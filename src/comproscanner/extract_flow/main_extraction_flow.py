@@ -90,6 +90,7 @@ class MaterialsState(BaseModel):
     synthesis_formatted_data: Dict = {}
     doi: str = ""
     materials_data_identifier_query: str = ""
+    identifier_context_mode: str = "rag"
     main_extraction_keyword: str = ""
     composition_property_text_data: str = ""
     synthesis_text_data: str = ""
@@ -161,6 +162,7 @@ class DataExtractionFlow(Flow[MaterialsState]):
         synthesis_text_data: str = None,
         llm: Optional[LLM] = None,
         materials_data_identifier_query: str = None,
+        identifier_context_mode: str = "rag",
         is_extract_synthesis_data: bool = True,
         vlm_model: str = "gemini/gemini-3-flash-preview",
         related_figures_base_path: str = "results/related_figures",
@@ -213,6 +215,11 @@ class DataExtractionFlow(Flow[MaterialsState]):
         main_extraction_keyword = main_extraction_keyword.replace(" ", "_")
         self.state.main_extraction_keyword = main_extraction_keyword
         self.state.materials_data_identifier_query = materials_data_identifier_query
+        if identifier_context_mode not in ("rag", "full_candidate"):
+            raise ValueErrorHandler(
+                "identifier_context_mode must be 'rag' or 'full_candidate'"
+            )
+        self.state.identifier_context_mode = identifier_context_mode
         self.state.composition_property_text_data = composition_property_text_data
         self.state.synthesis_text_data = synthesis_text_data
 
@@ -659,6 +666,14 @@ class DataExtractionFlow(Flow[MaterialsState]):
     def identify_materials_data_presence(self):
         """Identify if threre is any material and corresponding property present in the text"""
         logger.debug("Starting material identification process...")
+        identifier_context = (
+            self.state.composition_property_text_data
+            if self.state.identifier_context_mode == "full_candidate"
+            else None
+        )
+        identifier_kwargs = {}
+        if identifier_context is not None:
+            identifier_kwargs["identifier_context"] = identifier_context
         if self.state.llm:
             rag_crew = MaterialsDataIdentifierCrew(
                 doi=self.state.doi,
@@ -668,6 +683,7 @@ class DataExtractionFlow(Flow[MaterialsState]):
                 task_output_folder=self.state.task_output_folder,
                 is_log_json=self.state.is_log_json,
                 verbose=self.state.verbose,
+                **identifier_kwargs,
             ).crew()
         else:
             rag_crew = MaterialsDataIdentifierCrew(
@@ -677,14 +693,16 @@ class DataExtractionFlow(Flow[MaterialsState]):
                 task_output_folder=self.state.task_output_folder,
                 is_log_json=self.state.is_log_json,
                 verbose=self.state.verbose,
+                **identifier_kwargs,
             ).crew()
-        result = rag_crew.kickoff(
-            inputs={
-                "doi": self.state.doi,
-                "materials_data_identifier_query": self.state.materials_data_identifier_query,
-                "main_extraction_keyword": self.state.main_extraction_keyword,
-            }
-        )
+        identifier_inputs = {
+            "doi": self.state.doi,
+            "materials_data_identifier_query": self.state.materials_data_identifier_query,
+            "main_extraction_keyword": self.state.main_extraction_keyword,
+        }
+        if identifier_context is not None:
+            identifier_inputs["identifier_context"] = identifier_context
+        result = rag_crew.kickoff(inputs=identifier_inputs)
         # Store the raw result
         raw_result = result.raw if hasattr(result, "raw") else str(result)
 

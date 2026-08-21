@@ -37,6 +37,21 @@ logger = setup_logger("comproscanner.log", module_name="pdf_to_markdown_text")
 IMAGE_RESOLUTION_SCALE = 2.0
 
 
+def matches_property_keywords(text: str, property_keywords: dict) -> bool:
+    """Return whether text matches configured literal or regex property terms.
+
+    Literal matching keeps the historical case-sensitive behavior. Properties
+    that need normalized matching may opt in with a ``regex_keywords`` list.
+    """
+    for group_name in ("exact_keywords", "substring_keywords"):
+        if any(keyword in text for keyword in property_keywords.get(group_name, [])):
+            return True
+    return any(
+        re.search(pattern, text, flags=re.IGNORECASE) is not None
+        for pattern in property_keywords.get("regex_keywords", [])
+    )
+
+
 class PDFToMarkdownText:
     def __init__(self, source: str = None, num_threads: int = 4):
         """Class to convert PDF to Markdown text.
@@ -634,25 +649,21 @@ class PDFToMarkdownText:
                     all_req_data["abstract"] = pre_intro_abstract
 
         total_text = f"#TITLE:\n{all_req_data['article_title']}\n\n# ABSTRACT:\n{all_req_data["abstract"]}\n\n# INTRODUCTION:\n{all_req_data["introduction"]}\n\n# EXPERIMENTAL SYNTHESIS:\n{all_req_data["exp_methods"]}\n\n# COMPUTATIONAL METHODOLOGY:\n{all_req_data["comp_methods"]}\n\n# RESULTS AND DISCUSSION:\n{all_req_data["results_discussion"]}\n\n# CONCLUSION\n{all_req_data["conclusion"]}"
-        has_text_property_match = False
-        for item in property_keywords.values():
-            for keyword in item:
-                if keyword in total_text:
-                    has_text_property_match = True
-                    all_req_data["is_property_mentioned"] = "1"
-                    modified_doi = doi.replace("/", "_")
-                    if vector_db_manager.database_exists(modified_doi):
-                        logger.warning(f"Database already exists for {doi}...")
-                    else:
-                        logger.info(
-                            f"Target property is mentioned in {doi}...Creating vector database..."
-                        )
-                        vector_db_manager.create_database(
-                            db_name=modified_doi, article_text=total_text
-                        )
-                    break
-            if has_text_property_match:
-                break
+        has_text_property_match = matches_property_keywords(
+            total_text, property_keywords
+        )
+        if has_text_property_match:
+            all_req_data["is_property_mentioned"] = "1"
+            modified_doi = doi.replace("/", "_")
+            if vector_db_manager.database_exists(modified_doi):
+                logger.warning(f"Database already exists for {doi}...")
+            else:
+                logger.info(
+                    f"Target property is mentioned in {doi}...Creating vector database..."
+                )
+                vector_db_manager.create_database(
+                    db_name=modified_doi, article_text=total_text
+                )
         if has_caption_keyword_match and not has_text_property_match:
             all_req_data["is_property_mentioned"] = "1"
             modified_doi = doi.replace("/", "_")

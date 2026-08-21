@@ -4,3 +4,17 @@ identify_materials_data:
   expected_output: >
     Depending on whether any material chemical composition and property is mentioned for the provided scientific journal article, output should be either {{"answer": "yes"}} or {{"answer": "no"}}.
   agent: materials_data_identifier
+
+identify_materials_data_from_context:
+  description: >
+    Review the complete property candidate below and answer the query:
+    '{materials_data_identifier_query}'. Check whether any material chemical
+    composition (not abbreviations) and corresponding
+    {main_extraction_keyword} value is explicitly reported for a material
+    studied in the current article. Do not use external knowledge. Complete
+    property candidate:
+
+    {identifier_context}
+  expected_output: >
+    Output exactly either {{"answer": "yes"}} or {{"answer": "no"}}.
+  agent: materials_data_identifier

@@ -48,6 +48,9 @@ PROPERTY_KEYWORDS = {
         " T_C ",
         " t_c ",
     ],
+    "regex_keywords": [
+        r"\bt[\s_]*c\s*(?:=|:|≈|~|∼)\s*[+-]?\d",
+    ],
 }
 
 MATERIALS_DATA_IDENTIFIER_QUERY = (
@@ -162,6 +165,7 @@ def get_curie_temperature_preset() -> dict:
             "main_extraction_keyword": MAIN_EXTRACTION_KEYWORD,
             "is_extract_synthesis_data": False,
             "materials_data_identifier_query": MATERIALS_DATA_IDENTIFIER_QUERY,
+            "identifier_context_mode": "full_candidate",
             **get_curie_temperature_flow_optional_args(),
         },
     }

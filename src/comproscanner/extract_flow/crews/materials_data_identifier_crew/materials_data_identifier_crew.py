@@ -46,6 +46,7 @@ class MaterialsDataIdentifierCrew:
         task_output_folder: Optional[str] = None,
         is_log_json: bool = False,
         verbose: Optional[bool] = True,
+        identifier_context: Optional[str] = None,
     ):
         """
         Initialize the MaterialsDataIdentifierCrew.
@@ -69,6 +70,7 @@ class MaterialsDataIdentifierCrew:
         self.task_output_folder = task_output_folder
         self.is_log_json = is_log_json
         self.verbose = verbose
+        self.identifier_context = identifier_context
 
         # Initialize output file paths as None
         self.output_log_file = None
@@ -101,10 +103,20 @@ class MaterialsDataIdentifierCrew:
     # Agents
     @agent
     def materials_data_identifier(self) -> Agent:
-        rag_tool = RAGTool(rag_config=self.rag_config)
+        if self.identifier_context is not None:
+            agent_config = dict(self.agents_config["materials_data_identifier"])
+            agent_config["goal"] = (
+                "Review the provided complete property candidate and decide whether "
+                "it contains a material chemical composition and corresponding "
+                "{main_extraction_keyword} value."
+            )
+            tools = []
+        else:
+            agent_config = self.agents_config["materials_data_identifier"]
+            tools = [RAGTool(rag_config=self.rag_config)]
         return Agent(
-            config=self.agents_config["materials_data_identifier"],
-            tools=[rag_tool],
+            config=agent_config,
+            tools=tools,
             llm=self.llm,
             verbose=self.verbose,
         )
@@ -112,16 +124,21 @@ class MaterialsDataIdentifierCrew:
     # Tasks
     @task
     def identify_materials_data(self) -> Task:
+        task_config = self.tasks_config[
+            "identify_materials_data_from_context"
+            if self.identifier_context is not None
+            else "identify_materials_data"
+        ]
         if self.task_output_folder:
             return Task(
                 expected_output='A JSON object in this exact format: {{"answer": "yes"}} or {{"answer": "no"}}',
-                config=self.tasks_config["identify_materials_data"],
+                config=task_config,
                 output_pydantic=YesNoResponse,
                 output_file=self.task_output_file,
             )
         else:
             return Task(
-                config=self.tasks_config["identify_materials_data"],
+                config=task_config,
                 output_pydantic=YesNoResponse,
             )
 
