@@ -12,6 +12,7 @@ import regex as re
 import json
 import os
 import glob
+import io
 from typing import Optional
 
 # Third party imports
@@ -29,6 +30,13 @@ from .logger import setup_logger
 
 # configure logger
 logger = setup_logger("comproscanner.log", module_name="data_preparator")
+
+
+def read_csv_sanitizing_nul(file_path: str) -> pd.DataFrame:
+    """Read an intermediate CSV after removing non-semantic NUL characters."""
+    with open(file_path, "r", encoding="utf-8-sig", newline="") as file:
+        csv_text = file.read().replace("\x00", "")
+    return pd.read_csv(io.StringIO(csv_text), dtype=str)
 
 
 class SectionProcessor:
@@ -301,7 +309,7 @@ class MatPropDataPreparator:
         Process materials data extracted from the CSV database and run CrewAI Workflow.
         """
         all_files = glob.glob(self.extracted_folderpath + "/*.csv")
-        dfs = [pd.read_csv(f, dtype=str) for f in all_files]
+        dfs = [read_csv_sanitizing_nul(f) for f in all_files]
         if not dfs:
             logger.error(f"No files found in the folder: {self.extracted_folderpath}")
             raise FileNotFoundErrorHandler(

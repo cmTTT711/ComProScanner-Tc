@@ -18,6 +18,7 @@ from pathlib import Path
 from comproscanner.utils.data_preparator import (
     SectionProcessor,
     MatPropDataPreparator,
+    read_csv_sanitizing_nul,
 )
 from comproscanner.utils.error_handler import (
     ValueErrorHandler,
@@ -32,6 +33,57 @@ class TestSectionProcessor:
     def processor(self):
         """Create a SectionProcessor instance for testing."""
         return SectionProcessor()
+
+    def test_csv_without_nul_is_unchanged(self, tmp_path):
+        csv_path = tmp_path / "normal.csv"
+        expected = "Normal scientific text 300 K."
+        pd.DataFrame({"results_discussion": [expected]}).to_csv(
+            csv_path, index=False
+        )
+
+        result = read_csv_sanitizing_nul(str(csv_path))
+
+        assert result.loc[0, "results_discussion"] == expected
+
+    def test_csv_text_after_nul_is_preserved(self, tmp_path):
+        csv_path = tmp_path / "nul.csv"
+        csv_path.write_text(
+            'results_discussion\n"before text \x00 after text 596 °C"\n',
+            encoding="utf-8",
+        )
+
+        result = read_csv_sanitizing_nul(str(csv_path))
+
+        text = result.loc[0, "results_discussion"]
+        assert "before text" in text
+        assert "after text" in text
+        assert "596 °C" in text
+        assert "\x00" not in text
+
+    def test_tc_pairs_survive_real_preprocessing(self, tmp_path, processor):
+        csv_path = tmp_path / "paper.csv"
+        source = (
+            "BFS-BT-Mn-0.5 has Curie temperature 596 °C. "
+            "Intermediate marker \x00 BFS-BT-Mn-1.0 has Curie temperature 590 °C."
+        )
+        pd.DataFrame(
+            {
+                "article_title": ["Paper 53"],
+                "abstract": [""],
+                "introduction": [""],
+                "exp_methods": [""],
+                "results_discussion": [source],
+                "conclusion": [""],
+            }
+        ).to_csv(csv_path, index=False)
+
+        row = read_csv_sanitizing_nul(str(csv_path)).fillna("").iloc[0]
+        extraction_input, _ = processor.create_formatted_texts(row)
+
+        assert "BFS-BT-Mn-0.5" in extraction_input
+        assert "596 °C" in extraction_input
+        assert "BFS-BT-Mn-1.0" in extraction_input
+        assert "590 °C" in extraction_input
 
     def test_initialization(self, processor):
         """Test SectionProcessor initialization."""

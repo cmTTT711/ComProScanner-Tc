@@ -26,11 +26,27 @@ MAIN_PROPERTY_KEYWORD = "magnetic"
 MAIN_EXTRACTION_KEYWORD = "Curie temperature"
 
 PROPERTY_KEYWORDS = {
-    "exact_keywords": ["Curie temperature", "Curie point"],
+    "exact_keywords": [
+        "Curie temperature",
+        "curie temperature",
+        "Curie point",
+        "curie point",
+        "ferroelectric Curie temperature",
+        "ferroelectric curie temperature",
+        "ferroelectric Curie point",
+        "ferroelectric curie point",
+        "ferroelectric transition temperature",
+        "ferroelectric to paraelectric phase transition temperature",
+        "phase transition temperature, Tc",
+        "magnetic Curie temperature",
+        "magnetic curie temperature",
+    ],
     "substring_keywords": [
         "curie temperature",
         "curie point",
         " tc ",
+        " T_C ",
+        " t_c ",
     ],
 }
 

@@ -32,10 +32,8 @@ def test_preset_constructs_config():
     preset = preset_module.get_curie_temperature_preset()
 
     assert preset["main_property_keyword"] == "magnetic"
-    assert preset["property_keywords"]["exact_keywords"] == [
-        "Curie temperature",
-        "Curie point",
-    ]
+    assert "Curie temperature" in preset["property_keywords"]["exact_keywords"]
+    assert "Curie point" in preset["property_keywords"]["exact_keywords"]
     assert (
         preset["extraction_kwargs"]["main_extraction_keyword"]
         == "Curie temperature"
