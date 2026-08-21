@@ -106,9 +106,11 @@ class MaterialsDataIdentifierCrew:
         if self.identifier_context is not None:
             agent_config = dict(self.agents_config["materials_data_identifier"])
             agent_config["goal"] = (
-                "Review the provided complete property candidate and decide whether "
-                "it contains a material chemical composition and corresponding "
-                "{main_extraction_keyword} value."
+                "Review the complete property candidate and decide whether it "
+                "contains at least one plausible current-work "
+                "{main_extraction_keyword} fact worth sending to extraction. "
+                "Do not require final composition normalization or complete "
+                "composition-property binding at this gate."
             )
             tools = []
         else:

@@ -8,11 +8,22 @@ identify_materials_data:
 identify_materials_data_from_context:
   description: >
     Review the complete property candidate below and answer the query:
-    '{materials_data_identifier_query}'. Check whether any material chemical
-    composition (not abbreviations) and corresponding
-    {main_extraction_keyword} value is explicitly reported for a material
-    studied in the current article. Do not use external knowledge. Complete
-    property candidate:
+    '{materials_data_identifier_query}'. Return yes when at least one plausible
+    current-work fact for {main_extraction_keyword} is present and should be
+    attempted by the extraction stage. This is a semantic existence gate, not
+    the final extraction step. Do not require this gate to normalize formulas,
+    expand one shared value across multiple current-work samples, parse complex
+    compositions, or construct the final composition-property mapping. Evaluate
+    facts locally: one valid normal transition is sufficient even if nearby
+    samples show non-target transitions. A table-bound or sample-bound Tm may
+    qualify only when local current-work context explicitly identifies it as the
+    target transition; Tm by itself is not sufficient. Keep current-work
+    attribution strict. Return no when the candidate contains only cited or
+    background facts, constituent background properties not measured in the
+    current work, Curie-Weiss, Neel, blocking, spin-glass, synthesis or
+    measurement temperatures, a generic dielectric maximum/Tm without target
+    semantics, or unrelated phase transitions. Do not use external knowledge.
+    Complete property candidate:
 
     {identifier_context}
   expected_output: >
