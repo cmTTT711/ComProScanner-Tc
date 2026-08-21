@@ -63,6 +63,28 @@ MATERIALS_DATA_IDENTIFIER_QUERY = (
     "transition/decomposition temperatures."
 )
 
+TC_EXTRACTOR_PRECISION_TASK_NOTES = [
+    "CURRENT WORK: Extract Curie-temperature facts only for samples or materials "
+    "investigated in the current paper. Exclude textbook constants, unrelated or "
+    "cited reference values, and intrinsic constituent properties mentioned only "
+    "as background.",
+    "TC SEMANTICS: Treat an explicitly assigned Curie transition, normal "
+    "ferroelectric-to-paraelectric transition, or loss of long-range ferroelectric "
+    "order as Curie-temperature evidence. Exclude relaxor peak temperatures, "
+    "dipole-glass transitions, frequency-dependent Tm values, and unrelated "
+    "dielectric maxima. When normal and relaxor samples coexist, extract only the "
+    "sample-local normal Curie/FE-PE facts.",
+    "BINDING: For composites and multiphase samples, bind the value according to "
+    "the experimentally investigated object described by the article. Do not "
+    "automatically substitute a constituent for the measured composite or transfer "
+    "a constituent's background property to the composite. If a transition observed "
+    "in a composite originates from one phase, keep the measured composite/sample "
+    "as the extracted object when that is what the experiment reports.",
+    "FINAL CHECK: For every proposed record, confirm current-work attribution, "
+    "target-transition semantics, and exact material-value binding. Remove the "
+    "record if any of these checks fails.",
+]
+
 
 def get_curie_temperature_flow_optional_args() -> dict:
     """Return the prompt notes and few-shot examples for the Tc extraction flow."""
@@ -97,7 +119,7 @@ def get_curie_temperature_flow_optional_args() -> dict:
         "do not invent one and do not use external scientific knowledge.",
         "Preserve the reported unit exactly. Use 'K' or '°C' as reported; do not "
         "silently convert between units.",
-    ]
+    ] + TC_EXTRACTOR_PRECISION_TASK_NOTES
     composition_property_formatting_agent_notes = [
         "Preserve the composition -> Curie temperature mapping during formatting.",
         "Keep the reported unit (K or °C) unchanged.",
