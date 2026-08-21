@@ -11,6 +11,7 @@ Date: 21-03-2025
 import re
 import os
 import time
+import unicodedata
 from io import BytesIO
 import pandas as pd
 import torch
@@ -37,19 +38,67 @@ logger = setup_logger("comproscanner.log", module_name="pdf_to_markdown_text")
 IMAGE_RESOLUTION_SCALE = 2.0
 
 
-def matches_property_keywords(text: str, property_keywords: dict) -> bool:
-    """Return whether text matches configured literal or regex property terms.
+def match_property_signal(text: str, property_keywords: dict):
+    """Return the first deterministic property signal as ``(class, excerpt)``."""
+    if property_keywords.get("candidate_gate") == "tc_high_recall":
+        normalized = unicodedata.normalize("NFKC", text).replace("\x00", " ")
+        normalized = re.sub(r"\s+", " ", normalized)
+        patterns = (
+            (
+                "DIRECT_TC",
+                r"(?i)(?<![A-Za-z])t\s*_?\s*c(?:urie)?(?![A-Za-z0-9])"
+                r"\s*(?:[=:≈~∼�]\s*|(?:is|of)\s+)[+-]?\d+(?:\.\d+)?"
+                r"(?:\s*(?:°\s*c|k)\b)?",
+            ),
+            (
+                "CURIE",
+                r"(?i)\bcurie[-\s]+(?:temperature|point|transition)"
+                r"(?:[-\s]+transition)?\b",
+            ),
+            (
+                "FE_PE_TRANSITION",
+                r"(?i)\b(?:ferroelectric|fe)\s*(?:-|–|—|/|to)\s*"
+                r"(?:paraelectric|pe)\s+(?:phase\s+)?transition\b|"
+                r"\bparaelectric\s*(?:-|–|—|/|to)\s*ferroelectric\s+"
+                r"(?:phase\s+)?transition\b",
+            ),
+            (
+                "FE_TRANSITION_CONTEXT",
+                r"(?i)\b(?:normal\s+)?ferroelectric(?:\s+phase)?\s+transition"
+                r"(?:\s+temperature\b|\b.{0,120}?(?:\bT\s*_?\s*m\b|"
+                r"transition\s+temperature|dielectric\s+(?:maximum|peak)|"
+                r"[+-]?\d+(?:\.\d+)?\s*(?:°\s*c|k)\b))",
+            ),
+            (
+                "TM_FE_CONTEXT",
+                r"(?i)(?:\bT\s*_?\s*m\b.{0,160}\b(?:ferroelectric|"
+                r"paraelectric)\b|\b(?:ferroelectric|paraelectric)\b"
+                r".{0,160}\bT\s*_?\s*m\b)",
+            ),
+        )
+        for signal_class, pattern in patterns:
+            match = re.search(pattern, normalized)
+            if match:
+                start = max(0, match.start() - 60)
+                end = min(len(normalized), match.end() + 60)
+                return signal_class, normalized[start:end]
+        return None
 
-    Literal matching keeps the historical case-sensitive behavior. Properties
-    that need normalized matching may opt in with a ``regex_keywords`` list.
-    """
+    # Preserve historical matching for every non-Tc preset.
     for group_name in ("exact_keywords", "substring_keywords"):
-        if any(keyword in text for keyword in property_keywords.get(group_name, [])):
-            return True
-    return any(
-        re.search(pattern, text, flags=re.IGNORECASE) is not None
-        for pattern in property_keywords.get("regex_keywords", [])
-    )
+        for keyword in property_keywords.get(group_name, []):
+            if keyword in text:
+                return group_name, keyword
+    for pattern in property_keywords.get("regex_keywords", []):
+        match = re.search(pattern, text, flags=re.IGNORECASE)
+        if match:
+            return "regex_keywords", match.group(0)
+    return None
+
+
+def matches_property_keywords(text: str, property_keywords: dict) -> bool:
+    """Return whether text contains a configured property candidate signal."""
+    return match_property_signal(text, property_keywords) is not None
 
 
 class PDFToMarkdownText:

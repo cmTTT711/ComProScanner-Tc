@@ -54,8 +54,10 @@ _original_rag_get_llm = rag_module.RAGTool._get_llm
 
 
 def tc_prefilter_matches(text: str, keywords: dict) -> bool:
-    """Mirror the production prefilter's direct substring behavior."""
-    return any(keyword in text for group in keywords.values() for keyword in group)
+    """Use the same deterministic candidate gate as production."""
+    from comproscanner.utils.pdf_to_markdown_text import matches_property_keywords
+
+    return matches_property_keywords(text, keywords)
 
 
 def normalized_pdf_text(pdf_path: Path) -> str:

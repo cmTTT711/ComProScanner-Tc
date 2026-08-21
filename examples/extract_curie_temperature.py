@@ -26,6 +26,7 @@ MAIN_PROPERTY_KEYWORD = "magnetic"
 MAIN_EXTRACTION_KEYWORD = "Curie temperature"
 
 PROPERTY_KEYWORDS = {
+    "candidate_gate": "tc_high_recall",
     "exact_keywords": [
         "Curie temperature",
         "curie temperature",
