@@ -69,6 +69,7 @@ def test_init_valid_parameters(sample_property_keywords):
         "/test/path", "failed_pdf_filenames.txt"
     )
     assert processor.is_track_pdfs is True
+    assert processor.allow_missing_doi is False
     assert processor.track_pdfs_report_path == DefaultPaths("piezoelectric").PDF_PROCESSED_DOIS_FILENAME
 
 
@@ -223,6 +224,74 @@ def test_extract_doi_from_text(pdfs_processor):
     doi = pdfs_processor._extract_doi_from_text(text_with_multiple_dois)
     assert doi == "10.1234/test.567"
 
+
+def test_local_document_id_is_stable_and_not_a_fake_doi():
+    first = PDFsProcessor._local_document_id("/papers/论文一.pdf")
+    second = PDFsProcessor._local_document_id("C:/other/论文一.pdf")
+    assert first == second
+    assert first.startswith("local-pdf/")
+    assert not first.startswith("10.")
+
+
+@patch("glob.glob")
+@patch(
+    "comproscanner.article_processors.pdfs_processor.get_doi_from_crossref",
+    return_value="",
+)
+def test_process_pdfs_allows_explicit_doi_optional_mode(
+    mock_crossref, mock_glob, pdfs_processor
+):
+    mock_glob.return_value = ["/test/path/local-paper.pdf"]
+    pdfs_processor.allow_missing_doi = True
+
+    row = pd.DataFrame(
+        {
+            "doi": ["placeholder"],
+            "is_property_mentioned": ["0"],
+        }
+    )
+    with (
+        patch.object(PDFToMarkdownText, "convert_to_markdown", return_value="content"),
+        patch.object(PDFToMarkdownText, "extract_and_save_figures", return_value=False),
+        patch.object(PDFToMarkdownText, "clean_text", return_value={}),
+        patch.object(PDFToMarkdownText, "append_section_to_df", return_value=row),
+        patch.object(pdfs_processor.csv_db_manager, "write_to_csv") as write_csv,
+        patch("time.sleep"),
+    ):
+        pdfs_processor.process_pdfs()
+
+    assert pdfs_processor.doi.startswith("local-pdf/")
+    assert pdfs_processor.identifier == "local-paper"
+    write_csv.assert_called_once()
+
+
+@patch("glob.glob")
+@patch(
+    "comproscanner.article_processors.pdfs_processor.get_paper_metadata_from_openalex",
+    return_value=("Title", "Journal", "Publisher"),
+)
+def test_partial_csv_batch_is_flushed_once_after_loop(
+    mock_metadata, mock_glob, pdfs_processor
+):
+    mock_glob.return_value = ["/test/path/one.pdf", "/test/path/two.pdf"]
+    markdown = ["DOI: 10.1234/one", "DOI: 10.1234/two"]
+
+    def make_row(*args, **kwargs):
+        return pd.DataFrame({"doi": ["row"], "is_property_mentioned": ["0"]})
+
+    with (
+        patch.object(PDFToMarkdownText, "convert_to_markdown", side_effect=markdown),
+        patch.object(PDFToMarkdownText, "extract_and_save_figures", return_value=False),
+        patch.object(PDFToMarkdownText, "clean_text", return_value={}),
+        patch.object(PDFToMarkdownText, "append_section_to_df", side_effect=make_row),
+        patch.object(pdfs_processor.csv_db_manager, "write_to_csv") as write_csv,
+        patch("time.sleep"),
+    ):
+        pdfs_processor.process_pdfs()
+
+    write_csv.assert_called_once()
+    written_frame = write_csv.call_args.args[0]
+    assert len(written_frame) == 2
 
 @pytest.mark.parametrize("is_sql_db", [True, False])
 def test_database_selection(is_sql_db):

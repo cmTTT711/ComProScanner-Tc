@@ -1,0 +1,19 @@
+{
+  "task": "TC_LITERATURE_DISCOVERY_SCOPUS_01",
+  "generated_at_utc": "2026-08-30T01:03:03.275208+00:00",
+  "query": "TITLE-ABS-KEY((\"Curie temperature\" OR \"Curie point\" OR \"ferroelectric transition\" OR \"magnetic transition\") AND (material* OR ceramic* OR ferroelectric* OR multiferroic* OR magnet*)) AND DOCTYPE(ar) AND LANGUAGE(english)",
+  "sampling": "year-stratified; approximately equal quota per year",
+  "open_access_only": true,
+  "excluded_doi_count": 500,
+  "requested_candidates": 500,
+  "retrieved_candidates": 500,
+  "shortlist_size": 500,
+  "year_range": [
+    2020,
+    2026
+  ],
+  "document_type": "Article",
+  "language": "English",
+  "llm_called": false,
+  "full_text_downloaded": false
+}

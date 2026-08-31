@@ -1,0 +1,103 @@
+{
+  "paper_id": 42,
+  "filename": "42-低温核壳主要磁性能交换偏置-2023-JAC-Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\42-低温核壳主要磁性能交换偏置-2023-JAC-Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 167.247,
+  "output": {
+    "10.1016/j.jallcom.2023.172066": {
+      "composition_data": {
+        "compositions_property_values": {
+          "CoFe2O4": 793,
+          "BiFeO3/CoFe2O4 core-shell annealed at 450 °C": 810,
+          "BiFeO3/CoFe2O4 core-shell annealed at 550 °C": 826
+        },
+        "property_unit": "K",
+        "family": "CoFe2O4"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.jallcom.2023.172066",
+        "title": "Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles",
+        "journal": "Journal of Alloys and Compounds",
+        "year": 2023,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "S. Vivek",
+            "affiliation_id": "I177436651",
+            "affiliation_name": "Mahatma Gandhi University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "A.S. Kumar",
+            "affiliation_id": "I35340524",
+            "affiliation_name": "Central University of Kerala",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "C.S. Chitra Lekha",
+            "affiliation_id": "I177436651",
+            "affiliation_name": "Mahatma Gandhi University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Nandakumar Kalarikkal",
+            "affiliation_id": "I177436651",
+            "affiliation_name": "Mahatma Gandhi University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Aritra Banerjee",
+            "affiliation_id": "I4210132317",
+            "affiliation_name": "UGC DAE Consortium for Scientific Research",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Swapna S. Nair",
+            "affiliation_id": "I35340524",
+            "affiliation_name": "Central University of Kerala",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Coercivity",
+          "Exchange bias",
+          "Nanoparticle",
+          "Materials science",
+          "Crystallinity",
+          "Spin glass",
+          "Condensed matter physics",
+          "Shell (structure)",
+          "Anisotropy",
+          "Core (optical fiber)",
+          "Diffusion",
+          "Magnetization",
+          "Nanotechnology",
+          "Magnetic anisotropy",
+          "Composite material",
+          "Magnetic field",
+          "Thermodynamics",
+          "Optics",
+          "Physics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.jallcom.2023.172066",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

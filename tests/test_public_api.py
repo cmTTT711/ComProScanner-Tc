@@ -119,6 +119,40 @@ def test_extract_composition_property_data_public_api_smoke_with_no_papers(tmp_p
     mock_cleaner_cls.return_value.get_useful_data.assert_called_once_with()
 
 
+def test_extract_public_api_builds_dedicated_identifier_llm(tmp_path, monkeypatch):
+    scanner = ComProScanner(main_property_keyword="magnetic")
+    mock_preparator = MagicMock()
+    mock_preparator.get_unprocessed_data.return_value = []
+    monkeypatch.setenv("DASHSCOPE_API_KEY", "test-key")
+
+    with (
+        patch(
+            "comproscanner.comproscanner.MatPropDataPreparator",
+            return_value=mock_preparator,
+        ),
+        patch("comproscanner.comproscanner.LLMConfig") as mock_llm_cfg,
+        patch("comproscanner.comproscanner.DataCleaner") as mock_cleaner_cls,
+    ):
+        mock_llm_cfg.return_value.get_llm.return_value = MagicMock()
+        mock_cleaner_cls.return_value.get_useful_data.return_value = {}
+        scanner.extract_composition_property_data(
+            main_extraction_keyword="Curie temperature",
+            model="deepseek/deepseek-v4-flash",
+            identifier_model="openai/qwen-flash",
+            identifier_base_url=(
+                "https://dashscope.aliyuncs.com/compatible-mode/v1"
+            ),
+            identifier_api_key_env="DASHSCOPE_API_KEY",
+            json_results_file=str(tmp_path / "results.json"),
+            checked_doi_list_file=str(tmp_path / "checked.txt"),
+        )
+
+    assert mock_llm_cfg.call_count == 2
+    identifier_call = mock_llm_cfg.call_args_list[1]
+    assert identifier_call.kwargs["model"] == "openai/qwen-flash"
+    assert identifier_call.kwargs["api_key"] == "test-key"
+
+
 def test_process_articles_forwards_pdf_failed_report_args():
     scanner = ComProScanner(main_property_keyword="piezoelectric")
     mock_pdfs_cls = MagicMock()

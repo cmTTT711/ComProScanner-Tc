@@ -107,10 +107,11 @@ class MaterialsDataIdentifierCrew:
             agent_config = dict(self.agents_config["materials_data_identifier"])
             agent_config["goal"] = (
                 "Review the complete property candidate and decide whether it "
-                "contains at least one plausible current-work "
+                "contains at least one plausible article-asserted material-to-"
                 "{main_extraction_keyword} fact worth sending to extraction. "
                 "Do not require final composition normalization or complete "
-                "composition-property binding at this gate."
+                "composition-property binding at this gate. Apply the supplied "
+                "identifier query's scope and scientific rules exactly."
             )
             tools = []
         else:

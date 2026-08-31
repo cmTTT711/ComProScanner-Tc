@@ -1,0 +1,102 @@
+{
+  "paper_id": 72,
+  "filename": "72-有机多铁异质结中的光控磁化效应和磁电效应2017-aom.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\72-有机多铁异质结中的光控磁化效应和磁电效应2017-aom.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 101.374,
+  "output": {
+    "10.1002/adom.201700644": {
+      "composition_data": {
+        "compositions_property_values": {
+          "tetrathiafulvalene-p-bromanil": 52,
+          "κ-(bis(ethylenedithio)tetrathiafulvalene)2Cu[N(CN)2]Cl": 26
+        },
+        "property_unit": "K",
+        "family": "Organic charge-transfer multiferroics"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1002/adom.201700644",
+        "title": "Optically Controlled Magnetization and Magnetoelectric Effect in Organic Multiferroic Heterojunction",
+        "journal": "Advanced Optical Materials",
+        "year": 2017,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Mengmeng Wei",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Meng-Si Niu",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Pengqing Bi",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xiaotao Hao",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Shenqiang Ren",
+            "affiliation_id": "I84392919",
+            "affiliation_name": "Temple University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Shijie Xie",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wei Qin",
+            "affiliation_id": "I154099455",
+            "affiliation_name": "Shandong University",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Materials science",
+          "Magnetism",
+          "Photoexcitation",
+          "Magnetization",
+          "Polythiophene",
+          "Condensed matter physics",
+          "Ferroelectricity",
+          "Optoelectronics",
+          "Conductive polymer",
+          "Physics",
+          "Polymer",
+          "Magnetic field"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": true,
+  "pipeline_report": [
+    {
+      "document_id": "10.1002/adom.201700644",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

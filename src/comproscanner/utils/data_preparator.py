@@ -112,7 +112,8 @@ class SectionProcessor:
 
     def _get_relevant_sentences(self, text: str) -> list:
         """
-        Get sentences containing digits or consecutive capital letters.
+        Get sentences containing digits or consecutive capital letters, together
+        with one sentence of context on either side of every match.
 
         Args:
             text (str): Text to be processed.
@@ -123,7 +124,22 @@ class SectionProcessor:
         if pd.isna(text):
             return []
         sentences = self._split_into_sentences(text)
-        return [s for s in sentences if self._has_digits_or_consecutive_caps(s)]
+        matched_indexes = {
+            index
+            for index, sentence in enumerate(sentences)
+            if self._has_digits_or_consecutive_caps(sentence)
+        }
+        context_indexes = {
+            context_index
+            for index in matched_indexes
+            for context_index in (index - 1, index, index + 1)
+            if 0 <= context_index < len(sentences)
+        }
+        return [
+            sentence
+            for index, sentence in enumerate(sentences)
+            if index in context_indexes
+        ]
 
     def _process_section(self, text: str, section_name: str) -> tuple:
         """

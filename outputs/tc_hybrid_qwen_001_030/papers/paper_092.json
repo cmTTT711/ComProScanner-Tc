@@ -1,0 +1,88 @@
+{
+  "paper_id": 92,
+  "filename": "92-顺电铁磁磁介电-2019-陶瓷国际-Room-temperature multiferroic and magnetodielectric properties of SrTiO3.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\92-顺电铁磁磁介电-2019-陶瓷国际-Room-temperature multiferroic and magnetodielectric properties of SrTiO3.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 70.148,
+  "output": {
+    "10.1016/j.ceramint.2019.01.127": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": "SrTiO3-NiFe2O4 composite"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.ceramint.2019.01.127",
+        "title": "Room-temperature multiferroic and magnetodielectric properties of SrTiO3/NiFe2O4 composite ceramics",
+        "journal": "Ceramics International",
+        "year": 2019,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Hua Ke",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Hongjun Zhang",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Junjie Zhou",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Dechang Jia",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yu Zhou",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Tetragonal crystal system",
+          "Multiferroics",
+          "Composite number",
+          "Ferroelectricity",
+          "Ceramic",
+          "Dielectric",
+          "Raman spectroscopy",
+          "Impurity",
+          "Calcination",
+          "Phase (matter)",
+          "Composite material",
+          "Analytical Chemistry (journal)",
+          "Optics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.ceramint.2019.01.127",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

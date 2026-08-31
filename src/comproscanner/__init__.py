@@ -16,10 +16,12 @@ Main functions:
 
 import sys
 import os
-from .utils.configs.paths_config import DefaultPaths
 
 # Check if the script is running under pytest
 _is_testing = "pytest" in sys.modules or "PYTEST_CURRENT_TEST" in os.environ
+
+if not _is_testing:
+    from .utils.configs.paths_config import DefaultPaths
 
 # Package version
 __version__ = "0.1.4"
@@ -110,7 +112,7 @@ if not _is_testing:
     def process_articles(
         main_property_keyword,
         property_keywords=None,
-        source_list=["elsevier", "wiley", "iop", "springer", "pdfs"],
+        source_list=None,
         **kwargs,
     ):
         """
@@ -122,6 +124,8 @@ if not _is_testing:
             source_list (list, optional): List of sources to process
             **kwargs (Any): Additional keyword arguments to pass to the process_articles method
         """
+        if source_list is None:
+            source_list = ["elsevier", "wiley", "iop", "springer", "pdfs"]
         scanner = ComProScanner(main_property_keyword=main_property_keyword)
         return scanner.process_articles(
             property_keywords=property_keywords, source_list=source_list, **kwargs

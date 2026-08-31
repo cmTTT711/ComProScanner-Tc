@@ -1,0 +1,118 @@
+{
+  "paper_id": 80,
+  "filename": "80-2-2-2019-jap-YW铁氧体和PZT.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\80-2-2-2019-jap-YW铁氧体和PZT.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 47.891,
+  "output": {
+    "10.1063/1.5112024": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": ""
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/1.5112024",
+        "title": "Magneto-electric interactions in composites of self-biased Y- and W-type hexagonal ferrites and lead zirconate titanate: Experiment and theory",
+        "journal": "Journal of Applied Physics",
+        "year": 2019,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Ying Liu",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Jitao Zhang",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Peng Zhou",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Cunzheng Dong",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Xianfeng Liang",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Wei Zhang",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Tianjin Zhang",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Nian X. Sun",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "Д. А. Филиппов",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          },
+          {
+            "name": "G. Srinivasan",
+            "affiliation_id": "I12912129",
+            "affiliation_name": "Northeastern University",
+            "affiliation_country": "US"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Lead zirconate titanate",
+          "Remanence",
+          "Composite material",
+          "Condensed matter physics",
+          "Ferroelectricity",
+          "Magnetization",
+          "Anisotropy",
+          "Hysteresis",
+          "Crystallite",
+          "Magnetic field",
+          "Dielectric",
+          "Metallurgy",
+          "Physics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/1.5112024",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

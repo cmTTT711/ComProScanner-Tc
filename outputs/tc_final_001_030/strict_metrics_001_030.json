@@ -1,0 +1,89 @@
+{
+  "task": "TC_CONTEXT_WINDOW_30_UPDATED_GOLD_METRICS",
+  "gold_total_including_non_strict": 47,
+  "strict_gold_facts": 46,
+  "non_strict_gold_facts": 1,
+  "strict_predictions_after_exclusions_and_dedup": 40,
+  "tp": 40,
+  "fp": 0,
+  "fn": 6,
+  "precision": 1,
+  "recall": 0.8695652173913043,
+  "f1": 0.9302325581395349,
+  "exclusions": [
+    "Paper 30 BiFeO3-BaTiO3 >~580 °C is retained in Gold as a non-strict range fact.",
+    "Paper 19 duplicate 367 K material aliases count as one transition."
+  ],
+  "strict_missing_keys": [
+    {
+      "paper_id": 10,
+      "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3",
+      "tc_value": 683,
+      "tc_unit": "K",
+      "fact_role": "current_work",
+      "review_decision": "ADD_TO_GOLD",
+      "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    },
+    {
+      "paper_id": 10,
+      "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO and MnO2 additives",
+      "tc_value": 687,
+      "tc_unit": "K",
+      "fact_role": "current_work",
+      "review_decision": "ADD_TO_GOLD",
+      "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    },
+    {
+      "paper_id": 10,
+      "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with MnO2 additive",
+      "tc_value": 690,
+      "tc_unit": "K",
+      "fact_role": "current_work",
+      "review_decision": "ADD_TO_GOLD",
+      "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    },
+    {
+      "paper_id": 10,
+      "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO additive",
+      "tc_value": 692,
+      "tc_unit": "K",
+      "fact_role": "current_work",
+      "review_decision": "ADD_TO_GOLD",
+      "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    },
+    {
+      "paper_id": 25,
+      "material": "lanthanum-substituted (1−x)BiFeO3−xPbTiO3",
+      "tc_value": 227,
+      "tc_unit": "°C",
+      "page": 4,
+      "fact_role": "background",
+      "transition_type": "ferroelectric transition",
+      "evidence": "The ferroelectric transition ... occurs at 650 °C, dropping to 227 °C when lanthanum is substituted.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    },
+    {
+      "paper_id": 25,
+      "material": "undoped (1−x)BiFeO3−xPbTiO3",
+      "tc_value": 650,
+      "tc_unit": "°C",
+      "page": 4,
+      "fact_role": "background",
+      "transition_type": "ferroelectric transition",
+      "evidence": "The ferroelectric transition for undoped (1-x)BFO-xPTO correlates with the dielectric anomaly and occurs at 650 °C.",
+      "strict_scoring": true,
+      "gold_status": "ACCEPTED"
+    }
+  ],
+  "workbook_path": "F:/Python_Project/ComProScanner/outputs/tc_final_001_030/gold_review_001_030.xlsx",
+  "predictions_path": "F:/Python_Project/ComProScanner/outputs/tc_final_001_030/predictions_001_030.json"
+}

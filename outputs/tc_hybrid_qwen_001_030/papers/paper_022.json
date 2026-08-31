@@ -1,0 +1,44 @@
+{
+  "paper_id": 22,
+  "filename": "22-三相复合-2022-陶瓷国际-Significant impact of spinel ferrites in evolution of magneto-electric coupling in novel tri-phase composites.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\22-三相复合-2022-陶瓷国际-Significant impact of spinel ferrites in evolution of magneto-electric coupling in novel tri-phase composites.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 82.639,
+  "output": {
+    "local-pdf/7c100201e7883b3e": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/7c100201e7883b3e",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

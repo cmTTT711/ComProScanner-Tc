@@ -1,0 +1,119 @@
+{
+  "paper_id": 29,
+  "filename": "29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 163.309,
+  "output": {
+    "10.1111/jace.19555": {
+      "composition_data": {
+        "compositions_property_values": {
+          "((1-0.27)BiFe(1-0.03)Cr(0.03)O3)-(0.27)BaTi(1-0.03)Mn(0.03)O3": 795.2,
+          "BiFeO3": 1100
+        },
+        "property_unit": "K",
+        "family": "BiFeO3-BaTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1111/jace.19555",
+        "title": "Lattice‐mediated room temperature magnetoelectric effect in (1‐ y )BiFe 1‐ x Cr x O 3 ‐ y BaTi 1‐ x Mn x O 3 solid solutions",
+        "journal": "Journal of the American Ceramic Society",
+        "year": 2023,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Gaochao Zhao",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Chengbing Pan",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wei Dong",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Peng Tong",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jie Yang",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xuebin Zhu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Lihua Yin",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wenhai Song",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yuping Sun",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Condensed matter physics",
+          "Materials science",
+          "Spintronics",
+          "Phase boundary",
+          "Magnetization",
+          "Magnetism",
+          "Raman spectroscopy",
+          "Raman scattering",
+          "Phonon",
+          "Ferromagnetism",
+          "Phase (matter)",
+          "Dielectric",
+          "Physics",
+          "Magnetic field",
+          "Ferroelectricity",
+          "Optics",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1111/jace.19555",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

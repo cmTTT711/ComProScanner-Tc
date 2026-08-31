@@ -43,6 +43,17 @@ class PaperMetadataExtractor:
             paper_data (dict): A dictionary containing the metadata of the article
         """
 
+        if doi.startswith("local-pdf/"):
+            return {
+                "doi": None,
+                "title": "",
+                "journal": "",
+                "year": "",
+                "isOpenAccess": False,
+                "authors": [],
+                "keywords": [],
+            }
+
         def _get_scopus_data(doi: str):
             """
             Get the article metadata from Scopus API using the provided DOI

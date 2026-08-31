@@ -40,43 +40,15 @@ IMAGE_RESOLUTION_SCALE = 2.0
 
 def match_property_signal(text: str, property_keywords: dict):
     """Return the first deterministic property signal as ``(class, excerpt)``."""
-    if property_keywords.get("candidate_gate") == "tc_high_recall":
+    candidate_patterns = property_keywords.get("candidate_patterns", [])
+    if candidate_patterns:
         normalized = unicodedata.normalize("NFKC", text).replace("\x00", " ")
         normalized = re.sub(r"\s+", " ", normalized)
-        patterns = (
-            (
-                "DIRECT_TC",
-                r"(?i)(?<![A-Za-z])t\s*_?\s*c(?:urie)?(?![A-Za-z0-9])"
-                r"\s*(?:[=:≈~∼�]\s*|(?:is|of)\s+)[+-]?\d+(?:\.\d+)?"
-                r"(?:\s*(?:°\s*c|k)\b)?",
-            ),
-            (
-                "CURIE",
-                r"(?i)\bcurie[-\s]+(?:temperature|point|transition)"
-                r"(?:[-\s]+transition)?\b",
-            ),
-            (
-                "FE_PE_TRANSITION",
-                r"(?i)\b(?:ferroelectric|fe)\s*(?:-|–|—|/|to)\s*"
-                r"(?:paraelectric|pe)\s+(?:phase\s+)?transition\b|"
-                r"\bparaelectric\s*(?:-|–|—|/|to)\s*ferroelectric\s+"
-                r"(?:phase\s+)?transition\b",
-            ),
-            (
-                "FE_TRANSITION_CONTEXT",
-                r"(?i)\b(?:normal\s+)?ferroelectric(?:\s+phase)?\s+transition"
-                r"(?:\s+temperature\b|\b.{0,120}?(?:\bT\s*_?\s*m\b|"
-                r"transition\s+temperature|dielectric\s+(?:maximum|peak)|"
-                r"[+-]?\d+(?:\.\d+)?\s*(?:°\s*c|k)\b))",
-            ),
-            (
-                "TM_FE_CONTEXT",
-                r"(?i)(?:\bT\s*_?\s*m\b.{0,160}\b(?:ferroelectric|"
-                r"paraelectric)\b|\b(?:ferroelectric|paraelectric)\b"
-                r".{0,160}\bT\s*_?\s*m\b)",
-            ),
-        )
-        for signal_class, pattern in patterns:
+        for item in candidate_patterns:
+            signal_class = item.get("class", "candidate_pattern")
+            pattern = item.get("pattern", "")
+            if not pattern:
+                continue
             match = re.search(pattern, normalized)
             if match:
                 start = max(0, match.start() - 60)

@@ -1,0 +1,123 @@
+{
+  "paper_id": 24,
+  "filename": "24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 361.844,
+  "output": {
+    "10.1063/5.0133946": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1100,
+          "((1-0.23)(0.9BiFeO3-0.1Bi0.5Na0.5TiO3))-0.23BaTi(1-0.00)Mn0.00O3": 774
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/5.0133946",
+        "title": "Enhanced electric field control of magnetism in ternary BiFeO3-based ceramics",
+        "journal": "Applied Physics Letters",
+        "year": 2023,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Gaochao Zhao",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Chengbing Pan",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wei Dong",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Lei Xie",
+            "affiliation_id": "I143868143",
+            "affiliation_name": "Anhui University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Peng Tong",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jie Yang",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xuebin Zhu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Lihua Yin",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wenhai Song",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yuping Sun",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Magnetism",
+          "Ternary operation",
+          "Condensed matter physics",
+          "Phase boundary",
+          "Materials science",
+          "Electric field",
+          "Magnetoelectric effect",
+          "Diffraction",
+          "Dielectric",
+          "Phase (matter)",
+          "Ferroelectricity",
+          "Physics",
+          "Optoelectronics",
+          "Computer science",
+          "Optics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": true,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/5.0133946",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

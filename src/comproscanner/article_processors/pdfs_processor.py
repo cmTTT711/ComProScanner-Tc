@@ -16,6 +16,7 @@ from tqdm import tqdm
 import glob
 import re
 import os
+import hashlib
 
 # Custom imports
 from ..utils.configs import (
@@ -59,6 +60,7 @@ class PDFsProcessor:
         failed_pdf_report_path: str = None,
         is_track_pdfs: bool = True,
         track_pdfs_report_path: str = None,
+        allow_missing_doi: bool = False,
     ):
         """Class to process PDFs in a folder and process them to extract the required sections of the articles and save them to the MySQL database and CSV files and create a vector store if the relevant data is present in the article.
 
@@ -107,6 +109,7 @@ class PDFsProcessor:
         )
         self.failed_pdf_records = []
         self.is_track_pdfs = is_track_pdfs
+        self.allow_missing_doi = allow_missing_doi
 
         self.identifier = ""
         self.doi = ""
@@ -161,6 +164,13 @@ class PDFsProcessor:
         filename = os.path.basename(pdf_file)
         candidate = filename.replace(".pdf", "").replace("_", "/").strip()
         return candidate if self._is_valid_doi(candidate) else ""
+
+    @staticmethod
+    def _local_document_id(pdf_file: str) -> str:
+        """Return a stable internal identifier for a DOI-less local PDF."""
+        filename = os.path.basename(pdf_file)
+        digest = hashlib.sha256(filename.encode("utf-8")).hexdigest()[:16]
+        return f"local-pdf/{digest}"
 
     def _record_failed_pdf(self, pdf_file: str, reason: str) -> None:
         """Record failed PDF filename cases and optionally write to report file."""
@@ -391,11 +401,14 @@ class PDFsProcessor:
                     self.doi = self._filename_to_valid_doi(pdf_file)
                     self.identifier = filename.replace(".pdf", "")
                     if not self.doi:
-                        self._record_failed_pdf(
-                            pdf_file,
-                            "empty_or_corrupted_text_and_filename_not_valid_doi",
-                        )
-                        continue
+                        if self.allow_missing_doi:
+                            self.doi = self._local_document_id(pdf_file)
+                        else:
+                            self._record_failed_pdf(
+                                pdf_file,
+                                "empty_or_corrupted_text_and_filename_not_valid_doi",
+                            )
+                            continue
 
                     # Try to get metadata (API first, then CSV)
                     title, journal_name, publisher = "", "", ""
@@ -461,14 +474,23 @@ class PDFsProcessor:
                         self.identifier = filename.replace(".pdf", "")
                         self.doi = self._filename_to_valid_doi(pdf_file)
                         if not self.doi:
-                            self._record_failed_pdf(
-                                pdf_file, "doi_not_found_and_filename_not_valid_doi"
+                            if self.allow_missing_doi:
+                                self.doi = self._local_document_id(pdf_file)
+                                logger.info(
+                                    "DOI not found for %s; using internal document id %s",
+                                    pdf_file,
+                                    self.doi,
+                                )
+                            else:
+                                self._record_failed_pdf(
+                                    pdf_file, "doi_not_found_and_filename_not_valid_doi"
+                                )
+                                continue
+                        if self._is_valid_doi(self.doi):
+                            logger.warning(
+                                f"DOI not found in text/CrossRef for {pdf_file}. "
+                                f"Using filename-derived DOI: {self.doi}"
                             )
-                            continue
-                        logger.warning(
-                            f"DOI not found in text/CrossRef for {pdf_file}. "
-                            f"Using filename-derived DOI: {self.doi}"
-                        )
 
                 # Secondary skip: DOI-based fallback (CSV path, or tracking file DOI column)
                 if self.doi and self.doi in processed_dois:
@@ -480,7 +502,7 @@ class PDFsProcessor:
 
                 # Get metadata from external API (with CSV fallback) using DOI
                 title, journal_name, publisher = "", "", ""
-                if self.doi:
+                if self._is_valid_doi(self.doi):
                     title, journal_name, publisher = get_paper_metadata_from_openalex(
                         self.doi
                     )
@@ -558,21 +580,21 @@ class PDFsProcessor:
                 logger.error(f"Error processing {pdf_file}: {e}")
                 continue
 
-            # Append any remaining dataframes at the end
-            try:
-                if sql_dataframes:
-                    remaining_sql_df = pd.concat(sql_dataframes, ignore_index=True)
-                    if self.is_sql_db:
-                        self.sql_db_manager.write_to_sql_db(
-                            self.paperdata_table_name, remaining_sql_df
-                        )
-                if csv_dataframes:
-                    remaining_csv_df = pd.concat(csv_dataframes, ignore_index=True)
-                    self.csv_db_manager.write_to_csv(
-                        remaining_csv_df, self.csv_path, self.keyword, self.source
+        # Flush a partial final batch once, after every PDF has been processed.
+        try:
+            if sql_dataframes:
+                remaining_sql_df = pd.concat(sql_dataframes, ignore_index=True)
+                if self.is_sql_db:
+                    self.sql_db_manager.write_to_sql_db(
+                        self.paperdata_table_name, remaining_sql_df
                     )
-            except Exception as e:
-                logger.error(f"Error writing remaining dataframes: {e}")
+            if csv_dataframes:
+                remaining_csv_df = pd.concat(csv_dataframes, ignore_index=True)
+                self.csv_db_manager.write_to_csv(
+                    remaining_csv_df, self.csv_path, self.keyword, self.source
+                )
+        except Exception as e:
+            logger.error(f"Error writing remaining dataframes: {e}")
         logger.verbose(f"\n\nParsing of PDFs completed...")
         logger.info(f"\nTotal valid property articles: {self.valid_property_articles}")
         if skipped_count:

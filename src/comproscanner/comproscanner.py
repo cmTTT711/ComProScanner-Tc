@@ -61,6 +61,7 @@ class ComProScanner:
 
         self.main_property_keyword = main_property_keyword.replace(" ", "_")
         self.main_property_search_keyword = self.main_property_keyword.replace("_", " ")
+        self.last_extraction_report: List[Dict[str, Any]] = []
 
     def collect_metadata(
         self,
@@ -108,7 +109,7 @@ class ComProScanner:
     def process_articles(
         self,
         property_keywords: dict = None,
-        source_list: list = ["elsevier", "wiley", "iop", "springer"],
+        source_list: Optional[list] = None,
         folder_path: str = None,
         sql_batch_size: int = 500,
         csv_batch_size: int = 1,
@@ -128,6 +129,7 @@ class ComProScanner:
         failed_pdf_report_path: Optional[str] = None,
         save_failed_automated_report: bool = True,
         failed_automated_report_path: Optional[str] = None,
+        allow_missing_doi: bool = False,
     ):
         """Process articles for the main property keyword.
 
@@ -158,6 +160,8 @@ class ComProScanner:
             failed_pdf_report_path (str, optional): For `pdfs` source only. Custom path for failed PDF filename report. Defaults to None (uses `{folder_path}/failed_pdf_filenames.txt`).
             save_failed_automated_report (bool, optional): For automated publisher sources (elsevier, springer, iop, wiley). If True, save failed/unparseable articles to a report. Defaults to True.
             failed_automated_report_path (str, optional): Custom path for the automated failure report. Defaults to None (uses `results/article_processor_failed_articles.txt`)..
+            allow_missing_doi (bool, optional): For local PDFs, assign a stable
+                internal document id when no DOI can be resolved. Defaults to False.
 
         Raises:
             ValueErrorHandler: If property_keywords is not provided.
@@ -166,6 +170,8 @@ class ComProScanner:
             raise ValueErrorHandler(
                 message="Please provide property_keywords dictionary to proceed."
             )
+        if source_list is None:
+            source_list = ["elsevier", "wiley", "iop", "springer"]
         source_list = [source.lower() for source in source_list]
         rag_config = RAGConfig(
             rag_db_path=rag_db_path,
@@ -364,6 +370,7 @@ class ComProScanner:
                 additional_figure_keywords=additional_figure_keywords,
                 save_failed_pdf_report=save_failed_pdf_report,
                 failed_pdf_report_path=failed_pdf_report_path,
+                allow_missing_doi=allow_missing_doi,
             )
             pdf_processor.process_pdfs()
 
@@ -388,6 +395,11 @@ class ComProScanner:
         api_base: Optional[str] = None,
         base_url: Optional[str] = None,
         api_key: Optional[str] = None,
+        identifier_model: Optional[str] = None,
+        identifier_api_base: Optional[str] = None,
+        identifier_base_url: Optional[str] = None,
+        identifier_api_key: Optional[str] = None,
+        identifier_api_key_env: Optional[str] = None,
         output_log_folder: Optional[str] = None,
         is_log_json: bool = False,
         task_output_folder: Optional[str] = None,
@@ -431,6 +443,11 @@ class ComProScanner:
             api_base (str, optional): Base URL for standard API endpoints
             base_url (str, optional): Base URL for the model service
             api_key (str, optional): API key for the model service
+            identifier_model (str, optional): Dedicated model for the yes/no identifier. When omitted, the extraction model is reused.
+            identifier_api_base (str, optional): API base for the dedicated identifier model.
+            identifier_base_url (str, optional): Base URL for the dedicated identifier model.
+            identifier_api_key (str, optional): Direct API key for the dedicated identifier model.
+            identifier_api_key_env (str, optional): Environment variable containing the dedicated identifier API key.
             output_log_folder (str, optional): Base folder path to save logs. Logs will be saved in {output_log_folder}/{doi}/ subdirectory. Logs will be in JSON format if is_log_json is True, otherwise plain text. Defaults to None.
             task_output_folder (str, optional): Base folder path to save task outputs. Task outputs will be saved as .txt files in {task_output_folder}/{doi}/ subdirectory. Defaults to None.
             is_log_json (bool, optional): Flag to save logs in JSON format. Defaults to False.
@@ -459,6 +476,7 @@ class ComProScanner:
         Raises:
             ValueErrorHandler: If main_extraction_keyword is not provided.
         """
+        self.last_extraction_report = []
         if main_extraction_keyword is None:
             logger.error(
                 "main_extraction_keyword cannot be None. Please provide a valid keyword. Exiting..."
@@ -490,6 +508,27 @@ class ComProScanner:
             max_tokens=max_tokens,
         )
         llm = llm_config.get_llm()
+        identifier_llm = None
+        if identifier_model:
+            resolved_identifier_api_key = identifier_api_key
+            if not resolved_identifier_api_key and identifier_api_key_env:
+                resolved_identifier_api_key = os.getenv(identifier_api_key_env)
+            if identifier_api_key_env and not resolved_identifier_api_key:
+                raise ValueErrorHandler(
+                    f"Identifier API key environment variable is not configured: "
+                    f"{identifier_api_key_env}"
+                )
+            identifier_llm = LLMConfig(
+                model=identifier_model,
+                api_base=identifier_api_base,
+                base_url=identifier_base_url,
+                api_key=resolved_identifier_api_key,
+                temperature=temperature,
+                top_p=top_p,
+                timeout=timeout,
+                frequency_penalty=frequency_penalty,
+                max_tokens=max_tokens,
+            ).get_llm()
         rag_config = RAGConfig(
             rag_db_path=rag_db_path,
             embedding_model=embedding_model,
@@ -555,10 +594,18 @@ class ComProScanner:
         ):
             logger.debug(f"\n\nProcessing DOI: {paper_data['doi']}")
             current_doi = paper_data["doi"]
+            run_record = {
+                "document_id": current_doi,
+                "status": "PROCESSING",
+                "stage": "input",
+                "error": None,
+            }
+            self.last_extraction_report.append(run_record)
 
             try:
                 try:
                     if paper_data["comp_prop_text"].strip() == "":
+                        run_record.update(status="NO_INPUT", stage="preparation")
                         logger.warning(
                             f"No composition-property text data for DOI: {paper_data['doi']}. Skipping..."
                         )
@@ -583,6 +630,7 @@ class ComProScanner:
                         composition_property_text_data=paper_data["comp_prop_text"],
                         synthesis_text_data=paper_data["synthesis_text"],
                         llm=llm,
+                        identifier_llm=identifier_llm,
                         materials_data_identifier_query=materials_data_identifier_query,
                         is_extract_synthesis_data=is_extract_synthesis_data,
                         vlm_model=vlm_model,
@@ -602,6 +650,9 @@ class ComProScanner:
                     composition_data = result_dict["composition_data"]
                     synthesis_data = result_dict["synthesis_data"]
                 except Exception as e:
+                    run_record.update(
+                        status="FLOW_ERROR", stage="extraction", error=str(e)
+                    )
                     logger.error(
                         f"Error in MaterialsFlow processing for DOI: {paper_data['doi']}. {e}"
                     )
@@ -614,10 +665,24 @@ class ComProScanner:
                     )
                     result_dict["article_metadata"] = paper_metadata
                 except Exception as e:
-                    logger.error(
-                        f"Error fetching paper metadata for DOI: {paper_data['doi']}. {e}"
+                    run_record.update(
+                        status="COMPLETED_WITHOUT_METADATA",
+                        stage="metadata",
+                        error=str(e),
                     )
-                    continue
+                    logger.warning(
+                        f"Error fetching paper metadata for DOI: {paper_data['doi']}. "
+                        f"Keeping extracted material data with empty metadata. {e}"
+                    )
+                    result_dict["article_metadata"] = {
+                        "doi": None,
+                        "title": "",
+                        "journal": "",
+                        "year": "",
+                        "isOpenAccess": False,
+                        "authors": [],
+                        "keywords": [],
+                    }
 
                 # Determine if the paper should be saved or not
                 should_save = True
@@ -641,10 +706,25 @@ class ComProScanner:
                         if is_save_csv:
                             result_saver.update_in_csv(result_dict)
                     except Exception as e:
+                        run_record.update(
+                            status="SAVE_ERROR", stage="save", error=str(e)
+                        )
                         logger.error(
                             f"Error saving results for DOI: {paper_data['doi']}. {e}"
                         )
                         continue
+
+                if run_record["status"] == "PROCESSING":
+                    run_record.update(
+                        status=(
+                            "COMPLETED"
+                            if _has_composition_data(composition_data)
+                            else "EMPTY_RESULT"
+                        ),
+                        stage="complete",
+                    )
+                elif run_record["status"] == "COMPLETED_WITHOUT_METADATA":
+                    run_record["stage"] = "complete"
 
                 # For test data preparation, track DOIs with non-empty composition data
                 if is_test_data_preparation and composition_data != {}:
@@ -698,6 +778,7 @@ class ComProScanner:
                 )
                 raise KeyboardInterruptHandler()
             except Exception as e:
+                run_record.update(status="PROCESSING_ERROR", error=str(e))
                 logger.error(f"Error processing DOI: {paper_data['doi']}. {e}")
                 continue
 

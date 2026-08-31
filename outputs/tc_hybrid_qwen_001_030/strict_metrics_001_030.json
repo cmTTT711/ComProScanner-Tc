@@ -1,0 +1,52 @@
+{
+  "task": "TC_HYBRID_QWEN_001_030_STRICT_METRICS",
+  "gold_total_including_non_strict": 47,
+  "strict_gold_facts": 46,
+  "non_strict_gold_facts": 1,
+  "strict_predictions_after_exclusions_and_dedup": 43,
+  "tp": 42,
+  "fp": 1,
+  "fn": 4,
+  "precision": 0.9767441860465116,
+  "recall": 0.9130434782608695,
+  "f1": 0.9438202247191011,
+  "false_positives": [
+    {
+      "paper_id": 6,
+      "material": "BaTiO3",
+      "tc_value": 130,
+      "tc_unit": "°C"
+    }
+  ],
+  "strict_missing_facts": [
+    {
+      "paper_id": 11,
+      "material": "BaTiO3",
+      "tc_value": 120,
+      "tc_unit": "°C"
+    },
+    {
+      "paper_id": 17,
+      "material": "BiFeO3",
+      "tc_value": 1103,
+      "tc_unit": "K"
+    },
+    {
+      "paper_id": 25,
+      "material": "lanthanum-substituted (1−x)BiFeO3−xPbTiO3",
+      "tc_value": 227,
+      "tc_unit": "°C"
+    },
+    {
+      "paper_id": 25,
+      "material": "undoped (1−x)BiFeO3−xPbTiO3",
+      "tc_value": 650,
+      "tc_unit": "°C"
+    }
+  ],
+  "exclusions": [
+    "Paper 30 BiFeO3-BaTiO3 >~580 °C is retained in Gold as a non-strict range fact and excluded from strict scoring.",
+    "Material aliases and equivalent composition expressions are matched semantically within the same paper.",
+    "Paper 19 duplicate aliases for the same transition are counted once."
+  ]
+}

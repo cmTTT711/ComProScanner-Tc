@@ -1,0 +1,83 @@
+{
+  "paper_id": 70,
+  "filename": "70-2016-jmcc-还原烧结和再氧化法制备的CoFe2O4-BaTiO3复合材料的磁电滞后行为.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\70-2016-jmcc-还原烧结和再氧化法制备的CoFe2O4-BaTiO3复合材料的磁电滞后行为.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 119.134,
+  "output": {
+    "10.1039/c6tc00995f": {
+      "composition_data": {
+        "compositions_property_values": {
+          "(CoFe2O4)(0.1)-(BaTiO3)(1-0.1)": 150,
+          "(CoFe2O4)(0.2)-(BaTiO3)(1-0.2)": 150,
+          "(CoFe2O4)(0.3)-(BaTiO3)(1-0.3)": 150,
+          "(CoFe2O4)(0.4)-(BaTiO3)(1-0.4)": 150,
+          "(CoFe2O4)(0.5)-(BaTiO3)(1-0.5)": 150,
+          "BaTiO3": 120
+        },
+        "property_unit": "°C",
+        "family": "CoFe2O4-BaTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1039/c6tc00995f",
+        "title": "Hysteretic magnetoelectric behavior of CoFe 2 O 4 –BaTiO 3 composites prepared by reductive sintering and reoxidation",
+        "journal": "Journal of Materials Chemistry C",
+        "year": 2016,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Till Walther",
+            "affiliation_id": "I2801009184",
+            "affiliation_name": "Luther University",
+            "affiliation_country": "KR"
+          },
+          {
+            "name": "U. Straube",
+            "affiliation_id": "I2801009184",
+            "affiliation_name": "Luther University",
+            "affiliation_country": "KR"
+          },
+          {
+            "name": "Roberto Köferstein",
+            "affiliation_id": "I2801009184",
+            "affiliation_name": "Luther University",
+            "affiliation_country": "KR"
+          },
+          {
+            "name": "Stefan G. Ebbinghaus",
+            "affiliation_id": "I2801009184",
+            "affiliation_name": "Luther University",
+            "affiliation_country": "KR"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Sintering",
+          "Composite material",
+          "Ferroelectricity",
+          "Polyol",
+          "X-ray crystallography",
+          "Dielectric",
+          "Diffraction"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1039/c6tc00995f",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

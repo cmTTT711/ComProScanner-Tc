@@ -1,0 +1,103 @@
+{
+  "paper_id": 49,
+  "filename": "49-没磁电耦合-2017-APL- Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\49-没磁电耦合-2017-APL- Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 127.066,
+  "output": {
+    "10.1063/1.4978651": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103,
+          "0.75BiFe0.98Ga0.02O3-0.25(Ba0.85Ca0.15)(Zr0.10Ti0.90)O3": 700
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/1.4978651",
+        "title": "Large remanent polarization and enhanced magnetic properties in non-quenched Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3 multiferroic ceramics",
+        "journal": "Applied Physics Letters",
+        "year": 2017,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Ningtao Liu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Ruihong Liang",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Zhen Liu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Zhiyong Zhou",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Chenhong Xu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Genshui Wang",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xianlin Dong",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Multiferroics",
+          "Remanence",
+          "Ferroelectricity",
+          "Magnetization",
+          "Condensed matter physics",
+          "Ferromagnetism",
+          "Ceramic",
+          "Ferroelectric ceramics",
+          "Metallurgy",
+          "Magnetic field",
+          "Optoelectronics",
+          "Dielectric",
+          "Physics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/1.4978651",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

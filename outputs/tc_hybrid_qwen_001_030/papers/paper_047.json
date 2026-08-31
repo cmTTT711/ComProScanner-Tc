@@ -1,0 +1,81 @@
+{
+  "paper_id": 47,
+  "filename": "47-增强铁电-2023-AMT-Strengthening the ferroelectric properties in the three-component.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\47-增强铁电-2023-AMT-Strengthening the ferroelectric properties in the three-component.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 139.877,
+  "output": {
+    "10.1016/j.apmt.2023.101847": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BaTiO3": 120,
+          "Pb0.94Sr0.06(Zr0.46Ti0.54)0.99Cr0.01O3": 377,
+          "0.425BaTiO3 + 0.425Pb0.94Sr0.06(Zr0.46Ti0.54)0.99Cr0.01O3 + 0.15Ni0.64Zn0.36Fe2O4": 151,
+          "0.45BaTiO3 + 0.45Pb0.94Sr0.06(Zr0.46Ti0.54)0.99Cr0.01O3 + 0.10Ni0.64Zn0.36Fe2O4": 154,
+          "0.475BaTiO3 + 0.475Pb0.94Sr0.06(Zr0.46Ti0.54)0.99Cr0.01O3 + 0.05Ni0.64Zn0.36Fe2O4": 154
+        },
+        "property_unit": "°C",
+        "family": "BPF multiferroic composites"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.apmt.2023.101847",
+        "title": "Strengthening the ferroelectric properties in the three-component multiferroic ceramic composites",
+        "journal": "Applied Materials Today",
+        "year": 2023,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Dariusz Bochenek",
+            "affiliation_id": "I864159182",
+            "affiliation_name": "University of Silesia in Katowice",
+            "affiliation_country": "PL"
+          },
+          {
+            "name": "Artur Chrobak",
+            "affiliation_id": "I4210086947",
+            "affiliation_name": "Institute of Physics",
+            "affiliation_country": "PL"
+          },
+          {
+            "name": "Grzegorz Dercz",
+            "affiliation_id": "I864159182",
+            "affiliation_name": "University of Silesia in Katowice",
+            "affiliation_country": "PL"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Ferroelectricity",
+          "Multiferroics",
+          "Composite material",
+          "Ceramic",
+          "Dielectric",
+          "Ferrite (magnet)",
+          "Composite number",
+          "Permittivity",
+          "Magnetization",
+          "Ferroelectric ceramics",
+          "Magnetic field",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.apmt.2023.101847",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

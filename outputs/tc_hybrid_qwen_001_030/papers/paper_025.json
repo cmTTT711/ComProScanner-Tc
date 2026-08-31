@@ -1,0 +1,75 @@
+{
+  "paper_id": 25,
+  "filename": "25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 201.278,
+  "output": {
+    "10.1143/JPSJ.7.5": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1143/JPSJ.7.5",
+        "title": "Phase Transitions in Solid Solutions of PbZrO3 and PbTiO3 (I) Small Concentrations of PbTiO3",
+        "journal": "Journal of the Physical Society of Japan",
+        "year": 1952,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "G. Shirane",
+            "affiliation_id": "I114531698",
+            "affiliation_name": "Tokyo Institute of Technology",
+            "affiliation_country": "JP"
+          },
+          {
+            "name": "Akitsu Takeda",
+            "affiliation_id": "I114531698",
+            "affiliation_name": "Tokyo Institute of Technology",
+            "affiliation_country": "JP"
+          }
+        ],
+        "keywords": [
+          "Curie temperature",
+          "Ferroelectricity",
+          "Antiferroelectricity",
+          "Dielectric",
+          "Materials science",
+          "Phase transition",
+          "Condensed matter physics",
+          "Solid solution",
+          "Curie",
+          "Transition point",
+          "Curie–Weiss law",
+          "Analytical Chemistry (journal)",
+          "Thermodynamics",
+          "Physics",
+          "Chemistry",
+          "Ferromagnetism",
+          "Metallurgy"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1143/JPSJ.7.5",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

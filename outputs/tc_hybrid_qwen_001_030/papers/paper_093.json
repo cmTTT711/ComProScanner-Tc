@@ -1,0 +1,183 @@
+{
+  "paper_id": 93,
+  "filename": "93-铁电PZT纹理陶瓷-2023-Science.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\93-铁电PZT纹理陶瓷-2023-Science.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 87.2,
+  "output": {
+    "10.1126/science.adf6161": {
+      "composition_data": {
+        "compositions_property_values": {
+          "Pb(Zr,Ti)O3": 360
+        },
+        "property_unit": "°C",
+        "family": "Pb(Zr,Ti)O3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1126/science.adf6161",
+        "title": "Lead zirconate titanate ceramics with aligned crystallite grains",
+        "journal": "Science",
+        "year": 2023,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Jinglei Li",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wanbo Qu",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "J. Daniels",
+            "affiliation_id": "I31746571",
+            "affiliation_name": "UNSW Sydney",
+            "affiliation_country": "AU"
+          },
+          {
+            "name": "Haijun Wu",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Linjing Liu",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jie Wu",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Mingwen Wang",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Stefano Checchia",
+            "affiliation_id": "I2801997478",
+            "affiliation_name": "European Synchrotron Radiation Facility",
+            "affiliation_country": "FR"
+          },
+          {
+            "name": "Shuai Yang",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Haobin Lei",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Rui Lv",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yang Zhang",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Danyang Wang",
+            "affiliation_id": "I31746571",
+            "affiliation_name": "UNSW Sydney",
+            "affiliation_country": "AU"
+          },
+          {
+            "name": "Xuexin Li",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xiangdong Ding",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jun Sun",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Zhuo Xu",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yunfei Chang",
+            "affiliation_id": "I204983213",
+            "affiliation_name": "Harbin Institute of Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Shujun Zhang",
+            "affiliation_id": "I204824540",
+            "affiliation_name": "University of Wollongong",
+            "affiliation_country": "AU"
+          },
+          {
+            "name": "Fei Li",
+            "affiliation_id": "I87445476",
+            "affiliation_name": "Xi'an Jiaotong University",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Lead zirconate titanate",
+          "Ceramic",
+          "Piezoelectricity",
+          "Crystallite",
+          "Titanium",
+          "Composite material",
+          "Zirconate",
+          "Titanate",
+          "Zirconium",
+          "Template",
+          "Ferroelectricity",
+          "Mineralogy",
+          "Metallurgy",
+          "Nanotechnology",
+          "Optoelectronics",
+          "Dielectric"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1126/science.adf6161",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

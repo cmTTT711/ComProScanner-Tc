@@ -1,0 +1,86 @@
+{
+  "paper_id": 75,
+  "filename": "75-磁电耦合效应是直线-2021-jac-Exotic magnetic properties and enhanced magnetoelectric coupling in.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\75-磁电耦合效应是直线-2021-jac-Exotic magnetic properties and enhanced magnetoelectric coupling in.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 157.126,
+  "output": {
+    "10.1016/j.jallcom.2021.161667": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BaTiO3": 393,
+          "Fe3O4-BaTiO3 (1:1) [FP-BTO]": 824,
+          "Fe3O4-BaTiO3 (1:1) [FPR-BTO]": 818
+        },
+        "property_unit": "K",
+        "family": "Fe3O4-BaTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.jallcom.2021.161667",
+        "title": "Exotic magnetic properties and enhanced magnetoelectric coupling in Fe3O4-BaTiO3 heterostructures",
+        "journal": "Journal of Alloys and Compounds",
+        "year": 2021,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Ramany Revathy",
+            "affiliation_id": "I146682468",
+            "affiliation_name": "National Institute for Interdisciplinary Science and Technology",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Nandakumar Kalarikkal",
+            "affiliation_id": "I177436651",
+            "affiliation_name": "Mahatma Gandhi University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Manoj Raama Varma",
+            "affiliation_id": "I146682468",
+            "affiliation_name": "National Institute for Interdisciplinary Science and Technology",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Kuzhichalil Peethambharan Surendran",
+            "affiliation_id": "I146682468",
+            "affiliation_name": "National Institute for Interdisciplinary Science and Technology",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Magnetoelectric effect",
+          "Coupling (piping)",
+          "Phase (matter)",
+          "Composite material",
+          "Curie temperature",
+          "Condensed matter physics",
+          "Ferroelectricity",
+          "Ferromagnetism",
+          "Multiferroics",
+          "Chemistry",
+          "Dielectric",
+          "Physics",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.jallcom.2021.161667",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

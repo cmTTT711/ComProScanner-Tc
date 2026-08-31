@@ -1,0 +1,112 @@
+{
+  "paper_id": 40,
+  "filename": "40-微波下磁电耦合-2023-JMST-Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\40-微波下磁电耦合-2023-JMST-Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 98.106,
+  "output": {
+    "10.1016/j.jmst.2022.07.040": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 830
+        },
+        "property_unit": "°C",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.jmst.2022.07.040",
+        "title": "Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature",
+        "journal": "Journal of Material Science and Technology",
+        "year": 2022,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Man Zhang",
+            "affiliation_id": "I166337079",
+            "affiliation_name": "Queen Mary University of London",
+            "affiliation_country": "GB"
+          },
+          {
+            "name": "Vladimı́r Koval",
+            "affiliation_id": "I207624831",
+            "affiliation_name": "Slovak Academy of Sciences",
+            "affiliation_country": "SK"
+          },
+          {
+            "name": "Yu Shi",
+            "affiliation_id": "I76214153",
+            "affiliation_name": "Lanzhou University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yajun Yue",
+            "affiliation_id": "I166337079",
+            "affiliation_name": "Queen Mary University of London",
+            "affiliation_country": "GB"
+          },
+          {
+            "name": "Chenglong Jia",
+            "affiliation_id": "I76214153",
+            "affiliation_name": "Lanzhou University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jiagang Wu",
+            "affiliation_id": "I24185976",
+            "affiliation_name": "Sichuan University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Giuseppe Viola",
+            "affiliation_id": "I166337079",
+            "affiliation_name": "Queen Mary University of London",
+            "affiliation_country": "GB"
+          },
+          {
+            "name": "Haixue Yan",
+            "affiliation_id": "I166337079",
+            "affiliation_name": "Queen Mary University of London",
+            "affiliation_country": "GB"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Materials science",
+          "Ferroelectricity",
+          "Bismuth ferrite",
+          "Dielectric",
+          "Condensed matter physics",
+          "Ferrite (magnet)",
+          "Piezoelectricity",
+          "Magnetization",
+          "Magnetoelectric effect",
+          "Ceramic",
+          "Ferromagnetism",
+          "Permittivity",
+          "Nuclear magnetic resonance",
+          "Magnetic field",
+          "Composite material",
+          "Optoelectronics",
+          "Physics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.jmst.2022.07.040",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

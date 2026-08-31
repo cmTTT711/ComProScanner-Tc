@@ -1,0 +1,72 @@
+{
+  "paper_id": 55,
+  "filename": "55-铁氧体加铁电-2024-CI-新型Na0.5Bi0.5TiO3-BaFe12-2xCoxTixO19多铁复合材料中的强磁电耦合.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\55-铁氧体加铁电-2024-CI-新型Na0.5Bi0.5TiO3-BaFe12-2xCoxTixO19多铁复合材料中的强磁电耦合.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 97.716,
+  "output": {
+    "10.1016/j.ceramint.2024.06.130": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": ""
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.ceramint.2024.06.130",
+        "title": "Strong magnetoelectric coupling in novel Na0.5Bi0.5TiO3–BaFe12-2xCoxTixO19 multiferroic composite",
+        "journal": "Ceramics International",
+        "year": 2024,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Khuraijam Jyotsna",
+            "affiliation_id": "I16471300",
+            "affiliation_name": "Manipur University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Monika Tomar",
+            "affiliation_id": "I110166357",
+            "affiliation_name": "University of Delhi",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Sumitra Phanjoubam",
+            "affiliation_id": "I16471300",
+            "affiliation_name": "Manipur University",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Materials science",
+          "Composite number",
+          "Coupling (piping)",
+          "Condensed matter physics",
+          "Composite material",
+          "Ferroelectricity",
+          "Dielectric",
+          "Physics",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.ceramint.2024.06.130",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

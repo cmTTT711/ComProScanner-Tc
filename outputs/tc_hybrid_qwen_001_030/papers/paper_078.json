@@ -1,0 +1,84 @@
+{
+  "paper_id": 78,
+  "filename": "78-3区-2024-Materials Research Bulletin-NixCo1− xFe2O4− SryBa1− yNb2O6.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\78-3区-2024-Materials Research Bulletin-NixCo1− xFe2O4− SryBa1− yNb2O6.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 176.294,
+  "output": {
+    "10.1016/j.materresbull.2024.112860": {
+      "composition_data": {
+        "compositions_property_values": {
+          "(Ni(0)Co(1-0)Fe2O4)0.3-(Sr0.5Ba0.5Nb2O6)0.7": 773,
+          "(Ni(1)Co(1-1)Fe2O4)0.3-(Sr0.5Ba0.5Nb2O6)0.7": 860
+        },
+        "property_unit": "K",
+        "family": "NixCo1-xFe2O4"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.materresbull.2024.112860",
+        "title": "Magnetoelectric, dielectric, and magnetic investigations of multiferroic NixCo1−xFe2O4−SryBa1−yNb2O6 composites",
+        "journal": "Materials Research Bulletin",
+        "year": 2024,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Roberto Köferstein",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          },
+          {
+            "name": "Maria-Sophie Wartmann",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          },
+          {
+            "name": "Stefan G. Ebbinghaus",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          }
+        ],
+        "keywords": [
+          "Ferrimagnetism",
+          "Materials science",
+          "Dielectric",
+          "Curie temperature",
+          "Magnetostriction",
+          "Ferroelectricity",
+          "Stoichiometry",
+          "Multiferroics",
+          "Saturation (graph theory)",
+          "Composite material",
+          "Nickel",
+          "Curie",
+          "Nuclear magnetic resonance",
+          "Condensed matter physics",
+          "Ferromagnetism",
+          "Magnetization",
+          "Chemistry",
+          "Metallurgy",
+          "Magnetic field"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.materresbull.2024.112860",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

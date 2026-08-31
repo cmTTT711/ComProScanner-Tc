@@ -166,16 +166,35 @@ class TestSectionProcessor:
         assert processor._has_digits_or_consecutive_caps(sentence) is False
 
     def test_get_relevant_sentences_filters_correctly(self, processor):
-        """Test that only relevant sentences are returned."""
+        """Test that matches retain one neighboring sentence on each side."""
         text = (
             "Normal sentence. Temperature was 300K. Another normal. "
             "XRD analysis was done. Yet another normal."
         )
         relevant = processor._get_relevant_sentences(text)
 
-        assert len(relevant) == 2
-        assert "300K" in relevant[0]
-        assert "XRD" in relevant[1]
+        assert relevant == [
+            "Normal sentence.",
+            "Temperature was 300K.",
+            "Another normal.",
+            "XRD analysis was done.",
+            "Yet another normal.",
+        ]
+
+    def test_get_relevant_sentences_deduplicates_overlapping_context(self, processor):
+        text = (
+            "Opening context. First value was 300K. Shared context. "
+            "Second value was 500K. Closing context."
+        )
+
+        relevant = processor._get_relevant_sentences(text)
+
+        assert relevant == processor._split_into_sentences(text)
+
+    def test_get_relevant_sentences_returns_empty_without_match(self, processor):
+        text = "Opening context. No scientific signal here. Closing context."
+
+        assert processor._get_relevant_sentences(text) == []
 
     def test_get_relevant_sentences_with_nan(self, processor):
         """Test getting relevant sentences with NaN input."""

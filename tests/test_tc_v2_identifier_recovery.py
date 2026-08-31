@@ -61,9 +61,11 @@ def test_default_identifier_mode_remains_rag():
     assert parameter.default == "rag"
 
 
-def test_tc_preset_selects_full_candidate_identifier_context():
+def test_tc_preset_selects_additive_hybrid_identifier_context():
     kwargs = _tc_preset()["extraction_kwargs"]
-    assert kwargs["identifier_context_mode"] == "full_candidate"
+    assert kwargs["identifier_context_mode"] == "hybrid"
+    assert kwargs["identifier_model"] == "openai/qwen-flash"
+    assert kwargs["identifier_api_key_env"] == "DASHSCOPE_API_KEY"
 
 
 def test_full_candidate_preserves_paragraphs_and_tables():

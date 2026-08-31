@@ -8,8 +8,6 @@ workflow and that the original composition-property schema is untouched.
 from __future__ import annotations
 
 import importlib.util
-import shutil
-import tempfile
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -39,9 +37,35 @@ def test_preset_constructs_config():
         == "Curie temperature"
     )
     assert preset["extraction_kwargs"]["is_extract_synthesis_data"] is False
+    assert preset["processing_kwargs"]["allow_missing_doi"] is True
+    assert preset["extraction_kwargs"]["identifier_context_mode"] == "hybrid"
+    assert preset["extraction_kwargs"]["identifier_model"] == "openai/qwen-flash"
+    assert preset["extraction_kwargs"]["identifier_api_key_env"] == (
+        "DASHSCOPE_API_KEY"
+    )
+    assert len(preset["extraction_kwargs"]["hybrid_retrieval_queries"]) == 2
     assert "Curie temperature" in preset["extraction_kwargs"][
         "materials_data_identifier_query"
     ]
+
+
+def test_typed_preset_registry_preserves_runtime_contract():
+    from comproscanner.presets import get_preset, list_presets
+
+    definition = get_preset("curie_temperature")
+    runtime = definition.to_runtime_dict()
+
+    assert definition.name == "curie_temperature"
+    assert list_presets() == ("curie_temperature",)
+    assert set(runtime) == {
+        "main_property_keyword",
+        "property_keywords",
+        "processing_kwargs",
+        "extraction_kwargs",
+    }
+    assert runtime["extraction_kwargs"]["main_extraction_keyword"] == (
+        "Curie temperature"
+    )
 
 
 def test_preset_prompt_notes_cover_tc_rules():
@@ -60,7 +84,7 @@ def test_preset_prompt_notes_cover_tc_rules():
         "sintering temperatures",
         "measurement temperatures",
         "Néel temperatures",
-        "general background",
+        "background or comparison materials",
         "do not invent one",
         "do not silently convert",
         "Do not add evidence",
@@ -150,7 +174,7 @@ def test_flow_receives_preset_notes_without_llm():
     )
 
 
-def test_public_api_accepts_curie_preset_without_llm():
+def test_public_api_accepts_curie_preset_without_llm(tmp_path):
     from comproscanner.comproscanner import ComProScanner
 
     preset_module = _load_preset_module()
@@ -160,27 +184,23 @@ def test_public_api_accepts_curie_preset_without_llm():
     mock_preparator = MagicMock()
     mock_preparator.get_unprocessed_data.return_value = []
 
-    temp_root = Path(tempfile.mkdtemp(dir=str(REPO_ROOT / "work")))
-    try:
-        with (
-            patch(
-                "comproscanner.comproscanner.MatPropDataPreparator",
-                return_value=mock_preparator,
-            ),
-            patch("comproscanner.comproscanner.LLMConfig") as mock_llm_cfg,
-            patch("comproscanner.comproscanner.DataCleaner") as mock_cleaner_cls,
-        ):
-            mock_llm_cfg.return_value.get_llm.return_value = MagicMock()
-            mock_cleaner_cls.return_value.get_useful_data.return_value = {}
-            scanner.extract_composition_property_data(
-                **preset["extraction_kwargs"],
-                json_results_file=str(temp_root / "results.json"),
-                checked_doi_list_file=str(temp_root / "checked.txt"),
-            )
+    with (
+        patch(
+            "comproscanner.comproscanner.MatPropDataPreparator",
+            return_value=mock_preparator,
+        ),
+        patch("comproscanner.comproscanner.LLMConfig") as mock_llm_cfg,
+        patch("comproscanner.comproscanner.DataCleaner") as mock_cleaner_cls,
+    ):
+        mock_llm_cfg.return_value.get_llm.return_value = MagicMock()
+        mock_cleaner_cls.return_value.get_useful_data.return_value = {}
+        scanner.extract_composition_property_data(
+            **preset["extraction_kwargs"],
+            json_results_file=str(tmp_path / "results.json"),
+            checked_doi_list_file=str(tmp_path / "checked.txt"),
+        )
 
-        assert (temp_root / "results.json").exists()
-    finally:
-        shutil.rmtree(temp_root, ignore_errors=True)
+    assert (tmp_path / "results.json").exists()
 
 
 def test_general_d33_flow_still_accepts_default_example():

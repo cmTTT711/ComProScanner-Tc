@@ -1,0 +1,45 @@
+{
+  "paper_id": 27,
+  "filename": "27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 232.113,
+  "output": {
+    "local-pdf/e0b7c7f789f25ed2": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103,
+          "0.65BiFeO3-0.35((1-0.4)Bi0.5K0.5TiO3-0.4BaTiO3)": 742.6
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/e0b7c7f789f25ed2",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

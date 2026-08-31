@@ -1,0 +1,78 @@
+{
+  "paper_id": 97,
+  "filename": "97-添加剂对于复合材料影响-2021-陶瓷国际-添加剂对bifeo3-pbtio3多铁行为的影响.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\97-添加剂对于复合材料影响-2021-陶瓷国际-添加剂对bifeo3-pbtio3多铁行为的影响.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 126.672,
+  "output": {
+    "10.1016/j.ceramint.2021.07.153": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 830,
+          "(1-0.30)BiFeO3-(0.30)PbTiO3": 630
+        },
+        "property_unit": "°C",
+        "family": "BiFeO3-PbTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.ceramint.2021.07.153",
+        "title": "Additives effect on the multiferroic behaviour of BiFeO3–PbTiO3",
+        "journal": "Ceramics International",
+        "year": 2021,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "R. P. Singh",
+            "affiliation_id": "I59270414",
+            "affiliation_name": "Indian Institute of Science Bangalore",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Sujoy Saha",
+            "affiliation_id": "I59270414",
+            "affiliation_name": "Indian Institute of Science Bangalore",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Multiferroics",
+          "Ferroelectricity",
+          "Ferrimagnetism",
+          "Ceramic",
+          "Poling",
+          "Piezoelectricity",
+          "Ferromagnetic material properties",
+          "Grain size",
+          "Sintering",
+          "Coercivity",
+          "Curie temperature",
+          "Composite material",
+          "Ferromagnetism",
+          "Dielectric",
+          "Condensed matter physics",
+          "Magnetization",
+          "Magnetic field",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.ceramint.2021.07.153",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

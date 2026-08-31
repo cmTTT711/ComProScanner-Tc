@@ -1,0 +1,75 @@
+{
+  "paper_id": 51,
+  "filename": "51-微波磁电耦合-2024-APL-Dynamic magnetoelectric effect in bismuth-layer structured.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\51-微波磁电耦合-2024-APL-Dynamic magnetoelectric effect in bismuth-layer structured.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 123.105,
+  "output": {
+    "10.1063/5.0209767": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": "Bi5FeTi3O15-type Aurivillius"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/5.0209767",
+        "title": "Dynamic magnetoelectric effect in bismuth-layer structured Aurivillius ceramics",
+        "journal": "Applied Physics Letters",
+        "year": 2024,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Yu Shi",
+            "affiliation_id": "I76214153",
+            "affiliation_name": "Lanzhou University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Vladimı́r Koval",
+            "affiliation_id": "I207624831",
+            "affiliation_name": "Slovak Academy of Sciences",
+            "affiliation_country": "SK"
+          },
+          {
+            "name": "Chenglong Jia",
+            "affiliation_id": "I76214153",
+            "affiliation_name": "Lanzhou University",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Aurivillius",
+          "Bismuth",
+          "Materials science",
+          "Ceramic",
+          "Layer (electronics)",
+          "Ferroelectric ceramics",
+          "Condensed matter physics",
+          "Composite material",
+          "Metallurgy",
+          "Optoelectronics",
+          "Ferroelectricity",
+          "Physics",
+          "Dielectric"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/5.0209767",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

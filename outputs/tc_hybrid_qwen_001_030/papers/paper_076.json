@@ -1,0 +1,87 @@
+{
+  "paper_id": 76,
+  "filename": "76-3区一锅法Nb铁电-2022-Materials Chemistry and Physics-Sr0.5Ba0.5Nb2O6–CoFe2O4.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\76-3区一锅法Nb铁电-2022-Materials Chemistry and Physics-Sr0.5Ba0.5Nb2O6–CoFe2O4.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 102.362,
+  "output": {
+    "10.1016/j.matchemphys.2021.125616": {
+      "composition_data": {
+        "compositions_property_values": {
+          "(Sr0.5Ba0.5Nb2O6)(1-0.2)(CoFe2O4)(0.2)": 488,
+          "(Sr0.5Ba0.5Nb2O6)(1-0.3)(CoFe2O4)(0.3)": 493,
+          "(Sr0.5Ba0.5Nb2O6)(1-0.4)(CoFe2O4)(0.4)": 502,
+          "(Sr0.5Ba0.5Nb2O6)(1-0.5)(CoFe2O4)(0.5)": 506,
+          "(Sr0.5Ba0.5Nb2O6)(1-0.6)(CoFe2O4)(0.6)": 505,
+          "CoFe2O4": 507,
+          "Sr0.5Ba0.5Nb2O6": 120
+        },
+        "property_unit": "°C",
+        "family": "Sr0.5Ba0.5Nb2O6-CoFe2O4 composites"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.matchemphys.2021.125616",
+        "title": "Fine-grained magnetoelectric Sr0.5Ba0.5Nb2O6–CoFe2O4 composites synthesized by a straightforward one-pot method",
+        "journal": "Materials Chemistry and Physics",
+        "year": 2021,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Roberto Köferstein",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          },
+          {
+            "name": "Florian Oehler",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          },
+          {
+            "name": "Stefan G. Ebbinghaus",
+            "affiliation_id": "I68956291",
+            "affiliation_name": "Martin Luther University Halle-Wittenberg",
+            "affiliation_country": "DE"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Sintering",
+          "Nanocrystalline material",
+          "Composite number",
+          "Ferrite (magnet)",
+          "Grain size",
+          "Composite material",
+          "Ferrimagnetism",
+          "Ceramic",
+          "Dielectric spectroscopy",
+          "Magnetization",
+          "Calcination",
+          "Mass fraction",
+          "Analytical Chemistry (journal)",
+          "Magnetic field",
+          "Nanotechnology",
+          "Chemistry"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.matchemphys.2021.125616",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

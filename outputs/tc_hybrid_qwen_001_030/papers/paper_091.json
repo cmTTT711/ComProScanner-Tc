@@ -1,0 +1,95 @@
+{
+  "paper_id": 91,
+  "filename": "91-顺电铁磁磁电耦合-2024-JAC-Co0.7Fe2.3O4-SrTiO3.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\91-顺电铁磁磁电耦合-2024-JAC-Co0.7Fe2.3O4-SrTiO3.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 94.844,
+  "output": {
+    "10.1038/srep30074": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": "CoFe2O4-SrTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1038/srep30074",
+        "title": "Switching of magnetic easy-axis using crystal orientation for large perpendicular coercivity in CoFe2O4 thin film",
+        "journal": "Scientific Reports",
+        "year": 2016,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Sagar E. Shirsath",
+            "affiliation_id": "I137975476",
+            "affiliation_name": "Shinshu University",
+            "affiliation_country": "JP"
+          },
+          {
+            "name": "Xiaoxi Liu",
+            "affiliation_id": "I137975476",
+            "affiliation_name": "Shinshu University",
+            "affiliation_country": "JP"
+          },
+          {
+            "name": "Yukiko Yasukawa",
+            "affiliation_id": "I137975476",
+            "affiliation_name": "Shinshu University",
+            "affiliation_country": "JP"
+          },
+          {
+            "name": "Sean Li",
+            "affiliation_id": "I31746571",
+            "affiliation_name": "UNSW Sydney",
+            "affiliation_country": "AU"
+          },
+          {
+            "name": "Akimitsu Morisako",
+            "affiliation_id": "I137975476",
+            "affiliation_name": "Shinshu University",
+            "affiliation_country": "JP"
+          }
+        ],
+        "keywords": [
+          "Coercivity",
+          "Materials science",
+          "Amorphous solid",
+          "Thin film",
+          "Perpendicular",
+          "Sputter deposition",
+          "Sputtering",
+          "Magnetic anisotropy",
+          "Annealing (glass)",
+          "Substrate (aquarium)",
+          "Magnetization",
+          "Nuclear magnetic resonance",
+          "Condensed matter physics",
+          "Composite material",
+          "Nanotechnology",
+          "Crystallography",
+          "Magnetic field",
+          "Chemistry",
+          "Physics",
+          "Geometry",
+          "Geology"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1038/srep30074",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

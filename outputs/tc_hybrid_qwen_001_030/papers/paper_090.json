@@ -1,0 +1,110 @@
+{
+  "paper_id": 90,
+  "filename": "90-2021-Materials Today Chemistry-多铁流体.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\90-2021-Materials Today Chemistry-多铁流体.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 60.237,
+  "output": {
+    "10.1016/j.compositesb.2018.12.010": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": ""
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.compositesb.2018.12.010",
+        "title": "A comparative study on the structural, dielectric and multiferroic properties of Co0.6Cu0.3Zn0.1Fe2O4/Ba0.9Sr0.1Zr0.1Ti0.9O3 composite ceramics",
+        "journal": "Composites Part B Engineering",
+        "year": 2018,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Rongli Gao",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Qingmei Zhang",
+            "affiliation_id": "I46305995",
+            "affiliation_name": "Taiyuan University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Zhiyi Xu",
+            "affiliation_id": "I4210162136",
+            "affiliation_name": "National Institute of Metrology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Zhenhua Wang",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Gang Chen",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xiaoling Deng",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Chunlin Fu",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wei Cai",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Materials science",
+          "Dielectric",
+          "Curie temperature",
+          "Ceramic",
+          "Polarization (electrochemistry)",
+          "Composite number",
+          "Grain size",
+          "Ferroelectricity",
+          "Molar",
+          "Condensed matter physics",
+          "Composite material",
+          "Analytical Chemistry (journal)",
+          "Nuclear magnetic resonance",
+          "Chemistry",
+          "Ferromagnetism",
+          "Medicine",
+          "Physical chemistry"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.compositesb.2018.12.010",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

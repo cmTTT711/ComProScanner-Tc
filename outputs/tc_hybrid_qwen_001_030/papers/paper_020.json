@@ -1,0 +1,45 @@
+{
+  "paper_id": 20,
+  "filename": "20-三元复合-2022-Mater S Proce-A suitable platform for simultaneous improvement of multiferroic characteristics.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\20-三元复合-2022-Mater S Proce-A suitable platform for simultaneous improvement of multiferroic characteristics.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 99.512,
+  "output": {
+    "local-pdf/deb70641057677d8": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103,
+          "CrFe2O4": 420
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/deb70641057677d8",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

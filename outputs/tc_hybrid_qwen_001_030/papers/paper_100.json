@@ -1,0 +1,42 @@
+{
+  "paper_id": 100,
+  "filename": "100-2020-陶瓷国际-调整Ba0.83Ca0.10Sr0.07TiO3-MnFe2o4多铁复合材料的介电、铁电和机电性能.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\100-2020-陶瓷国际-调整Ba0.83Ca0.10Sr0.07TiO3-MnFe2o4多铁复合材料的介电、铁电和机电性能.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 40.046,
+  "output": {
+    "local-pdf/36d1eaccce2cd6c3": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": ""
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": true,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/36d1eaccce2cd6c3",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

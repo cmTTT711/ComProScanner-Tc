@@ -1,0 +1,120 @@
+{
+  "paper_id": 10,
+  "filename": "10-MnCu共掺杂铁酸铋-钛酸钡固溶体-2020-JAP-Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\10-MnCu共掺杂铁酸铋-钛酸钡固溶体-2020-JAP-Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 154.887,
+  "output": {
+    "10.1063/1.5131055": {
+      "composition_data": {
+        "compositions_property_values": {
+          "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3": 683,
+          "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + CuO (0.4 wt%)": 692,
+          "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + MnO2 (0.4 wt%)": 690,
+          "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + CuO (0.4 wt%) + MnO2 (0.4 wt%)": 687
+        },
+        "property_unit": "K",
+        "family": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/1.5131055",
+        "title": "Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3 − 0.3(Ba0.85Ca0.15)TiO3 ceramics",
+        "journal": "Journal of Applied Physics",
+        "year": 2020,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Mingfang Shu",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Dong Wang",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Sumei Li",
+            "affiliation_id": "I126520041",
+            "affiliation_name": "University of Science and Technology of China",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Lihua Yin",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Caixia Wang",
+            "affiliation_id": "I78978612",
+            "affiliation_name": "Yangzhou University",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wenhai Song",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Jie Yang",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xuebin Zhu",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Yuping Sun",
+            "affiliation_id": "I19820366",
+            "affiliation_name": "Chinese Academy of Sciences",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Remanence",
+          "Ferrimagnetism",
+          "Materials science",
+          "Ferroelectricity",
+          "Magnetization",
+          "Magnetism",
+          "Condensed matter physics",
+          "Curie temperature",
+          "Magnetic moment",
+          "Superexchange",
+          "Sintering",
+          "Multiferroics",
+          "Paramagnetism",
+          "Ferromagnetism",
+          "Metallurgy",
+          "Magnetic field",
+          "Physics",
+          "Dielectric"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/1.5131055",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

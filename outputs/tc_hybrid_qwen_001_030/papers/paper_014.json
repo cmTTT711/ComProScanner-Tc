@@ -1,0 +1,44 @@
+{
+  "paper_id": 14,
+  "filename": "14-Bi0⋅9La0⋅1FeO3SrCoO3新组合-2024-JMRT-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\14-Bi0⋅9La0⋅1FeO3SrCoO3新组合-2024-JMRT-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 75.245,
+  "output": {
+    "local-pdf/f632a01543d4e2d3": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/f632a01543d4e2d3",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

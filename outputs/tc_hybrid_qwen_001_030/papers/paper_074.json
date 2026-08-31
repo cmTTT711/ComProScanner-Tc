@@ -1,0 +1,45 @@
+{
+  "paper_id": 74,
+  "filename": "74-掺杂铁钛酸钡-单相-2020-jac-Room temperature magnetoelectric coupling in Fe-doped sodium.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\74-掺杂铁钛酸钡-单相-2020-jac-Room temperature magnetoelectric coupling in Fe-doped sodium.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 199.074,
+  "output": {
+    "local-pdf/0eba9dbfc2434c23": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103,
+          "(Na0.5Bi0.5)TiO3": 593.15
+        },
+        "property_unit": "K",
+        "family": "perovskite"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/0eba9dbfc2434c23",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "paper_id": 71,
+  "filename": "71-2017-3M-Room temperature large self-biased magnetoelectric effect.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\71-2017-3M-Room temperature large self-biased magnetoelectric effect.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 28.728,
+  "output": {
+    "local-pdf/3e1cf48634c08fe3": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": ""
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/3e1cf48634c08fe3",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

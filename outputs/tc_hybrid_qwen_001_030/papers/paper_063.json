@@ -1,0 +1,135 @@
+{
+  "paper_id": 63,
+  "filename": "63-氧化铁和聚合物-2023-MH-热中介磁电耦合-The magnetopyroelectric effect heat-mediated.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\63-氧化铁和聚合物-2023-MH-热中介磁电耦合-The magnetopyroelectric effect heat-mediated.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 190.48,
+  "output": {
+    "10.1039/d2mh01361d": {
+      "composition_data": {
+        "compositions_property_values": {
+          "poly(vinylidene fluoride-trifluoroethylene)": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 0.3 wt% iron oxide nanoparticles": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 1.3 wt% iron oxide nanoparticles": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 2.6 wt% iron oxide nanoparticles": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 3.9 wt% iron oxide nanoparticles": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 5.1 wt% iron oxide nanoparticles": 100,
+          "poly(vinylidene fluoride-trifluoroethylene) + 11.9 wt% iron oxide nanoparticles": 100
+        },
+        "property_unit": "°C",
+        "family": "P(VDF-TrFE)"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1039/d2mh01361d",
+        "title": "The magnetopyroelectric effect: heat-mediated magnetoelectricity in magnetic nanoparticle-ferroelectric polymer composites",
+        "journal": "Materials Horizons",
+        "year": 2023,
+        "isOpenAccess": true,
+        "authors": [
+          {
+            "name": "Joaquin Llacer‐Wintle",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Jan Renz",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Lukas Hertle",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Andrea Veciana",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Denis von Arx",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Jiang Wu",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "P. Bruna",
+            "affiliation_id": "I9617848",
+            "affiliation_name": "Universitat Politècnica de Catalunya",
+            "affiliation_country": "ES"
+          },
+          {
+            "name": "Marija Vukomanović",
+            "affiliation_id": "I3006985408",
+            "affiliation_name": "Jožef Stefan Institute",
+            "affiliation_country": "SI"
+          },
+          {
+            "name": "Josep Puigmartí‐Luis",
+            "affiliation_id": "I11932220",
+            "affiliation_name": "Institució Catalana de Recerca i Estudis Avançats",
+            "affiliation_country": "ES"
+          },
+          {
+            "name": "Bradley J. Nelson",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Xiangzhong Chen",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          },
+          {
+            "name": "Salvador Pané",
+            "affiliation_id": "I35440088",
+            "affiliation_name": "ETH Zurich",
+            "affiliation_country": "CH"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Ferroelectricity",
+          "Composite material",
+          "Nanoparticle",
+          "Magnetic nanoparticles",
+          "Polymer",
+          "Ferroelectric polymers",
+          "Nanotechnology",
+          "Optoelectronics",
+          "Dielectric",
+          "Copolymer"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1039/d2mh01361d",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

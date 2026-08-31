@@ -1,9 +1,10 @@
 import pytest
 
 from comproscanner.utils.pdf_to_markdown_text import matches_property_keywords
+from comproscanner.presets.curie_temperature import PROPERTY_KEYWORDS
 
 
-KEYWORDS = {"candidate_gate": "tc_high_recall"}
+KEYWORDS = PROPERTY_KEYWORDS
 
 
 @pytest.mark.parametrize("text", [

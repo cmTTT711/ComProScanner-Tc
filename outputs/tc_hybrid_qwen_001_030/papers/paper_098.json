@@ -1,0 +1,88 @@
+{
+  "paper_id": 98,
+  "filename": "98-2024-陶瓷国际-La和Se共掺杂BiFeO3嵌套Ti3C2Tx MXene独立陶瓷薄膜的室温铁电、磁性和磁电性能.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\98-2024-陶瓷国际-La和Se共掺杂BiFeO3嵌套Ti3C2Tx MXene独立陶瓷薄膜的室温铁电、磁性和磁电性能.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 232.8,
+  "output": {
+    "10.1016/j.ceramint.2024.05.283": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103
+        },
+        "property_unit": "K",
+        "family": "BiFeO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.ceramint.2024.05.283",
+        "title": "Tailoring room-temperature ferroelectric, magnetic and magnetoelectric properties in La and Se co-doped BiFeO3 embedded Ti3C2Tx MXene free-standing ceramics film",
+        "journal": "Ceramics International",
+        "year": 2024,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Lazare Kindohoun",
+            "affiliation_id": "I929597975",
+            "affiliation_name": "National University of Sciences and Technology",
+            "affiliation_country": "PK"
+          },
+          {
+            "name": "Kubra Sattar",
+            "affiliation_id": "I929597975",
+            "affiliation_name": "National University of Sciences and Technology",
+            "affiliation_country": "PK"
+          },
+          {
+            "name": "Rabia Tahir",
+            "affiliation_id": "I929597975",
+            "affiliation_name": "National University of Sciences and Technology",
+            "affiliation_country": "PK"
+          },
+          {
+            "name": "Syed Irfan",
+            "affiliation_id": "I1297991670",
+            "affiliation_name": "Southwest University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Syed Rizwan",
+            "affiliation_id": "I929597975",
+            "affiliation_name": "National University of Sciences and Technology",
+            "affiliation_country": "PK"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Bismuth ferrite",
+          "Multiferroics",
+          "Ferroelectricity",
+          "Dielectric",
+          "Doping",
+          "Ceramic",
+          "Magnetoelectric effect",
+          "Polarization (electrochemistry)",
+          "Optoelectronics",
+          "Composite material",
+          "Nanotechnology"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.ceramint.2024.05.283",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "paper_id": 4,
+  "filename": "4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 161.76,
+  "output": {
+    "10.1016/j.jallcom.2019.05.068": {
+      "composition_data": {
+        "compositions_property_values": {
+          "CoFe2O4": 793,
+          "0.66BaTiO3-0.33CoFe2O4 (randomly mixed)": 720,
+          "0.66BaTiO3-0.33CoFe2O4 (layered)": 746
+        },
+        "property_unit": "K",
+        "family": "BaTiO3-CoFe2O4"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.jallcom.2019.05.068",
+        "title": "Functional properties of randomly mixed and layered BaTiO3 - CoFe2O4 ceramic composites close to the percolation limit",
+        "journal": "Journal of Alloys and Compounds",
+        "year": 2019,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Alexandra Guzu",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Cristina Elena Ciomaga",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Mirela Airimioaei",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Leontin Pădurariu",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Lavinia Curecheriu",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Ioan Dumitru",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Felicia Gheorghiu",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "George Stoian",
+            "affiliation_id": "I4210158639",
+            "affiliation_name": "National Institute of Research and Development for Technical Physics",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "M. Grigoraș",
+            "affiliation_id": "I4210158639",
+            "affiliation_name": "National Institute of Research and Development for Technical Physics",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Nicoleta Lupu",
+            "affiliation_id": "I4210158639",
+            "affiliation_name": "National Institute of Research and Development for Technical Physics",
+            "affiliation_country": "RO"
+          },
+          {
+            "name": "Mihai Asăndulesa",
+            "affiliation_id": "",
+            "affiliation_name": "",
+            "affiliation_country": ""
+          },
+          {
+            "name": "Liliana Mitoşeriu",
+            "affiliation_id": "I138164181",
+            "affiliation_name": "Alexandru Ioan Cuza University",
+            "affiliation_country": "RO"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Ferrimagnetism",
+          "Dielectric",
+          "Composite material",
+          "Ferroelectricity",
+          "Percolation threshold",
+          "Curie temperature",
+          "Condensed matter physics",
+          "Ferrite (magnet)",
+          "Permittivity",
+          "Magnetization",
+          "Anisotropy",
+          "Magnetic field",
+          "Electrical resistivity and conductivity",
+          "Ferromagnetism"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

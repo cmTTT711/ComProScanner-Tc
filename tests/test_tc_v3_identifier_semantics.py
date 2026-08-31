@@ -3,6 +3,7 @@
 from pathlib import Path
 
 import yaml
+from comproscanner.presets.curie_temperature import MATERIALS_DATA_IDENTIFIER_QUERY
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,12 +25,12 @@ SEMANTIC_FIXTURES = {
     "shared_value_series": ("x=0.1 through x=0.5 current composites share a 150 C FE-PE transition", "YES"),
     "table_tm_with_target_semantics": ("85BPF Tm=151 C; local text identifies the FE-PE transition", "YES"),
     "normal_fe_among_relaxors": ("x=.01 has a normal 853.1 K FE-PE transition; x=.03/.05 are relaxors", "YES"),
-    "cited_background": ("BiFeO3 has Tc 1103 K [reference]; current composite reports no Tc", "NO"),
+    "cited_background": ("BiFeO3 has Tc 1103 K [reference]; current composite reports no Tc", "YES"),
     "curie_weiss": ("The Curie-Weiss temperature is 450 K", "NO"),
     "neel": ("The Neel temperature is 640 K", "NO"),
     "generic_tm": ("A dielectric maximum Tm occurs at 320 C without target semantics", "NO"),
     "sintering": ("The sample was sintered at 900 C", "NO"),
-    "constituent_background": ("BaTiO3 has known Tc 120 C but the current composite has no transition measurement", "NO"),
+    "constituent_background": ("BaTiO3 has known Tc 120 C but the current composite has no transition measurement", "YES"),
 }
 
 
@@ -45,30 +46,39 @@ def test_identifier_allows_shared_value_series():
 
 def test_identifier_allows_locally_valid_fact_in_mixed_context():
     assert "Evaluate facts locally" in TASKS
-    assert "one valid normal transition is sufficient" in TASKS
+    assert "one valid target-property fact is sufficient" in TASKS
 
 
 def test_identifier_requires_tm_target_semantics():
-    assert "Tm by itself is not sufficient" in TASKS
-    assert "explicitly identifies it as the" in TASKS
-    assert "target transition" in TASKS
+    assert "Tm or dielectric peak qualifies only" in MATERIALS_DATA_IDENTIFIER_QUERY
+    assert "normal Curie or ferroelectric-to-paraelectric" in MATERIALS_DATA_IDENTIFIER_QUERY
 
 
 def test_identifier_preserves_negative_semantic_guards():
     for phrase in (
-        "cited or background facts",
-        "constituent background properties",
-        "Curie-Weiss",
-        "Neel",
+        "Néel",
         "blocking",
-        "spin-glass",
-        "synthesis or measurement temperatures",
-        "generic dielectric maximum/Tm",
-        "unrelated phase transitions",
+        "glass transition",
+        "synthesis/annealing/sintering/measurement",
+        "generic dielectric maxima",
+        "frequency-dependent relaxor peaks",
     ):
-        assert phrase in TASKS
+        assert phrase in MATERIALS_DATA_IDENTIFIER_QUERY
 
 
 def test_semantic_fixture_expectations_cover_required_cases():
-    assert [expected for _, expected in SEMANTIC_FIXTURES.values()].count("YES") == 3
-    assert [expected for _, expected in SEMANTIC_FIXTURES.values()].count("NO") == 6
+    assert [expected for _, expected in SEMANTIC_FIXTURES.values()].count("YES") == 5
+    assert [expected for _, expected in SEMANTIC_FIXTURES.values()].count("NO") == 4
+
+
+def test_identifier_accepts_explicit_background_and_cited_material_facts():
+    for phrase in (
+        "background, comparison, and cited-material statements",
+        "material-to-Tc relationship explicit",
+    ):
+        assert phrase in MATERIALS_DATA_IDENTIFIER_QUERY
+
+
+def test_shared_identifier_prompt_is_property_agnostic():
+    for tc_specific_phrase in ("Curie-Weiss", "Neel", "Tm", "cited-material"):
+        assert tc_specific_phrase not in TASKS

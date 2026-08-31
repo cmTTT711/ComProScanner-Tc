@@ -42,7 +42,7 @@ from comproscanner.extract_flow.tools import rag_tool as rag_module
 from comproscanner.utils import get_paper_data as paper_data_module
 from comproscanner.utils.configs.rag_config import RAGConfig
 from comproscanner.utils.database_manager import VectorDatabaseManager
-from examples.extract_curie_temperature import get_curie_temperature_preset
+from comproscanner.presets.curie_temperature import get_curie_temperature_preset
 from langchain_deepseek import ChatDeepSeek
 
 
@@ -211,6 +211,7 @@ def run_paper(paper_id: int, pdf_path: Path | None) -> dict:
             main_figure_keywords={"exact_keywords": [], "substring_keywords": []},
             additional_figure_keywords={"exact_keywords": [], "substring_keywords": []},
             failed_pdf_report_path=str(paper_runtime / "failed_pdf_filenames.txt"),
+            **preset["processing_kwargs"],
         )
         recover_empty_section_candidate(
             paper_runtime,

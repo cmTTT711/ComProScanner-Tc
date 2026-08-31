@@ -1,0 +1,44 @@
+{
+  "paper_id": 26,
+  "filename": "26-2023-JAC-Grain size and piezoelectric effect on magnetoelectric coupling in BFO_PZT perovskite-perovskite composites.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\26-2023-JAC-Grain size and piezoelectric effect on magnetoelectric coupling in BFO_PZT perovskite-perovskite composites.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 93.141,
+  "output": {
+    "local-pdf/4d3fe4ad46460542": {
+      "composition_data": {
+        "compositions_property_values": {
+          "Pb(Zr0.5Ti0.5)O3": 355
+        },
+        "property_unit": "°C",
+        "family": "BiFeO3/Pb(Zr0.5Ti0.5)O3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/4d3fe4ad46460542",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

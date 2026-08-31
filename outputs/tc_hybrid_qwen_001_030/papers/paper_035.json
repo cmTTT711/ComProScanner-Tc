@@ -1,0 +1,45 @@
+{
+  "paper_id": 35,
+  "filename": "35-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in perovskite_spinel-based triphasic multiferroic composites for multistate devices.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\35-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in perovskite_spinel-based triphasic multiferroic composites for multistate devices.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 102.356,
+  "output": {
+    "local-pdf/46e726a1ed83ad5b": {
+      "composition_data": {
+        "compositions_property_values": {
+          "SrCoO2.29": 305,
+          "Pb(Zr0.58Ti0.42)O3": 508
+        },
+        "property_unit": "K",
+        "family": "perovskite oxides"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/46e726a1ed83ad5b",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

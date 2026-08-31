@@ -1,0 +1,50 @@
+{
+  "paper_id": 32,
+  "filename": "32-没磁电耦合-2023-陶瓷国际-High piezoelectric-magnetic coupling in potassium-sodium niobate piezoelectric ceramics prepared by solution synthesis.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\32-没磁电耦合-2023-陶瓷国际-High piezoelectric-magnetic coupling in potassium-sodium niobate piezoelectric ceramics prepared by solution synthesis.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 180.466,
+  "output": {
+    "local-pdf/ca1945115538a793": {
+      "composition_data": {
+        "compositions_property_values": {
+          "(K0.5Na0.5)NbO3": 420,
+          "(1-0.05)(K0.5Na0.5)NbO3-0.05Fe2O3": 418,
+          "(1-0.075)(K0.5Na0.5)NbO3-0.075Fe2O3": 417,
+          "(1-0.10)(K0.5Na0.5)NbO3-0.10Fe2O3": 415,
+          "(1-0.125)(K0.5Na0.5)NbO3-0.125Fe2O3": 413,
+          "(1-0.15)(K0.5Na0.5)NbO3-0.15Fe2O3": 410,
+          "(1-0.20)(K0.5Na0.5)NbO3-0.20Fe2O3": 405
+        },
+        "property_unit": "°C",
+        "family": "K0.5Na0.5NbO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": null,
+        "title": "",
+        "journal": "",
+        "year": "",
+        "isOpenAccess": false,
+        "authors": [],
+        "keywords": []
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "local-pdf/ca1945115538a793",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

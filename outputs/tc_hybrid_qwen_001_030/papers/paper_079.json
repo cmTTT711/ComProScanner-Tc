@@ -1,0 +1,84 @@
+{
+  "paper_id": 79,
+  "filename": "79-单相-2019-apl-缺钠钛酸铋钠的室温多铁性和磁电耦合.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\79-单相-2019-apl-缺钠钛酸铋钠的室温多铁性和磁电耦合.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 250.313,
+  "output": {
+    "10.1063/1.5078575": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BiFeO3": 1103,
+          "(Na0.5Bi0.5)TiO3": 320
+        },
+        "property_unit": "K (BiFeO3); °C (NBT)",
+        "family": "perovskite"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1063/1.5078575",
+        "title": "Room temperature multiferroicity and magnetoelectric coupling in Na-deficient sodium bismuth titanate",
+        "journal": "Applied Physics Letters",
+        "year": 2019,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Jain Ruth D. E.",
+            "affiliation_id": "I175691731",
+            "affiliation_name": "Pondicherry University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Raja Altaf U Rahman",
+            "affiliation_id": "I175691731",
+            "affiliation_name": "Pondicherry University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "B. Sundarakannan",
+            "affiliation_id": "I175691731",
+            "affiliation_name": "Pondicherry University",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Ramaswamy Murugan",
+            "affiliation_id": "I175691731",
+            "affiliation_name": "Pondicherry University",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Multiferroics",
+          "Materials science",
+          "Condensed matter physics",
+          "Ferromagnetism",
+          "Bismuth",
+          "Vacancy defect",
+          "Ferroelectricity",
+          "Valence (chemistry)",
+          "Chemistry",
+          "Optoelectronics",
+          "Metallurgy",
+          "Physics",
+          "Dielectric"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": true,
+  "pipeline_report": [
+    {
+      "document_id": "10.1063/1.5078575",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

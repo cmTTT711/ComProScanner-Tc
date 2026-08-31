@@ -22,9 +22,9 @@ def test_tc_recovery_configuration():
     )
 
     def matches(text):
-        return any(
-            keyword in text for group in keywords.values() for keyword in group
-        )
+        from comproscanner.utils.pdf_to_markdown_text import matches_property_keywords
+
+        return matches_property_keywords(text, keywords)
 
     assert 'return f"10.9999/local-tc-dev-{paper_id:03d}"' in runner_source
     assert "PDFsProcessor._extract_doi_from_text = _use_local_identity" in runner_source
@@ -54,5 +54,5 @@ def test_tc_schema_and_scientific_prompt_remain_unchanged():
     assert '"property_unit"' in example
     assert '"family"' in example
     assert "Néel temperatures" in notes
-    assert "general background" in notes
+    assert "background or comparison materials" in notes
     assert "do not invent one" in notes

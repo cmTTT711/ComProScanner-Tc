@@ -1,0 +1,94 @@
+{
+  "paper_id": 6,
+  "filename": "6-mof原位合成-2020-陶瓷国际-Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4BaTiO3 composite ceramics.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\6-mof原位合成-2020-陶瓷国际-Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4BaTiO3 composite ceramics.pdf",
+  "status": "COMPLETED",
+  "runtime_seconds": 119.424,
+  "output": {
+    "10.1016/j.ceramint.2019.12.165": {
+      "composition_data": {
+        "compositions_property_values": {
+          "BaTiO3": 130
+        },
+        "property_unit": "°C",
+        "family": "BaTiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.ceramint.2019.12.165",
+        "title": "Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4/BaTiO3 composite ceramics",
+        "journal": "Ceramics International",
+        "year": 2019,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Zhenhua Wang",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Rongli Gao",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Gang Chen",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Xiaoling Deng",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Wei Cai",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          },
+          {
+            "name": "Chunlin Fu",
+            "affiliation_id": "I168337820",
+            "affiliation_name": "Chongqing University of Science and Technology",
+            "affiliation_country": "CN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Ferroelectricity",
+          "Dielectric",
+          "Ferromagnetic material properties",
+          "Composite number",
+          "Sintering",
+          "Ceramic",
+          "Ferromagnetism",
+          "Composite material",
+          "Magnetization",
+          "Magnetic field",
+          "Condensed matter physics",
+          "Optoelectronics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.ceramint.2019.12.165",
+      "status": "COMPLETED",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

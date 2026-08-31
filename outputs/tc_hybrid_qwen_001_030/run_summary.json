@@ -1,0 +1,10 @@
+{
+  "task": "TC_HYBRID_QWEN_001_100",
+  "completed_papers": 100,
+  "status_counts": {
+    "COMPLETED": 51,
+    "EMPTY_RESULT": 15,
+    "PREFILTER_REJECTED": 34
+  },
+  "total_runtime_seconds": 9891.584
+}

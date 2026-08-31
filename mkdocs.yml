@@ -177,6 +177,7 @@ nav:
           - Evaluation Visualization: usage/visualization/eval-viz.md
   - RAG Configuration: rag-config.md
   - API Overview: api.md
+  - Architecture: architecture.md
   - Blog: news/index.md
   - About:
       - Project Structure: about/project-structure.md

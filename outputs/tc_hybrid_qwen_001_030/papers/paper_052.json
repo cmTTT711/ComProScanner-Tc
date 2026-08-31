@@ -1,0 +1,82 @@
+{
+  "paper_id": 52,
+  "filename": "52-铁电固溶体加铁磁-2024-sss-High magnetoelectric coupling in piezoelectric modified BNT and magnetic.pdf",
+  "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\52-铁电固溶体加铁磁-2024-sss-High magnetoelectric coupling in piezoelectric modified BNT and magnetic.pdf",
+  "status": "EMPTY_RESULT",
+  "runtime_seconds": 130.281,
+  "output": {
+    "10.1016/j.solidstatesciences.2024.107438": {
+      "composition_data": {
+        "compositions_property_values": {},
+        "property_unit": "",
+        "family": "Bi0.5Na0.5TiO3"
+      },
+      "synthesis_data": {
+        "method": "",
+        "precursors": [],
+        "steps": [],
+        "characterization_techniques": []
+      },
+      "article_metadata": {
+        "doi": "10.1016/j.solidstatesciences.2024.107438",
+        "title": "High magnetoelectric coupling in piezoelectric modified BNT and magnetic NZFO particulate composite",
+        "journal": "Solid State Sciences",
+        "year": 2024,
+        "isOpenAccess": false,
+        "authors": [
+          {
+            "name": "Parminder Singh",
+            "affiliation_id": "I162030827",
+            "affiliation_name": "Thapar Institute of Engineering & Technology",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Radhapiyari Laishram",
+            "affiliation_id": "I140777494",
+            "affiliation_name": "Solid State Physics Laboratory",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Jayant Kolte",
+            "affiliation_id": "I162030827",
+            "affiliation_name": "Thapar Institute of Engineering & Technology",
+            "affiliation_country": "IN"
+          },
+          {
+            "name": "Puneet Sharma",
+            "affiliation_id": "I2801787918",
+            "affiliation_name": "IILM Institute for Higher Education",
+            "affiliation_country": "IN"
+          }
+        ],
+        "keywords": [
+          "Materials science",
+          "Composite material",
+          "Dielectric",
+          "Composite number",
+          "Ferroelectricity",
+          "Hysteresis",
+          "Saturation (graph theory)",
+          "Piezoelectricity",
+          "Magnetization",
+          "Magnetoelectric effect",
+          "Nuclear magnetic resonance",
+          "Condensed matter physics",
+          "Magnetic field",
+          "Multiferroics"
+        ]
+      }
+    }
+  },
+  "error": null,
+  "attempt_count": 1,
+  "raw_text_candidate_recovered": false,
+  "pipeline_report": [
+    {
+      "document_id": "10.1016/j.solidstatesciences.2024.107438",
+      "status": "EMPTY_RESULT",
+      "stage": "complete",
+      "error": null
+    }
+  ]
+}

@@ -17,7 +17,7 @@ from textwrap import dedent
 import ast
 
 # Third party imports
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 from crewai import LLM
 from crewai.flow.flow import Flow, listen, start, router
 
@@ -25,6 +25,7 @@ from crewai.flow.flow import Flow, listen, start, router
 from ..utils.error_handler import ValueErrorHandler
 from ..utils.logger import setup_logger
 from ..utils.configs.rag_config import RAGConfig
+from ..utils.candidate_context import build_hybrid_candidate_context
 from .crews.materials_data_identifier_crew.materials_data_identifier_crew import (
     MaterialsDataIdentifierCrew,
 )
@@ -84,10 +85,10 @@ class MaterialsState(BaseModel):
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
     is_materials_mentioned: str = ""
-    composition_extracted_data: Dict = {}
-    composition_formatted_data: Dict = {}
-    synthesis_extracted_data: Dict = {}
-    synthesis_formatted_data: Dict = {}
+    composition_extracted_data: Dict = Field(default_factory=dict)
+    composition_formatted_data: Dict = Field(default_factory=dict)
+    synthesis_extracted_data: Dict = Field(default_factory=dict)
+    synthesis_formatted_data: Dict = Field(default_factory=dict)
     doi: str = ""
     materials_data_identifier_query: str = ""
     identifier_context_mode: str = "rag"
@@ -100,6 +101,7 @@ class MaterialsState(BaseModel):
     formula_instruction: Optional[str] = None
     equation_model: Optional[str] = None
     llm: Optional[LLM] = None
+    identifier_llm: Optional[LLM] = None
     rag_config: Optional[RAGConfig] = None
     output_log_folder: Optional[str] = None
     task_output_folder: Optional[str] = None
@@ -161,8 +163,10 @@ class DataExtractionFlow(Flow[MaterialsState]):
         composition_property_text_data: str = None,
         synthesis_text_data: str = None,
         llm: Optional[LLM] = None,
+        identifier_llm: Optional[LLM] = None,
         materials_data_identifier_query: str = None,
         identifier_context_mode: str = "rag",
+        hybrid_retrieval_queries: Optional[list[str]] = None,
         is_extract_synthesis_data: bool = True,
         vlm_model: str = "gemini/gemini-3-flash-preview",
         related_figures_base_path: str = "results/related_figures",
@@ -175,16 +179,16 @@ class DataExtractionFlow(Flow[MaterialsState]):
         verbose: bool = True,
         expected_composition_property_example: str = "",
         expected_variable_composition_property_example: str = "",
-        composition_property_extraction_agent_notes: list = [],
-        composition_property_extraction_task_notes: list = [],
-        composition_property_formatting_agent_notes: list = [],
-        composition_property_formatting_task_notes: list = [],
-        synthesis_extraction_agent_notes: list = [],
-        synthesis_extraction_task_notes: list = [],
-        synthesis_formatting_agent_notes: list = [],
-        synthesis_formatting_task_notes: list = [],
-        allowed_synthesis_methods: list = [],
-        allowed_characterization_techniques: list = [],
+        composition_property_extraction_agent_notes: Optional[list] = None,
+        composition_property_extraction_task_notes: Optional[list] = None,
+        composition_property_formatting_agent_notes: Optional[list] = None,
+        composition_property_formatting_task_notes: Optional[list] = None,
+        synthesis_extraction_agent_notes: Optional[list] = None,
+        synthesis_extraction_task_notes: Optional[list] = None,
+        synthesis_formatting_agent_notes: Optional[list] = None,
+        synthesis_formatting_task_notes: Optional[list] = None,
+        allowed_synthesis_methods: Optional[list] = None,
+        allowed_characterization_techniques: Optional[list] = None,
     ):
         super().__init__()
         if not doi:
@@ -196,6 +200,7 @@ class DataExtractionFlow(Flow[MaterialsState]):
 
         self.state.doi = doi
         self.state.llm = llm
+        self.state.identifier_llm = identifier_llm
         self.state.is_extract_synthesis_data = is_extract_synthesis_data
         self.state.vlm_model = vlm_model
         self.state.related_figures_base_path = related_figures_base_path
@@ -215,11 +220,22 @@ class DataExtractionFlow(Flow[MaterialsState]):
         main_extraction_keyword = main_extraction_keyword.replace(" ", "_")
         self.state.main_extraction_keyword = main_extraction_keyword
         self.state.materials_data_identifier_query = materials_data_identifier_query
-        if identifier_context_mode not in ("rag", "full_candidate"):
+        if identifier_context_mode not in ("rag", "full_candidate", "hybrid"):
             raise ValueErrorHandler(
-                "identifier_context_mode must be 'rag' or 'full_candidate'"
+                "identifier_context_mode must be 'rag', 'full_candidate', or 'hybrid'"
             )
         self.state.identifier_context_mode = identifier_context_mode
+        if identifier_context_mode == "hybrid":
+            queries = hybrid_retrieval_queries or [
+                materials_data_identifier_query,
+                main_extraction_keyword.replace("_", " "),
+            ]
+            composition_property_text_data = build_hybrid_candidate_context(
+                doi=doi,
+                rule_candidate=composition_property_text_data,
+                queries=queries,
+                rag_config=rag_config,
+            )
         self.state.composition_property_text_data = composition_property_text_data
         self.state.synthesis_text_data = synthesis_text_data
 
@@ -288,8 +304,10 @@ class DataExtractionFlow(Flow[MaterialsState]):
 
             return dedent(f"""**Notes**:\n{all_notes}""")
 
-        def _update_methods_techniques(item_list: list):
-            return dedent("""{}""".format("\n".join(f"- {n}" for n in item_list)))
+        def _update_methods_techniques(item_list: Optional[list]):
+            return dedent(
+                """{}""".format("\n".join(f"- {n}" for n in (item_list or [])))
+            )
 
         # optional notes to pass to the agents and tasks
         composition_property_extraction_default_notes = [
@@ -668,16 +686,17 @@ class DataExtractionFlow(Flow[MaterialsState]):
         logger.debug("Starting material identification process...")
         identifier_context = (
             self.state.composition_property_text_data
-            if self.state.identifier_context_mode == "full_candidate"
+            if self.state.identifier_context_mode in ("full_candidate", "hybrid")
             else None
         )
         identifier_kwargs = {}
         if identifier_context is not None:
             identifier_kwargs["identifier_context"] = identifier_context
-        if self.state.llm:
+        identifier_llm = self.state.identifier_llm or self.state.llm
+        if identifier_llm:
             rag_crew = MaterialsDataIdentifierCrew(
                 doi=self.state.doi,
-                llm=self.state.llm,
+                llm=identifier_llm,
                 rag_config=self.state.rag_config,
                 output_log_folder=self.state.output_log_folder,
                 task_output_folder=self.state.task_output_folder,
@@ -702,7 +721,26 @@ class DataExtractionFlow(Flow[MaterialsState]):
         }
         if identifier_context is not None:
             identifier_inputs["identifier_context"] = identifier_context
-        result = rag_crew.kickoff(inputs=identifier_inputs)
+        try:
+            result = rag_crew.kickoff(inputs=identifier_inputs)
+        except Exception:
+            if not self.state.identifier_llm or not self.state.llm:
+                raise
+            logger.warning(
+                "Dedicated identifier model failed for %s; retrying the identifier "
+                "once with the extraction model.",
+                self.state.doi,
+            )
+            result = MaterialsDataIdentifierCrew(
+                doi=self.state.doi,
+                llm=self.state.llm,
+                rag_config=self.state.rag_config,
+                output_log_folder=self.state.output_log_folder,
+                task_output_folder=self.state.task_output_folder,
+                is_log_json=self.state.is_log_json,
+                verbose=self.state.verbose,
+                **identifier_kwargs,
+            ).crew().kickoff(inputs=identifier_inputs)
         # Store the raw result
         raw_result = result.raw if hasattr(result, "raw") else str(result)
 
