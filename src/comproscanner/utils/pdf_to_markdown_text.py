@@ -712,13 +712,5 @@ class PDFToMarkdownText:
                 vector_db_manager.create_database(
                     db_name=modified_doi, article_text=total_text
                 )
-        if all_req_data["is_property_mentioned"] == "0":
-            all_req_data["abstract"] = ""
-            all_req_data["introduction"] = ""
-            all_req_data["exp_methods"] = ""
-            all_req_data["comp_methods"] = ""
-            all_req_data["results_discussion"] = ""
-            all_req_data["conclusion"] = ""
-
         # Returning dataframe (appended dictionary for one article)
         return pd.DataFrame([all_req_data])

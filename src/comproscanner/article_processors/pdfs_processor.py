@@ -134,6 +134,7 @@ class PDFsProcessor:
             columns=[
                 "doi",
                 "article_title",
+                "full_text",
                 "publication_name",
                 "publisher",
                 "abstract",
@@ -143,6 +144,9 @@ class PDFsProcessor:
                 "results_discussion",
                 "conclusion",
                 "is_property_mentioned",
+                "paper_id",
+                "source_path",
+                "file_hash",
             ]
         )
         self.valid_property_articles = 0
@@ -173,6 +177,24 @@ class PDFsProcessor:
         filename = os.path.basename(pdf_file)
         digest = hashlib.sha256(filename.encode("utf-8")).hexdigest()[:16]
         return f"local-pdf/{digest}"
+
+    @staticmethod
+    def _paper_id(pdf_file: str) -> str:
+        match = re.match(r"^(\d+)-", os.path.basename(pdf_file))
+        return match.group(1) if match else ""
+
+    @staticmethod
+    def _file_hash(pdf_file: str) -> str:
+        digest = hashlib.sha256()
+        try:
+            with open(pdf_file, "rb") as handle:
+                for block in iter(lambda: handle.read(1024 * 1024), b""):
+                    digest.update(block)
+            return digest.hexdigest()
+        except OSError:
+            # Virtual/mocked sources may not expose bytes. The source path still
+            # preserves provenance; never fail article parsing for optional hash.
+            return ""
 
     def _record_failed_pdf(self, pdf_file: str, reason: str) -> None:
         """Record failed PDF filename cases and optionally write to report file."""
@@ -232,6 +254,7 @@ class PDFsProcessor:
                 {
                     "doi": doi,
                     "article_title": title,
+                    "full_text": "",
                     "publication_name": journal_name,
                     "publisher": publisher,
                     "abstract": "",
@@ -241,6 +264,9 @@ class PDFsProcessor:
                     "results_discussion": "",
                     "conclusion": "",
                     "is_property_mentioned": "0",
+                    "paper_id": "",
+                    "source_path": "",
+                    "file_hash": "",
                 }
             ]
         )
@@ -430,6 +456,9 @@ class PDFsProcessor:
                     row = self._create_empty_row(
                         self.doi, title, journal_name, publisher
                     )
+                    row["paper_id"] = self._paper_id(pdf_file)
+                    row["source_path"] = os.path.abspath(pdf_file)
+                    row["file_hash"] = self._file_hash(pdf_file)
                     sql_dataframes.append(row)
                     csv_dataframes.append(row)
 
@@ -549,6 +578,13 @@ class PDFsProcessor:
                     logger,
                     has_caption_keyword_match=has_caption_keyword_match,
                 )
+                # The evidence-first pipeline consumes the complete parser output.
+                # Legacy property filtering remains diagnostic only and must never
+                # erase source text before canonical Article normalization.
+                row["full_text"] = "\n\n".join(all_sections).strip()
+                row["paper_id"] = self._paper_id(pdf_file)
+                row["source_path"] = os.path.abspath(pdf_file)
+                row["file_hash"] = self._file_hash(pdf_file)
                 sql_dataframes.append(row)
                 csv_dataframes.append(row)
 

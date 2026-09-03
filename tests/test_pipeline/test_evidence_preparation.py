@@ -67,3 +67,21 @@ def test_unknown_evidence_provider_is_rejected():
             property_keywords={"exact_keywords": ["Tc"]},
             provider_names=("mystery",),
         )
+
+
+def test_full_text_is_the_single_authoritative_text_source():
+    configured = EvidencePreparationPipeline(
+        target_property="Curie temperature",
+        property_keywords={"exact_keywords": ["Curie temperature"]},
+        rule_patterns=[r"793\s*K"],
+        provider_names=("rule_text",),
+    )
+    chunks, evidence = configured.prepare_all({
+        "document_id": "paper-4",
+        "full_text": "CoFe2O4 has a Curie temperature of 793 K.",
+        "abstract": "This section intentionally omits the target value.",
+    })
+    assert len(chunks) == 1
+    assert chunks[0].section == "full_text"
+    assert len(evidence) == 1
+    assert "793 K" in evidence[0].content

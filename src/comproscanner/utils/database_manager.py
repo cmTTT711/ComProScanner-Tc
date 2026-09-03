@@ -245,14 +245,21 @@ class VectorDatabaseManager:
 
     def __init__(self, rag_config):
         self.rag_config = rag_config
-        self.embeddings = MultiModelEmbeddings(rag_config)
+        self.enabled = getattr(rag_config, "enabled", True)
         self.rag_db_path = Path(rag_config.rag_db_path)
         self.chunk_size = rag_config.chunk_size
         self.chunk_overlap = rag_config.chunk_overlap
+        if not self.enabled:
+            self.embeddings = None
+            self.client = None
+            return
+        self.embeddings = MultiModelEmbeddings(rag_config)
         self.client = PersistentClient(path=str(self.rag_db_path))
 
     def create_database(self, db_name: str, article_text: str):
         """Create a new persistent ChromaDB database (auto‑persisted)."""
+        if not self.enabled:
+            return
         if not db_name:
             raise ValueError("Database name is required")
         if not article_text:
@@ -295,6 +302,8 @@ class VectorDatabaseManager:
         method remains available for backward-compatible extraction runs.
         """
 
+        if not self.enabled:
+            raise RuntimeError("Vector retrieval is disabled for this processing run")
         if not db_name:
             raise ValueError("Database name is required")
         chunks = list(chunks)
@@ -360,6 +369,8 @@ class VectorDatabaseManager:
 
     def query_database(self, db_name: str, query: str, top_k: int = 5):
         """Query the persisted ChromaDB database."""
+        if not self.enabled:
+            raise RuntimeError("Vector retrieval is disabled for this processing run")
         db_location = self.rag_db_path / db_name
         if not db_location.exists():
             raise ValueError(f"Database {db_name} not found at {db_location}")
@@ -386,5 +397,9 @@ class VectorDatabaseManager:
 
     def database_exists(self, db_name: str) -> bool:
         """Check if a vector database exists."""
+        if not self.enabled:
+            # Legacy processors interpret True as "no creation needed". This
+            # keeps their optional RAG side effect out of the canonical run.
+            return True
         db_location = self.rag_db_path / db_name
         return db_location.exists()

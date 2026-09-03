@@ -131,6 +131,7 @@ class ComProScanner:
         failed_automated_report_path: Optional[str] = None,
         allow_missing_doi: bool = False,
         allow_metadata_network: bool = True,
+        create_vector_database: bool = True,
     ):
         """Process articles for the main property keyword.
 
@@ -182,6 +183,7 @@ class ComProScanner:
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap,
             embedding_model=embedding_model,
+            enabled=create_vector_database,
         )
 
         routed_doi_list = {

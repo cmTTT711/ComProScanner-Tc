@@ -26,6 +26,23 @@ from comproscanner.utils.error_handler import ValueErrorHandler, BaseError
 from comproscanner.utils.configs import RAGConfig
 
 
+def test_disabled_vector_manager_loads_no_model_or_database(tmp_path):
+    config = RAGConfig(rag_db_path=str(tmp_path), enabled=False)
+    with patch(
+        "comproscanner.utils.database_manager.MultiModelEmbeddings"
+    ) as embeddings, patch(
+        "comproscanner.utils.database_manager.PersistentClient"
+    ) as client:
+        manager = VectorDatabaseManager(config)
+
+    embeddings.assert_not_called()
+    client.assert_not_called()
+    assert manager.database_exists("legacy-side-effect") is True
+    assert manager.create_database("legacy-side-effect", "source text") is None
+    with pytest.raises(RuntimeError, match="disabled"):
+        manager.query_database("legacy-side-effect", "query")
+
+
 @pytest.fixture
 def sample_df():
     """Fixture to create a sample DataFrame for testing"""

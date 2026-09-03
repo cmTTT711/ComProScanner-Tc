@@ -67,6 +67,7 @@ def test_execute_forwards_plan_without_importing_real_scanner(tmp_path):
     assert kwargs["source_list"] == ["pdfs"]
     assert kwargs["allow_missing_doi"] is True
     assert kwargs["allow_metadata_network"] is False
+    assert kwargs["create_vector_database"] is False
 
 
 def test_read_doi_file_normalizes_url_and_deduplicates(tmp_path):

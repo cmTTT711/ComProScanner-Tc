@@ -37,3 +37,18 @@ def test_normalize_resolves_relative_figure_manifest_from_processor_workspace(tm
     assert result.loc[0, "figures_manifest_path"] == str(
         (workspace / "figures" / "paper-a.json").resolve()
     )
+
+
+def test_normalize_builds_full_text_for_legacy_section_rows(tmp_path):
+    source = tmp_path / "legacy.csv"
+    pd.DataFrame([{
+        "doi": "10.1/full",
+        "abstract": "abstract marker",
+        "introduction": "introduction marker",
+        "results_discussion": "result marker",
+    }]).to_csv(source, index=False)
+    output = normalize_article_csvs([source], tmp_path / "article.csv")
+    full_text = pd.read_csv(output).loc[0, "full_text"]
+    assert "abstract marker" in full_text
+    assert "introduction marker" in full_text
+    assert "result marker" in full_text

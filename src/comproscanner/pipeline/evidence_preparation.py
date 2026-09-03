@@ -108,10 +108,15 @@ class EvidencePreparationPipeline:
         vector_matches: Iterable[TextChunkMatch] = (),
     ) -> tuple[list, list[Evidence]]:
         document_id = str(row["document_id"])
-        sections = {}
-        for section in TEXT_SECTIONS:
-            value = row.get(section, "")
-            sections[section] = "" if value is None or str(value) == "nan" else str(value)
+        full_text = row.get("full_text", "")
+        full_text = "" if full_text is None or str(full_text) == "nan" else str(full_text)
+        if full_text.strip():
+            sections = {"full_text": full_text}
+        else:
+            sections = {}
+            for section in TEXT_SECTIONS:
+                value = row.get(section, "")
+                sections[section] = "" if value is None or str(value) == "nan" else str(value)
         chunks = self.chunker.split_article(document_id, sections)
         rule_matches = self.rule_provider.select(chunks) if self.rule_provider else []
         matches = [*rule_matches, *vector_matches]

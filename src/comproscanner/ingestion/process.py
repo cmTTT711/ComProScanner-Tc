@@ -140,6 +140,10 @@ def execute_processing_plan(
             "is_save_xml": save_xml,
             "is_save_pdf": save_pdf,
             "allow_metadata_network": plan.metadata_network_allowed,
+            # Canonical execution builds Evidence after Article normalization.
+            # The legacy per-processor vector database is an optional tool, not
+            # a second hidden extraction path.
+            "create_vector_database": False,
         }
     )
     scanner.process_articles(**kwargs)

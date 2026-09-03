@@ -36,8 +36,12 @@ comproscanner normalize --csv first.csv --csv second.csv --output article.csv
 ```
 
 The command sanitizes NUL bytes, upgrades legacy columns, validates the schema,
-and de-duplicates by `document_id`. `comproscanner sources` lists the registered
-raw inputs and their credential/network requirements.
+and de-duplicates by `document_id`. `full_text` is the authoritative textual
+payload: local PDF parsing writes it directly, while the legacy publisher
+adapter composes it from all preserved sections. `paper_id`, `source_path`, and
+`file_hash` keep local corpus identity independent of DOI availability.
+`comproscanner sources` lists the registered raw inputs and their
+credential/network requirements.
 
 The processor entry point is likewise shared:
 
@@ -50,7 +54,10 @@ comproscanner process-articles --source springer --doi-file dois.txt
 These examples only print validated plans. The first two map to the existing
 `PDFsProcessor`; publisher names map to their existing processors. Local plans
 disable DOI/metadata lookups unless network execution is explicitly enabled.
-This preserves parsing behavior while removing the need for a new Python runner
+The processors only produce Article data in this workflow: their historical
+per-article vector-database side effect is disabled. Vector retrieval remains
+available as an explicit Evidence provider. This preserves the tools while
+removing the second hidden extraction path and the need for a new Python runner
 for each batch.
 
 ## Stable pipeline
@@ -78,9 +85,12 @@ selection do not belong in that preset.
 `schemas/article_csv.py` defines the CSV columns shared by local PDFs and every
 publisher processor. Historical processor frames pass through a non-lossy
 adapter while processors are migrated. Missing sections are allowed; missing
-columns or document identifiers are not.
+columns or document identifiers are not. `is_property_mentioned` is retained
+only as compatibility/diagnostic metadata; it never removes Article text or
+gates the canonical Evidence stage.
 
-`chunking/text_chunker.py` produces the only normal-text segmentation. Chunks
+`chunking/text_chunker.py` produces the only normal-text segmentation from
+`full_text`. Chunks
 never cross section boundaries, prefer natural paragraphs, and split oversized
 paragraphs with overlap. Fixed three-sentence context is not used.
 

@@ -13,6 +13,7 @@ ARTICLE_CSV_COLUMNS = (
     "paper_id",
     "doi",
     "article_title",
+    "full_text",
     "abstract",
     "introduction",
     "exp_methods",
@@ -61,6 +62,7 @@ def normalize_legacy_article_frame(
         "paper_id": "",
         "doi": "",
         "article_title": "",
+        "full_text": "",
         "abstract": "",
         "introduction": "",
         "exp_methods": "",
@@ -79,6 +81,15 @@ def normalize_legacy_article_frame(
     for column, default in defaults.items():
         if column not in normalized:
             normalized[column] = default
+    section_columns = [
+        "article_title", "abstract", "introduction", "exp_methods",
+        "comp_methods", "results_discussion", "conclusion",
+    ]
+    missing_full_text = normalized["full_text"].fillna("").astype(str).str.strip().eq("")
+    if missing_full_text.any():
+        normalized.loc[missing_full_text, "full_text"] = normalized.loc[
+            missing_full_text, section_columns
+        ].fillna("").astype(str).agg("\n\n".join, axis=1).str.strip()
     for index, value in normalized["results_discussion"].fillna("").items():
         table_value = normalized.at[index, "tables"]
         if not pd.isna(table_value) and str(table_value).strip():

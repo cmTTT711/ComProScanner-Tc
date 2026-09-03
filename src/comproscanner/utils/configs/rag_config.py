@@ -34,6 +34,7 @@ class RAGConfig:
         rag_max_tokens: Optional[int] = None,
         rag_top_k: Optional[int] = None,
         rag_base_url: Optional[str] = None,
+        enabled: bool = True,
     ):
         self.rag_db_path = rag_db_path or self.DEFAULT_DB_PATH
         self.chunk_size = chunk_size or self.DEFAULT_CHUNK_SIZE
@@ -43,3 +44,4 @@ class RAGConfig:
         self.rag_max_tokens = rag_max_tokens or self.DEFAULT_MAX_TOKENS
         self.rag_top_k = rag_top_k or self.DEFAULT_TOP_K
         self.rag_base_url = rag_base_url
+        self.enabled = enabled

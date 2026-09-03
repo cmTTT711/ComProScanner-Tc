@@ -373,12 +373,12 @@ class TestPDFToMarkdownText:
         assert result_df.iloc[0]["doi"] == "10.1000/test.doi"
         assert result_df.iloc[0]["article_title"] == "Test Article"
         assert result_df.iloc[0]["is_property_mentioned"] == "0"
-        assert result_df.iloc[0]["abstract"] == ""
-        assert result_df.iloc[0]["introduction"] == ""
-        assert result_df.iloc[0]["exp_methods"] == ""
+        assert "abstract without any relevant properties" in result_df.iloc[0]["abstract"]
+        assert "introduction" in result_df.iloc[0]["introduction"]
+        assert "methods" in result_df.iloc[0]["exp_methods"]
         assert result_df.iloc[0]["comp_methods"] == ""
-        assert result_df.iloc[0]["results_discussion"] == ""
-        assert result_df.iloc[0]["conclusion"] == ""
+        assert "results" in result_df.iloc[0]["results_discussion"]
+        assert "conclusion" in result_df.iloc[0]["conclusion"]
         mock_vector_db_manager.create_database.assert_not_called()
 
     @patch("comproscanner.utils.pdf_to_markdown_text.DocumentConverter")
