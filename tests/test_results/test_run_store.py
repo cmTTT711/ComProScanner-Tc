@@ -23,3 +23,14 @@ def test_run_store_refuses_path_escape(tmp_path):
 def test_run_id_cannot_be_a_path(tmp_path):
     with pytest.raises(ValueError, match="path separators"):
         RunStore(tmp_path, "runs/tc")
+
+
+def test_run_store_tracks_resumable_stage_status(tmp_path):
+    store = RunStore(tmp_path, "resumable")
+    store.initialize()
+    assert not store.stage_completed("prepare")
+    store.update_stage("prepare", "RUNNING")
+    assert not store.stage_completed("prepare")
+    store.update_stage("prepare", "COMPLETE", exit_code=0)
+    assert store.stage_completed("prepare")
+    assert store.read_json("stage_status.json")["prepare"]["exit_code"] == 0

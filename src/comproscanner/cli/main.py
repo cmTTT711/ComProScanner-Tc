@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 
 from ..chunking import TextChunkConfig
-from ..agents import EvidenceAgentFlow
+from ..agents import EvidenceAgentFlow, EvidenceDecision, EvidenceExtraction
 from ..evidence import Evidence, EvidenceType, RetrievalMethod
 from ..evidence.providers import VectorTextEvidenceProvider
 from ..evidence.vector_store import CanonicalChunkVectorStore
@@ -235,6 +235,21 @@ def _prepare_evidence(args: argparse.Namespace) -> int:
     manifest, failures, all_evidence = [], [], []
     for row_number, row in frame.iterrows():
         document_id = str(row["document_id"])
+        cached_path = store.evidence_dir / f"{_safe_file_stem(document_id)}.json"
+        if getattr(args, "resume", False) and cached_path.is_file():
+            payload = json.loads(cached_path.read_text(encoding="utf-8"))
+            all_evidence.extend(payload.get("evidence", []))
+            manifest.append(
+                {
+                    "row": int(row_number),
+                    "document_id": document_id,
+                    "status": payload.get("status", "ERROR"),
+                    "chunk_count": len(payload.get("chunks", [])),
+                    "evidence_count": len(payload.get("evidence", [])),
+                    "resumed": True,
+                }
+            )
+            continue
         try:
             chunks, rule_evidence = pipeline.prepare_all(row)
             vector_matches = []
@@ -274,6 +289,10 @@ def _prepare_evidence(args: argparse.Namespace) -> int:
                 "status": "ERROR",
                 "error": f"{type(exc).__name__}: {exc}",
             }
+            store.write_json(
+                f"evidence/{_safe_file_stem(document_id)}.json",
+                {**failure, "chunks": [], "evidence": []},
+            )
             failures.append(failure)
             manifest.append(failure)
 
@@ -374,6 +393,8 @@ def _scientific_instructions(preset) -> str:
 
 
 def _extract_evidence(args: argparse.Namespace) -> int:
+    if getattr(args, "resume", False) and args.force:
+        raise ValueError("--resume and --force cannot be used together")
     if not args.execute:
         raise SystemExit(
             "External model calls are disabled. Re-run with --execute only after explicit approval."
@@ -396,6 +417,9 @@ def _extract_evidence(args: argparse.Namespace) -> int:
             f"Evidence file does not exist; run prepare-evidence first: {evidence_path}"
         )
     prediction_path = store.run_dir / "predictions.json"
+    if prediction_path.exists() and getattr(args, "resume", False):
+        print(prediction_path)
+        return 0
     if prediction_path.exists() and not args.force:
         raise FileExistsError(
             f"Predictions already exist: {prediction_path}. Use --force to replace this run output."
@@ -435,7 +459,40 @@ def _extract_evidence(args: argparse.Namespace) -> int:
                 api_key_env=args.vision_api_key_env,
             )
         )
-    results = EvidenceAgentFlow(identifier, extractor, figure_interpreter).run(evidence)
+    flow = EvidenceAgentFlow(identifier, extractor, figure_interpreter)
+    results = []
+    for item in evidence:
+        cache_name = f"papers/{_safe_file_stem(item.evidence_id)}.json"
+        cached = store.read_json(cache_name) if getattr(args, "resume", False) else None
+        if cached is not None:
+            decision_data = cached.get("decision", {})
+            results.append(
+                EvidenceExtraction(
+                    evidence_id=item.evidence_id,
+                    decision=EvidenceDecision(
+                        item.evidence_id,
+                        bool(decision_data.get("accepted")),
+                        str(decision_data.get("raw_response", "")),
+                    ),
+                    extracted=cached.get("extracted", {}),
+                    error=cached.get("error"),
+                )
+            )
+            continue
+        result = flow.run([item])[0]
+        store.write_json(
+            cache_name,
+            {
+                "evidence_id": result.evidence_id,
+                "decision": {
+                    "accepted": result.decision.accepted,
+                    "raw_response": result.decision.raw_response,
+                },
+                "extracted": result.extracted,
+                "error": result.error,
+            },
+        )
+        results.append(result)
     evidence_by_id = {item.evidence_id: item for item in evidence}
     facts, failures, usage = [], [], []
     for result in results:
@@ -549,23 +606,63 @@ def _evaluate(args: argparse.Namespace) -> int:
 _RUN_STAGES = ("prepare", "extract", "review", "evaluate")
 
 
+def _processor_csv_paths(workspace: Path, preset, plan) -> list[Path]:
+    directory = workspace / "results" / "extracted_data" / preset.main_property_keyword
+    labels = (
+        "pdf" if source in {"manual_pdf", "downloaded_pdf"} else source
+        for source in plan.requested_sources
+    )
+    paths = [
+        directory / f"{label}_{preset.main_property_keyword}_paragraphs.csv"
+        for label in dict.fromkeys(labels)
+    ]
+    return [path for path in paths if path.is_file()]
+
+
+def _run_stage(store: RunStore, name: str, action, *, resume: bool, artifact: Path | None = None):
+    if resume and store.stage_completed(name) and (artifact is None or artifact.exists()):
+        return 0
+    store.update_stage(name, "RUNNING")
+    try:
+        code = action()
+    except Exception as exc:
+        store.update_stage(name, "ERROR", error=f"{type(exc).__name__}: {exc}")
+        raise
+    status = "COMPLETE" if not code else "COMPLETE_WITH_ERRORS"
+    store.update_stage(name, status, exit_code=int(code or 0))
+    return int(code or 0)
+
+
 def _run_pipeline(args: argparse.Namespace) -> int:
+    if args.resume and args.force:
+        raise ValueError("--resume and --force cannot be used together")
     run_id = args.run_id or _default_run_id(args.preset)
     source_csv = Path(args.csv).resolve() if args.csv else (
         Path(args.outputs).resolve() / "runs" / run_id / "article.csv"
     )
     through_index = _RUN_STAGES.index(args.through)
+    preset = get_preset(args.preset)
+    dois = read_doi_file(args.doi_file) if args.source else None
+    processing_plan = None
+    if args.source:
+        processing_plan = build_processing_plan(
+            preset=args.preset, sources=args.source, folder_path=args.folder,
+            dois=dois, execute_network=args.execute_network,
+        )
     plan = {
         "command": "run",
         "run_id": run_id,
         "preset": args.preset,
         "source_csv": str(source_csv),
         "processor_csvs": [str(Path(path).resolve()) for path in args.processor_csv],
+        "article_sources": list(args.source or []),
+        "article_processing": processing_plan.to_dict() if processing_plan else None,
         "through": args.through,
         "evidence_providers": list(args.provider or get_preset(args.preset).evidence_providers),
         "material_normalizer": args.material_normalizer,
         "model_calls": through_index >= 1,
         "network_material_normalization": args.material_normalizer == "material-parser-api",
+        "resume": bool(args.resume),
     }
     print(json.dumps(plan, ensure_ascii=False, indent=2))
     if not args.execute_pipeline:
@@ -576,8 +673,61 @@ def _run_pipeline(args: argparse.Namespace) -> int:
         raise ValueError("--gold is required when --through evaluate")
     if args.material_normalizer == "material-parser-api" and not args.execute_network:
         raise SystemExit("Material Parser API normalization requires --execute-network.")
-    if args.processor_csv:
-        normalize_article_csvs(args.processor_csv, source_csv, source_type=args.source_type)
+    if processing_plan and processing_plan.network_required and not args.execute_network:
+        raise SystemExit("Selected article sources require --execute-network before processing.")
+
+    store = RunStore(args.outputs, run_id)
+    store.initialize()
+    failures_seen = False
+    if processing_plan:
+        workspace = store.run_dir / "processor_workspace"
+
+        def process_sources():
+            workspace.mkdir(parents=True, exist_ok=True)
+            previous = Path.cwd()
+            try:
+                os.chdir(workspace)
+                execute_processing_plan(
+                    processing_plan,
+                    property_keywords=preset.property_keywords,
+                    main_property_keyword=preset.main_property_keyword,
+                    processing_kwargs=preset.processing_kwargs,
+                    dois=dois, save_xml=args.save_xml, save_pdf=args.save_pdf,
+                )
+            finally:
+                os.chdir(previous)
+            if not _processor_csv_paths(workspace, preset, processing_plan):
+                raise FileNotFoundError(
+                    "Article processing completed without producing an expected processor CSV"
+                )
+            return 0
+
+        _run_stage(store, "process", process_sources, resume=args.resume)
+
+        def normalize_processed():
+            paths = _processor_csv_paths(workspace, preset, processing_plan)
+            if not paths:
+                raise FileNotFoundError("No processor CSV is available for normalization")
+            normalize_article_csvs(
+                paths, source_csv, source_type=args.source_type, source_root=workspace
+            )
+            return 0
+
+        _run_stage(
+            store, "normalize", normalize_processed, resume=args.resume,
+            artifact=source_csv,
+        )
+    elif args.processor_csv:
+        def normalize_supplied():
+            normalize_article_csvs(
+                args.processor_csv, source_csv, source_type=args.source_type
+            )
+            return 0
+
+        _run_stage(
+            store, "normalize", normalize_supplied, resume=args.resume,
+            artifact=source_csv,
+        )
     elif not source_csv.is_file():
         raise FileNotFoundError(f"Article CSV does not exist: {source_csv}")
 
@@ -586,10 +736,15 @@ def _run_pipeline(args: argparse.Namespace) -> int:
         source_type=args.source_type, target_words=args.target_words,
         max_words=args.max_words, overlap_words=args.overlap_words,
         with_rag=args.with_rag, rag_top_k=args.rag_top_k, provider=args.provider,
+        resume=args.resume,
     )
-    code = _prepare_evidence(prepare_args)
-    if code or through_index == 0:
-        return code
+    code = _run_stage(
+        store, "prepare", lambda: _prepare_evidence(prepare_args),
+        resume=args.resume, artifact=store.evidence_dir / "all.json",
+    )
+    failures_seen |= bool(code)
+    if through_index == 0:
+        return int(failures_seen)
     extract_args = argparse.Namespace(
         run_id=run_id, preset=args.preset, outputs=args.outputs,
         identifier_model=args.identifier_model, extractor_model=args.extractor_model,
@@ -598,16 +753,28 @@ def _run_pipeline(args: argparse.Namespace) -> int:
         timeout=args.timeout, execute=True, force=args.force,
         material_normalizer=args.material_normalizer,
         execute_network=args.execute_network,
+        resume=args.resume,
     )
-    code = _extract_evidence(extract_args)
-    if code or through_index == 1:
-        return code
-    code = _review(argparse.Namespace(run_id=run_id, outputs=args.outputs))
-    if code or through_index == 2:
-        return code
-    return _evaluate(
-        argparse.Namespace(run_id=run_id, outputs=args.outputs, gold=args.gold)
+    code = _run_stage(
+        store, "extract", lambda: _extract_evidence(extract_args),
+        resume=args.resume, artifact=store.run_dir / "predictions.json",
     )
+    failures_seen |= bool(code)
+    if through_index == 1:
+        return int(failures_seen)
+    _run_stage(
+        store, "review",
+        lambda: _review(argparse.Namespace(run_id=run_id, outputs=args.outputs)),
+        resume=args.resume, artifact=store.run_dir / "review.xlsx",
+    )
+    if through_index == 2:
+        return int(failures_seen)
+    _run_stage(
+        store, "evaluate",
+        lambda: _evaluate(argparse.Namespace(run_id=run_id, outputs=args.outputs, gold=args.gold)),
+        resume=args.resume, artifact=store.run_dir / "metrics.json",
+    )
+    return int(failures_seen)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -682,6 +849,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="Override preset Evidence providers; repeat for multiple providers",
     )
     prepare.add_argument("--rag-top-k", type=int, default=3)
+    prepare.add_argument("--resume", action="store_true")
     extract = subparsers.add_parser(
         "extract", help="Run Qwen and DeepSeek over prepared Evidence"
     )
@@ -701,6 +869,7 @@ def build_parser() -> argparse.ArgumentParser:
     extract.add_argument("--timeout", type=int, default=180)
     extract.add_argument("--execute", action="store_true")
     extract.add_argument("--force", action="store_true")
+    extract.add_argument("--resume", action="store_true")
     extract.add_argument(
         "--material-normalizer",
         choices=("identity", "material-parser-api"),
@@ -725,6 +894,14 @@ def build_parser() -> argparse.ArgumentParser:
         "--processor-csv", action="append", default=[],
         help="Processor CSV to normalize first; repeat for multiple files",
     )
+    inputs.add_argument(
+        "--source", action="append",
+        help="Raw registered article source to process first; repeat for multiple sources",
+    )
+    run.add_argument("--folder", help="PDF folder for manual_pdf/downloaded_pdf")
+    run.add_argument("--doi-file", help="UTF-8 file containing one DOI per line")
+    run.add_argument("--save-xml", action="store_true")
+    run.add_argument("--save-pdf", action="store_true")
     run.add_argument("--preset", default="curie_temperature")
     run.add_argument("--run-id")
     run.add_argument("--outputs", default="outputs")
@@ -748,6 +925,7 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--execute-models", action="store_true")
     run.add_argument("--execute-network", action="store_true")
     run.add_argument("--force", action="store_true")
+    run.add_argument("--resume", action="store_true")
     return parser
 
 

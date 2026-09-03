@@ -55,3 +55,18 @@ class RunStore:
             if os.path.exists(temporary_name):
                 os.unlink(temporary_name)
         return target
+
+    def read_json(self, relative_name: str, default: Any = None) -> Any:
+        target = self.run_dir / relative_name
+        if not target.is_file():
+            return default
+        return json.loads(target.read_text(encoding="utf-8"))
+
+    def update_stage(self, stage: str, status: str, **details: Any) -> Path:
+        stages = self.read_json("stage_status.json", {})
+        stages[stage] = {"status": status, **details}
+        return self.write_json("stage_status.json", stages)
+
+    def stage_completed(self, stage: str) -> bool:
+        stages = self.read_json("stage_status.json", {})
+        return stages.get(stage, {}).get("status") == "COMPLETE"

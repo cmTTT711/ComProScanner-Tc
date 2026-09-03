@@ -77,7 +77,18 @@ comproscanner run --csv article.csv --run-id tc_check --through prepare --execut
 
 # Evidence -> prediction -> review (external model calls)
 comproscanner run --csv article.csv --run-id tc_check --execute-pipeline --execute-models
+
+# Raw local PDFs -> processor -> Article -> Evidence, in one isolated run
+comproscanner run --source manual_pdf --folder pdfs/manual --run-id tc_pdf --through prepare --execute-pipeline
+
+# Continue an interrupted run without repeating completed papers or Evidence
+comproscanner run --source manual_pdf --folder pdfs/manual --run-id tc_pdf --through prepare --execute-pipeline --resume
 ```
+
+Each run records stage state in `stage_status.json`. Per-paper Evidence and
+per-Evidence extraction results are checkpointed inside that run. `--resume`
+reuses completed and failed item records; `--force` is the explicit replacement
+mode and cannot be combined with `--resume`.
 
 Evidence providers can be overridden by repeating `--provider` with any of
 `rule_text`, `physbert`, `table`, `figure`, and `equation`. The Tc preset keeps

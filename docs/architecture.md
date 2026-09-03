@@ -117,11 +117,20 @@ are resolved through `EvidenceProviderRegistry`; `physbert` uses the same
 canonical chunks as rule retrieval and remains opt-in because it loads a local
 embedding model.
 
-`comproscanner run` orchestrates normalization (when processor CSVs are given),
-Evidence preparation, extraction, review, and evaluation. It prints a plan by
-default. `--execute-pipeline` permits local stages, `--execute-models` permits
-Qwen/DeepSeek/VLM stages, and `--execute-network` separately permits optional
-network tools such as Material Parsers.
+`comproscanner run` accepts an Article CSV, processor CSVs, or registered raw
+PDF/publisher sources. Raw processors execute in the run's own
+`processor_workspace`, then normalize into that run's canonical `article.csv`
+before Evidence preparation, extraction, review, and evaluation. It prints a
+plan by default. `--execute-pipeline` permits processing and local stages,
+`--execute-models` permits Qwen/DeepSeek/VLM stages, and `--execute-network`
+separately permits publisher and optional network tools such as Material
+Parsers.
+
+Each stage is recorded in `stage_status.json`; Evidence preparation checkpoints
+each document and extraction checkpoints each Evidence. `--resume` skips those
+completed records, including recorded failures, so an interruption or one bad
+paper does not repeat completed work. Replacement is explicit through
+`--force`, which is mutually exclusive with `--resume`.
 
 Fact normalization is also pluggable. The safe default preserves the exact
 reported material. `material-parser-api` adapts the historical formula parser

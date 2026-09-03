@@ -17,6 +17,7 @@ def normalize_article_csvs(
     destination: str | Path,
     *,
     source_type: str = "mixed",
+    source_root: str | Path | None = None,
 ) -> Path:
     if not sources:
         raise ValueError("At least one article CSV is required")
@@ -27,6 +28,15 @@ def normalize_article_csvs(
         frame = normalize_legacy_article_frame(
             frame, source_type=source_type, source_path=str(path)
         )
+        if source_root is not None:
+            root = Path(source_root).resolve()
+            frame["figures_manifest_path"] = frame["figures_manifest_path"].map(
+                lambda value: (
+                    str((root / str(value)).resolve())
+                    if str(value).strip() and not Path(str(value)).is_absolute()
+                    else str(value)
+                )
+            )
         validate_article_frame(frame)
         frames.append(frame)
     combined = pd.concat(frames, ignore_index=True)
