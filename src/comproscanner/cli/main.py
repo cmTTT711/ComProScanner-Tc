@@ -16,7 +16,13 @@ from ..evidence.vector_store import CanonicalChunkVectorStore
 from ..pipeline import EvidencePreparationPipeline
 from ..presets import get_preset, list_presets
 from ..results import RunStore, write_review_workbook
-from ..facts import Fact, FactValue, merge_facts
+from ..facts import (
+    Fact,
+    FactProcessor,
+    FactValue,
+    MaterialParserAPINormalizer,
+    merge_facts,
+)
 from ..evaluation import score_exact_facts
 from ..schemas import normalize_legacy_article_frame, validate_article_frame
 from ..ingestion import (
@@ -195,6 +201,9 @@ def _acquire_oa(args: argparse.Namespace) -> int:
 
 def _prepare_evidence(args: argparse.Namespace) -> int:
     preset = get_preset(args.preset)
+    provider_names = tuple(args.provider or preset.evidence_providers)
+    if args.with_rag and "physbert" not in provider_names:
+        provider_names = (*provider_names, "physbert")
     source = Path(args.csv).resolve()
     frame = read_csv_sanitizing_nul(str(source))
     frame = normalize_legacy_article_frame(
@@ -212,9 +221,10 @@ def _prepare_evidence(args: argparse.Namespace) -> int:
             max_words=args.max_words,
             overlap_words=args.overlap_words,
         ),
+        provider_names=provider_names,
     )
     vector_provider = None
-    if args.with_rag:
+    if "physbert" in provider_names:
         from ..utils.database_manager import VectorDatabaseManager
 
         rag_path = store.run_dir / "vector_db"
@@ -272,6 +282,7 @@ def _prepare_evidence(args: argparse.Namespace) -> int:
         "preset": args.preset,
         "source_csv": str(source),
         "with_rag": bool(args.with_rag),
+        "evidence_providers": list(provider_names),
         "external_llm_calls": False,
         "chunking": {
             "target_words": args.target_words,
@@ -374,6 +385,10 @@ def _extract_evidence(args: argparse.Namespace) -> int:
         ModelSettings,
     )
     preset = get_preset(args.preset)
+    if args.material_normalizer == "material-parser-api" and not args.execute_network:
+        raise SystemExit(
+            "Material Parser API normalization requires --execute-network."
+        )
     store = RunStore(args.outputs, args.run_id)
     evidence_path = store.run_dir / "evidence" / "all.json"
     if not evidence_path.exists():
@@ -464,7 +479,13 @@ def _extract_evidence(args: argparse.Namespace) -> int:
                     conditions=item.get("conditions") or {},
                 )
             )
-    merged = merge_facts(facts)
+    normalizer = (
+        MaterialParserAPINormalizer()
+        if args.material_normalizer == "material-parser-api"
+        else None
+    )
+    processor = FactProcessor(normalizer)
+    merged = merge_facts(processor.process(fact) for fact in facts)
     store.write_json("predictions.json", [fact.to_dict() for fact in merged])
     store.write_json("failures.json", failures)
     store.write_json("tool_usage.json", usage)
@@ -476,6 +497,7 @@ def _extract_evidence(args: argparse.Namespace) -> int:
             "facts_before_merge": len(facts),
             "facts_after_merge": len(merged),
             "errors": len(failures),
+            "material_normalizer": args.material_normalizer,
         },
     )
     return 1 if failures else 0
@@ -522,6 +544,70 @@ def _evaluate(args: argparse.Namespace) -> int:
     destination = store.write_json("metrics.json", metrics.to_dict())
     print(destination)
     return 0
+
+
+_RUN_STAGES = ("prepare", "extract", "review", "evaluate")
+
+
+def _run_pipeline(args: argparse.Namespace) -> int:
+    run_id = args.run_id or _default_run_id(args.preset)
+    source_csv = Path(args.csv).resolve() if args.csv else (
+        Path(args.outputs).resolve() / "runs" / run_id / "article.csv"
+    )
+    through_index = _RUN_STAGES.index(args.through)
+    plan = {
+        "command": "run",
+        "run_id": run_id,
+        "preset": args.preset,
+        "source_csv": str(source_csv),
+        "processor_csvs": [str(Path(path).resolve()) for path in args.processor_csv],
+        "through": args.through,
+        "evidence_providers": list(args.provider or get_preset(args.preset).evidence_providers),
+        "material_normalizer": args.material_normalizer,
+        "model_calls": through_index >= 1,
+        "network_material_normalization": args.material_normalizer == "material-parser-api",
+    }
+    print(json.dumps(plan, ensure_ascii=False, indent=2))
+    if not args.execute_pipeline:
+        return 0
+    if through_index >= 1 and not args.execute_models:
+        raise SystemExit("Stages extract/review/evaluate require --execute-models.")
+    if through_index >= 3 and not args.gold:
+        raise ValueError("--gold is required when --through evaluate")
+    if args.material_normalizer == "material-parser-api" and not args.execute_network:
+        raise SystemExit("Material Parser API normalization requires --execute-network.")
+    if args.processor_csv:
+        normalize_article_csvs(args.processor_csv, source_csv, source_type=args.source_type)
+    elif not source_csv.is_file():
+        raise FileNotFoundError(f"Article CSV does not exist: {source_csv}")
+
+    prepare_args = argparse.Namespace(
+        csv=str(source_csv), preset=args.preset, outputs=args.outputs, run_id=run_id,
+        source_type=args.source_type, target_words=args.target_words,
+        max_words=args.max_words, overlap_words=args.overlap_words,
+        with_rag=args.with_rag, rag_top_k=args.rag_top_k, provider=args.provider,
+    )
+    code = _prepare_evidence(prepare_args)
+    if code or through_index == 0:
+        return code
+    extract_args = argparse.Namespace(
+        run_id=run_id, preset=args.preset, outputs=args.outputs,
+        identifier_model=args.identifier_model, extractor_model=args.extractor_model,
+        extractor_api_key_env=args.extractor_api_key_env,
+        vision_model=args.vision_model, vision_api_key_env=args.vision_api_key_env,
+        timeout=args.timeout, execute=True, force=args.force,
+        material_normalizer=args.material_normalizer,
+        execute_network=args.execute_network,
+    )
+    code = _extract_evidence(extract_args)
+    if code or through_index == 1:
+        return code
+    code = _review(argparse.Namespace(run_id=run_id, outputs=args.outputs))
+    if code or through_index == 2:
+        return code
+    return _evaluate(
+        argparse.Namespace(run_id=run_id, outputs=args.outputs, gold=args.gold)
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -590,6 +676,11 @@ def build_parser() -> argparse.ArgumentParser:
     prepare.add_argument("--max-words", type=int, default=360)
     prepare.add_argument("--overlap-words", type=int, default=60)
     prepare.add_argument("--with-rag", action="store_true")
+    prepare.add_argument(
+        "--provider", action="append",
+        choices=("rule_text", "physbert", "table", "figure", "equation"),
+        help="Override preset Evidence providers; repeat for multiple providers",
+    )
     prepare.add_argument("--rag-top-k", type=int, default=3)
     extract = subparsers.add_parser(
         "extract", help="Run Qwen and DeepSeek over prepared Evidence"
@@ -610,6 +701,12 @@ def build_parser() -> argparse.ArgumentParser:
     extract.add_argument("--timeout", type=int, default=180)
     extract.add_argument("--execute", action="store_true")
     extract.add_argument("--force", action="store_true")
+    extract.add_argument(
+        "--material-normalizer",
+        choices=("identity", "material-parser-api"),
+        default="identity",
+    )
+    extract.add_argument("--execute-network", action="store_true")
     review = subparsers.add_parser(
         "review", help="Create a one-Fact-per-row workbook with original Evidence"
     )
@@ -619,6 +716,38 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate.add_argument("--run-id", required=True)
     evaluate.add_argument("--gold", required=True)
     evaluate.add_argument("--outputs", default="outputs")
+    run = subparsers.add_parser(
+        "run", help="Plan or execute the canonical Article-to-evaluation workflow"
+    )
+    inputs = run.add_mutually_exclusive_group(required=True)
+    inputs.add_argument("--csv", help="Existing canonical or legacy Article CSV")
+    inputs.add_argument(
+        "--processor-csv", action="append", default=[],
+        help="Processor CSV to normalize first; repeat for multiple files",
+    )
+    run.add_argument("--preset", default="curie_temperature")
+    run.add_argument("--run-id")
+    run.add_argument("--outputs", default="outputs")
+    run.add_argument("--source-type", default="mixed")
+    run.add_argument("--through", choices=_RUN_STAGES, default="review")
+    run.add_argument("--gold")
+    run.add_argument("--provider", action="append", choices=("rule_text", "physbert", "table", "figure", "equation"))
+    run.add_argument("--with-rag", action="store_true")
+    run.add_argument("--rag-top-k", type=int, default=3)
+    run.add_argument("--target-words", type=int, default=220)
+    run.add_argument("--max-words", type=int, default=360)
+    run.add_argument("--overlap-words", type=int, default=60)
+    run.add_argument("--identifier-model", default="openai/qwen-flash")
+    run.add_argument("--extractor-model", default="deepseek/deepseek-v4-flash")
+    run.add_argument("--extractor-api-key-env")
+    run.add_argument("--vision-model")
+    run.add_argument("--vision-api-key-env")
+    run.add_argument("--timeout", type=int, default=180)
+    run.add_argument("--material-normalizer", choices=("identity", "material-parser-api"), default="identity")
+    run.add_argument("--execute-pipeline", action="store_true")
+    run.add_argument("--execute-models", action="store_true")
+    run.add_argument("--execute-network", action="store_true")
+    run.add_argument("--force", action="store_true")
     return parser
 
 
@@ -665,4 +794,6 @@ def main(argv: list[str] | None = None) -> int:
         return _review(args)
     if args.command == "evaluate":
         return _evaluate(args)
+    if args.command == "run":
+        return _run_pipeline(args)
     raise AssertionError(f"Unhandled command: {args.command}")

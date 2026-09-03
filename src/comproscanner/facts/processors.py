@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from typing import Protocol
 
 from .models import Fact
@@ -17,6 +18,47 @@ class IdentityMaterialNormalizer:
     def normalize(self, material: str) -> tuple[str, str]:
         value = material.strip()
         return value, value
+
+
+class MaterialParserAPINormalizer:
+    """Resolve formulas through the legacy Material Parsers HTTP service.
+
+    The adapter is independent from CrewAI and is only constructed when a run
+    explicitly enables network-backed material normalization.
+    """
+
+    endpoint = "https://lfoppiano-material-parsers.hf.space/process/material"
+
+    def __init__(self, resolver: Callable[[str], str | None] | None = None):
+        self._resolver = resolver or self._resolve_http
+        self._cache: dict[str, str] = {}
+
+    def _resolve_http(self, material: str) -> str | None:
+        import requests
+
+        response = requests.post(
+            self.endpoint, files={"text": (None, material)}, timeout=30
+        )
+        response.raise_for_status()
+        payload = response.json()
+        try:
+            values = payload[0][0].get("resolvedFormulas", [])
+            return str(values[0].get("rawValue", "")).strip() or None
+        except (IndexError, KeyError, TypeError, AttributeError):
+            return None
+
+    def normalize(self, material: str) -> tuple[str, str]:
+        reported = material.strip()
+        if reported in self._cache:
+            normalized = self._cache[reported]
+            return normalized, normalized
+        try:
+            normalized = self._resolver(reported) or reported
+        except Exception:
+            normalized = reported
+        normalized = normalized.strip()
+        self._cache[reported] = normalized
+        return normalized, normalized
 
 
 class FactProcessor:

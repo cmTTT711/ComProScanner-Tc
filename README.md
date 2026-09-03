@@ -64,6 +64,28 @@ comproscanner process-articles --source elsevier --doi-file dois.txt --execute-p
 Use `downloaded_pdf` instead of `manual_pdf` for one provider-specific download
 directory. Process those directories separately so source provenance is retained.
 
+The canonical stages can also be orchestrated without writing a batch script.
+`run` is inert unless `--execute-pipeline` is supplied, and model stages require
+the separate `--execute-models` flag:
+
+```bash
+# Inspect the complete plan only
+comproscanner run --csv article.csv --run-id tc_check
+
+# Local Article -> Evidence only
+comproscanner run --csv article.csv --run-id tc_check --through prepare --execute-pipeline
+
+# Evidence -> prediction -> review (external model calls)
+comproscanner run --csv article.csv --run-id tc_check --execute-pipeline --execute-models
+```
+
+Evidence providers can be overridden by repeating `--provider` with any of
+`rule_text`, `physbert`, `table`, `figure`, and `equation`. The Tc preset keeps
+rules, tables, figures, and equations enabled by default; PhysBERT remains an
+explicit opt-in. Material normalization defaults to lossless `identity`.
+The legacy Material Parsers service is available with
+`--material-normalizer material-parser-api --execute-network`.
+
 **Key Features:**
 
 - 🏗️ Data extraction from texts, tables and figures.

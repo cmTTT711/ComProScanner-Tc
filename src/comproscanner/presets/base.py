@@ -20,6 +20,12 @@ class PropertyExtractionPreset:
     main_extraction_keyword: str
     property_keywords: dict[str, Any]
     text_candidate_patterns: tuple[str, ...] = ()
+    evidence_providers: tuple[str, ...] = (
+        "rule_text",
+        "table",
+        "figure",
+        "equation",
+    )
     processing_kwargs: dict[str, Any] = field(default_factory=dict)
     extraction_kwargs: dict[str, Any] = field(default_factory=dict)
 
@@ -33,6 +39,8 @@ class PropertyExtractionPreset:
             raise ValueError("main_extraction_keyword cannot be empty")
         if not self.property_keywords:
             raise ValueError("property_keywords cannot be empty")
+        if not self.evidence_providers:
+            raise ValueError("evidence_providers cannot be empty")
 
     def to_runtime_dict(self) -> dict[str, Any]:
         """Return the historical dictionary shape expected by ComProScanner."""

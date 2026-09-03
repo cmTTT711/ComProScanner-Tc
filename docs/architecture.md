@@ -109,6 +109,25 @@ Evidence failure does not stop later Evidence or papers.
 External calls require an explicit CLI execution flag. Preparing CSV, chunks,
 Evidence, manifests, and review structures is local-only.
 
+## Configurable execution
+
+The property preset declares the default Evidence providers. A run may override
+them without editing the pipeline by repeating `--provider`. Provider factories
+are resolved through `EvidenceProviderRegistry`; `physbert` uses the same
+canonical chunks as rule retrieval and remains opt-in because it loads a local
+embedding model.
+
+`comproscanner run` orchestrates normalization (when processor CSVs are given),
+Evidence preparation, extraction, review, and evaluation. It prints a plan by
+default. `--execute-pipeline` permits local stages, `--execute-models` permits
+Qwen/DeepSeek/VLM stages, and `--execute-network` separately permits optional
+network tools such as Material Parsers.
+
+Fact normalization is also pluggable. The safe default preserves the exact
+reported material. `material-parser-api` adapts the historical formula parser
+without importing CrewAI, caches repeated formulas, and falls back to the
+reported material if the service cannot resolve a value.
+
 ## Facts and review
 
 Facts retain reported and normalized material names, value, qualifier, unit,

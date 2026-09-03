@@ -42,3 +42,28 @@ def test_rule_and_vector_matches_share_canonical_chunks():
         "physbert",
     ]
     assert combined[0].content == chunks[0].content
+
+
+def test_evidence_providers_can_be_disabled_by_configuration():
+    configured = EvidencePreparationPipeline(
+        target_property="tc",
+        property_keywords={
+            "candidate_patterns": [{"pattern": r"\bCurie temperature\b"}],
+            "exact_keywords": [], "substring_keywords": [], "regex_keywords": [],
+        },
+        provider_names=("table",),
+    )
+    chunks, evidence = configured.prepare_all(row())
+    assert chunks
+    assert evidence == []
+
+
+def test_unknown_evidence_provider_is_rejected():
+    import pytest
+
+    with pytest.raises(ValueError, match="Unknown Evidence provider"):
+        EvidencePreparationPipeline(
+            target_property="tc",
+            property_keywords={"exact_keywords": ["Tc"]},
+            provider_names=("mystery",),
+        )

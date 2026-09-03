@@ -6,7 +6,7 @@ import re
 from collections.abc import Iterable
 
 from ..chunking import TextChunkConfig, TextChunker
-from ..evidence import Evidence, TextEvidenceBuilder
+from ..evidence import Evidence, EvidenceProviderRegistry, TextEvidenceBuilder
 from ..evidence.providers import RuleTextEvidenceProvider
 from ..evidence.providers import (
     EquationEvidenceProvider,
@@ -64,16 +64,41 @@ class EvidencePreparationPipeline:
         property_keywords: dict,
         rule_patterns: Iterable[str] | None = None,
         chunk_config: TextChunkConfig | None = None,
+        provider_names: Iterable[str] | None = None,
+        provider_registry: EvidenceProviderRegistry | None = None,
     ):
         self.target_property = target_property
         self.chunker = TextChunker(chunk_config)
-        self.rule_provider = RuleTextEvidenceProvider(
-            tuple(rule_patterns or ()) or preset_patterns(property_keywords)
+        self.provider_names = tuple(
+            dict.fromkeys(
+                name.strip().casefold()
+                for name in (provider_names or ("rule_text", "table", "figure", "equation"))
+            )
         )
         source_patterns = preset_patterns(property_keywords)
-        self.table_provider = TableEvidenceProvider(source_patterns)
-        self.figure_provider = FigureEvidenceProvider(source_patterns)
-        self.equation_provider = EquationEvidenceProvider(source_patterns)
+        rule_patterns = tuple(rule_patterns or ()) or source_patterns
+        registry = provider_registry or EvidenceProviderRegistry()
+        if provider_registry is None:
+            registry.register("rule_text", lambda: RuleTextEvidenceProvider(rule_patterns))
+            registry.register("table", lambda: TableEvidenceProvider(source_patterns))
+            registry.register("figure", lambda: FigureEvidenceProvider(source_patterns))
+            registry.register("equation", lambda: EquationEvidenceProvider(source_patterns))
+        supported = set(registry.names()) | {"physbert"}
+        unknown = sorted(set(self.provider_names) - supported)
+        if unknown:
+            raise ValueError("Unknown Evidence provider(s): " + ", ".join(unknown))
+        self.rule_provider = (
+            registry.create("rule_text") if "rule_text" in self.provider_names else None
+        )
+        self.table_provider = (
+            registry.create("table") if "table" in self.provider_names else None
+        )
+        self.figure_provider = (
+            registry.create("figure") if "figure" in self.provider_names else None
+        )
+        self.equation_provider = (
+            registry.create("equation") if "equation" in self.provider_names else None
+        )
         self.builder = TextEvidenceBuilder()
 
     def prepare_text(
@@ -88,7 +113,8 @@ class EvidencePreparationPipeline:
             value = row.get(section, "")
             sections[section] = "" if value is None or str(value) == "nan" else str(value)
         chunks = self.chunker.split_article(document_id, sections)
-        matches = [*self.rule_provider.select(chunks), *vector_matches]
+        rule_matches = self.rule_provider.select(chunks) if self.rule_provider else []
+        matches = [*rule_matches, *vector_matches]
         return chunks, self.builder.build(
             chunks=chunks,
             matches=matches,
@@ -110,10 +136,11 @@ class EvidencePreparationPipeline:
         tables = table_units_from_text(document_id, row.get("tables", ""))
         equations = equation_units_from_chunks(chunks)
         figures = figure_units_from_manifest(row.get("figures_manifest_path", ""))
-        evidence = [
-            *text_evidence,
-            *self.table_provider.select(tables, self.target_property),
-            *self.figure_provider.select(figures, self.target_property),
-            *self.equation_provider.select(equations, self.target_property),
-        ]
+        evidence = [*text_evidence]
+        if self.table_provider:
+            evidence.extend(self.table_provider.select(tables, self.target_property))
+        if self.figure_provider:
+            evidence.extend(self.figure_provider.select(figures, self.target_property))
+        if self.equation_provider:
+            evidence.extend(self.equation_provider.select(equations, self.target_property))
         return chunks, evidence
