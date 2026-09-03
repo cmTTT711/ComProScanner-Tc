@@ -56,6 +56,8 @@ test = ["pytest", "pytest-cov", "pytest-mock"]
 [project.urls]
 "Homepage" = "https://github.com/slimeslab/ComProScanner"
 "Bug Tracker" = "https://github.com/slimeslab/ComProScanner/issues"
+[project.scripts]
+comproscanner = "comproscanner.cli:main"
 [tool.setuptools]
 package-dir = { "" = "src" }
 
@@ -65,6 +67,10 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
+addopts = "-m 'not integration'"
+markers = [
+    "integration: requires optional local services, credentials, or model weights",
+]
 
 [tool.coverage.run]
 omit = [

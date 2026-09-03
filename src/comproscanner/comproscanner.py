@@ -130,6 +130,7 @@ class ComProScanner:
         save_failed_automated_report: bool = True,
         failed_automated_report_path: Optional[str] = None,
         allow_missing_doi: bool = False,
+        allow_metadata_network: bool = True,
     ):
         """Process articles for the main property keyword.
 
@@ -162,6 +163,9 @@ class ComProScanner:
             failed_automated_report_path (str, optional): Custom path for the automated failure report. Defaults to None (uses `results/article_processor_failed_articles.txt`)..
             allow_missing_doi (bool, optional): For local PDFs, assign a stable
                 internal document id when no DOI can be resolved. Defaults to False.
+            allow_metadata_network (bool, optional): For local PDFs, permit
+                CrossRef/OpenAlex DOI and metadata lookups. Disable for a fully
+                offline preprocessing run. Defaults to True.
 
         Raises:
             ValueErrorHandler: If property_keywords is not provided.
@@ -371,6 +375,7 @@ class ComProScanner:
                 save_failed_pdf_report=save_failed_pdf_report,
                 failed_pdf_report_path=failed_pdf_report_path,
                 allow_missing_doi=allow_missing_doi,
+                allow_metadata_network=allow_metadata_network,
             )
             pdf_processor.process_pdfs()
 

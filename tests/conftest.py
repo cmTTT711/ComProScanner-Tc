@@ -2,11 +2,16 @@ import pytest
 import sys
 import os
 import types
+from contextlib import ExitStack
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 # Set environment variable to indicate testing BEFORE any imports
 os.environ["PYTEST_CURRENT_TEST"] = "true"
+# Unit tests must not emit CrewAI/OpenTelemetry traffic or wait on telemetry
+# retries. Explicit integration tests may override these values themselves.
+os.environ.setdefault("OTEL_SDK_DISABLED", "true")
+os.environ.setdefault("CREWAI_DISABLE_TELEMETRY", "true")
 
 # Add the src directory to the path FIRST
 tests_dir = Path(__file__).parent
@@ -431,28 +436,40 @@ def mock_heavy_ml_dependencies():
         yield
         return
 
-    with (
-        patch(
-            "comproscanner.utils.database_manager.MultiModelEmbeddings"
-        ) as mock_embeddings,
-        patch("comproscanner.utils.embeddings.AutoTokenizer") as mock_tokenizer,
-        patch("comproscanner.utils.embeddings.AutoModel") as mock_model,
-    ):
+    # Patch only modules already loaded by the selected tests. Importing a heavy
+    # optional module merely to patch it defeats lightweight CLI/unit isolation.
+    with ExitStack() as stack:
+        mock_embeddings = None
+        mock_tokenizer = None
+        mock_model = None
+        if "comproscanner.utils.database_manager" in sys.modules:
+            mock_embeddings = stack.enter_context(
+                patch("comproscanner.utils.database_manager.MultiModelEmbeddings")
+            )
+        if "comproscanner.utils.embeddings" in sys.modules:
+            mock_tokenizer = stack.enter_context(
+                patch("comproscanner.utils.embeddings.AutoTokenizer")
+            )
+            mock_model = stack.enter_context(
+                patch("comproscanner.utils.embeddings.AutoModel")
+            )
 
         # Setup embeddings mock
-        mock_embeddings_instance = MagicMock()
-        mock_embeddings_instance.embed_documents.return_value = [[0.1] * 768]
-        mock_embeddings_instance.embed_query.return_value = [0.1] * 768
-        mock_embeddings_instance.model_type = "huggingface"
-        mock_embeddings.return_value = mock_embeddings_instance
+        if mock_embeddings is not None:
+            mock_embeddings_instance = MagicMock()
+            mock_embeddings_instance.embed_documents.return_value = [[0.1] * 768]
+            mock_embeddings_instance.embed_query.return_value = [0.1] * 768
+            mock_embeddings_instance.model_type = "huggingface"
+            mock_embeddings.return_value = mock_embeddings_instance
 
         # Setup tokenizer and model mocks (for when embeddings is initialized)
-        mock_tokenizer_instance = MagicMock()
-        mock_tokenizer.from_pretrained.return_value = mock_tokenizer_instance
+        if mock_tokenizer is not None and mock_model is not None:
+            mock_tokenizer_instance = MagicMock()
+            mock_tokenizer.from_pretrained.return_value = mock_tokenizer_instance
 
-        mock_model_instance = MagicMock()
-        mock_model_instance.eval.return_value = mock_model_instance
-        mock_model.from_pretrained.return_value = mock_model_instance
+            mock_model_instance = MagicMock()
+            mock_model_instance.eval.return_value = mock_model_instance
+            mock_model.from_pretrained.return_value = mock_model_instance
 
         yield
 

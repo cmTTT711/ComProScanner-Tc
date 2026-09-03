@@ -19,6 +19,11 @@ from pathlib import Path
 import requests
 from dotenv import load_dotenv
 
+from comproscanner.literature import (
+    atomic_json as _atomic_json,
+    normalize_doi as _normalize_doi,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "outputs" / "literature_discovery" / "tc_scopus_2020_2026"
@@ -47,10 +52,7 @@ HIGH_VALUE_TERMS = {
 
 
 def atomic_json(path: Path, data: object) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    temporary.replace(path)
+    _atomic_json(path, data)
 
 
 def text(value) -> str:
@@ -58,9 +60,7 @@ def text(value) -> str:
 
 
 def normalize_doi(value: str) -> str:
-    value = text(value).casefold()
-    value = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", value)
-    return value.rstrip(".,; ")
+    return _normalize_doi(value)
 
 
 def score_candidate(item: dict) -> int:

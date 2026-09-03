@@ -1,1 +1,0 @@
-{"synthesis_formatted_data":{"method":"no data","precursors":[],"steps":[],"characterization_techniques":[]}}

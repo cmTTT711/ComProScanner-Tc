@@ -205,6 +205,9 @@ def get_curie_temperature_preset_definition() -> PropertyExtractionPreset:
         main_property_keyword=MAIN_PROPERTY_KEYWORD,
         main_extraction_keyword=MAIN_EXTRACTION_KEYWORD,
         property_keywords=PROPERTY_KEYWORDS,
+        # Preserve the validated high-recall rule at canonical chunk level.
+        # Qwen remains responsible for rejecting unrelated numeric/acronym text.
+        text_candidate_patterns=(r"\d", r"[A-Z]{2,}"),
         processing_kwargs={"allow_missing_doi": True},
         extraction_kwargs={
             "main_extraction_keyword": MAIN_EXTRACTION_KEYWORD,

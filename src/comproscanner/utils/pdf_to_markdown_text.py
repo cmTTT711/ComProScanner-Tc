@@ -65,6 +65,21 @@ def match_property_signal(text: str, property_keywords: dict):
         match = re.search(pattern, text, flags=re.IGNORECASE)
         if match:
             return "regex_keywords", match.group(0)
+
+    # Backward compatibility for the original public API, whose examples use
+    # arbitrary group names such as {"piezoelectric": ["piezo", ...]}.
+    known_groups = {
+        "candidate_patterns",
+        "exact_keywords",
+        "substring_keywords",
+        "regex_keywords",
+    }
+    for group_name, keywords in property_keywords.items():
+        if group_name in known_groups or not isinstance(keywords, (list, tuple)):
+            continue
+        for keyword in keywords:
+            if keyword and keyword in text:
+                return group_name, keyword
     return None
 
 

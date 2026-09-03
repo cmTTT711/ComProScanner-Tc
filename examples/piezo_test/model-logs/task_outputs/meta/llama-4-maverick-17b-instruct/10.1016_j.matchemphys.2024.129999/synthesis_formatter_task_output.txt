@@ -1,1 +1,0 @@
-{"synthesis_formatted_data":{"method":"solvothermal","precursors":[],"steps":["Synthesis using solvothermal approach","Pressed into pellets","Sintered at 1100 °C for 2 h"],"characterization_techniques":["XRD","TEM","SAED","Dielectric impedance spectroscopy"]}}

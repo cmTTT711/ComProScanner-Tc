@@ -188,8 +188,59 @@ class FigureExtractor:
             info[safe_id] = caption_text
             with open(info_path, "w", encoding="utf-8") as f:
                 json.dump(info, f, ensure_ascii=False, indent=2)
+            cls.update_manifest(
+                doi=doi,
+                caption_id=safe_id,
+                caption_text=caption_text,
+                base_path=base_path,
+            )
         except Exception:
             pass
+
+    @classmethod
+    def update_manifest(
+        cls,
+        doi: str,
+        caption_id: str,
+        caption_text: str,
+        base_path: str = None,
+        page: int = None,
+    ) -> str:
+        """Write the richer sidecar used by FigureEvidence.
+
+        ``info.json`` remains for compatibility with the original graph tool.
+        The manifest adds stable paths and optional location without embedding
+        image bytes in article CSV files.
+        """
+
+        fig_dir = cls.get_figure_dir(doi, base_path)
+        os.makedirs(fig_dir, exist_ok=True)
+        manifest_path = os.path.join(fig_dir, "manifest.json")
+        try:
+            if os.path.isfile(manifest_path):
+                with open(manifest_path, "r", encoding="utf-8") as handle:
+                    manifest = json.load(handle)
+            else:
+                manifest = {"document_id": doi, "figures": []}
+            safe_id = _sanitize_filename(caption_id)
+            record = {
+                "figure_id": safe_id,
+                "path": os.path.join(fig_dir, f"{safe_id}.jpg"),
+                "caption": caption_text,
+            }
+            if page is not None:
+                record["page"] = page
+            figures = [
+                item for item in manifest.get("figures", [])
+                if item.get("figure_id") != safe_id
+            ]
+            figures.append(record)
+            manifest["figures"] = figures
+            with open(manifest_path, "w", encoding="utf-8") as handle:
+                json.dump(manifest, handle, ensure_ascii=False, indent=2)
+            return manifest_path
+        except Exception:
+            return ""
 
 
 def record_failed_article(

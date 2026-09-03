@@ -61,6 +61,7 @@ class PDFsProcessor:
         is_track_pdfs: bool = True,
         track_pdfs_report_path: str = None,
         allow_missing_doi: bool = False,
+        allow_metadata_network: bool = True,
     ):
         """Class to process PDFs in a folder and process them to extract the required sections of the articles and save them to the MySQL database and CSV files and create a vector store if the relevant data is present in the article.
 
@@ -110,6 +111,7 @@ class PDFsProcessor:
         self.failed_pdf_records = []
         self.is_track_pdfs = is_track_pdfs
         self.allow_missing_doi = allow_missing_doi
+        self.allow_metadata_network = allow_metadata_network
 
         self.identifier = ""
         self.doi = ""
@@ -412,7 +414,7 @@ class PDFsProcessor:
 
                     # Try to get metadata (API first, then CSV)
                     title, journal_name, publisher = "", "", ""
-                    if self.doi.startswith("10."):
+                    if self.allow_metadata_network and self.doi.startswith("10."):
                         title, journal_name, publisher = (
                             get_paper_metadata_from_openalex(self.doi)
                         )
@@ -461,7 +463,11 @@ class PDFsProcessor:
                     logger.debug(f"DOI found: {self.doi}")
                 else:
                     # Try CrossRef API as fallback before using filename
-                    crossref_doi = get_doi_from_crossref(md_text)
+                    crossref_doi = (
+                        get_doi_from_crossref(md_text)
+                        if self.allow_metadata_network
+                        else ""
+                    )
                     if crossref_doi:
                         self.doi = crossref_doi
                         self.identifier = crossref_doi
@@ -502,7 +508,7 @@ class PDFsProcessor:
 
                 # Get metadata from external API (with CSV fallback) using DOI
                 title, journal_name, publisher = "", "", ""
-                if self._is_valid_doi(self.doi):
+                if self.allow_metadata_network and self._is_valid_doi(self.doi):
                     title, journal_name, publisher = get_paper_metadata_from_openalex(
                         self.doi
                     )

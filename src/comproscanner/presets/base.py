@@ -19,6 +19,7 @@ class PropertyExtractionPreset:
     main_property_keyword: str
     main_extraction_keyword: str
     property_keywords: dict[str, Any]
+    text_candidate_patterns: tuple[str, ...] = ()
     processing_kwargs: dict[str, Any] = field(default_factory=dict)
     extraction_kwargs: dict[str, Any] = field(default_factory=dict)
 

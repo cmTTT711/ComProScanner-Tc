@@ -17,6 +17,13 @@ from pathlib import Path
 
 import requests
 
+from comproscanner.literature import (
+    atomic_json as _atomic_json,
+    download_validated_pdf as _download_validated_pdf,
+    normalize_doi as _normalize_doi,
+    safe_filename as _safe_filename,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SHORTLIST = (
@@ -35,22 +42,15 @@ USER_AGENT = "ComProScanner academic OA downloader/1.0"
 
 
 def safe_name(title: str, limit: int = 105) -> str:
-    value = re.sub(r"[<>:\"/\\|?*\x00-\x1f]", " ", title)
-    value = re.sub(r"\s+", " ", value).strip(" .")
-    return (value[:limit].rstrip(" .") or "untitled")
+    return _safe_filename(title, limit)
 
 
 def normalize_doi(value: str) -> str:
-    value = (value or "").strip().casefold()
-    value = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", value)
-    return value.rstrip(".,; ")
+    return _normalize_doi(value)
 
 
 def atomic_json(path: Path, data: object) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    temporary.replace(path)
+    _atomic_json(path, data)
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:
@@ -134,28 +134,7 @@ def existing_hashes(pdf_dir: Path) -> set[str]:
 
 
 def download_pdf(url: str, temporary: Path) -> tuple[str, int]:
-    digest = hashlib.sha256()
-    size = 0
-    headers = {"User-Agent": USER_AGENT, "Accept": "application/pdf,*/*;q=0.5"}
-    with requests.get(url, headers=headers, stream=True, timeout=(30, 120), allow_redirects=True) as response:
-        response.raise_for_status()
-        first = b""
-        with temporary.open("wb") as stream:
-            for chunk in response.iter_content(1024 * 256):
-                if not chunk:
-                    continue
-                if not first:
-                    first = chunk[:8]
-                stream.write(chunk)
-                digest.update(chunk)
-                size += len(chunk)
-        if not first.startswith(b"%PDF-"):
-            temporary.unlink(missing_ok=True)
-            raise ValueError("response is not a PDF")
-    if size < 10_000:
-        temporary.unlink(missing_ok=True)
-        raise ValueError(f"PDF is unexpectedly small ({size} bytes)")
-    return digest.hexdigest(), size
+    return _download_validated_pdf(url, temporary)
 
 
 def main() -> None:

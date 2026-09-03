@@ -70,6 +70,7 @@ def test_init_valid_parameters(sample_property_keywords):
     )
     assert processor.is_track_pdfs is True
     assert processor.allow_missing_doi is False
+    assert processor.allow_metadata_network is True
     assert processor.track_pdfs_report_path == DefaultPaths("piezoelectric").PDF_PROCESSED_DOIS_FILENAME
 
 
@@ -82,6 +83,16 @@ def test_init_tracking_disabled(sample_property_keywords):
         is_track_pdfs=False,
     )
     assert processor.is_track_pdfs is False
+
+
+def test_local_pdf_metadata_network_can_be_disabled(sample_property_keywords):
+    processor = PDFsProcessor(
+        folder_path="/test/path",
+        main_property_keyword="piezoelectric",
+        property_keywords=sample_property_keywords,
+        allow_metadata_network=False,
+    )
+    assert processor.allow_metadata_network is False
 
 
 def test_init_custom_track_pdfs_report_path(sample_property_keywords):

@@ -1,1 +1,0 @@
-{"synthesis_formatted_data":{"method":"","precursors":[],"steps":[],"characterization_techniques":["phonon dispersion spectra","AIMD simulations"]}}

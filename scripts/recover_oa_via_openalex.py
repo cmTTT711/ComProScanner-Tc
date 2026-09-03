@@ -12,6 +12,7 @@ from urllib.parse import quote
 import requests
 
 from download_tc_oa_shortlist import atomic_json, download_pdf, safe_name
+from comproscanner.literature import resolve_openalex_urls
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,24 +43,7 @@ def known_hashes(pdf_dir: Path) -> set[str]:
 
 
 def oa_urls(doi: str) -> list[str]:
-    url = "https://api.openalex.org/works/https://doi.org/" + quote(doi, safe="")
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
-    if response.status_code == 404:
-        return []
-    response.raise_for_status()
-    work = response.json()
-    locations = []
-    for key in ("best_oa_location", "primary_location"):
-        value = work.get(key)
-        if isinstance(value, dict):
-            locations.append(value)
-    locations.extend(x for x in (work.get("locations") or []) if isinstance(x, dict))
-    urls = []
-    for location in locations:
-        value = (location.get("pdf_url") or "").strip()
-        if value and value not in urls:
-            urls.append(value)
-    return urls
+    return resolve_openalex_urls(doi)
 
 
 def main() -> None:

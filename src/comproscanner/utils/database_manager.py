@@ -10,6 +10,7 @@ Date: 23-02-2025
 # Standard library imports
 import os
 import gc
+import json
 from pathlib import Path
 from typing import List
 
@@ -38,6 +39,7 @@ from .configs import DatabaseConfig, RAGConfig
 from .error_handler import ValueErrorHandler
 from .logger import setup_logger
 from .embeddings import MultiModelEmbeddings
+from ..schemas import normalize_legacy_article_frame, validate_article_frame
 
 # configure logger
 logger = setup_logger("comproscanner.log", module_name="database_manager")
@@ -198,6 +200,25 @@ class CSVDatabaseManager:
         if csv_batch_size > 1:
             logger.info("Writing to CSV...")
         try:
+            final_df = normalize_legacy_article_frame(
+                final_df, source_type=source
+            )
+            for row_index, row in final_df.iterrows():
+                if str(row.get("figures_manifest_path", "")).strip():
+                    continue
+                document_id = str(row["document_id"])
+                figure_folder = document_id.replace("/", "_").replace(":", "_")
+                manifest = Path(filepath) / "related_figures" / figure_folder / "manifest.json"
+                if manifest.is_file():
+                    final_df.at[row_index, "figures_manifest_path"] = str(manifest)
+                    try:
+                        payload = json.loads(manifest.read_text(encoding="utf-8"))
+                        final_df.at[row_index, "figure_count"] = str(
+                            len(payload.get("figures", []))
+                        )
+                    except (OSError, json.JSONDecodeError):
+                        pass
+            validate_article_frame(final_df)
             if not os.path.exists(filepath):
                 os.makedirs(filepath)
 
@@ -205,7 +226,9 @@ class CSVDatabaseManager:
 
             if os.path.exists(output_file):
                 # Read all columns as strings to avoid mixed type issues
-                existing_df = pd.read_csv(output_file, dtype=str)
+                existing_df = normalize_legacy_article_frame(
+                    pd.read_csv(output_file, dtype=str), source_type=source
+                )
                 final_df = final_df[~final_df["doi"].isin(existing_df["doi"])]
                 if not final_df.empty:
                     combined_df = pd.concat([existing_df, final_df], ignore_index=True)
@@ -263,6 +286,77 @@ class VectorDatabaseManager:
             pass
 
         logger.info(f"Vector database auto-persisted at {db_location}")
+
+    def create_chunk_database(self, db_name: str, chunks) -> None:
+        """Index canonical TextChunks without applying a second text splitter.
+
+        Rule matching and vector retrieval can therefore refer to the same
+        ``chunk_id`` and the same source text. The historical ``create_database``
+        method remains available for backward-compatible extraction runs.
+        """
+
+        if not db_name:
+            raise ValueError("Database name is required")
+        chunks = list(chunks)
+        if not chunks:
+            raise ValueError("At least one canonical text chunk is required")
+        db_location = self.rag_db_path / db_name
+        db_location.mkdir(parents=True, exist_ok=True)
+        docs = []
+        for chunk in chunks:
+            metadata = {
+                "chunk_id": chunk.chunk_id,
+                "document_id": chunk.document_id,
+                "section": chunk.section,
+                "ordinal": chunk.ordinal,
+            }
+            if chunk.page_start is not None:
+                metadata["page_start"] = chunk.page_start
+            if chunk.page_end is not None:
+                metadata["page_end"] = chunk.page_end
+            docs.append(Document(page_content=chunk.content, metadata=metadata))
+        vectordb = Chroma.from_documents(
+            documents=docs,
+            embedding=self.embeddings,
+            persist_directory=str(db_location),
+            ids=[chunk.chunk_id for chunk in chunks],
+        )
+        self._release_vector_database(vectordb)
+        logger.info("Canonical chunk database auto-persisted at %s", db_location)
+
+    def query_chunks(self, db_name: str, query: str, top_k: int = 5) -> list[dict]:
+        """Return vector matches keyed by canonical ``chunk_id``."""
+
+        results = self.query_database(db_name=db_name, query=query, top_k=top_k)
+        matches = []
+        for document, score in results:
+            chunk_id = document.metadata.get("chunk_id")
+            if not chunk_id:
+                logger.warning("Ignoring legacy vector result without chunk_id")
+                continue
+            matches.append(
+                {
+                    "chunk_id": chunk_id,
+                    "score": float(score),
+                    "content": document.page_content,
+                    "metadata": dict(document.metadata),
+                }
+            )
+        return matches
+
+    def _release_vector_database(self, vectordb) -> None:
+        """Release Chroma and optional CUDA resources consistently."""
+
+        self.client.clear_system_cache()
+        del vectordb
+        gc.collect()
+        try:
+            import torch
+
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except ImportError:
+            pass
 
     def query_database(self, db_name: str, query: str, top_k: int = 5):
         """Query the persisted ChromaDB database."""

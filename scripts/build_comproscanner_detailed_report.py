@@ -353,7 +353,7 @@ def build_story():
         ["Chroma", "work/.../paper_001/db/", "否；可再建"],
         ["单篇结果", "outputs/.../papers/paper_001.json", "是"],
         ["合并结果", "outputs/.../predictions_001_100.json", "是"],
-        ["人工 Gold", "outputs/tc_final_001_030/gold_facts_001_030.json", "是，不可用预测替代"],
+        ["人工 Gold", "outputs/gold/tc_001_030/gold_facts.json", "是，不可用预测替代"],
         ["指标", "outputs/.../strict_metrics_001_030.json", "是，需带口径"],
     ], [29*mm, 93*mm, 52*mm])]
 
@@ -603,7 +603,7 @@ def build_story():
     story += [H("21.1 检查输入映射", 2), P("python scripts/run_tc_hybrid_qwen_30.py --validate-only", "code")]
     story += [H("21.2 运行指定论文", 2), P("python scripts/run_tc_hybrid_qwen_30.py --paper-ids 31 32 33", "code")]
     story += [H("21.3 恢复批次", 2), P("python scripts/run_tc_hybrid_qwen_30.py", "code"), P("已有 paper_NNN.json 会跳过。不要随意使用 --force；它会重新发送并覆盖该篇结果。")]
-    story += [H("21.4 查看进度", 2), P("Get-ChildItem outputs/tc_hybrid_qwen_001_030/papers/paper_*.json | Measure-Object", "code")]
+    story += [H("21.4 查看结果", 2), P("Get-Content outputs/runs/tc_hybrid_001_100/predictions.json", "code")]
     story += [H("21.5 调试一条 FN", 2), P("依次检查 pdfs/原文 → work/.../*.csv → 候选文本/向量 chunks → paper_NNN.json/pipeline_report。先确认事实在哪层消失，再决定改解析、候选还是 prompt。")]
 
     story += section_intro("22. 明日汇报可直接使用的 10 分钟提纲", "建议把重点放在“为什么做、如何做、做到什么、下一步怎么验证”，而不是逐文件念目录。")
@@ -642,8 +642,8 @@ def build_story():
         "Official documentation: https://slimeslab.github.io/ComProScanner/",
         "arXiv preprint: https://arxiv.org/abs/2510.20362",
         "本地架构说明：docs/architecture.md；docs/about/project-structure.md；docs/usage/*。",
-        "当前严格指标：outputs/tc_hybrid_qwen_001_030/strict_metrics_001_030.json。",
-        "当前人工 Gold：outputs/tc_final_001_030/gold_facts_001_030.json。",
+        "当前严格指标：outputs/metrics/tc_final_001_030.json。",
+        "当前人工 Gold：outputs/gold/tc_001_030/gold_facts.json。",
         "当前 runner：scripts/run_tc_hybrid_qwen_30.py。",
     ]
     for i, x in enumerate(refs, 1): story.append(P(f"[{i}] {x}"))

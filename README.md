@@ -12,6 +12,58 @@
 
 ComProScanner is a multi-agent framework designed to extract composition-property relationships from scientific articles in materials science. It automates the entire workflow from metadata collection to data extraction, evaluation, and visualization.
 
+This repository also contains an evidence-first property workflow. PDF and
+publisher XML inputs share a canonical CSV contract; rule search and PhysBERT
+retrieve the same paragraph-aware TextChunks; every extracted Fact links back
+to original text, table, figure, or equation Evidence. See
+[`docs/architecture.md`](docs/architecture.md) and
+[`docs/evidence.md`](docs/evidence.md).
+
+Preparing Evidence is local-only and does not call Qwen or DeepSeek:
+
+```bash
+comproscanner prepare-evidence --csv article.csv --preset curie_temperature
+```
+
+External model execution is separately guarded and requires an explicit
+`--execute` flag.
+
+Literature metadata discovery and lawful OA acquisition are also available
+through the same CLI. Both commands are inert unless `--execute-network` is
+explicitly supplied:
+
+```bash
+comproscanner discover --query "TITLE-ABS-KEY(...)" --start-year 2020 --end-year 2026
+comproscanner acquire-oa --shortlist outputs/literature/discovery/shortlist.csv
+```
+
+API downloads are stored by provider under `pdfs/downloaded/`; they are never
+mixed directly into `pdfs/manual/`.
+
+Processor outputs are merged into one validated Article CSV with:
+
+```bash
+comproscanner normalize --csv elsevier.csv --csv local_pdf.csv --output article.csv
+```
+
+Article processing no longer needs a new batch script. The same guarded command
+plans every local-PDF and publisher run; without `--execute-processing` it only
+prints a JSON plan:
+
+```bash
+# Safe plan only: no PDF parsing, network request, or model call
+comproscanner process-articles --source manual_pdf --folder pdfs/manual
+
+# Actual offline PDF preprocessing (still no Qwen/DeepSeek call)
+comproscanner process-articles --source manual_pdf --folder pdfs/manual --execute-processing
+
+# Publisher processing needs one DOI per line and both explicit execution flags
+comproscanner process-articles --source elsevier --doi-file dois.txt --execute-processing --execute-network
+```
+
+Use `downloaded_pdf` instead of `manual_pdf` for one provider-specific download
+directory. Process those directories separately so source provenance is retained.
+
 **Key Features:**
 
 - 🏗️ Data extraction from texts, tables and figures.

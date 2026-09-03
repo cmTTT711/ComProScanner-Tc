@@ -235,7 +235,7 @@ def test_embed_query_huggingface():
     assert len(result) == 768
 
 
-def test_embed_query_sentence_transformers():
+def test_embed_query_sentence_transformers(mock_sentence_transformers):
     """Test query embedding with SentenceTransformers model"""
     config = RAGConfig(embedding_model="sentence-transformers:all-mpnet-base-v2")
     embeddings = MultiModelEmbeddings(config)

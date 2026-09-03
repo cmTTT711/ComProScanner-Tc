@@ -1,34 +1,18 @@
-"""Focused checks for the Tc development execution-recovery layer."""
-
-import importlib.util
-from pathlib import Path
-
-
-ROOT = Path(__file__).resolve().parents[1]
-
-
-def _load(path: Path, name: str):
-    spec = importlib.util.spec_from_file_location(name, path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
+"""Focused checks for the production Tc configuration retained after recovery."""
 
 def test_tc_recovery_configuration():
-    preset = _load(ROOT / "examples" / "extract_curie_temperature.py", "tc_preset")
-    keywords = preset.get_curie_temperature_preset()["property_keywords"]
-    runner_source = (ROOT / "scripts" / "run_tc_dev_recovery.py").read_text(
-        encoding="utf-8"
-    )
+    from comproscanner.cli.main import build_parser
+    from comproscanner.presets import get_preset
+
+    preset = get_preset("curie_temperature")
+    keywords = preset.property_keywords
 
     def matches(text):
         from comproscanner.utils.pdf_to_markdown_text import matches_property_keywords
 
         return matches_property_keywords(text, keywords)
 
-    assert 'return f"10.9999/local-tc-dev-{paper_id:03d}"' in runner_source
-    assert "PDFsProcessor._extract_doi_from_text = _use_local_identity" in runner_source
-    assert "get_doi_from_crossref = _no_crossref_identity" in runner_source
+    assert preset.processing_kwargs["allow_missing_doi"] is True
     assert matches(
         "The ferroelectric transition temperature shifts with composition."
     )
@@ -36,14 +20,16 @@ def test_tc_recovery_configuration():
         "The ferroelectric to paraelectric phase transition temperature, Tc decreases."
     )
     assert not matches("The sample was measured at a temperature of 300 K.")
-    assert "TIMEOUT_SECONDS = 180" in runner_source
-    assert "timeout=TIMEOUT_SECONDS" in runner_source
-    assert "recover_empty_section_candidate" in runner_source
+    extract_args = build_parser().parse_args(["extract", "--run-id", "check"])
+    assert extract_args.timeout == 180
 
 
 def test_tc_schema_and_scientific_prompt_remain_unchanged():
-    preset = _load(ROOT / "examples" / "extract_curie_temperature.py", "tc_preset_schema")
-    args = preset.get_curie_temperature_flow_optional_args()
+    from comproscanner.presets.curie_temperature import (
+        get_curie_temperature_flow_optional_args,
+    )
+
+    args = get_curie_temperature_flow_optional_args()
     example = args["expected_composition_property_example"]
     notes = " ".join(
         args["composition_property_extraction_agent_notes"]
