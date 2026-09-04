@@ -51,6 +51,9 @@ def write_review_workbook(
             {
                 "document_id": fact.document_id,
                 "material_reported": fact.material_reported,
+                "material_reported_variants": "\n".join(
+                    fact.material_reported_variants or (fact.material_reported,)
+                ),
                 "material_normalized": fact.material_normalized,
                 "property": fact.property_name,
                 "value": fact.fact_value.stable_value(),
@@ -73,15 +76,16 @@ def write_review_workbook(
         widths = {
             "A": 22,
             "B": 32,
-            "C": 32,
-            "D": 18,
-            "E": 14,
+            "C": 38,
+            "D": 32,
+            "E": 18,
             "F": 14,
-            "G": 12,
-            "H": 28,
-            "I": 90,
-            "J": 14,
-            "K": 30,
+            "G": 14,
+            "H": 12,
+            "I": 28,
+            "J": 90,
+            "K": 14,
+            "L": 30,
         }
         for column, width in widths.items():
             sheet.column_dimensions[column].width = width

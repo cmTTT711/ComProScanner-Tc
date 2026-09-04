@@ -43,6 +43,7 @@ class Fact:
     fact_value: FactValue
     evidence_ids: tuple[str, ...]
     conditions: dict[str, Any] = field(default_factory=dict)
+    material_reported_variants: tuple[str, ...] = field(default_factory=tuple)
 
     def merge_key(self) -> tuple[str, str, str, str, str, str | None]:
         return (
@@ -56,5 +57,7 @@ class Fact:
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
+        if not data["material_reported_variants"]:
+            data["material_reported_variants"] = [self.material_reported]
         data["fact_value"]["value"] = self.fact_value.stable_value()
         return data

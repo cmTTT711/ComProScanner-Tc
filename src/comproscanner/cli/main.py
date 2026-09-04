@@ -576,6 +576,9 @@ def _fact_from_dict(item: dict) -> Fact:
         ),
         evidence_ids=tuple(item.get("evidence_ids", [])),
         conditions=item.get("conditions") or {},
+        material_reported_variants=tuple(
+            item.get("material_reported_variants", [])
+        ),
     )
 
 

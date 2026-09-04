@@ -78,4 +78,5 @@ class FactProcessor:
             fact_value=fact.fact_value,
             evidence_ids=fact.evidence_ids,
             conditions=fact.conditions,
+            material_reported_variants=fact.material_reported_variants,
         )
