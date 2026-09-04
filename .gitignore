@@ -194,5 +194,13 @@ examples/vlm_piezo_test/db/chroma.sqlite3
 /scripts/debug_*.py
 *.inspect.ndjson
 /outputs/presentation/*/
+/outputs/runs/*/article.csv
+/outputs/runs/*/evidence/
+/outputs/runs/*/papers/
+/outputs/runs/*/processor_workspace/
+/outputs/runs/*/vector_db/
+/outputs/runs/*/raw_responses/
+/output/
+/results/
 
 applications

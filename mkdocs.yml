@@ -158,26 +158,15 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Current workflow: architecture.md
+  - Extension points: extensions.md
+  - Legacy compatibility: legacy.md
   - Getting Started:
       - Installation: getting-started/installation.md
       - API Key Guide: getting-started/api-key-guide.md
       - Quick Start: getting-started/quick-start.md
-  - User Guide:
-      - Metadata Collection: usage/metadata-collection.md
-      - Article Processing: usage/article-processing.md
-      - Data Extraction: usage/data-extraction.md
-      - Data Cleaning: usage/data-cleaning.md
-      - Evaluation:
-          - Overview: usage/evaluation/overview.md
-          - Semantic Evaluation: usage/evaluation/semantic.md
-          - Agentic Evaluation: usage/evaluation/agentic.md
-      - Visualization:
-          - Overview: usage/visualization/overview.md
-          - Data Visualization: usage/visualization/data-viz.md
-          - Evaluation Visualization: usage/visualization/eval-viz.md
   - RAG Configuration: rag-config.md
   - API Overview: api.md
-  - Architecture: architecture.md
   - Blog: news/index.md
   - About:
       - Project Structure: about/project-structure.md

@@ -10,9 +10,9 @@ existing configurable knobs that ComProScanner already exposes:
 - expected few-shot examples
 - composition extraction/formatting prompt notes
 
-No production code is changed, and no real LLM API is called by importing this
-module. Running ``python examples/extract_curie_temperature.py`` is the entry
-point for a real extraction run in the next stage.
+No real LLM API is called by importing this module. New batch execution uses
+the guarded ``comproscanner run`` CLI; the historical Python example remains a
+compatibility entry point.
 """
 
 from __future__ import annotations

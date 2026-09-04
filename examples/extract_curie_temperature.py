@@ -1,4 +1,9 @@
-"""Backward-compatible example entry point for the built-in Tc preset."""
+"""Compatibility example exposing the frozen Tc preset.
+
+New batch execution should use ``comproscanner run`` as documented in this
+directory's README. This module remains because downstream users and regression
+tests import its preset constants.
+"""
 
 from comproscanner import ComProScanner
 from comproscanner.presets.curie_temperature import (

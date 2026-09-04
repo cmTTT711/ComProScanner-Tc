@@ -16,22 +16,7 @@ dependencies = [
     "tqdm",
     "lxml",
     "pandas",
-    "torch",
-    "langchain",
-    "transformers",
-    "tokenizers",
-    "mysql-connector-python",
-    "langchain-community",
     "litellm",
-    "crewai",
-    "crewai-tools",
-    "chromadb",
-    "langchain-chroma",
-    "docling",
-    "sentence-transformers",
-    "neo4j",
-    "pymatgen",
-    "seaborn",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -50,6 +35,38 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 [project.optional-dependencies]
+pdf = ["docling"]
+rag = [
+    "torch",
+    "transformers",
+    "tokenizers",
+    "sentence-transformers",
+    "langchain",
+    "langchain-community",
+    "chromadb",
+    "langchain-chroma",
+]
+database = ["mysql-connector-python", "neo4j"]
+materials = ["pymatgen"]
+visualization = ["seaborn"]
+legacy = ["crewai", "crewai-tools"]
+all = [
+    "docling",
+    "torch",
+    "transformers",
+    "tokenizers",
+    "sentence-transformers",
+    "langchain",
+    "langchain-community",
+    "chromadb",
+    "langchain-chroma",
+    "mysql-connector-python",
+    "neo4j",
+    "pymatgen",
+    "seaborn",
+    "crewai",
+    "crewai-tools",
+]
 dev = ["pytest", "pytest-mock"]
 docs = ["mkdocs-material", "mkdocs-minify-plugin", "mkdocstrings[python]"]
 test = ["pytest", "pytest-cov", "pytest-mock"]

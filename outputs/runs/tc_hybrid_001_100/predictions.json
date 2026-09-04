@@ -9,7 +9,7 @@
     {
       "paper_id": 1,
       "filename": "1-纳米粉体-BiFeO3-(0.2,0.3,0.4)CoFe2O4溶胶凝胶纳米复合磁介电-2017-JAC- BiFeO3-CoFe2O4-Magnetic, dielectric and magnetoelectric properties of BiFeO3-CoFe2O4.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\1-纳米粉体-BiFeO3-(0.2,0.3,0.4)CoFe2O4溶胶凝胶纳米复合磁介电-2017-JAC- BiFeO3-CoFe2O4-Magnetic, dielectric and magnetoelectric properties of BiFeO3-CoFe2O4.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\1-纳米粉体-BiFeO3-(0.2,0.3,0.4)CoFe2O4溶胶凝胶纳米复合磁介电-2017-JAC- BiFeO3-CoFe2O4-Magnetic, dielectric and magnetoelectric properties of BiFeO3-CoFe2O4.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 111.153,
       "output": {
@@ -52,7 +52,7 @@
     {
       "paper_id": 2,
       "filename": "2-MFe2O4-BaTiO3 (Mn, Co, Ni, Zn）薄膜磁电耦合-2017-JAC-Multiferroic effects in MFe2O4BaTiO3 (M ¼ Mn, Co, Ni, Zn).pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\2-MFe2O4-BaTiO3 (Mn, Co, Ni, Zn）薄膜磁电耦合-2017-JAC-Multiferroic effects in MFe2O4BaTiO3 (M ¼ Mn, Co, Ni, Zn).pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\2-MFe2O4-BaTiO3 (Mn, Co, Ni, Zn）薄膜磁电耦合-2017-JAC-Multiferroic effects in MFe2O4BaTiO3 (M ¼ Mn, Co, Ni, Zn).pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 6.299,
       "output": {},
@@ -63,7 +63,7 @@
     {
       "paper_id": 3,
       "filename": "3-球磨时间无磁电耦合测试-2017-陶瓷国际-Effect of mechanical milling on structural, dielectric and magnetic.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\3-球磨时间无磁电耦合测试-2017-陶瓷国际-Effect of mechanical milling on structural, dielectric and magnetic.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\3-球磨时间无磁电耦合测试-2017-陶瓷国际-Effect of mechanical milling on structural, dielectric and magnetic.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 125.582,
       "output": {
@@ -107,7 +107,7 @@
     {
       "paper_id": 4,
       "filename": "4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 161.76,
       "output": {
@@ -241,7 +241,7 @@
     {
       "paper_id": 5,
       "filename": "5-核壳结构纳米双磁致伸缩-2020.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\5-核壳结构纳米双磁致伸缩-2020.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\5-核壳结构纳米双磁致伸缩-2020.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 0.231,
       "output": {},
@@ -252,7 +252,7 @@
     {
       "paper_id": 6,
       "filename": "6-mof原位合成-2020-陶瓷国际-Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4BaTiO3 composite ceramics.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\6-mof原位合成-2020-陶瓷国际-Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4BaTiO3 composite ceramics.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\6-mof原位合成-2020-陶瓷国际-Dielectric, ferroelectric and magnetoelectric properties of in-situ synthesized CoFe2O4BaTiO3 composite ceramics.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 119.424,
       "output": {
@@ -346,7 +346,7 @@
     {
       "paper_id": 7,
       "filename": "7-钛酸钡立方相和四方相磁电耦合-2021-APLM-Scalable, costefficient synthesis and properties optimization of magnetoelectric cobalt ferritebarium titanate.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\7-钛酸钡立方相和四方相磁电耦合-2021-APLM-Scalable, costefficient synthesis and properties optimization of magnetoelectric cobalt ferritebarium titanate.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\7-钛酸钡立方相和四方相磁电耦合-2021-APLM-Scalable, costefficient synthesis and properties optimization of magnetoelectric cobalt ferritebarium titanate.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 114.994,
       "output": {
@@ -439,7 +439,7 @@
     {
       "paper_id": 8,
       "filename": "8-特殊结构基于纳米管模版-2021-JAC-Ferromagnetic, ferroelectric, and magnetoelectric properties in individual nanotube-based magnetoelectric films of CoFe2O4BaTiO3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\8-特殊结构基于纳米管模版-2021-JAC-Ferromagnetic, ferroelectric, and magnetoelectric properties in individual nanotube-based magnetoelectric films of CoFe2O4BaTiO3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\8-特殊结构基于纳米管模版-2021-JAC-Ferromagnetic, ferroelectric, and magnetoelectric properties in individual nanotube-based magnetoelectric films of CoFe2O4BaTiO3.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 0.097,
       "output": {},
@@ -450,7 +450,7 @@
     {
       "paper_id": 9,
       "filename": "9-非原位溶胶凝胶温度影响-2022-3M-Microstructure and magnetoresistance driven magnetocapacitance in ex-situ combustion derived BaTiO3-CoFe2O4 bulk.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\9-非原位溶胶凝胶温度影响-2022-3M-Microstructure and magnetoresistance driven magnetocapacitance in ex-situ combustion derived BaTiO3-CoFe2O4 bulk.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\9-非原位溶胶凝胶温度影响-2022-3M-Microstructure and magnetoresistance driven magnetocapacitance in ex-situ combustion derived BaTiO3-CoFe2O4 bulk.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 0.128,
       "output": {},
@@ -461,7 +461,7 @@
     {
       "paper_id": 10,
       "filename": "10-MnCu共掺杂铁酸铋-钛酸钡固溶体-2020-JAP-Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\10-MnCu共掺杂铁酸铋-钛酸钡固溶体-2020-JAP-Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\10-MnCu共掺杂铁酸铋-钛酸钡固溶体-2020-JAP-Enhanced multiferroicity in Mn- and Cu-modified 0.7BiFeO3.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 154.887,
       "output": {
@@ -581,7 +581,7 @@
     {
       "paper_id": 11,
       "filename": "11-2018-磁电耦合达到mv解释可以参考-Journal of Crystal Growth-浮区熔化制备的相纯共晶CoFe2O4-Ba1xSrxTiO3复合材料-Phase-pure eutectic CoFe2O4-Ba1-xSrxTiO3 composites prepared by.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\11-2018-磁电耦合达到mv解释可以参考-Journal of Crystal Growth-浮区熔化制备的相纯共晶CoFe2O4-Ba1xSrxTiO3复合材料-Phase-pure eutectic CoFe2O4-Ba1-xSrxTiO3 composites prepared by.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\11-2018-磁电耦合达到mv解释可以参考-Journal of Crystal Growth-浮区熔化制备的相纯共晶CoFe2O4-Ba1xSrxTiO3复合材料-Phase-pure eutectic CoFe2O4-Ba1-xSrxTiO3 composites prepared by.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 112.075,
       "output": {
@@ -663,7 +663,7 @@
     {
       "paper_id": 12,
       "filename": "12-CrMn共掺杂铁酸铋钛酸钡固溶体-2022-J Mater Sci Mater Electron.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\12-CrMn共掺杂铁酸铋钛酸钡固溶体-2022-J Mater Sci Mater Electron.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\12-CrMn共掺杂铁酸铋钛酸钡固溶体-2022-J Mater Sci Mater Electron.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 121.985,
       "output": {
@@ -782,7 +782,7 @@
     {
       "paper_id": 13,
       "filename": "13-Nb掺杂-2024-提高BaTiO3CoNb0.02Fe1.98O4复合系统的介电、磁性、铁电和磁电耦合性能.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\13-Nb掺杂-2024-提高BaTiO3CoNb0.02Fe1.98O4复合系统的介电、磁性、铁电和磁电耦合性能.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\13-Nb掺杂-2024-提高BaTiO3CoNb0.02Fe1.98O4复合系统的介电、磁性、铁电和磁电耦合性能.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 0.49,
       "output": {},
@@ -793,7 +793,7 @@
     {
       "paper_id": 14,
       "filename": "14-Bi0⋅9La0⋅1FeO3SrCoO3新组合-2024-JMRT-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\14-Bi0⋅9La0⋅1FeO3SrCoO3新组合-2024-JMRT-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\14-Bi0⋅9La0⋅1FeO3SrCoO3新组合-2024-JMRT-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 75.245,
       "output": {
@@ -837,7 +837,7 @@
     {
       "paper_id": 15,
       "filename": "15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 127.954,
       "output": {
@@ -966,7 +966,7 @@
     {
       "paper_id": 16,
       "filename": "16-三项复合多铁2021-JAC-A neoteric tri-phase composite with efficient magneto-electric and multifunctional response.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\16-三项复合多铁2021-JAC-A neoteric tri-phase composite with efficient magneto-electric and multifunctional response.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\16-三项复合多铁2021-JAC-A neoteric tri-phase composite with efficient magneto-electric and multifunctional response.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 93.91,
       "output": {},
@@ -977,7 +977,7 @@
     {
       "paper_id": 17,
       "filename": "17-top-俩顺电产生磁电耦合-2022-acs nano-interface-driven-multiferroicity-in-cubic-batio3-srtio3-nanocomposites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\17-top-俩顺电产生磁电耦合-2022-acs nano-interface-driven-multiferroicity-in-cubic-batio3-srtio3-nanocomposites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\17-top-俩顺电产生磁电耦合-2022-acs nano-interface-driven-multiferroicity-in-cubic-batio3-srtio3-nanocomposites.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 139.392,
       "output": {
@@ -1130,7 +1130,7 @@
     {
       "paper_id": 18,
       "filename": "18-磷酸键合无烧结2022-JAC-Magnetoelectric coupling in nonsintered bulk BaTiO3 – xCoFe2O4.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\18-磷酸键合无烧结2022-JAC-Magnetoelectric coupling in nonsintered bulk BaTiO3 – xCoFe2O4.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\18-磷酸键合无烧结2022-JAC-Magnetoelectric coupling in nonsintered bulk BaTiO3 – xCoFe2O4.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 42.157,
       "output": {},
@@ -1141,7 +1141,7 @@
     {
       "paper_id": 19,
       "filename": "19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 256.215,
       "output": {
@@ -1278,7 +1278,7 @@
     {
       "paper_id": 20,
       "filename": "20-三元复合-2022-Mater S Proce-A suitable platform for simultaneous improvement of multiferroic characteristics.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\20-三元复合-2022-Mater S Proce-A suitable platform for simultaneous improvement of multiferroic characteristics.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\20-三元复合-2022-Mater S Proce-A suitable platform for simultaneous improvement of multiferroic characteristics.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 99.512,
       "output": {
@@ -1323,7 +1323,7 @@
     {
       "paper_id": 21,
       "filename": "21-薄膜无耦合-2022-欧陶-Suppressing the nonswitching contribution in BiFeO3-Bi4Ti3O12 ehavior.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\21-薄膜无耦合-2022-欧陶-Suppressing the nonswitching contribution in BiFeO3-Bi4Ti3O12 ehavior.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\21-薄膜无耦合-2022-欧陶-Suppressing the nonswitching contribution in BiFeO3-Bi4Ti3O12 ehavior.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 47.829,
       "output": {},
@@ -1334,7 +1334,7 @@
     {
       "paper_id": 22,
       "filename": "22-三相复合-2022-陶瓷国际-Significant impact of spinel ferrites in evolution of magneto-electric coupling in novel tri-phase composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\22-三相复合-2022-陶瓷国际-Significant impact of spinel ferrites in evolution of magneto-electric coupling in novel tri-phase composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\22-三相复合-2022-陶瓷国际-Significant impact of spinel ferrites in evolution of magneto-electric coupling in novel tri-phase composites.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 82.639,
       "output": {
@@ -1378,7 +1378,7 @@
     {
       "paper_id": 23,
       "filename": "23-铁电复合材料成分的软混合和硬混合2023-APA-Magnetoelectric properties of multiferroic ceramic composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\23-铁电复合材料成分的软混合和硬混合2023-APA-Magnetoelectric properties of multiferroic ceramic composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\23-铁电复合材料成分的软混合和硬混合2023-APA-Magnetoelectric properties of multiferroic ceramic composites.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 88.148,
       "output": {
@@ -1420,7 +1420,7 @@
     {
       "paper_id": 24,
       "filename": "24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 361.844,
       "output": {
@@ -1543,7 +1543,7 @@
     {
       "paper_id": 25,
       "filename": "25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 201.278,
       "output": {
@@ -1618,7 +1618,7 @@
     {
       "paper_id": 26,
       "filename": "26-2023-JAC-Grain size and piezoelectric effect on magnetoelectric coupling in BFO_PZT perovskite-perovskite composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\26-2023-JAC-Grain size and piezoelectric effect on magnetoelectric coupling in BFO_PZT perovskite-perovskite composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\26-2023-JAC-Grain size and piezoelectric effect on magnetoelectric coupling in BFO_PZT perovskite-perovskite composites.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 93.141,
       "output": {
@@ -1662,7 +1662,7 @@
     {
       "paper_id": 27,
       "filename": "27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 232.113,
       "output": {
@@ -1707,7 +1707,7 @@
     {
       "paper_id": 28,
       "filename": "28-2023-Acta Mater-Control of magnetism at low electric fields in multiferroic 0.58BiFeO3–0.42Bi0.5K0.5TiO3  near morphotropic phase boundary.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\28-2023-Acta Mater-Control of magnetism at low electric fields in multiferroic 0.58BiFeO3–0.42Bi0.5K0.5TiO3  near morphotropic phase boundary.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\28-2023-Acta Mater-Control of magnetism at low electric fields in multiferroic 0.58BiFeO3–0.42Bi0.5K0.5TiO3  near morphotropic phase boundary.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 167.592,
       "output": {
@@ -1810,7 +1810,7 @@
     {
       "paper_id": 29,
       "filename": "29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 163.309,
       "output": {
@@ -1929,7 +1929,7 @@
     {
       "paper_id": 30,
       "filename": "30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 209.48,
       "output": {
@@ -2022,7 +2022,7 @@
     {
       "paper_id": 31,
       "filename": "31-没磁电耦合-2023-MMM-Investigation of BaTiO3_ Cu1-xMgxFe2O4 nano-multiferroic composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\31-没磁电耦合-2023-MMM-Investigation of BaTiO3_ Cu1-xMgxFe2O4 nano-multiferroic composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\31-没磁电耦合-2023-MMM-Investigation of BaTiO3_ Cu1-xMgxFe2O4 nano-multiferroic composites.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 84.683,
       "output": {
@@ -2137,7 +2137,7 @@
     {
       "paper_id": 32,
       "filename": "32-没磁电耦合-2023-陶瓷国际-High piezoelectric-magnetic coupling in potassium-sodium niobate piezoelectric ceramics prepared by solution synthesis.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\32-没磁电耦合-2023-陶瓷国际-High piezoelectric-magnetic coupling in potassium-sodium niobate piezoelectric ceramics prepared by solution synthesis.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\32-没磁电耦合-2023-陶瓷国际-High piezoelectric-magnetic coupling in potassium-sodium niobate piezoelectric ceramics prepared by solution synthesis.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 180.466,
       "output": {
@@ -2187,7 +2187,7 @@
     {
       "paper_id": 33,
       "filename": "33-共沉淀法-2023-陶瓷国际-Magnetoelectric coupling property of 0-3 type CoFe2O4-BaTiO3 nanocomposites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\33-共沉淀法-2023-陶瓷国际-Magnetoelectric coupling property of 0-3 type CoFe2O4-BaTiO3 nanocomposites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\33-共沉淀法-2023-陶瓷国际-Magnetoelectric coupling property of 0-3 type CoFe2O4-BaTiO3 nanocomposites.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 37.853,
       "output": {},
@@ -2198,7 +2198,7 @@
     {
       "paper_id": 34,
       "filename": "34-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in BiFeO3oFe2O4 tri-phase composites for ultra-fast switching applications.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\34-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in BiFeO3oFe2O4 tri-phase composites for ultra-fast switching applications.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\34-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in BiFeO3oFe2O4 tri-phase composites for ultra-fast switching applications.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 48.502,
       "output": {},
@@ -2209,7 +2209,7 @@
     {
       "paper_id": 35,
       "filename": "35-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in perovskite_spinel-based triphasic multiferroic composites for multistate devices.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\35-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in perovskite_spinel-based triphasic multiferroic composites for multistate devices.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\35-Shahid Atiq三相复合-2023-陶瓷国际-Tunability of magnetoelectric coupling in perovskite_spinel-based triphasic multiferroic composites for multistate devices.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 102.356,
       "output": {
@@ -2254,7 +2254,7 @@
     {
       "paper_id": 36,
       "filename": "36-important-2023-陶瓷国际-Magnetoelectric coupling optimization in lead-free Ba0.85Ca0.15Zr0.1Ti0.9O3 Ni0.5Zn0.5Fe2O4 nanocomposites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\36-important-2023-陶瓷国际-Magnetoelectric coupling optimization in lead-free Ba0.85Ca0.15Zr0.1Ti0.9O3 Ni0.5Zn0.5Fe2O4 nanocomposites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\36-important-2023-陶瓷国际-Magnetoelectric coupling optimization in lead-free Ba0.85Ca0.15Zr0.1Ti0.9O3 Ni0.5Zn0.5Fe2O4 nanocomposites.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 125.295,
       "output": {
@@ -2356,7 +2356,7 @@
     {
       "paper_id": 37,
       "filename": "37-Shahid Atiq三相复合-2024-JAC.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\37-Shahid Atiq三相复合-2024-JAC.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\37-Shahid Atiq三相复合-2024-JAC.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 69.384,
       "output": {
@@ -2400,7 +2400,7 @@
     {
       "paper_id": 38,
       "filename": "38-Ga双掺杂-2023-揭示Ba0.95Sn0.05Ti0.95 Ga0.05O3-CoFe1.8Ga0.2O4颗粒多铁复合材料中的线性和双二次磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\38-Ga双掺杂-2023-揭示Ba0.95Sn0.05Ti0.95 Ga0.05O3-CoFe1.8Ga0.2O4颗粒多铁复合材料中的线性和双二次磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\38-Ga双掺杂-2023-揭示Ba0.95Sn0.05Ti0.95 Ga0.05O3-CoFe1.8Ga0.2O4颗粒多铁复合材料中的线性和双二次磁电耦合.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 196.06,
       "output": {
@@ -2463,7 +2463,7 @@
     {
       "paper_id": 39,
       "filename": "39-磁介电-2024-（Ni0.5Zn0.5Fe2O4）x[（Na0.5Bi0.5)0.7Ba0.3TiO3]1−x（x=0.3,0.5)纳米复合陶瓷的磁电性能制备及研究，用于磁场传感器应用.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\39-磁介电-2024-（Ni0.5Zn0.5Fe2O4）x[（Na0.5Bi0.5)0.7Ba0.3TiO3]1−x（x=0.3,0.5)纳米复合陶瓷的磁电性能制备及研究，用于磁场传感器应用.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\39-磁介电-2024-（Ni0.5Zn0.5Fe2O4）x[（Na0.5Bi0.5)0.7Ba0.3TiO3]1−x（x=0.3,0.5)纳米复合陶瓷的磁电性能制备及研究，用于磁场传感器应用.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 38.242,
       "output": {},
@@ -2474,7 +2474,7 @@
     {
       "paper_id": 40,
       "filename": "40-微波下磁电耦合-2023-JMST-Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\40-微波下磁电耦合-2023-JMST-Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\40-微波下磁电耦合-2023-JMST-Magnetoelectric coupling at microwave frequencies observed in bismuth ferrite-based multiferroics at room temperature.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 98.106,
       "output": {
@@ -2586,7 +2586,7 @@
     {
       "paper_id": 41,
       "filename": "41-磁场电回线由第一性原理-2023-多铁NiO纳米复合材料低温磁性和磁电性能研究.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\41-磁场电回线由第一性原理-2023-多铁NiO纳米复合材料低温磁性和磁电性能研究.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\41-磁场电回线由第一性原理-2023-多铁NiO纳米复合材料低温磁性和磁电性能研究.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 50.097,
       "output": {},
@@ -2597,7 +2597,7 @@
     {
       "paper_id": 42,
       "filename": "42-低温核壳主要磁性能交换偏置-2023-JAC-Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\42-低温核壳主要磁性能交换偏置-2023-JAC-Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\42-低温核壳主要磁性能交换偏置-2023-JAC-Exchange bias studies of CoFe2O4 coated BiFeO3 nanoparticles.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 167.247,
       "output": {
@@ -2700,7 +2700,7 @@
     {
       "paper_id": 43,
       "filename": "43-Shahid Atiq双相-2024-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\43-Shahid Atiq双相-2024-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\43-Shahid Atiq双相-2024-Rapid switching capability and efficient magnetoelectric coupling mediated.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 82.797,
       "output": {
@@ -2744,7 +2744,7 @@
     {
       "paper_id": 44,
       "filename": "44-磁电耦合解释-2012-Magneto electric effects in BaTiO3–CoFe2O4 bulk composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\44-磁电耦合解释-2012-Magneto electric effects in BaTiO3–CoFe2O4 bulk composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\44-磁电耦合解释-2012-Magneto electric effects in BaTiO3–CoFe2O4 bulk composites.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 19.611,
       "output": {},
@@ -2755,7 +2755,7 @@
     {
       "paper_id": 45,
       "filename": "45-2022-JMCC-Magnetoelectric behaviour of 0–3 Co-BaTiO3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\45-2022-JMCC-Magnetoelectric behaviour of 0–3 Co-BaTiO3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\45-2022-JMCC-Magnetoelectric behaviour of 0–3 Co-BaTiO3.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 129.156,
       "output": {
@@ -2829,7 +2829,7 @@
     {
       "paper_id": 46,
       "filename": "46-Co棒状和颗粒的影响-2024-jmcc-co BTO-Exchange bias mediated self-biased.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\46-Co棒状和颗粒的影响-2024-jmcc-co BTO-Exchange bias mediated self-biased.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\46-Co棒状和颗粒的影响-2024-jmcc-co BTO-Exchange bias mediated self-biased.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 114.376,
       "output": {
@@ -2917,7 +2917,7 @@
     {
       "paper_id": 47,
       "filename": "47-增强铁电-2023-AMT-Strengthening the ferroelectric properties in the three-component.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\47-增强铁电-2023-AMT-Strengthening the ferroelectric properties in the three-component.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\47-增强铁电-2023-AMT-Strengthening the ferroelectric properties in the three-component.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 139.877,
       "output": {
@@ -2998,7 +2998,7 @@
     {
       "paper_id": 48,
       "filename": "48-解释可以看-2024-3M-(Na0.41K0.09Bi0.5TiO3-Ba0.85Ca0.15Zr0.1Ti0.9O3)-(CoFe2O4).pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\48-解释可以看-2024-3M-(Na0.41K0.09Bi0.5TiO3-Ba0.85Ca0.15Zr0.1Ti0.9O3)-(CoFe2O4).pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\48-解释可以看-2024-3M-(Na0.41K0.09Bi0.5TiO3-Ba0.85Ca0.15Zr0.1Ti0.9O3)-(CoFe2O4).pdf",
       "status": "COMPLETED",
       "runtime_seconds": 126.107,
       "output": {
@@ -3085,7 +3085,7 @@
     {
       "paper_id": 49,
       "filename": "49-没磁电耦合-2017-APL- Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\49-没磁电耦合-2017-APL- Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\49-没磁电耦合-2017-APL- Bi(Fe,Ga)O3-(Ba,Ca)(Zr,Ti)O3.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 127.066,
       "output": {
@@ -3188,7 +3188,7 @@
     {
       "paper_id": 50,
       "filename": "50-磁电滞回线Mn掺杂三相复合-2020-apl-BiFeO3–PbTiO3-DyFeO3复合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\50-磁电滞回线Mn掺杂三相复合-2020-apl-BiFeO3–PbTiO3-DyFeO3复合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\50-磁电滞回线Mn掺杂三相复合-2020-apl-BiFeO3–PbTiO3-DyFeO3复合.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 28.19,
       "output": {},
@@ -3199,7 +3199,7 @@
     {
       "paper_id": 51,
       "filename": "51-微波磁电耦合-2024-APL-Dynamic magnetoelectric effect in bismuth-layer structured.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\51-微波磁电耦合-2024-APL-Dynamic magnetoelectric effect in bismuth-layer structured.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\51-微波磁电耦合-2024-APL-Dynamic magnetoelectric effect in bismuth-layer structured.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 123.105,
       "output": {
@@ -3274,7 +3274,7 @@
     {
       "paper_id": 52,
       "filename": "52-铁电固溶体加铁磁-2024-sss-High magnetoelectric coupling in piezoelectric modified BNT and magnetic.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\52-铁电固溶体加铁磁-2024-sss-High magnetoelectric coupling in piezoelectric modified BNT and magnetic.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\52-铁电固溶体加铁磁-2024-sss-High magnetoelectric coupling in piezoelectric modified BNT and magnetic.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 130.281,
       "output": {
@@ -3356,7 +3356,7 @@
     {
       "paper_id": 53,
       "filename": "53-Mn掺杂BFO-2015-JMCC.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\53-Mn掺杂BFO-2015-JMCC.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\53-Mn掺杂BFO-2015-JMCC.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 251.06,
       "output": {
@@ -3485,7 +3485,7 @@
     {
       "paper_id": 54,
       "filename": "54-top-俩钙钛矿复合实现磁电耦合-2021-Scripta Materialia-钙钛矿复合-New approach for designing bulk multiferroic composites made of.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\54-top-俩钙钛矿复合实现磁电耦合-2021-Scripta Materialia-钙钛矿复合-New approach for designing bulk multiferroic composites made of.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\54-top-俩钙钛矿复合实现磁电耦合-2021-Scripta Materialia-钙钛矿复合-New approach for designing bulk multiferroic composites made of.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 27.544,
       "output": {},
@@ -3496,7 +3496,7 @@
     {
       "paper_id": 55,
       "filename": "55-铁氧体加铁电-2024-CI-新型Na0.5Bi0.5TiO3-BaFe12-2xCoxTixO19多铁复合材料中的强磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\55-铁氧体加铁电-2024-CI-新型Na0.5Bi0.5TiO3-BaFe12-2xCoxTixO19多铁复合材料中的强磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\55-铁氧体加铁电-2024-CI-新型Na0.5Bi0.5TiO3-BaFe12-2xCoxTixO19多铁复合材料中的强磁电耦合.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 97.716,
       "output": {
@@ -3568,7 +3568,7 @@
     {
       "paper_id": 56,
       "filename": "56-可以看磁电耦合CoFe和铁电- 2017 -美陶- Novel magnetoelectric composites of cobalt iron alloy and barium.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\56-可以看磁电耦合CoFe和铁电- 2017 -美陶- Novel magnetoelectric composites of cobalt iron alloy and barium.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\56-可以看磁电耦合CoFe和铁电- 2017 -美陶- Novel magnetoelectric composites of cobalt iron alloy and barium.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 72.823,
       "output": {
@@ -3646,7 +3646,7 @@
     {
       "paper_id": 57,
       "filename": "57- 2024 - 美陶 - Stress‐induced multiferroic properties of lead‐free  1   x BTNO.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\57- 2024 - 美陶 - Stress‐induced multiferroic properties of lead‐free  1   x BTNO.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\57- 2024 - 美陶 - Stress‐induced multiferroic properties of lead‐free  1   x BTNO.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 41.674,
       "output": {},
@@ -3657,7 +3657,7 @@
     {
       "paper_id": 58,
       "filename": "58-纯铁电多铁-2024-sintering-induced-multiferroicity-in-0.93(na0.5bi0.5)tio3-0.07batio3-ceramics.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\58-纯铁电多铁-2024-sintering-induced-multiferroicity-in-0.93(na0.5bi0.5)tio3-0.07batio3-ceramics.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\58-纯铁电多铁-2024-sintering-induced-multiferroicity-in-0.93(na0.5bi0.5)tio3-0.07batio3-ceramics.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 106.618,
       "output": {
@@ -3724,7 +3724,7 @@
     {
       "paper_id": 59,
       "filename": "59-纯铁电中多铁-2019-apl.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\59-纯铁电中多铁-2019-apl.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\59-纯铁电中多铁-2019-apl.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 167.511,
       "output": {
@@ -3808,7 +3808,7 @@
     {
       "paper_id": 60,
       "filename": "60-2019-CoFe2O4–Ba1–xSrxTiO3共晶.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\60-2019-CoFe2O4–Ba1–xSrxTiO3共晶.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\60-2019-CoFe2O4–Ba1–xSrxTiO3共晶.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 23.248,
       "output": {},
@@ -3819,7 +3819,7 @@
     {
       "paper_id": 61,
       "filename": "61-铁团聚体单相磁介电-2020-Angew- The Mechanism of the Magnetodielectric Response in a Molecule‐Based Trinuclear Iron Cluster.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\61-铁团聚体单相磁介电-2020-Angew- The Mechanism of the Magnetodielectric Response in a Molecule‐Based Trinuclear Iron Cluster.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\61-铁团聚体单相磁介电-2020-Angew- The Mechanism of the Magnetodielectric Response in a Molecule‐Based Trinuclear Iron Cluster.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 55.999,
       "output": {},
@@ -3830,7 +3830,7 @@
     {
       "paper_id": 62,
       "filename": "62-2015第一性原理计算热中介机制磁电耦合-PhysRevLett-Thermally Mediated Mechanism to Enhance Magnetoelectric Coupling.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\62-2015第一性原理计算热中介机制磁电耦合-PhysRevLett-Thermally Mediated Mechanism to Enhance Magnetoelectric Coupling.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\62-2015第一性原理计算热中介机制磁电耦合-PhysRevLett-Thermally Mediated Mechanism to Enhance Magnetoelectric Coupling.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 91.846,
       "output": {
@@ -3911,7 +3911,7 @@
     {
       "paper_id": 63,
       "filename": "63-氧化铁和聚合物-2023-MH-热中介磁电耦合-The magnetopyroelectric effect heat-mediated.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\63-氧化铁和聚合物-2023-MH-热中介磁电耦合-The magnetopyroelectric effect heat-mediated.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\63-氧化铁和聚合物-2023-MH-热中介磁电耦合-The magnetopyroelectric effect heat-mediated.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 190.48,
       "output": {
@@ -4046,7 +4046,7 @@
     {
       "paper_id": 64,
       "filename": "64-2013-apl-共烧织构层状复合材料中的巨大自偏磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\64-2013-apl-共烧织构层状复合材料中的巨大自偏磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\64-2013-apl-共烧织构层状复合材料中的巨大自偏磁电耦合.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 24.404,
       "output": {},
@@ -4057,7 +4057,7 @@
     {
       "paper_id": 65,
       "filename": "65-2015-apl-嵌入式NiPZTFeNi复合材料中磁电耦合的应力诱导自偏置.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\65-2015-apl-嵌入式NiPZTFeNi复合材料中磁电耦合的应力诱导自偏置.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\65-2015-apl-嵌入式NiPZTFeNi复合材料中磁电耦合的应力诱导自偏置.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 24.833,
       "output": {},
@@ -4068,7 +4068,7 @@
     {
       "paper_id": 66,
       "filename": "66-2017-apl-自偏置.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\66-2017-apl-自偏置.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\66-2017-apl-自偏置.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 183.125,
       "output": {
@@ -4169,7 +4169,7 @@
     {
       "paper_id": 67,
       "filename": "67-2023-JAC-自偏置-Tunable self-biased magnetoelectric effect in magnetization-graded magnetoelectric composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\67-2023-JAC-自偏置-Tunable self-biased magnetoelectric effect in magnetization-graded magnetoelectric composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\67-2023-JAC-自偏置-Tunable self-biased magnetoelectric effect in magnetization-graded magnetoelectric composites.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 24.855,
       "output": {},
@@ -4180,7 +4180,7 @@
     {
       "paper_id": 68,
       "filename": "68-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\68-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\68-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 23.564,
       "output": {},
@@ -4191,7 +4191,7 @@
     {
       "paper_id": 69,
       "filename": "69-2020-在室温下，超顺磁相和铁电相共存的多铁质体中的巨大磁电响应.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\69-2020-在室温下，超顺磁相和铁电相共存的多铁质体中的巨大磁电响应.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\69-2020-在室温下，超顺磁相和铁电相共存的多铁质体中的巨大磁电响应.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 23.49,
       "output": {},
@@ -4202,7 +4202,7 @@
     {
       "paper_id": 70,
       "filename": "70-2016-jmcc-还原烧结和再氧化法制备的CoFe2O4-BaTiO3复合材料的磁电滞后行为.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\70-2016-jmcc-还原烧结和再氧化法制备的CoFe2O4-BaTiO3复合材料的磁电滞后行为.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\70-2016-jmcc-还原烧结和再氧化法制备的CoFe2O4-BaTiO3复合材料的磁电滞后行为.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 119.134,
       "output": {
@@ -4285,7 +4285,7 @@
     {
       "paper_id": 71,
       "filename": "71-2017-3M-Room temperature large self-biased magnetoelectric effect.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\71-2017-3M-Room temperature large self-biased magnetoelectric effect.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\71-2017-3M-Room temperature large self-biased magnetoelectric effect.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 28.728,
       "output": {
@@ -4327,7 +4327,7 @@
     {
       "paper_id": 72,
       "filename": "72-有机多铁异质结中的光控磁化效应和磁电效应2017-aom.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\72-有机多铁异质结中的光控磁化效应和磁电效应2017-aom.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\72-有机多铁异质结中的光控磁化效应和磁电效应2017-aom.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 101.374,
       "output": {
@@ -4429,7 +4429,7 @@
     {
       "paper_id": 73,
       "filename": "73-2019-PhysRevLett-提出在反铁磁过渡金属氧化物中插入氢是实现强磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\73-2019-PhysRevLett-提出在反铁磁过渡金属氧化物中插入氢是实现强磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\73-2019-PhysRevLett-提出在反铁磁过渡金属氧化物中插入氢是实现强磁电耦合.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 19.84,
       "output": {},
@@ -4440,7 +4440,7 @@
     {
       "paper_id": 74,
       "filename": "74-掺杂铁钛酸钡-单相-2020-jac-Room temperature magnetoelectric coupling in Fe-doped sodium.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\74-掺杂铁钛酸钡-单相-2020-jac-Room temperature magnetoelectric coupling in Fe-doped sodium.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\74-掺杂铁钛酸钡-单相-2020-jac-Room temperature magnetoelectric coupling in Fe-doped sodium.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 199.074,
       "output": {
@@ -4485,7 +4485,7 @@
     {
       "paper_id": 75,
       "filename": "75-磁电耦合效应是直线-2021-jac-Exotic magnetic properties and enhanced magnetoelectric coupling in.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\75-磁电耦合效应是直线-2021-jac-Exotic magnetic properties and enhanced magnetoelectric coupling in.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\75-磁电耦合效应是直线-2021-jac-Exotic magnetic properties and enhanced magnetoelectric coupling in.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 157.126,
       "output": {
@@ -4571,7 +4571,7 @@
     {
       "paper_id": 76,
       "filename": "76-3区一锅法Nb铁电-2022-Materials Chemistry and Physics-Sr0.5Ba0.5Nb2O6–CoFe2O4.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\76-3区一锅法Nb铁电-2022-Materials Chemistry and Physics-Sr0.5Ba0.5Nb2O6–CoFe2O4.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\76-3区一锅法Nb铁电-2022-Materials Chemistry and Physics-Sr0.5Ba0.5Nb2O6–CoFe2O4.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 102.362,
       "output": {
@@ -4658,7 +4658,7 @@
     {
       "paper_id": 77,
       "filename": "77-高频下磁电耦合-2022-rsc adv-Giant magnetoelectric coupling observed at highfrequency in NiFe2O4–BaTiO3 particulate.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\77-高频下磁电耦合-2022-rsc adv-Giant magnetoelectric coupling observed at highfrequency in NiFe2O4–BaTiO3 particulate.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\77-高频下磁电耦合-2022-rsc adv-Giant magnetoelectric coupling observed at highfrequency in NiFe2O4–BaTiO3 particulate.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 123.72,
       "output": {
@@ -4749,7 +4749,7 @@
     {
       "paper_id": 78,
       "filename": "78-3区-2024-Materials Research Bulletin-NixCo1− xFe2O4− SryBa1− yNb2O6.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\78-3区-2024-Materials Research Bulletin-NixCo1− xFe2O4− SryBa1− yNb2O6.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\78-3区-2024-Materials Research Bulletin-NixCo1− xFe2O4− SryBa1− yNb2O6.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 176.294,
       "output": {
@@ -4833,7 +4833,7 @@
     {
       "paper_id": 79,
       "filename": "79-单相-2019-apl-缺钠钛酸铋钠的室温多铁性和磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\79-单相-2019-apl-缺钠钛酸铋钠的室温多铁性和磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\79-单相-2019-apl-缺钠钛酸铋钠的室温多铁性和磁电耦合.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 250.313,
       "output": {
@@ -4917,7 +4917,7 @@
     {
       "paper_id": 80,
       "filename": "80-2-2-2019-jap-YW铁氧体和PZT.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\80-2-2-2019-jap-YW铁氧体和PZT.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\80-2-2-2019-jap-YW铁氧体和PZT.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 47.891,
       "output": {
@@ -5035,7 +5035,7 @@
     {
       "paper_id": 81,
       "filename": "81-2012-apl-应变耦合两相系统中直、逆磁电系数的等价性.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\81-2012-apl-应变耦合两相系统中直、逆磁电系数的等价性.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\81-2012-apl-应变耦合两相系统中直、逆磁电系数的等价性.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 18.49,
       "output": {},
@@ -5046,7 +5046,7 @@
     {
       "paper_id": 82,
       "filename": "82-可细读-2023-欧陶-NiFe2O4− Sr0.5Ba0.5Nb2O6.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\82-可细读-2023-欧陶-NiFe2O4− Sr0.5Ba0.5Nb2O6.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\82-可细读-2023-欧陶-NiFe2O4− Sr0.5Ba0.5Nb2O6.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 23.644,
       "output": {},
@@ -5057,7 +5057,7 @@
     {
       "paper_id": 83,
       "filename": "83-SI-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\83-SI-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\83-SI-2023-acsnano-室温下具有大磁电耦合的溶液处理多铁薄膜-solution-processed-multiferroic-thin-films-with-large-magnetoelectric-coupling-at-room.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 31.096,
       "output": {},
@@ -5068,7 +5068,7 @@
     {
       "paper_id": 84,
       "filename": "84-2024-陶瓷国际-BaTiO3-CoNb0.02Fe1.98O4.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\84-2024-陶瓷国际-BaTiO3-CoNb0.02Fe1.98O4.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\84-2024-陶瓷国际-BaTiO3-CoNb0.02Fe1.98O4.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 50.059,
       "output": {},
@@ -5079,7 +5079,7 @@
     {
       "paper_id": 85,
       "filename": "85-4区机械合成-2016-Materials Research Express-mechanically synthesized.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\85-4区机械合成-2016-Materials Research Express-mechanically synthesized.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\85-4区机械合成-2016-Materials Research Express-mechanically synthesized.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 53.701,
       "output": {
@@ -5121,7 +5121,7 @@
     {
       "paper_id": 86,
       "filename": "86-2023-materials-钛酸铋钠-钾镍钴铁氧体.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\86-2023-materials-钛酸铋钠-钾镍钴铁氧体.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\86-2023-materials-钛酸铋钠-钾镍钴铁氧体.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 95.545,
       "output": {
@@ -5200,7 +5200,7 @@
     {
       "paper_id": 87,
       "filename": "87-2023-开源-Multicaloric Effect in 0–3-Type MnAsPMN–PT Composites.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\87-2023-开源-Multicaloric Effect in 0–3-Type MnAsPMN–PT Composites.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\87-2023-开源-Multicaloric Effect in 0–3-Type MnAsPMN–PT Composites.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 43.166,
       "output": {},
@@ -5211,7 +5211,7 @@
     {
       "paper_id": 88,
       "filename": "88-2024-JAC-(1-x)BaTiO3.(x)LaFeO3 solid solution.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\88-2024-JAC-(1-x)BaTiO3.(x)LaFeO3 solid solution.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\88-2024-JAC-(1-x)BaTiO3.(x)LaFeO3 solid solution.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 245.06,
       "output": {
@@ -5293,7 +5293,7 @@
     {
       "paper_id": 89,
       "filename": "89-2008-apl-纳米复合薄膜中的应变介导的磁电耦合.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\89-2008-apl-纳米复合薄膜中的应变介导的磁电耦合.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\89-2008-apl-纳米复合薄膜中的应变介导的磁电耦合.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 19.238,
       "output": {},
@@ -5304,7 +5304,7 @@
     {
       "paper_id": 90,
       "filename": "90-2021-Materials Today Chemistry-多铁流体.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\90-2021-Materials Today Chemistry-多铁流体.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\90-2021-Materials Today Chemistry-多铁流体.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 60.237,
       "output": {
@@ -5414,7 +5414,7 @@
     {
       "paper_id": 91,
       "filename": "91-顺电铁磁磁电耦合-2024-JAC-Co0.7Fe2.3O4-SrTiO3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\91-顺电铁磁磁电耦合-2024-JAC-Co0.7Fe2.3O4-SrTiO3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\91-顺电铁磁磁电耦合-2024-JAC-Co0.7Fe2.3O4-SrTiO3.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 94.844,
       "output": {
@@ -5509,7 +5509,7 @@
     {
       "paper_id": 92,
       "filename": "92-顺电铁磁磁介电-2019-陶瓷国际-Room-temperature multiferroic and magnetodielectric properties of SrTiO3.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\92-顺电铁磁磁介电-2019-陶瓷国际-Room-temperature multiferroic and magnetodielectric properties of SrTiO3.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\92-顺电铁磁磁介电-2019-陶瓷国际-Room-temperature multiferroic and magnetodielectric properties of SrTiO3.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 70.148,
       "output": {
@@ -5597,7 +5597,7 @@
     {
       "paper_id": 93,
       "filename": "93-铁电PZT纹理陶瓷-2023-Science.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\93-铁电PZT纹理陶瓷-2023-Science.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\93-铁电PZT纹理陶瓷-2023-Science.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 87.2,
       "output": {
@@ -5780,7 +5780,7 @@
     {
       "paper_id": 94,
       "filename": "94-top-通过相形态边界中掺杂Fe实现磁电耦合-2015-nature-设计室温下氧化物中的可切换极化和磁化.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\94-top-通过相形态边界中掺杂Fe实现磁电耦合-2015-nature-设计室温下氧化物中的可切换极化和磁化.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\94-top-通过相形态边界中掺杂Fe实现磁电耦合-2015-nature-设计室温下氧化物中的可切换极化和磁化.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 33.766,
       "output": {},
@@ -5791,7 +5791,7 @@
     {
       "paper_id": 95,
       "filename": "95-2008-science-形态相边界的起源.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\95-2008-science-形态相边界的起源.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\95-2008-science-形态相边界的起源.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 11.436,
       "output": {},
@@ -5802,7 +5802,7 @@
     {
       "paper_id": 96,
       "filename": "96-孔隙率和磁电耦合关系2022-apl-Strain transfer in porous multiferroic composites of CoFe2O4-and PbZrxTiO.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\96-孔隙率和磁电耦合关系2022-apl-Strain transfer in porous multiferroic composites of CoFe2O4-and PbZrxTiO.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\96-孔隙率和磁电耦合关系2022-apl-Strain transfer in porous multiferroic composites of CoFe2O4-and PbZrxTiO.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 21.049,
       "output": {},
@@ -5813,7 +5813,7 @@
     {
       "paper_id": 97,
       "filename": "97-添加剂对于复合材料影响-2021-陶瓷国际-添加剂对bifeo3-pbtio3多铁行为的影响.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\97-添加剂对于复合材料影响-2021-陶瓷国际-添加剂对bifeo3-pbtio3多铁行为的影响.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\97-添加剂对于复合材料影响-2021-陶瓷国际-添加剂对bifeo3-pbtio3多铁行为的影响.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 126.672,
       "output": {
@@ -5891,7 +5891,7 @@
     {
       "paper_id": 98,
       "filename": "98-2024-陶瓷国际-La和Se共掺杂BiFeO3嵌套Ti3C2Tx MXene独立陶瓷薄膜的室温铁电、磁性和磁电性能.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\98-2024-陶瓷国际-La和Se共掺杂BiFeO3嵌套Ti3C2Tx MXene独立陶瓷薄膜的室温铁电、磁性和磁电性能.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\98-2024-陶瓷国际-La和Se共掺杂BiFeO3嵌套Ti3C2Tx MXene独立陶瓷薄膜的室温铁电、磁性和磁电性能.pdf",
       "status": "COMPLETED",
       "runtime_seconds": 232.8,
       "output": {
@@ -5979,7 +5979,7 @@
     {
       "paper_id": 99,
       "filename": "99-2022-science-Sr掺杂KNN实现高压电.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\99-2022-science-Sr掺杂KNN实现高压电.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\99-2022-science-Sr掺杂KNN实现高压电.pdf",
       "status": "PREFILTER_REJECTED",
       "runtime_seconds": 47.021,
       "output": {},
@@ -5990,7 +5990,7 @@
     {
       "paper_id": 100,
       "filename": "100-2020-陶瓷国际-调整Ba0.83Ca0.10Sr0.07TiO3-MnFe2o4多铁复合材料的介电、铁电和机电性能.pdf",
-      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\100-2020-陶瓷国际-调整Ba0.83Ca0.10Sr0.07TiO3-MnFe2o4多铁复合材料的介电、铁电和机电性能.pdf",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\pdfs\\manual\\original_001_100\\100-2020-陶瓷国际-调整Ba0.83Ca0.10Sr0.07TiO3-MnFe2o4多铁复合材料的介电、铁电和机电性能.pdf",
       "status": "EMPTY_RESULT",
       "runtime_seconds": 40.046,
       "output": {

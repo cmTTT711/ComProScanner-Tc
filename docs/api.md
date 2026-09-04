@@ -1,17 +1,9 @@
-# API Reference
+# Command and Python API
 
-::: comproscanner
-options:
-members: - ComProScanner - RAGConfig - LLMConfig - data_visualizer - eval_visualizer
-show_root_heading: true
-heading_level: 2
+`comproscanner --help` is the authoritative command list. The supported
+production entry point is the guarded CLI. Core Python contracts are available
+under `schemas`, `chunking`, `evidence`, `facts`, `presets`, `pipeline`, and
+`results`.
 
-::: comproscanner.data_visualizer
-options:
-show_root_heading: true
-heading_level: 2
-
-::: comproscanner.eval_visualizer
-options:
-show_root_heading: true
-heading_level: 2
+The historical top-level `ComProScanner` class remains importable for upstream
+compatibility; see [legacy compatibility](legacy.md).
