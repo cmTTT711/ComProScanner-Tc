@@ -40,3 +40,31 @@ def test_review_workbook_shows_all_original_evidence_in_one_fact_row(tmp_path):
     assert len(frame) == 1
     assert "Original text evidence." in frame.loc[0, "evidence"]
     assert "BiFeO3 | 1103" in frame.loc[0, "evidence"]
+
+
+def test_review_workbook_removes_illegal_pdf_control_characters(tmp_path):
+    evidence = [
+        Evidence(
+            "text_control",
+            "paper_001",
+            "Tc",
+            EvidenceType.TEXT,
+            "chunk_control",
+            "Curie temperature is 698\x0e C.",
+            (RetrievalMethod("rule"),),
+        )
+    ]
+    fact = Fact(
+        "paper_001",
+        "Tc",
+        "sample",
+        "sample",
+        "sample",
+        FactValue.from_raw(698, "C"),
+        ("text_control",),
+    )
+
+    path = write_review_workbook(tmp_path / "review.xlsx", [fact], evidence)
+    frame = pd.read_excel(path)
+    assert "\x0e" not in frame.loc[0, "evidence"]
+    assert "698 C" in frame.loc[0, "evidence"]

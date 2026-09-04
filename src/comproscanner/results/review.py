@@ -6,9 +6,16 @@ from copy import copy
 from pathlib import Path
 
 import pandas as pd
+from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
 
 from ..evidence import Evidence
 from ..facts import Fact
+
+
+def _excel_safe(value):
+    """Remove XML control characters that XLSX cells cannot represent."""
+
+    return ILLEGAL_CHARACTERS_RE.sub("", value) if isinstance(value, str) else value
 
 
 def _evidence_text(item: Evidence) -> str:
@@ -57,7 +64,7 @@ def write_review_workbook(
         )
     destination = Path(path)
     destination.parent.mkdir(parents=True, exist_ok=True)
-    frame = pd.DataFrame(rows)
+    frame = pd.DataFrame(rows).map(_excel_safe)
     with pd.ExcelWriter(destination, engine="openpyxl") as writer:
         frame.to_excel(writer, sheet_name="facts", index=False)
         sheet = writer.sheets["facts"]
