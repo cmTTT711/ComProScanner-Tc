@@ -37,7 +37,8 @@ comproscanner normalize --csv first.csv --csv second.csv --output article.csv
 
 The command sanitizes NUL bytes, upgrades legacy columns, validates the schema,
 and de-duplicates by `document_id`. `full_text` is the authoritative textual
-payload: local PDF parsing writes it directly, while the legacy publisher
+payload: local PDF parsing writes the complete parser Markdown with only unsafe
+control characters removed, while the legacy publisher
 adapter composes it from all preserved sections. `paper_id`, `source_path`, and
 `file_hash` keep local corpus identity independent of DOI availability.
 `comproscanner sources` lists the registered raw inputs and their
@@ -90,7 +91,11 @@ only as compatibility/diagnostic metadata; it never removes Article text or
 gates the canonical Evidence stage.
 
 `chunking/text_chunker.py` produces the only normal-text segmentation from
-`full_text`. Chunks
+`full_text`. An exact terminal References/Bibliography heading is represented
+as `section=references`; the text stays in Article and chunk artifacts, but
+rule, vector, and equation Evidence providers skip those pure bibliography
+chunks by default. Ambiguous early headings remain normal text to protect
+recall in multi-column parser output. Chunks
 never cross section boundaries, prefer natural paragraphs, and split oversized
 paragraphs with overlap. Fixed three-sentence context is not used.
 

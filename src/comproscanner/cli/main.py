@@ -253,8 +253,11 @@ def _prepare_evidence(args: argparse.Namespace) -> int:
         try:
             chunks, rule_evidence = pipeline.prepare_all(row)
             vector_matches = []
-            if vector_provider and chunks:
-                vector_provider.index(document_id, chunks)
+            searchable_chunks = [
+                chunk for chunk in chunks if chunk.section != "references"
+            ]
+            if vector_provider and searchable_chunks:
+                vector_provider.index(document_id, searchable_chunks)
                 vector_matches = vector_provider.select(
                     document_id, retrieval_queries, top_k=args.rag_top_k
                 )

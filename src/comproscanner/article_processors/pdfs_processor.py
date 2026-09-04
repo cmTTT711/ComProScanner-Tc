@@ -32,7 +32,7 @@ from ..utils.database_manager import (
 )
 from ..utils.error_handler import ValueErrorHandler, KeyboardInterruptHandler
 from ..utils.logger import setup_logger
-from ..utils.pdf_to_markdown_text import PDFToMarkdownText
+from ..utils.pdf_to_markdown_text import PDFToMarkdownText, sanitize_full_text
 from ..utils.common_functions import (
     get_paper_metadata_from_openalex,
     get_doi_from_crossref,
@@ -581,7 +581,7 @@ class PDFsProcessor:
                 # The evidence-first pipeline consumes the complete parser output.
                 # Legacy property filtering remains diagnostic only and must never
                 # erase source text before canonical Article normalization.
-                row["full_text"] = "\n\n".join(all_sections).strip()
+                row["full_text"] = sanitize_full_text(md_text)
                 row["paper_id"] = self._paper_id(pdf_file)
                 row["source_path"] = os.path.abspath(pdf_file)
                 row["file_hash"] = self._file_hash(pdf_file)

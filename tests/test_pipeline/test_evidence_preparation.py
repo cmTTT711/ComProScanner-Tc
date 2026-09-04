@@ -85,3 +85,23 @@ def test_full_text_is_the_single_authoritative_text_source():
     assert chunks[0].section == "full_text"
     assert len(evidence) == 1
     assert "793 K" in evidence[0].content
+
+
+def test_terminal_references_are_retained_but_not_selected_as_evidence():
+    configured = EvidencePreparationPipeline(
+        target_property="Curie temperature",
+        property_keywords={"exact_keywords": ["Curie temperature"]},
+        provider_names=("rule_text",),
+    )
+    body = ("Body paragraph without a property value. " * 40).strip()
+    full_text = (
+        f"{body}\n\n## References\n\n"
+        "[1] BiFeO3 has a Curie temperature of 1103 K."
+    )
+    chunks, evidence = configured.prepare_all({
+        "document_id": "paper-references",
+        "full_text": full_text,
+    })
+    assert any(chunk.section == "references" for chunk in chunks)
+    assert any("1103 K" in chunk.content for chunk in chunks)
+    assert evidence == []

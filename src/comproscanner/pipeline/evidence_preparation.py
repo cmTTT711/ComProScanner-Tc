@@ -31,6 +31,26 @@ TEXT_SECTIONS = (
     "conclusion",
 )
 
+_REFERENCE_HEADING = re.compile(
+    r"(?im)^[ \t]*#{1,6}[ \t]+(?:references|bibliography|参考文献)[ \t]*$"
+)
+
+
+def split_reference_region(text: str) -> dict[str, str]:
+    """Mark a likely terminal bibliography without discarding source text."""
+
+    matches = list(_REFERENCE_HEADING.finditer(text))
+    for match in reversed(matches):
+        # Multi-column parsing can place a references column early. Prefer
+        # recall in that ambiguous case and keep the heading in normal text.
+        if match.start() < len(text) * 0.55:
+            continue
+        return {
+            "full_text": text[: match.start()].rstrip(),
+            "references": text[match.start() :].lstrip(),
+        }
+    return {"full_text": text}
+
 
 def preset_patterns(property_keywords: dict) -> tuple[str, ...]:
     """Convert the existing property-keyword shape into regex patterns."""
@@ -111,14 +131,17 @@ class EvidencePreparationPipeline:
         full_text = row.get("full_text", "")
         full_text = "" if full_text is None or str(full_text) == "nan" else str(full_text)
         if full_text.strip():
-            sections = {"full_text": full_text}
+            sections = split_reference_region(full_text)
         else:
             sections = {}
             for section in TEXT_SECTIONS:
                 value = row.get(section, "")
                 sections[section] = "" if value is None or str(value) == "nan" else str(value)
         chunks = self.chunker.split_article(document_id, sections)
-        rule_matches = self.rule_provider.select(chunks) if self.rule_provider else []
+        searchable_chunks = [chunk for chunk in chunks if chunk.section != "references"]
+        rule_matches = (
+            self.rule_provider.select(searchable_chunks) if self.rule_provider else []
+        )
         matches = [*rule_matches, *vector_matches]
         return chunks, self.builder.build(
             chunks=chunks,
@@ -139,7 +162,9 @@ class EvidencePreparationPipeline:
         )
         document_id = str(row["document_id"])
         tables = table_units_from_text(document_id, row.get("tables", ""))
-        equations = equation_units_from_chunks(chunks)
+        equations = equation_units_from_chunks(
+            chunk for chunk in chunks if chunk.section != "references"
+        )
         figures = figure_units_from_manifest(row.get("figures_manifest_path", ""))
         evidence = [*text_evidence]
         if self.table_provider:

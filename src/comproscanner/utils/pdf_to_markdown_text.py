@@ -38,6 +38,14 @@ logger = setup_logger("comproscanner.log", module_name="pdf_to_markdown_text")
 IMAGE_RESOLUTION_SCALE = 2.0
 
 
+def sanitize_full_text(text: str) -> str:
+    """Make parser text storage-safe without deleting scientific content."""
+
+    text = str(text or "").replace("\x00", "")
+    # XML/XLSX cannot represent these C0 controls. Preserve tabs and newlines.
+    return re.sub(r"[\x01-\x08\x0b\x0c\x0e-\x1f]", "", text).strip()
+
+
 def match_property_signal(text: str, property_keywords: dict):
     """Return the first deterministic property signal as ``(class, excerpt)``."""
     candidate_patterns = property_keywords.get("candidate_patterns", [])

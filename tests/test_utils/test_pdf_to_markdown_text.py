@@ -14,7 +14,7 @@ from unittest.mock import patch, MagicMock, mock_open
 from docling.datamodel.base_models import InputFormat
 import os
 
-from comproscanner.utils.pdf_to_markdown_text import PDFToMarkdownText
+from comproscanner.utils.pdf_to_markdown_text import PDFToMarkdownText, sanitize_full_text
 from comproscanner.utils.error_handler import ValueErrorHandler
 
 
@@ -32,6 +32,15 @@ class TestPDFToMarkdownText:
             pdf_converter = PDFToMarkdownText(source="test.pdf")
             assert pdf_converter.source == "test.pdf"
             assert pdf_converter.num_threads == 4  # Default value
+
+    def test_full_text_sanitizer_preserves_references_and_scientific_text(self):
+        text = "Main text\x00\n\n## References\nBiFeO3 1103 K\x0e"
+        result = sanitize_full_text(text)
+        assert "Main text" in result
+        assert "## References" in result
+        assert "BiFeO3 1103 K" in result
+        assert "\x00" not in result
+        assert "\x0e" not in result
 
     def test_initialization_with_custom_threads(self):
         """Test initialization with custom number of threads"""
