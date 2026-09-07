@@ -1,0 +1,97 @@
+{
+  "preparation": {
+    "source_csv": "F:\\Python_Project\\ComProScanner\\data\\runs\\tc_single_evidence_30_20260905\\article.csv",
+    "source_sha256": "19adbb90f02c59ee62171e854d4380bcb092116eb11b5e4feafafcf5d1aadaba",
+    "source_type": "unknown",
+    "target_property": "Curie temperature",
+    "property_keywords": {
+      "candidate_patterns": [
+        {
+          "class": "DIRECT_TC",
+          "pattern": "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?"
+        },
+        {
+          "class": "CURIE",
+          "pattern": "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b"
+        },
+        {
+          "class": "FE_PE_TRANSITION",
+          "pattern": "(?i)\\b(?:ferroelectric|fe)\\s*(?:-|–|—|/|to)\\s*(?:paraelectric|pe)\\s+(?:phase\\s+)?transition\\b|\\bparaelectric\\s*(?:-|–|—|/|to)\\s*ferroelectric\\s+(?:phase\\s+)?transition\\b"
+        },
+        {
+          "class": "FE_TRANSITION_CONTEXT",
+          "pattern": "(?i)\\b(?:normal\\s+)?ferroelectric(?:\\s+phase)?\\s+transition(?:\\s+temperature\\b|\\b.{0,120}?(?:\\bT\\s*_?\\s*m\\b|transition\\s+temperature|dielectric\\s+(?:maximum|peak)|[+-]?\\d+(?:\\.\\d+)?\\s*(?:°\\s*c|k)\\b))"
+        },
+        {
+          "class": "TM_FE_CONTEXT",
+          "pattern": "(?i)(?:\\bT\\s*_?\\s*m\\b.{0,160}\\b(?:ferroelectric|paraelectric)\\b|\\b(?:ferroelectric|paraelectric)\\b.{0,160}\\bT\\s*_?\\s*m\\b)"
+        }
+      ],
+      "exact_keywords": [
+        "Curie temperature",
+        "curie temperature",
+        "Curie point",
+        "curie point",
+        "ferroelectric Curie temperature",
+        "ferroelectric curie temperature",
+        "ferroelectric Curie point",
+        "ferroelectric curie point",
+        "ferroelectric transition temperature",
+        "ferroelectric to paraelectric phase transition temperature",
+        "phase transition temperature, Tc",
+        "magnetic Curie temperature",
+        "magnetic curie temperature"
+      ],
+      "substring_keywords": [
+        "curie temperature",
+        "curie point",
+        " tc ",
+        " T_C ",
+        " t_c "
+      ],
+      "regex_keywords": [
+        "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+      ]
+    },
+    "text_candidate_patterns": [
+      "\\d",
+      "[A-Z]{2,}"
+    ],
+    "retrieval_queries": [
+      "Curie temperature Tc material composition",
+      "ferroelectric paraelectric phase transition temperature material"
+    ],
+    "providers": [
+      "rule_text",
+      "table",
+      "equation"
+    ],
+    "modality_patterns": {},
+    "rag_settings": {
+      "embedding_model": "huggingface:thellert/physbert_cased",
+      "rag_max_tokens": 512,
+      "rag_top_k": 3
+    },
+    "rag_top_k": 3,
+    "chunking": [
+      220,
+      360,
+      60
+    ]
+  },
+  "command": "prepare-evidence",
+  "preset": "curie_temperature",
+  "source_csv": "F:\\Python_Project\\ComProScanner\\data\\runs\\tc_single_evidence_30_20260905\\article.csv",
+  "with_rag": false,
+  "evidence_providers": [
+    "rule_text",
+    "table",
+    "equation"
+  ],
+  "external_llm_calls": false,
+  "chunking": {
+    "target_words": 220,
+    "max_words": 360,
+    "overlap_words": 60
+  }
+}

@@ -1,3 +1,3 @@
-from .main import main
+from comproscanner.cli.main import main
 
 raise SystemExit(main())

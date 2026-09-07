@@ -1,0 +1,170 @@
+[
+  {
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_TEXT",
+    "resumed": true,
+    "stages": [
+      {
+        "stage": "identifier",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "usage_scope": "cached_previous_usage",
+    "cost": null
+  },
+  {
+    "document_id": "production-fixture",
+    "evidence_id": "production-fixture_TABLE_0001",
+    "resumed": true,
+    "stages": [
+      {
+        "stage": "identifier",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "usage_scope": "cached_previous_usage",
+    "cost": null
+  },
+  {
+    "document_id": "production-fixture",
+    "evidence_id": "fixture-figure",
+    "resumed": true,
+    "stages": [
+      {
+        "stage": "identifier",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "figure",
+        "error": null,
+        "token_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "usage_scope": "cached_previous_usage",
+    "cost": null
+  },
+  {
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_EQ_01",
+    "resumed": true,
+    "stages": [
+      {
+        "stage": "identifier",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "equation",
+        "error": null,
+        "token_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "usage_scope": "cached_previous_usage",
+    "cost": null
+  }
+]

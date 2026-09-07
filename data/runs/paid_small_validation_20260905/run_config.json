@@ -1,0 +1,5 @@
+{
+  "preset": "curie_temperature",
+  "experiment": "paid_small",
+  "input_type": "real_paper"
+}

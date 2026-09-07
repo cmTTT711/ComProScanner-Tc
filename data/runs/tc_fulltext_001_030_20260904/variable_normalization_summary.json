@@ -1,0 +1,35 @@
+{
+  "external_model_calls": false,
+  "source_predictions": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_fulltext_001_030_20260904\\predictions.json",
+  "source_pdf_count": 5,
+  "facts_before": 61,
+  "facts_after_merge": 59,
+  "normalization_changes": [
+    {
+      "document_id": "10.1007/s10854-022-08492-3",
+      "material_reported": "y=0.24, x=0.01",
+      "before": "y=0.24, x=0.01",
+      "after": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3"
+    },
+    {
+      "document_id": "10.1063/5.0026210",
+      "material_reported": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+      "before": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+      "after": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2"
+    },
+    {
+      "document_id": "10.1111/jace.19555",
+      "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+      "before": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+      "after": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3"
+    },
+    {
+      "document_id": "10.1111/jace.19555",
+      "material_reported": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+      "before": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+      "after": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3"
+    }
+  ],
+  "predictions": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_fulltext_001_030_20260904\\predictions_variable_normalized.json",
+  "review": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_fulltext_001_030_20260904\\review_variable_normalized.xlsx"
+}

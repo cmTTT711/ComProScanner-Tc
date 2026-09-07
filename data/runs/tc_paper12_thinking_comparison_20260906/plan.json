@@ -1,0 +1,40 @@
+{
+  "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+  "document_id": "10.1007/s10854-022-08492-3",
+  "historical_evidence_exact_match": true,
+  "evidence_characters": 1605,
+  "restored_extractor_and_client_ast_match": true,
+  "instructions_match_restored_contract": true,
+  "messages_sha256": "df59b8d7dd1fc4c1a42c8916b616e972a4cb23a85989727147fafefd48968800",
+  "instructions_sha256": "ffb846ec4e8772bfb2cf3c9a4fdd1eb65e930a5ca932e4a4a82131a125407eb2",
+  "expected_supported_values_K": [
+    853.1
+  ],
+  "excluded_Tm_values_K": [
+    766.1,
+    741.7
+  ],
+  "model": "deepseek/deepseek-v4-flash",
+  "max_new_http_requests": 2,
+  "common_parameters": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "timeout": 180,
+    "num_retries": 0
+  },
+  "arms": [
+    "thinking_omitted",
+    "thinking_disabled"
+  ],
+  "prior_model_request_attempts": 21,
+  "prior_material_requests": 1,
+  "maximum_cumulative_model_attempts": 23,
+  "maximum_cumulative_model_plus_material_attempts": 24,
+  "limitations": [
+    "Historical wire requests/model defaults unavailable.",
+    "Shared 8192 output cap is a budget constraint, not a known historical parameter.",
+    "Single call per arm; cannot establish repeatability or sole historical cause.",
+    "Identifier previously accepted; this isolates extraction, not full pipeline accuracy.",
+    "No host-formula context added and no material service called."
+  ]
+}

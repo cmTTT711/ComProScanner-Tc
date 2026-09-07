@@ -1,0 +1,62 @@
+[
+  {
+    "old_row": 7,
+    "paper_id": 12,
+    "reported": "y=0.24, x=0.01",
+    "candidate": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3",
+    "value": {
+      "value": "853.1",
+      "unit": "K",
+      "qualifier": null
+    },
+    "status": "SOURCE_VERIFIED_OFFLINE_RECOVERY",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API",
+    "verification": "Source PDF page 2 explicitly defines (1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3 and y=.24, x=.01; direct substitution gives 0.76/0.24 and 0.99/0.01.",
+    "applied_to_live_predictions": false
+  },
+  {
+    "old_row": 17,
+    "paper_id": 15,
+    "reported": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+    "candidate": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2",
+    "value": {
+      "value": "698",
+      "unit": "K",
+      "qualifier": null
+    },
+    "status": "SOURCE_VERIFIED_OFFLINE_RECOVERY",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API",
+    "verification": "Source PDF page 3 Table I gives decimal coefficients and the 0.8 wt.% MnO2 composition at 698 K; this is typography restoration, not a new composition inference.",
+    "applied_to_live_predictions": false
+  },
+  {
+    "old_row": 50,
+    "paper_id": 29,
+    "reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+    "candidate": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+    "value": {
+      "value": "795.2",
+      "unit": "K",
+      "qualifier": "~"
+    },
+    "status": "SOURCE_VERIFIED_OFFLINE_RECOVERY",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API",
+    "verification": "Source PDF pages 1-2 define the Cr/Mn parent formula and y=.27,x=.03; direct substitution gives 0.73/0.27 and 0.97/0.03. Rows 50/51 are duplicate source text.",
+    "applied_to_live_predictions": false
+  },
+  {
+    "old_row": 51,
+    "paper_id": 29,
+    "reported": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+    "candidate": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+    "value": {
+      "value": "795.2",
+      "unit": "K",
+      "qualifier": "~"
+    },
+    "status": "SOURCE_VERIFIED_OFFLINE_RECOVERY",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API",
+    "verification": "Source PDF pages 1-2 define the Cr/Mn parent formula and y=.27,x=.03; direct substitution gives 0.73/0.27 and 0.97/0.03. Rows 50/51 are duplicate source text.",
+    "applied_to_live_predictions": false
+  }
+]

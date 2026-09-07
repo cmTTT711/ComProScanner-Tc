@@ -1,0 +1,13 @@
+{
+  "scope": "one selected Evidence from paper 1 only; not the 30-paper benchmark",
+  "gold_facts": 1,
+  "predicted_facts": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "false_positives": [],
+  "false_negatives": []
+}

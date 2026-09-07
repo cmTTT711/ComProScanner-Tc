@@ -1,0 +1,1789 @@
+{
+  "plan": {
+    "scope": "Audit all 61 Sept4 predictions; rerun selected problem Evidence only.",
+    "historical_prediction_count": 61,
+    "strict_gold_fact_count": 46,
+    "strict_gold_temperature_events": 45,
+    "historical_temperature_event_hits": 43,
+    "temperature_event_misses": [
+      {
+        "gold_row_1based": 11,
+        "gold": {
+          "paper_id": 11,
+          "material": "BaTiO3",
+          "tc_value": 120,
+          "tc_unit": "°C",
+          "page": 6,
+          "fact_role": "background",
+          "transition_type": "ferroelectric-paraelectric",
+          "qualifier": "typical; not observed in the current CoFe2O4-Ba0.97Sr0.03TiO3 composite",
+          "evidence": "The typical maximum of epsilon' at about 120 °C, which stems from the ferroelectric to paraelectric phase transition of BaTiO3, was not found...",
+          "strict_scoring": true,
+          "gold_status": "ACCEPTED"
+        },
+        "audit_note": "Same-paper/value/unit absent; material and scientific meaning require source verification.",
+        "source_verified": "PDF page 6: typical BaTiO3 FE-PE peak about 120 C, not observed in this composite; valid background fact, not a composite measurement."
+      },
+      {
+        "gold_row_1based": 41,
+        "gold": {
+          "paper_id": 27,
+          "material": "BiFeO3",
+          "tc_value": 1103,
+          "tc_unit": "K",
+          "fact_role": "background",
+          "review_decision": "ADD_TO_GOLD",
+          "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+          "strict_scoring": true,
+          "gold_status": "ACCEPTED"
+        },
+        "audit_note": "Same-paper/value/unit absent; material and scientific meaning require source verification.",
+        "source_verified": "PDF pages 1-2 report approximately 830 C (1103.15 K by conversion), not literal 1103 K. Old parsed evidence has glyph corruption and splits the sentence across chunks. Keep original source unit; do not modify Gold."
+      }
+    ],
+    "flagged_name_rows": 37,
+    "name_incomplete_or_unexpanded_rows": 36,
+    "formula_typography_rows": 1,
+    "selected_evidence_count": 26,
+    "selected": [
+      {
+        "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+        "document_id": "10.1002/adma.201003636",
+        "source_type": "text",
+        "characters": 1521,
+        "old_rows": [],
+        "reasons": [
+          "FN_background_120C"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+        "document_id": "local-pdf/e0b7c7f789f25ed2",
+        "source_type": "text",
+        "characters": 872,
+        "old_rows": [],
+        "reasons": [
+          "FN_background_original_830C",
+          "PDF_text_recovery"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+        "document_id": "10.1063/1.5131055",
+        "source_type": "text",
+        "characters": 2125,
+        "old_rows": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "reasons": [
+          "unexpanded_alias_and_additives"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+        "document_id": "10.1007/s10854-022-08492-3",
+        "source_type": "text",
+        "characters": 1605,
+        "old_rows": [
+          7
+        ],
+        "reasons": [
+          "missing_parent_formula"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+        "document_id": "10.1063/5.0026210",
+        "source_type": "text",
+        "characters": 1238,
+        "old_rows": [
+          17
+        ],
+        "reasons": [
+          "formula_typography_corruption"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+        "document_id": "10.1063/5.0026210",
+        "source_type": "text",
+        "characters": 1369,
+        "old_rows": [
+          18
+        ],
+        "reasons": [
+          "unresolved_parent_or_sample_variable"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+        "document_id": "10.1063/5.0026210",
+        "source_type": "text",
+        "characters": 1561,
+        "old_rows": [
+          19
+        ],
+        "reasons": [
+          "unresolved_parent_or_sample_variable"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1979,
+        "old_rows": [
+          21
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1462,
+        "old_rows": [
+          22,
+          23
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1332,
+        "old_rows": [
+          24
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1750,
+        "old_rows": [
+          25,
+          26,
+          27
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1336,
+        "old_rows": [
+          28,
+          29
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "text",
+        "characters": 1743,
+        "old_rows": [
+          30
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "table",
+        "characters": 15192,
+        "old_rows": [
+          32,
+          33,
+          34
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+        "document_id": "10.1002/adfm.202113022",
+        "source_type": "table",
+        "characters": 16339,
+        "old_rows": [
+          35
+        ],
+        "reasons": [
+          "unexpanded_phase_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+        "document_id": "10.1063/5.0133946",
+        "source_type": "text",
+        "characters": 1884,
+        "old_rows": [
+          40
+        ],
+        "reasons": [
+          "unexpanded_ternary_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+        "document_id": "10.1143/JPSJ.7.5",
+        "source_type": "text",
+        "characters": 1814,
+        "old_rows": [
+          42,
+          43,
+          44
+        ],
+        "reasons": [
+          "unexpanded_solid_solution_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+        "document_id": "local-pdf/4d3fe4ad46460542",
+        "source_type": "text",
+        "characters": 1648,
+        "old_rows": [
+          45
+        ],
+        "reasons": [
+          "unexpanded_phase_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+        "document_id": "local-pdf/e0b7c7f789f25ed2",
+        "source_type": "text",
+        "characters": 1719,
+        "old_rows": [
+          46
+        ],
+        "reasons": [
+          "unexpanded_ternary_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "source_type": "text",
+        "characters": 1829,
+        "old_rows": [
+          47
+        ],
+        "reasons": [
+          "unexpanded_material_or_crystal_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "source_type": "text",
+        "characters": 1238,
+        "old_rows": [
+          48
+        ],
+        "reasons": [
+          "unexpanded_material_or_crystal_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+        "document_id": "10.1111/jace.19555",
+        "source_type": "text",
+        "characters": 990,
+        "old_rows": [
+          50,
+          51
+        ],
+        "reasons": [
+          "unexpanded_variable_solid_solution"
+        ],
+        "equivalent_source_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+        ]
+      },
+      {
+        "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+        "document_id": "local-pdf/d6275e45598fdba0",
+        "source_type": "text",
+        "characters": 1569,
+        "old_rows": [
+          52
+        ],
+        "reasons": [
+          "sample_label_without_composition"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "source_type": "text",
+        "characters": 1390,
+        "old_rows": [
+          53
+        ],
+        "reasons": [
+          "unexpanded_material_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "source_type": "text",
+        "characters": 1227,
+        "old_rows": [
+          54
+        ],
+        "reasons": [
+          "unexpanded_material_or_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      },
+      {
+        "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "source_type": "text",
+        "characters": 1456,
+        "old_rows": [
+          58,
+          59
+        ],
+        "reasons": [
+          "unexpanded_composite_alias"
+        ],
+        "equivalent_source_ids": []
+      }
+    ],
+    "model_input_policy": "Unchanged original Evidence and frozen Tc instructions, except one explicitly logged PDF source-recovery paragraph. No Gold content supplied to models; no added material-definition context.",
+    "thinking": {
+      "type": "enabled"
+    },
+    "old_outputs_and_gold_untouched": true,
+    "source_sha256": {
+      "outputs/runs/tc_fulltext_001_030_20260904/predictions.json": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7",
+      "outputs/gold/tc_001_030/gold_facts.json": "7b423c955290fd1a5b02c322893e5d23ac477cf9904227708fb6a694533ee4bd"
+    }
+  },
+  "rows": [
+    {
+      "prediction_row_1based": 1,
+      "paper_id": 1,
+      "original_fact": {
+        "document_id": "local-pdf/d13a6634f5c93180",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 2,
+      "paper_id": 10,
+      "original_fact": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT",
+        "material_normalized": "BF-BCT",
+        "material_identity_key": "BF-BCT",
+        "fact_value": {
+          "value": "683",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        }
+      },
+      "name_issue": "unexpanded_alias_and_additives",
+      "audit_note": "BF-BCT series needs parent formula and C/M additive definitions."
+    },
+    {
+      "prediction_row_1based": 3,
+      "paper_id": 10,
+      "original_fact": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-C",
+        "material_normalized": "BF-BCT-C",
+        "material_identity_key": "BF-BCT-C",
+        "fact_value": {
+          "value": "692",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        }
+      },
+      "name_issue": "unexpanded_alias_and_additives",
+      "audit_note": "BF-BCT series needs parent formula and C/M additive definitions."
+    },
+    {
+      "prediction_row_1based": 4,
+      "paper_id": 10,
+      "original_fact": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-M",
+        "material_normalized": "BF-BCT-M",
+        "material_identity_key": "BF-BCT-M",
+        "fact_value": {
+          "value": "690",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        }
+      },
+      "name_issue": "unexpanded_alias_and_additives",
+      "audit_note": "BF-BCT series needs parent formula and C/M additive definitions."
+    },
+    {
+      "prediction_row_1based": 5,
+      "paper_id": 10,
+      "original_fact": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-CM",
+        "material_normalized": "BF-BCT-CM",
+        "material_identity_key": "BF-BCT-CM",
+        "fact_value": {
+          "value": "687",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        }
+      },
+      "name_issue": "unexpanded_alias_and_additives",
+      "audit_note": "BF-BCT series needs parent formula and C/M additive definitions."
+    },
+    {
+      "prediction_row_1based": 6,
+      "paper_id": 12,
+      "original_fact": {
+        "document_id": "10.1007/s10854-022-08492-3",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 7,
+      "paper_id": 12,
+      "original_fact": {
+        "document_id": "10.1007/s10854-022-08492-3",
+        "property_name": "Curie temperature",
+        "material_reported": "y=0.24, x=0.01",
+        "material_normalized": "y=0.24, x=0.01",
+        "material_identity_key": "y=0.24, x=0.01",
+        "fact_value": {
+          "value": "853.1",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "E_bias": "0 V"
+        }
+      },
+      "name_issue": "missing_parent_formula",
+      "audit_note": "Only x/y assignments; parent solid-solution formula absent."
+    },
+    {
+      "prediction_row_1based": 8,
+      "paper_id": 14,
+      "original_fact": {
+        "document_id": "local-pdf/f632a01543d4e2d3",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 9,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "material_normalized": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "material_identity_key": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "fact_value": {
+          "value": "703",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 10,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "material_normalized": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "material_identity_key": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "fact_value": {
+          "value": "690",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 11,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "material_normalized": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "material_identity_key": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "fact_value": {
+          "value": "727",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 12,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "material_normalized": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "material_identity_key": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "fact_value": {
+          "value": "634",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 13,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "material_normalized": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "material_identity_key": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "fact_value": {
+          "value": "673",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 14,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "material_normalized": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "material_identity_key": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "fact_value": {
+          "value": "711",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 15,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "fact_value": {
+          "value": "698",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 16,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "fact_value": {
+          "value": "689",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 17,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+        "material_normalized": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+        "fact_value": {
+          "value": "698",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0006_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "formula_typography_corruption",
+      "audit_note": "Ba0:85Ca0:15 uses colons in numeric coefficients; other same-document record has decimals."
+    },
+    {
+      "prediction_row_1based": 18,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-Mn-x (x=0)",
+        "material_normalized": "BF-BCT-Mn-x (x=0)",
+        "material_identity_key": "BF-BCT-Mn-x (x=0)",
+        "fact_value": {
+          "value": "732",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unresolved_parent_or_sample_variable",
+      "audit_note": "BF-BCT-Mn-x alias or unassigned x wt.% does not fully identify the reported sample."
+    },
+    {
+      "prediction_row_1based": 19,
+      "paper_id": 15,
+      "original_fact": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "material_normalized": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "fact_value": {
+          "value": "698",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0019_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unresolved_parent_or_sample_variable",
+      "audit_note": "BF-BCT-Mn-x alias or unassigned x wt.% does not fully identify the reported sample."
+    },
+    {
+      "prediction_row_1based": 20,
+      "paper_id": 17,
+      "original_fact": {
+        "document_id": "10.1021/acsnano.2c07215",
+        "property_name": "Curie temperature",
+        "material_reported": "bulk BiFeO3",
+        "material_normalized": "bulk BiFeO3",
+        "material_identity_key": "bulk BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 21,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO ferrospinel",
+        "material_normalized": "MZFO ferrospinel",
+        "material_identity_key": "MZFO ferrospinel",
+        "fact_value": {
+          "value": "501",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 22,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "initial MZFO powder",
+        "material_normalized": "initial MZFO powder",
+        "material_identity_key": "initial MZFO powder",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 23,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "material_normalized": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "material_identity_key": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 24,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+        "material_normalized": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+        "material_identity_key": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 25,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite",
+        "material_normalized": "BLFO-MZFO composite",
+        "material_identity_key": "BLFO-MZFO composite",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+          "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 26,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite HPT",
+        "material_normalized": "BLFO-MZFO composite HPT",
+        "material_identity_key": "BLFO-MZFO composite HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 27,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite HPT",
+        "material_normalized": "BLFO-MZFO composite HPT",
+        "material_identity_key": "BLFO-MZFO composite HPT",
+        "fact_value": {
+          "value": "778",
+          "unit": "K",
+          "qualifier": "new FM order (T_C*)"
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 28,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO fraction",
+        "material_normalized": "MZFO fraction",
+        "material_identity_key": "MZFO fraction",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+          "10.1002_adfm.202113022_TABLE_0002",
+          "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 29,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO fraction",
+        "material_normalized": "BLFO fraction",
+        "material_identity_key": "BLFO fraction",
+        "fact_value": {
+          "value": "950",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+          "10.1002_adfm.202113022_TABLE_0002",
+          "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 30,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO nanocomposite HPT",
+        "material_normalized": "BLFO-MZFO nanocomposite HPT",
+        "material_identity_key": "BLFO-MZFO nanocomposite HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 31,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+        "material_normalized": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+        "material_identity_key": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 32,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO",
+        "material_normalized": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO",
+        "material_identity_key": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 33,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite processed by compression",
+        "material_normalized": "BLFO-MZFO composite processed by compression",
+        "material_identity_key": "BLFO-MZFO composite processed by compression",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 34,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite processed by HPT",
+        "material_normalized": "BLFO-MZFO composite processed by HPT",
+        "material_identity_key": "BLFO-MZFO composite processed by HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 35,
+      "paper_id": 19,
+      "original_fact": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO fraction",
+        "material_normalized": "BLFO fraction",
+        "material_identity_key": "BLFO fraction",
+        "fact_value": {
+          "value": "778",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0002"
+        ],
+        "conditions": {
+          "context": "T_C* = 778 K; internal stresses and magnetostriction stabilize FM interactions, above which BLFO fraction goes PM"
+        }
+      },
+      "name_issue": "unexpanded_phase_or_composite_alias",
+      "audit_note": "MZFO/BLFO chemistry and composite proportions need source definitions. Commercial grade names are specific labels but chemistry remains unresolved."
+    },
+    {
+      "prediction_row_1based": 36,
+      "paper_id": 20,
+      "original_fact": {
+        "document_id": "local-pdf/deb70641057677d8",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 37,
+      "paper_id": 20,
+      "original_fact": {
+        "document_id": "local-pdf/deb70641057677d8",
+        "property_name": "Curie temperature",
+        "material_reported": "CrFe2O4",
+        "material_normalized": "CrFe2O4",
+        "material_identity_key": "CrFe2O4",
+        "fact_value": {
+          "value": "420",
+          "unit": "K",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 38,
+      "paper_id": 22,
+      "original_fact": {
+        "document_id": "local-pdf/7c100201e7883b3e",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 39,
+      "paper_id": 24,
+      "original_fact": {
+        "document_id": "10.1063/5.0133946",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0133946_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 40,
+      "paper_id": 24,
+      "original_fact": {
+        "document_id": "10.1063/5.0133946",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+        "material_normalized": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+        "material_identity_key": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+        "fact_value": {
+          "value": "774",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0133946_FULL_TEXT_0009_TEXT"
+        ],
+        "conditions": {
+          "sample_state": "as-prepared"
+        }
+      },
+      "name_issue": "unexpanded_ternary_alias",
+      "audit_note": "BF-BNT-BTM and x/y labels need source parent formula."
+    },
+    {
+      "prediction_row_1based": 41,
+      "paper_id": 25,
+      "original_fact": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 42,
+      "paper_id": 25,
+      "original_fact": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "undoped (1-x)BFO-xPTO",
+        "material_normalized": "undoped (1-x)BFO-xPTO",
+        "material_identity_key": "undoped (1-x)BFO-xPTO",
+        "fact_value": {
+          "value": "650",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_solid_solution_alias",
+      "audit_note": "BFO/PTO/BNFPT aliases not expanded. Do not invent a doping fraction absent from the cited statement."
+    },
+    {
+      "prediction_row_1based": 43,
+      "paper_id": 25,
+      "original_fact": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "lanthanum-substituted (1-x)BFO-xPTO",
+        "material_normalized": "lanthanum-substituted (1-x)BFO-xPTO",
+        "material_identity_key": "lanthanum-substituted (1-x)BFO-xPTO",
+        "fact_value": {
+          "value": "227",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_solid_solution_alias",
+      "audit_note": "BFO/PTO/BNFPT aliases not expanded. Do not invent a doping fraction absent from the cited statement."
+    },
+    {
+      "prediction_row_1based": 44,
+      "paper_id": 25,
+      "original_fact": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "(BNFPT)x ceramics with Nd substitution",
+        "material_normalized": "(BNFPT)x ceramics with Nd substitution",
+        "material_identity_key": "(BNFPT)x ceramics with Nd substitution",
+        "fact_value": {
+          "value": "320",
+          "unit": "°C",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_solid_solution_alias",
+      "audit_note": "BFO/PTO/BNFPT aliases not expanded. Do not invent a doping fraction absent from the cited statement."
+    },
+    {
+      "prediction_row_1based": 45,
+      "paper_id": 26,
+      "original_fact": {
+        "document_id": "local-pdf/4d3fe4ad46460542",
+        "property_name": "Curie temperature",
+        "material_reported": "PZT",
+        "material_normalized": "PZT",
+        "material_identity_key": "PZT",
+        "fact_value": {
+          "value": "355",
+          "unit": "°C",
+          "qualifier": "around"
+        },
+        "evidence_ids": [
+          "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+          "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_EQ_01"
+        ],
+        "conditions": {
+          "sample": "3BFO_n/7PZT_m composite",
+          "sintering_temperature": "650 °C"
+        }
+      },
+      "name_issue": "unexpanded_phase_alias",
+      "audit_note": "PZT phase is named and sample conditions retained; chemical formula/ratio is not expanded."
+    },
+    {
+      "prediction_row_1based": 46,
+      "paper_id": 27,
+      "original_fact": {
+        "document_id": "local-pdf/e0b7c7f789f25ed2",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BKT-BT (x=0.4)",
+        "material_normalized": "BF-BKT-BT (x=0.4)",
+        "material_identity_key": "BF-BKT-BT (x=0.4)",
+        "fact_value": {
+          "value": "742.6",
+          "unit": "K",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_ternary_alias",
+      "audit_note": "BF-BKT-BT with x=.4 needs parent ternary expression; legacy PDF text contains corrupted glyphs."
+    },
+    {
+      "prediction_row_1based": 47,
+      "paper_id": 28,
+      "original_fact": {
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "property_name": "ferroelectric Curie temperature",
+        "material_reported": "BFO",
+        "material_normalized": "BFO",
+        "material_identity_key": "BFO",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_material_or_crystal_alias",
+      "audit_note": "BFO/BFBKT needs explicit chemistry; BFBKT additionally needs 0.58/0.42 composition."
+    },
+    {
+      "prediction_row_1based": 48,
+      "paper_id": 28,
+      "original_fact": {
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "property_name": "Curie temperature",
+        "material_reported": "BFBKT crystal",
+        "material_normalized": "BFBKT crystal",
+        "material_identity_key": "BFBKT crystal",
+        "fact_value": {
+          "value": "671.5",
+          "unit": "K",
+          "qualifier": "about"
+        },
+        "evidence_ids": [
+          "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_material_or_crystal_alias",
+      "audit_note": "BFO/BFBKT needs explicit chemistry; BFBKT additionally needs 0.58/0.42 composition."
+    },
+    {
+      "prediction_row_1based": 49,
+      "paper_id": 29,
+      "original_fact": {
+        "document_id": "10.1111/jace.19555",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 50,
+      "paper_id": 29,
+      "original_fact": {
+        "document_id": "10.1111/jace.19555",
+        "property_name": "Curie temperature",
+        "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+        "material_normalized": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+        "material_identity_key": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+        "fact_value": {
+          "value": "795.2",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0013_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_variable_solid_solution",
+      "audit_note": "BFC/BTM aliases and x/y assignment need parent formula."
+    },
+    {
+      "prediction_row_1based": 51,
+      "paper_id": 29,
+      "original_fact": {
+        "document_id": "10.1111/jace.19555",
+        "property_name": "Curie temperature",
+        "material_reported": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+        "material_normalized": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+        "material_identity_key": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+        "fact_value": {
+          "value": "795.2",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_variable_solid_solution",
+      "audit_note": "BFC/BTM aliases and x/y assignment need parent formula."
+    },
+    {
+      "prediction_row_1based": 52,
+      "paper_id": 3,
+      "original_fact": {
+        "document_id": "local-pdf/d6275e45598fdba0",
+        "property_name": "Curie temperature",
+        "material_reported": "Composite sample of 24 h",
+        "material_normalized": "Composite sample of 24 h",
+        "material_identity_key": "Composite sample of 24 h",
+        "fact_value": {
+          "value": "129",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "sample_label_without_composition",
+      "audit_note": "Composite sample of 24 h gives processing label but no composition."
+    },
+    {
+      "prediction_row_1based": 53,
+      "paper_id": 30,
+      "original_fact": {
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "property_name": "Curie temperature",
+        "material_reported": "pristine BFO ceramic",
+        "material_normalized": "pristine BFO ceramic",
+        "material_identity_key": "pristine BFO ceramic",
+        "fact_value": {
+          "value": "830",
+          "unit": "°C",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_material_or_composite_alias",
+      "audit_note": "BFO/BTO chemistry absent from reported name; do not infer an unreported composite ratio."
+    },
+    {
+      "prediction_row_1based": 54,
+      "paper_id": 30,
+      "original_fact": {
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "property_name": "Curie temperature",
+        "material_reported": "BFO-BTO composite",
+        "material_normalized": "BFO-BTO composite",
+        "material_identity_key": "BFO-BTO composite",
+        "fact_value": {
+          "value": "580",
+          "unit": "°C",
+          "qualifier": "over ~"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": "unexpanded_material_or_composite_alias",
+      "audit_note": "BFO/BTO chemistry absent from reported name; do not infer an unreported composite ratio."
+    },
+    {
+      "prediction_row_1based": 55,
+      "paper_id": 4,
+      "original_fact": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+        "fact_value": {
+          "value": "720",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {
+          "phase_arrangement": "randomly mixed phases"
+        }
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 56,
+      "paper_id": 4,
+      "original_fact": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+        "fact_value": {
+          "value": "746",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {
+          "phase_arrangement": "tri-layer/layered structure"
+        }
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 57,
+      "paper_id": 4,
+      "original_fact": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "CoFe2O4",
+        "material_normalized": "CoFe2O4",
+        "material_identity_key": "CoFe2O4",
+        "fact_value": {
+          "value": "793",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 58,
+      "paper_id": 4,
+      "original_fact": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "BT-CF randomly mixed ceramic composite",
+        "material_normalized": "BT-CF randomly mixed ceramic composite",
+        "material_identity_key": "BT-CF randomly mixed ceramic composite",
+        "fact_value": {
+          "value": "720",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+        ],
+        "conditions": {
+          "measurement": "field-cooled magnetization",
+          "magnetic_field": "10 kOe out-of-plane"
+        }
+      },
+      "name_issue": "unexpanded_composite_alias",
+      "audit_note": "BT-CF needs chemistry and 0.66/0.33 composition; arrangement is present."
+    },
+    {
+      "prediction_row_1based": 59,
+      "paper_id": 4,
+      "original_fact": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "BT-CF layered ceramic composite",
+        "material_normalized": "BT-CF layered ceramic composite",
+        "material_identity_key": "BT-CF layered ceramic composite",
+        "fact_value": {
+          "value": "746",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+        ],
+        "conditions": {
+          "measurement": "field-cooled magnetization",
+          "magnetic_field": "10 kOe out-of-plane"
+        }
+      },
+      "name_issue": "unexpanded_composite_alias",
+      "audit_note": "BT-CF needs chemistry and 0.66/0.33 composition; arrangement is present."
+    },
+    {
+      "prediction_row_1based": 60,
+      "paper_id": 6,
+      "original_fact": {
+        "document_id": "10.1016/j.ceramint.2019.12.165",
+        "property_name": "Curie temperature",
+        "material_reported": "BaTiO3",
+        "material_normalized": "BaTiO3",
+        "material_identity_key": "BaTiO3",
+        "fact_value": {
+          "value": "200",
+          "unit": "°C",
+          "qualifier": "below"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2019_12_165_FULL_TEXT_0014_TEXT"
+        ],
+        "conditions": {
+          "frequency_dependence": "independent"
+        }
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    },
+    {
+      "prediction_row_1based": 61,
+      "paper_id": 7,
+      "original_fact": {
+        "document_id": "10.1063/5.0036518",
+        "property_name": "Curie temperature",
+        "material_reported": "cubic BaTiO3",
+        "material_normalized": "cubic BaTiO3",
+        "material_identity_key": "cubic BaTiO3",
+        "fact_value": {
+          "value": "120",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0036518_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {}
+      },
+      "name_issue": null,
+      "audit_note": "No name-completeness issue flagged; this is not blanket scientific acceptance."
+    }
+  ]
+}

@@ -1,0 +1,763 @@
+[
+  {
+    "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+    "document_id": "10.1002/adma.201003636",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adma_201003636_FULL_TEXT_0019",
+    "content": "Fig. 7. Frequency dependence of the real part of the permittivity and the loss tangent at room temperature.\n\n<!-- image -->\n\nFig. 8. Temperature dependence of the real part of the permittivity and the loss tangent.\n\n<!-- image -->\n\nThe typical maximum of e ' at about 120 ° C, which stems from the ferroelectric to paraelectric phase transition of BaTiO3, was not found since the amount of CoFe2O4 in the eutectic composition is comparatively high (38 mol%) and therefore dominates the dielectric properties. Again, this finding is in accordance with earlier reports, e.g. [40]. In summary it can be stated that the impedance data basically reflect the behavior of the more conductive component, i.e. CoFe2O4.\n\nFig. 9. Magnetoelectric coefficient (dots) of the reoxidized sample grown with 5 mmh 1 compared to its magnetization curve (dashed line). Black arrows indicate the shifting direction of the magnetic dc field.\n\n<!-- image -->\n\n## 3.5. Magnetoelectric effect\n\nFirst magnetoelectric measurements were carried out on a reoxidized slice of the phase-pure composite grown with 5 mm h 1 . As described in the experimental section, prior to the ME measurements an electric field of 5 kV cm 1 was applied. We would like to stress that without this poling step no considerable magnetoelectric voltage was measured. This proves that the electric field leads to a permanent electrical polarization and consequently the ferroelectric tetragonal modification of BaTiO3 has to be present although the c/a ratio is very small.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 411.6276550292969
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 244
+    }
+  },
+  {
+    "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+    "document_id": "local-pdf/e0b7c7f789f25ed2",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "PDF_P001_P002_INTRO_PARAGRAPH",
+    "content": "Materials that show coexistence of various functional \nproperties have recently been attracting increasing \nattention due to the possible application in highly \nintegrated multifunctional devices. Multiferroic ­BiFeO3 \n(BFO) is one of such materials that shows both ferro-\nelectric (FE) and magnetic orders at room temperature \n(RT). BFO exhibits a high spontaneous polarization \n(~ 100 µC/cm2) with high FE Curie temperature (T) (TC\n~ 830 °C) and zero net magnetization with a high anti-\nferromagnetic Néel temperature (TN ~ 340 °C). How-\never, pure BFO suffers from high leakage and hence \ndeteriorated ferroelectricity due to the volatilization \nof Bi during high-T sintering process [1]. The linear \nME effect in BFO is forbidden due to the cycloidal spin \nstructure [2]. In addition, the piezoelectricity in BFO \nis also very low due to the high leakage currents [3].",
+    "retrieval_methods": [
+      {
+        "provider": "source_audit_pymupdf",
+        "details": {
+          "reason": "recover corrupted cross-page paragraph"
+        }
+      }
+    ],
+    "section": "introduction",
+    "page_start": 1,
+    "page_end": 2,
+    "metadata": {
+      "source_path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\27-0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3)固溶体-2023-J Mater Sci Mater Electron.pdf",
+      "source_sha256": "c678fa85487217d681c66a4e008d7bc4c7bd78195f15fcfd0192b223f3e521cd",
+      "source_recovery": "Verbatim PyMuPDF spans, page1 introduction until Received metadata and page2 first paragraph; linebreaks retained."
+    }
+  },
+  {
+    "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+    "document_id": "10.1063/1.5131055",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1063_1_5131055_FULL_TEXT_0011",
+    "content": "Temperature- and frequency-dependent dielectric constant ( ε ) and dielectric loss (tan δ ) from 300 to 850 K at the range of 50 -100 kHz for all the samples are shown in Fig. 4. The ferroelectric transition temperature Tc can be determined to be 683, 692, 690, and 687 K at 100 kHz for BF-BCT, BF-BCT-C, BF-BCT-M, and BF-BCT-CM, respectively. The dielectric constant of all the samples increases as the frequency decreases, which is normal for ferroelectrics. 30 Tc shifts toward higher temperatures as frequencies increase, indicating the relaxor behavior of all the samples. 31 The dielectric loss of all the samples exhibits similar behavior, and the values of dielectric loss do not change much below Tc . Above Tc , the dielectric loss increases markedly and became immeasurable above 850 K, which may be due to the scattering of thermally activated charge carriers and some defects in the samples. 32\n\nFIG. 4. Temperatureand frequency-dependent dielectric constant (left) and dielectric loss (right) in the range of 50 -100 kHz from 300 to 850 K for (a) BF-BCT (b) BF-BCT-C(c) BF-BCT-M, and (d) BF-BCT-CM.\n\n<!-- image -->\n\nFigure 5 shows the isothermal M(H) behaviors of all samples at room temperature in the range of -45 kOe to 45 kOe. The BF-BCT-C, BF-BCT-M, and BF-BCT-CM samples exhibit an obvious hysteresis behavior, whereas BF-BCT shows a negligible hysteresis loop with a very small remanent magnetization Mr of 8 : 7 -10 4 emu = g (inset of Fig. 5). Moreover, it is seen from Fig. 5 that the magnetization of BF-BCT-C, BF-BCT-M, and BF-BCT-CM does not reach saturation up to 45 kOe implying the coexistence of ferromagnetic and antiferromagnetic ordering in these samples. It is known that the bulk BiFeO3 exhibits a G-type antiferromagnetic ordering with a space-modulated spin structure. 33 The formation of solid solutions may suppress this spatial spin-modulated structure of BiFeO3 giving rise to the enhanced magnetism and existence of weak ferromagnetism. 34,35 The BF-BCT-C sample exhibits the maximum Mr of 0.272 emu/g, and the BF-BCT-M and BF-BCT-CM samples possess an almost equal Mr of 0.1 emu/g.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 426.1380920410156
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 348
+    }
+  },
+  {
+    "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+    "document_id": "10.1007/s10854-022-08492-3",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011",
+    "content": "The temperature-dependent dielectric constant ( e '-T ) at different frequencies and at different DC bias electric fields E bias for the series of samples with y = 0.24 and varied x is shown in Fig. 7a-c. A sharp frequency-independent dielectric peak at * 853.1 K under E bias = 0 V, which is corresponding to the longrange ordered FE to paraelectric (PE) phase transition [48], can be observed for the sample y 0.24 x 0.01. Both the samples y 0.24 x 0.03 and y 0.24 x 0.05 show a broad and frequency-dependent dielectric peak near T m * 766.1 K and 741.7 K, respectively, at zero DC bias E bias. The dielectric peak near T m for these two samples becomes frequency-independent and nearly unchanged, respectively, by applying an E bias = 10 V, which clearly demonstrates a relaxor and dipole glass behavior for the y 0.24 x 0.03 and y 0.24 x 0.05, respectively. In fact, it has been reported that although the relaxor and dipole glass show many similar features in dielectric and FE properties, they differ in essence at least in one aspect, i.e., the relaxor can change into a normal long-range FE/R-FE state under strong external electric fields, while the dipole glass can not [49, 50]. This difference is due to the higher disorder in dipole-dipole interaction and weaker interaction between PNRs or individual electric dipoles in dipole glasses. The e '-T curves for other selected samples are shown in Fig. S4. Similarly, we can also obtain the composition-dependent phase diagram for all the samples by considering all the structural, P -E, and e '-T data discussed above, as summarized in Fig. 1c.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 404.35565185546875
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 278
+    }
+  },
+  {
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+    "document_id": "10.1063/5.0026210",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1063_5_0026210_FULL_TEXT_0006",
+    "content": "ARTICLE\n\nWith this notion in mind, we prepared 0.74BiFeO3 -0.26 (Ba0 : 85Ca0 : 15)TiO3 -x wt. % MnO2 solid solutions. These samples show dense microstructures and distorted crystal structures, thus leading to high ferroelectricity with Pr ¼ 49 : 5 μ C/cm 2 , excellent piezoelectricity with d 33 ¼ 137 pC/N, improved magnetism Mr ¼ 0 : 47 emu/g, and high Curie temperature with T C ¼ 698 K in the x ¼ 0 : 8 ceramics, displaying potential applications in multiply controlled devices.\n\n## II. MATERIALS AND METHODS\n\n0.74BiFeO3 -0.26(Ba0 : 85Ca0 : 15)TiO3 -x wt. % MnO2 (BF -BCT -Mn -x ) ceramics were fabricated with a conventional solid state method using carbonate and metal oxides as powders: Bi2O3 (99.9%), Fe2O3 (99%), BaCO3 (99.95%), CaCO3(99.99%), TiO2 (99.8%), and MnO2 (99.9%). All the raw powders in the stoichiometric ratio of the BF -BCT -Mn -x ceramics were first mixed thoroughly in alcohol using zirconia balls for 15 h and then dried and calcined at 700 C for 2 h. The resulting mixture was ball-milled again for 15 h, mixed thoroughly with polyvinyl alcohol as a binder and then pressed into disk samples. After removal of the binder, the ceramics were sintered at 920 C for 3 h and then furnace cooled to room temperature.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "Curie temperature Tc material composition",
+          "score": 564.3389282226562
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 217
+    }
+  },
+  {
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+    "document_id": "10.1063/5.0026210",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1063_5_0026210_FULL_TEXT_0015",
+    "content": "<!-- image -->\n\n732 K and exhibits weak frequency dispersion, implying the existence of the normal ferroelectric transition. As x increases from 0.4 to 1.6, the dielectric peak is found to be temperature dependent, indicating a ferroelectric transition from prototype ferroelectric to relaxor upon the addition of MnO2. The ferroelectric transition temperature ( Tm ) can be determined to be 739, 718, 698, and 689 K for the samples with x ¼ 0 : 4, 0.8, 1.2, and 1.6 (at 2 kHz), respectively. Usually, the frequency dependence of the temperature of the permittivity maximum Tm can be described by the Vogel -Fulcher (VF) function, i.e., f r ¼ f 0 exp Ea = kB Tm TVF ð Þ ð Þ , where f 0 is the pre-exponential term, Ea expresses the activation energy, and kB denotes the Boltzmann constant. 49 The plot of ln( f r ) vs Tm is shown in Fig. 6(f), and the activation energy is estimated to be 0.019, 0.016, 0.020, and 0.018 eV for the samples with x ¼ 0 : 4, 0.8, 1.2, and 1.6, respectively. The obtained TVF are 718.2, 695.2, 672.0, and 664.1 K for the x ¼ 0 : 4, 0.8, 1.2, and 1.6 samples, respectively, which are in good agreement with the results obtained by the temperature-dependent dielectric constant curves. The results further confirmed the transformation from non-relaxor to relaxorferroelectric transition with the addition of MnO2 in the BF -BCT -Mn -x system.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 406.7835998535156
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 243
+    }
+  },
+  {
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+    "document_id": "10.1063/5.0026210",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1063_5_0026210_FULL_TEXT_0019",
+    "content": "In summary, multifunctional 0.74BiFeO3 -0.26(Ba0 : 85Ca0 : 15 ) TiO3 -x wt. % MnO2 solid solutions were fabricated with a conventional solid state reaction method. All the ceramics can be indexed with a coexistence of a rhombohedral (R3C) and a tetragonal (P4mm) lattice. The microstructure can be regulated by the addition of a small amount of MnO2. Large ferroelectric polarization values of Pr ¼ 49 : 5 μ C/cm 2 with a high Curie temperature of TC ¼ 698 K can be achieved because of the enhanced particle size and insulation. The improved remanent magnetization of Mr ¼ 0 : 59 emu/g can be understood in terms of the enhanced superexchange interaction between Fe 2 þ and Fe 3 þ arising from the increased Fe -O -Fe bond angle and the content of Fe 2 þ . Moreover, the x ¼ 1 : 2 sample exhibits the optimized piezoelectric coefficient with d 33 ¼ 137 pC/N arising from the relaxation regulation and the improvement of ferroelectric polarization. The coexistence of improved multiferroelectricity, piezoelectricity performance, and high service temperature indicates that the present materials may have potential applications in multiply controlled devices as promising multifunctional materials.\n\n## ACKNOWLEDGMENTS\n\nThis work was supported by the National Key Research and Development Program of China (No. 2017YFA0403502), the Joint Funds of the National Natural Science Foundation of China and the Chinese Academy of Sciences ' Large-Scale Scientific Facility (Grant No. U1832115), and Key Research Program of Frontier Sciences, CAS (No. QYZDB-SSW-SLH015).",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 248
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0003",
+    "content": "N. Liedienov, Y. Beygelzimer, A. Pashchenko, G. Levchenko Donetsk Institute for Physics and Engineering named after O.O. Galkin NAS of Ukraine\n\nKyiv 03028, Ukraine\n\nI. Fesych\n\nTaras Shevchenko National University of Kyiv Kyiv 01030, Ukraine\n\nR. Kulagin Institute of Nanotechnology Karlsruhe Institute of Technology 76021 Karlsruhe, Germany\n\nA. Pashchenko Institute of Magnetism NAS of Ukraine and MES of Ukraine\n\nKyiv 03142, Ukraine www.advancedsciencenews.com a high temperature of FE and FM orderings, as well as large electrical polarization values. The MZFO ferrospinel is a highpermeable magnetic ferrimagnet with a large initial magnetic permeability μ = 3000, a high Curie temperature T C = 501  K, a small coercivity H C = 0.25  Oe, and the large saturation mag­ netization M S = 88 emu g -1 . [8] It means that in small magnetic fields H ≈ 1-100  Oe ( H &gt; H C) at room temperature, the mag­ netic induction B = µ H may reach large values on the MZFO FM interface if MZFO particles are in a single-domain state. The critical size of the single-domain state D 0 for Mn-Zn ferrospinel is in the range D 0 = 20-30 nm. [9] For soft magnetized MnFe2 O 4 ferrospinel with close magnetic characteristics, the exchange length is l ex ≈ 2 nm. [10] If the BLFO-MZFO nanocomposite con­ sisting of close-packed ultrafine particles with a size of d &lt; 20 nm and with a width of interfacial boundaries less l ex ≈ 2 nm can be synthesized, a new material will be obtained with a high prob­ ability of linear ME effect in the range of weak fields. In the new heterophase system, the FM phase of the single-domain MZFO regions located at a distance smaller than the FM exchange length will affect regions of the BLFO FE phase with a size of a smaller than a period of spin cycloid by an external magnetic induction increased in μ = 3000 times. Owing to the influence of a strong FM phase, we will have a large resulting magnetic moment, which can be easily controlled by ME coupling.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 348
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0011",
+    "content": "the antiferromagnetic (AFM) nature of the interactions (Figure S5.1, Supporting Information). [7a] High values of coer­ civity H C ≈ 2.2-2.4  kOe and remanent magnetization M r ≈ 0.035 emu g -1 in the range of room temperatures (see Table 2 ) compared to H C ≈ 0.003 kOe and M r ≈ 0.0005 emu g -1 for the model multiferroic BiFeO 3 with cycloidal AFM [25] mean the destruction of the spin cycloid in the AFM iron sublattice by lan­ thanum ions. The appearance of hysteresis in the field depend­ ences of M ( H ) (see Figure S5.2, Supporting Information) is associated with the presence of weak FM in the BLFO powder. [26]\n\nThe temperature and field dependences of the M ZFC( T ), M FC ( T ), and M ( H ) for the initial MZFO powder (see Sup­ porting Information S5) show its highly permeable soft FM nature (Table  2). The Curie temperature T C = 518  K (see the inset of Figure S5.1, Supporting Information) is above the room temperature and coincides with T C for Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), which have the same stoichiometric composition and a large initial magnetic permeability μ = 3000. [8,23,27] As the temperature increases, the magnetic parameters decrease from H C = 365 Oe, M S = 88 emu g -1 , and M r = 26 emu g -1 at T = 2 K to H C ≈ 50-80 Oe, M S ≈ 50 emu g -1 , and M r = 2-3 emu g -1 for the entire range of room temperatures from 300 to 400 K. Such www.advancedsciencenews.com MATERIALS",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 281
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0012",
+    "content": "<!-- image -->\n\n<!-- image -->\n\nwww.afm-journal.de\n\nFigure 3. The TEM and HRTEM images for the BLFO-MZFO composite (top) and BLFO-MZFO composite HPT (bottom). The inserts show SAED, and the FFT of the HRTEM images with the lattice plane intensity profile.\n\n<!-- image -->\n\nmagnetic characteristics make it possible to easily control the magnetic properties of FM high-permeability MZFO powder with μ = 3000 by relatively small magnetic fields H ≈ 50-100 Oe.\n\nFigure 5 shows the M ZFC( T ), M FC ( T ), and M ( H ) dependences for both BLFO-MZFO composites processed by compression and HPT under external pressures of p = 0 and 1  GPa. First, we consider the magnetic properties of the composites under ambient pressure. For the BLFO-MZFO composite, with the increase in the temperature, the coercivity and magnetization decrease (see Table  2). The T C = 518  K has not changed. The non-monotonic behavior of the H C( T ) at room temperature is due to the presence of two uncompensated AFM sublattices in the ferrospinel with different temperature dependences of mag­ netization. [28] Analyzing the magnetic properties, it was found that the BLFO-MZFO composite did not exhibit individual fea­ tures and its magnetic characteristics correspond to the additive contribution of magnetic properties from 80  wt.% BLFO and 20 wt.% MZFO.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 220
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0013",
+    "content": "Compared to the composite, the BLFO-MZFO composite HPT showed the properties of new material (Figure  5 and Table  2): i) the T C has significantly decreased from 518 to 367 K that is additionally confirmed by the Arrott plots with a complex magnetic behavior of a second-order phase transition\n\n(see Supporting Information S5); ii) the behavior of the H C( T ) became monotonic for the entire room temperature range with a stabilized valued of H C ≈ 35  Oe; iii) a new FM order appeared at T C* = 778 K; iv) an anomalous hysteresis appeared between the M ZFC( T ) and M FC ( T ) dependences, where the zero-field cooling (ZFC) curve is above the field cooling (FC) curve in the temperature range from 671 to 795  K; v) in the M FC ( T ) in contrast to the M ZFC( T ) dependence, there are no signs of FM ordering at T C*; the residual magnetization reduces to M r ≈ 0.04-0.4 emu g -1 without a significant reduc­ tion in the M S ≈ 3 emu g -1 at the room temperature. It is nec­ essary to note that the residual magnetization M r is increased 12.5 times from M = 0.032 to 0.4 emu g -1 and the coercivity is decreased 65 times from H C = 2275 to 35 Oe upon H = 30 kOe in the BLFO-MZFO composite HPT compared with the BLFO at T = 300 K. Moreover, the calculated value of the induction of the magnetic field B = µ H can take large values of ≈ 15  T on the border of the MZFO fraction with μ = 3000 and H = 50  Oe in the new composite. However, the B cannot exceed the saturation induction B S when all magnetic moments of iron are aligned along with the H . For the MZFO powder with the M S = 88 emu g -1 and a density of 5.238 g cm -3 (see Table 1 and Table  2), the B S = 4 π × 10 -4 M S (emu  cm -3 ) [29] equals www.advancedsciencenews.com MATERIALS",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 360
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0016",
+    "content": "The existence of interactions between FM MZFO and FE BLFO fractions in the BLFO-MZFO composite HPT indicates anomalous temperature hysteresis on the M ZFC( T ) and M FC ( T ) dependencies within the 671-795  K (Figure  5). Anomalous behavior of the ZFC curve above the FC curve is due to an addi­ tional FM contribution to magnetization when the composite is heated from the low-temperature FM region and the absence of this contribution when it is cooling from its high-temperature paramagnetic (PM) region. The MZFO fraction is the FM below T C = 367 K. The BLFO fraction is the AFM below T N = 660 K, FE below the temperature T C = 950  K, and paraelectric (PE) above this temperature. [33] The phase state of the BLFO-MZFO composite HPT can be represented as: FM/(AFM + FE) ← ( T C = 367 K) → PM/(AFM + FE) ← ( T N = 660 K) → PM/(PM + FE) ← ( T C = 950 K) → PM/(PM + PE).\n\nThe anomalous appearance of the FM contribution in the PM/(PM + FE) phase (see the inset in Figure 5) is a consequence of a metamagnetic phase transition [7a,34] in the FM/(AFM + FE)\n\n1.6\n\nFigure 5. a,b) The M ZFC ( T ) and M FC ( T ) temperature dependencies and c,d) M ( H ) field dependencies of the magnetization under different pressures p = 0 and 1 GPa for the composite (a and c) and composite HPT (b and d). The inset shows the Curie temperature T C .",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 265
+    }
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1002_adfm_202113022_FULL_TEXT_0027",
+    "content": "It has been found that the BLFO-MZFO nanocomposite HPT has the unique physical properties of new material: i) an appearance of Curie temperature T С = 367 K near the room tem­ perature; ii) the monotonic change in the coercivity H C versus T and its small value H C ≈ 35 Oe at T = 300 K; iii) a decrease in the residual magnetization to M r ≈ 0.04-0.4 emu  g -1 ; (iv) an increase of 2.4 times in the residual polarization to P r = 0.012 µ C cm -2 and an increase of 2.9 times in the field to E C = 4.6  kV  cm -1 . It has been shown that a small alternating magnetic field of ≈ 50 Oe has to induce relatively high electric fields of ≈ 18 kV cm -1 with an energy of ≈ 3 × 10 -21 J in the FE fractions of the nanocomposite HPT.\n\n<!-- image -->\n\nwww.afm-journal.de\n\nAdditionally, for the first time, the FE high-pressure studies of the composites processed by compression and HPT, as well as BLFO powder have been conducted. As turned out, the com­ posite has demonstrated the highest increase in the residual polarization under p = 5 GPa.\n\nThus, we have obtained a multiferroic-like composite with improved magnetic and electric properties, and the used HPT method is an effective and promising method for obtaining new functional materials consisting of close-packed, ultra-dis­ persed, and exchange-interacting FE and FM phases. Moreover, the degree distribution of fractions, their size, and the strength of exchange interactions can be controlled by both high pres­ sure and the number of revolutions. The obtained new com­ posite can be used for the creation of electronic devices for monitoring ultrahigh pressure and in integrated circuits of high-speed computing systems as a result of a decrease in the switching energy of nanodevices.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 310
+    }
+  },
+  {
+    "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "table",
+    "source_id": "10.1002_adfm.202113022_TABLE_0001",
+    "content": "Table 1. Comparative analysis of XRD, transmission electron microscopy (TEM), and scanning electron microscopy (SEM) data for the structural parameters of the initial BLFO and MZFO powders, as well as BLFO-MZFO composite processed by compression and HPT.\n| Sample                  |               | D XRD [nm]   | D XRD [nm]      | D TEM [nm]            | D SEM [nm]   | ε ·10 4   |\n|-------------------------|---------------|--------------|-----------------|-----------------------|--------------|-----------|\n|                         |               | Scherrer     | Williamson-Hall | D TEM [nm]            | D SEM [nm]   | ε ·10 4   |\n| BLFO powder             |               | 131          | 104             | 158                   | 370          | 6.6       |\n| MZFO powder             |               | 15           | 13              | 15                    | -            | 1.5       |\n| BLFO-MZFO composite     | BLFO fraction | 103          | 97              | 75 (70%) and 143 (9%) | -            | 5.4       |\n| BLFO-MZFO composite     | MZFO fraction | 15           | 14              | 15 (21%)              | -            | 2.7       |\n| BLFO-MZFO composite HPT | BLFO fraction | 14           | 15              | 13                    | -            | 39        |\n| BLFO-MZFO composite HPT | MZFO fraction | 12           | 15              | 12                    | -            | 19.6      |\nMZFO  powder  has  a  cubic 3 Fd m spinel  structure  (JCPDS No. 96-230-0585) with the unit cell parameter of a = 8.40195 Å. The X-ray density determined from the XRD data is 8.217 and 5.238  g  cm -3 for  the  BLFO  and  MZFO  powders,  respectively. The main crystallographic parameters of the initial BLFO and MZFO powders refined by the Rietveld method are shown in Table S1.1 (Supporting Information).\nThe XRD  pattern of the  BLFO-MZFO  composite  HPT (Figure  1c)  corresponds  to  a  combination  of  the  XRD  patterns from the initial BLFO and MZFO powders (Figure 1a,b). A dis­ tinctive  feature  of  the  XRD  pattern  for  the  BLFO-MZFO  com­ posite  HPT  (Figure  1d)  is  the  X-ray  line  broadening  due  to  a decrease  in  the  crystallite  size.  An  average  crystallite  size D XRD in  powders  and  composites  was  calculated  by  the  X-ray  line broadening method using both Scherrer [19]  and Williamson-Hall approaches  in  Supporting  Information  S2.  Both  methods  give comparable D XRD values to each other (see Table 1 ).  In  the  ini­ tial powders, the D XRD is 104-131 nm for the BLFO powder and 13-15 nm for the MZFO powder. In a two-phase BLFO-MZFO composite, the size of the BLFO fraction decreased to 97-103 nm, while the size of the MZFO fraction was almost the same. In the BLFO-MZFO composite HPT, there was a severe decrease in the size of the multiferroic BLFO fraction to 14-15 nm and a slight reduction  in  the  size  of  the  FM  MZFO  fraction  to  12-15  nm. Such  a  decrease  in  the  size  of  BLFO  and  MZFO  fractions  is the  result  of  fragmentation  of  the  large  BLFO  particles  with a  hardness  of ≈ 2.5  GPa [20] by  the  small  MZFO  particles  with  a higher hardness of ≈ 5.5 GPa [21]  during plastic deformation of the HPT.  Additionally,  the  microstrains ε were  also  estimated  (see Supporting Information S2). As turned out, the microstrains ε of crystal structure for the composite after the HPT increases signif­ icantly compared to the initial powders and composite processed by compression because of the action of tensile forces. Moreover, the discrepancy among the lattice plane distances of the studied samples obtained during comparison of the high-resolution TEM (HRTEM) data (see below) and JCPDS PDF 2 cards (database) is reduced and achieves the minimum for the composite HPT. It additionally confirms the increase in the stress strains caused by the tensile forces.\nAccording  to  TEM  data  ( Figure 2 and  Supporting  Infor­ mation  S3),  the  initial  BLFO  and  MZFO  powders  consist  of spherical-like  particles  with  a  size  of D TEM = 158  and  15  nm, respectively,  which  are  consistent  with  the D XRD  values  (see Table 1). Moreover, the BLFO and MZFO samples demonstrate well crystalline structure according to the selected area electron diffraction  (SAED)  pattern  (see  upper  inserts  of  Figure  2)  with an interplane distance of 0.382 nm (012) for the perovskite phase and  0.483  nm  (111)  for  the  spinel  phase  (see  bottom  inserts  of Figure 2). Obtained data confirm the beginning of the spinel struc­ ture crystallization at low temperatures of ≈ 200 ° C. Additional syn­ thesis  at  higher  temperatures  leads  to  growing  the  particles  and increasing their crystallinity (see Supporting Information S1). This is  the  important  result  for  nanotechnology  and  nanomagnetism since additional annealing at higher temperatures can lead both to significant grain growth with standing beyond the nanoscale phe­ nomena, [22]  and a change in the ion valence states with declining the functional properties of the magnetic materials. [23]\nUsing  TEM  data  ( Figure 3 ,  top),  it  can  be  seen  that  the BLFO-MZFO composite corresponds to a mixture of BLFO and MZFO powders, where the size of the MZFO particles main­ tains, and the size of the BLFO particles decreased by half after compression. The percentage of particles with D BLFO = 75  nm (89%)  and  143  nm  (11%)  have  been  determined  by  approxi­ mating the n ( D )  dispersion  by  the  Gaussian  function,  consid­ ering the normalization condition of 1 0 n D dD ∫ ( ) = +∞ (Figure S3, Supporting Information).\nHowever, significant changes in the BLFO-MZFO composite HPT  (Figure  3,  bottom)  have  occurred.  First,  the  HRTEM images show a more than ten times decrease in the size of the BLFO fraction  from D TEM = 158  to  13  nm,  which  is  in  good agreement with XRD data (see Table 1). Second, the BLFO and MZFO fractions were compacted very tightly that led to weakly distinguishable  shades  in  TEM  images  for  the  multiferroic and FM phases. For the accurate determination of the size of the  BLFO  and  MZFO fractions,  the  differences  in  the  values of interplanar distance according to the HRTEM images were used. Analysis of HRTEM images made it possible to estimate the width of the interphase boundaries of ≈ 1  nm. In the next section, a comparison of the width of the interphase bounda­ ries with the FM exchange length l ex  will play important role in improving the magnetic and electric properties for a composite of  close-packed  multiferroic  and  FM  fractions  as  a  result  of induced ferromagnetism into FE region from the FM region.\nAccording  to  the  scanning  electron  microscopy  (SEM)  data ( Figure 4 and  Supporting  Information  S3),  the  BLFO-MZFO composite (Figure 4e) is  a  combination  of  the  large  BLFO  with D SEM = 370  nm  (Figure  4a)  and  small  MZFO  (Figure  4c)  parti­ cles. The large size of D SEM compared to D XRD and D TEM is due to the adhesion. [24]   At  the  same  time,  the  BLFO-MZFO composite\nMATERIALS\nwww.advancedsciencenews.com MATERIALS\nwww.afm-journal.de\nFigure 2. The TEM and HRTEM images for the initial BLFO and MZFO powders. The inserts show SAED and the fast Fourier transformation (FFT) of the HRTEM images with the lattice plane intensity profile.\nHPT is well compacted and has a homogeneous microstructure without clear boundaries (Figure 4g).\nAccording to the energy-dispersive X-ray spectroscopy (EDS) data, the chemical composition of the BLFO and MZFO pow­ ders,  as  well  as  both  BLFO-MZFO  composites,  is  confirmed, which corresponds approximately to the stoichiometric compo­ sition of Bi 0.9 La0.1FeO3 and Mn0.6Zn0.3Fe2.1O4 and their combi­ nations (Figure 4 and Supporting Information S4).\nThus,  using  HPT  is  an  effective  and  promising  method for  obtaining  heterophase  nanostructures  consisting  of  closepacked, ultra-dispersed, and uniformly distributed multiferroic and FM phases. HPT results in i) a statistical uniform distribu­ tion of fractions in the sample; ii) reducing the size of phases due  to  the  fragmentation  of  the  particles  by  others  with  a higher microhardness that can be controlled by the number of revolutions; iii) decreasing the width of the interphase bounda­ ries until to several unit cell periods at the close-packed phases.\nThe temperature dependences of the magnetization M ZFC( T )  and M FC ( T )  for  the  initial  BLFO  powder  indicate\nthe  antiferromagnetic  (AFM)  nature  of  the  interactions (Figure  S5.1,  Supporting  Information). [7a] High  values  of  coer­ civity H C ≈ 2.2-2.4  kOe  and  remanent  magnetization M r ≈ 0.035 emu g -1  in the range of room temperatures (see Table 2 ) compared to H C ≈ 0.003 kOe and M r ≈ 0.0005 emu g -1 for  the model  multiferroic  BiFeO 3   with  cycloidal  AFM [25]   mean  the destruction of the spin cycloid in the AFM iron sublattice by lan­ thanum ions. The appearance of hysteresis in the field depend­ ences  of M ( H )  (see  Figure  S5.2,  Supporting  Information)  is associated with the presence of weak FM in the BLFO powder. [26]\nThe  temperature  and  field  dependences  of  the M ZFC( T ), M FC ( T ),  and M ( H )  for  the  initial  MZFO  powder  (see  Sup­ porting  Information  S5)  show  its  highly  permeable  soft  FM nature  (Table  2).  The  Curie  temperature T C = 518  K  (see  the inset of Figure S5.1, Supporting Information) is above the room temperature and coincides with T C  for  Mn-Zn  ferrospinels  of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan),  which have the same stoichiometric composition and a  large  initial  magnetic  permeability μ = 3000. [8,23,27] As  the temperature increases, the magnetic parameters decrease from H C = 365 Oe, M S = 88 emu g -1 , and M r = 26 emu g -1  at T = 2 K to H C ≈ 50-80 Oe, M S ≈ 50 emu g -1 , and M r = 2-3 emu g -1  for the entire range of room temperatures from 300 to 400 K. Such www.advancedsciencenews.com MATERIALS\nwww.afm-journal.de\nFigure 3. The TEM and HRTEM images for the BLFO-MZFO composite (top) and BLFO-MZFO composite HPT (bottom). The inserts show SAED, and the FFT of the HRTEM images with the lattice plane intensity profile.\nmagnetic characteristics  make  it  possible  to  easily  control  the magnetic  properties  of  FM  high-permeability  MZFO  powder with μ = 3000 by relatively small magnetic fields H ≈ 50-100 Oe.\nFigure 5 shows the M ZFC( T ), M FC ( T ), and M ( H ) dependences for  both  BLFO-MZFO  composites  processed  by  compression and HPT under external pressures of p = 0  and  1  GPa.  First, we consider the magnetic properties of the composites under ambient  pressure.  For  the  BLFO-MZFO  composite,  with  the increase  in  the  temperature,  the  coercivity  and  magnetization decrease  (see  Table  2).  The T C = 518  K  has  not  changed.  The non-monotonic behavior of the H C( T )  at  room  temperature  is due to the presence of two uncompensated AFM sublattices in the ferrospinel with different temperature dependences of mag­ netization. [28]   Analyzing the magnetic properties, it was found that the BLFO-MZFO composite did not exhibit individual fea­ tures and its magnetic characteristics correspond to the additive contribution  of  magnetic  properties  from  80  wt.%  BLFO  and 20 wt.% MZFO.\nCompared  to  the  composite,  the  BLFO-MZFO  composite HPT  showed  the  properties  of  new  material  (Figure  5  and Table  2):  i)  the T C  has  significantly  decreased  from  518  to 367 K that is additionally confirmed by the Arrott plots with a complex magnetic behavior of a second-order phase transition\n(see Supporting Information S5); ii) the behavior of the H C( T ) became  monotonic  for  the  entire  room  temperature  range with a stabilized valued of H C ≈ 35  Oe;  iii)  a  new  FM  order appeared at T C* = 778 K; iv) an anomalous hysteresis appeared between  the M ZFC( T )  and M FC ( T )  dependences,  where  the zero-field cooling (ZFC) curve is above the field cooling (FC) curve  in  the  temperature  range  from  671  to  795  K;  v)  in  the M FC ( T )  in  contrast  to  the M ZFC( T )  dependence,  there  are no  signs  of  FM  ordering  at T C*;  the  residual  magnetization reduces to M r ≈ 0.04-0.4 emu g -1  without a significant reduc­ tion in the M S ≈ 3 emu g -1  at the room temperature. It is nec­ essary to note that the residual magnetization M r  is increased 12.5 times from M = 0.032 to 0.4 emu g -1  and the coercivity is decreased 65 times from H C = 2275 to 35 Oe upon H = 30 kOe in the BLFO-MZFO composite HPT compared with the BLFO at T = 300 K. Moreover, the calculated value of the induction of  the  magnetic  field B = µ H can  take  large  values  of ≈ 15  T on the border of the MZFO fraction with μ = 3000  and H = 50  Oe  in  the  new  composite.  However,  the B cannot  exceed the  saturation  induction B S   when  all  magnetic  moments  of iron are aligned along with the H . For the MZFO powder with the M S = 88 emu g -1  and a density of 5.238 g cm -3 (see Table 1 and  Table  2),  the B S = 4 π × 10 -4 M S (emu  cm -3 ) [29] equals www.advancedsciencenews.com MATERIALS\nwww.afm-journal.de\nFigure 4. The SEM and EDS data for the initial BLFO and MZFO powders, as well as the BLFO-MZFO composite processed by compression and HPT.\n0.58 T. Such B S  value is well consistent with the experimental value  of B S = 0.525  T  for  the  manganese  ferrospinel,  which has an uncompensated total magnetic moment 4.2 μ B  in  the ferrimagnetic  iron  sublattice. [30] The  appearance  of  the B = 0.58 T in the composite means that the FM MZFO fractions with μ = 3000 even in a small H ≈ 50  Oe  will  induce a large inner H int ≈ 5800 Oe acting on the FE BLFO fraction.\nAdditionally,  we  studied  the  influence  of  high  hydrostatic pressure of p = 1 GPa on the magnetic properties of both com­ posites (see Figure 5c,d). As turned out, the pressure p trends to  reduce  the  magnetic H C, M S ,  and M r parameters  of  the composites at different temperatures (see Table 2) modifying bond angles Fe  O  Fe and bond distances Fe  Fe,  and,  con­ sequently, the strength of AFM-FM exchange interactions. [31]\nThe  results  obtained  at  room  temperature  are  of  particular interest.  Both  the  composites  under p = 1  GPa  demonstrate totally  opposite  behavior  compared  with  the  samples  under ambient pressure. For the BLFO-MZFO composite, the pres­ sure p increases the H C by 42%, reduces the M S  by 23% and remains the M r whereas for the BLFO-MZFO composite HPT the H C  and M r are  decreased  by  23%  and  50%,  respectively, and the M S   is  increased by 7%. It should be noted that such changes  in  magnetic  properties  of  both  composites  will  be correlated  with  the  change  in  their  polarization  properties at  room  temperature  (see  '2.3. P -E properties'  below).  As  it was  shown  for  the  ferrospinel  Fe 3 O 4 , [32]   the  lower  charge carrier  density,  the  higher  resistivity  and  lower  saturation magnetization.\nSCIENCE NEWS\nwww.advancedsciencenews.com MATERIALS\nwww.afm-journal.de",
+    "retrieval_methods": [
+      {
+        "provider": "table_rule",
+        "details": {
+          "matched_patterns": [
+            "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+            "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+            "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+          ]
+        }
+      }
+    ],
+    "section": null,
+    "page_start": null,
+    "page_end": null,
+    "metadata": {}
+  },
+  {
+    "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+    "document_id": "10.1002/adfm.202113022",
+    "target_property": "Curie temperature",
+    "source_type": "table",
+    "source_id": "10.1002_adfm.202113022_TABLE_0002",
+    "content": "Table 2. The  coercivity H C ,  saturation  magnetization M S ,  and  remanent  magnetization M r for  the  initial  BLFO  and  MZFO  powders,  as  well  as BLFO-MZFO composite and composite HPT depending on the external pressure p .\n| Sample          | BLFO   | BLFO   | BLFO   | MZFO   | MZFO   | MZFO   | MZFO   |   Composite |   Composite |   Composite | Composite   |   Composite HPT |   Composite HPT |   Composite HPT | Composite HPT   |\n|-----------------|--------|--------|--------|--------|--------|--------|--------|-------------|-------------|-------------|-------------|-----------------|-----------------|-----------------|-----------------|\n| T [K]           |        | 2      | 300    | 400    | 2      | 300    | 400    |           2 |          77 |         300 | 400         |               2 |              77 |             300 | 400             |\n| H C [Oe]        | 0      | 1150   | 2275   | 2425   | 365    | 55     | 82     |         352 |         135 |           7 | 23          |             337 |             127 |              35 | 34              |\n|                 | 1 GPa  | -      | -      | -      | -      | -      | -      |         428 |          93 |          12 | -           |             278 |             135 |              27 | -               |\n| M S [emu g -1 ] | 0      | -      | -      | -      | 88     | 59     | 47     |          16 |          15 |          11 | 8           |               9 |               8 |               3 | 0.4             |\n|                 | 1 GPa  | -      | -      | -      | -      | -      | -      |        13.3 |          13 |         8.5 | -           |             7.4 |             7.1 |             3.2 | -               |\n| M r [emu g -1 ] | 0      | 0.02   | 0.03   | 0.04   | 26     | 2      | 3      |           5 |           2 |         0.2 | 0.4         |               3 |               2 |             0.4 | 0.04            |\n|                 | 1 GPa  | -      | -      | -      | -      | -      | -      |         2.9 |         1.5 |         0.2 | -           |             1.2 |             0.7 |             0.2 | -               |\nThe  existence  of  interactions  between  FM  MZFO  and  FE BLFO fractions in the BLFO-MZFO composite HPT indicates anomalous temperature hysteresis on the M ZFC( T ) and M FC ( T ) dependencies  within  the  671-795  K  (Figure  5).  Anomalous behavior of the ZFC curve above the FC curve is due to an addi­ tional FM contribution to magnetization when the composite is heated from the low-temperature FM region and the absence of this contribution when it is cooling from its high-temperature paramagnetic (PM) region. The MZFO fraction is the FM below T C = 367 K. The BLFO fraction is the AFM below T N = 660 K, FE  below  the  temperature T C = 950  K,  and  paraelectric  (PE) above this temperature. [33]  The phase state of the BLFO-MZFO composite  HPT  can  be  represented  as:  FM/(AFM + FE) ← ( T C = 367 K) → PM/(AFM + FE) ← ( T N = 660 K) → PM/(PM + FE) ← ( T C = 950 K) → PM/(PM + PE).\nThe  anomalous  appearance  of  the  FM  contribution  in  the PM/(PM + FE) phase (see the inset in Figure 5) is a consequence of  a  metamagnetic phase transition [7a,34]   in  the  FM/(AFM + FE)\n1.6\nFigure 5. a,b) The M ZFC ( T ) and M FC ( T ) temperature dependencies and c,d) M ( H ) field dependencies of the magnetization under different pressures p = 0 and 1 GPa for the composite (a and c) and composite HPT (b and d). The inset shows the Curie temperature T C .\nwww.advancedsciencenews.com MATERIALS\nwww.afm-journal.de\nFigure 6. Ferroelectric hysteresis loops for the a) initial BLFO powder, as well as b) the composite and c) composite HPT.\nphase.  The  metamagnetic  phase  transition  is  a  reorientation process  with  the  'order-order'  type  phase  transition  induced by  a  field,  which  changes  the  type  of  magnetic  ordering [35] or an  angle  between  magnetic  sublattices  in  the  magnet. [36] The metamagnetic  phase  transition  can  be  induced  not  only  by external H but also internal H int . [36] As was shown, [37] an addi­ tional FM contribution to the magnetization of nanoscale AFM perovskite  BiFeO 3   with  a  weak  Dzyaloshinsky-Moriya  inter­ action  can  occur  as  a  result  of  a  spin-reorientation  transition induced by the magnetic field. Moreover, this FM contribution depends on both the magnitude of the H and the stress-strain. The FM MZFO fractions in a weak field ≈ 50 Oe induce large internal  fields H int ≈ 5800  Oe.  Since  the  exchange  length l ex ≈ 6  nm  in  the  MZFO  (Supporting  Information  6)  exceeds  the width of the interfacial boundaries of ≈ 1 nm and is comparable to the size of ≈ 14 nm of the BLFO fractions, we can conclude about  the  existence  of  exchange  interactions  between  BLFO and  MZFO  fractions.  The  presence  of  exchange  interactions, the large H int ,  and  the  high  stress-strain composite HPT (see Table 1) are the necessary conditions for the spin-reorientation transition  in  the  FM/(AFM + FE)  phase, [38] which  is  the  result of  an  additional  FM  contribution  to  the M ZFC( T )  dependence. Internal  stresses  and  magnetostriction  stabilize  FM  interac­ tions [39] up to the T C* = 778 K, above which the BLFO fraction goes into the PM state. An increase in the temperature range of anomalous hysteresis to 795 K is due to spin fluctuations in the frustrated magnetic subsystem of the bismuth ferrite. [40]  When the composite is cooled, an additional FM contribution to the M FC ( T )  is  not  observed  due  to  the  lack  of  the H int ,  since  the MZFO fractions are in the PM state. The presence of exchange interactions  and  the  irreversible  nature  of  the  additional  FM contribution to the M is the reason for the appearance of anom­ alous  temperature  hysteresis  in  the  temperature  range  from 671 to 795 K.\nThe  appearance  of  the  exchange-related  state  between  the 'strong'  FM  subsystem  and  FE  phase  in  the  novel  composite should lead to a significant increase in the magnetic and electric properties in the range of weak magnetic fields. For this purpose, it  is  necessary  to  analyze  the  hysteresis P ( E )  curves  electronic polarization P in  the electric field E and establish that the HPT does not impair the FE properties of the initial BLFO powder.\nThe  ferroelectric  hysteresis P ( E )  loops  of  the  initial  BLFO powder,  as  well  as  the  BLFO-MZFO  composite  processed by  compression  and  HPT  at  the  different E are  shown  in Figure 6 .  All samples demonstrate the FE behavior for the dif­ ferent  applied  voltages  with  a  stepwise  increase  in E up  to  a maximum value of E max = 18 kV cm -1 .  The choice of E max  was not accidentally because of the need to perform the equality of w E = w H.  According to this equality,  the  energy  density  of  the\n<!-- formula-not-decoded -->\npermittivity) [41] has  to  coincide  with  the  energy  density  of  the magnetic  field = 1 2 w BH H in  the  field H = 50  Oe  from  the magnetic measurements. A dielectric constant ε equals 80 for the  BLFO multiferroic in the electromagnetic field with a fre­ quency of 50 Hz. [42]  In the MZFO ferromagnet at the H = 50 Oe (3980 A m -1 ), the induction B is 0.6 T (see 3.2. Magnetic prop­ erties).  With  such  values  of  the ε , B ,  and H ,  the  equality  of w E = w H will be performed in the E ≈ 18 kV cm -1  which allows us to compare correctly the mutual influence of ferromagnetic and  ferroelectric  properties.  Additional  measurements  of  fre­ quency dependences of polarization P confirm the absence of a  leakage  current  at  a  frequency  of  50  Hz, [43] which  indicates the correct formulation of the experiment and the definition of E max = 18 kV cm -1 .\nThe  shape  of P -E loops  indicates  that  the E max   has  not reached the saturation field. The maximum polarization of P max at E max ,  the  residual  polarization P r ,  and  the  coercive  field E C with a stepwise increase in the maximum measuring field from 11.7  to  18.0  kV  cm -1 were  defined  ( Figure 7 a).  In  all  samples, the linear course of the P r ( E ) was found for the entire range of E . In the BLFO powder, the P max , P r , and E C are 0.052 µ C cm -2 , 0.005 µ C  cm -2 ,  and  1.6  kV  cm -1 ,  respectively.  In  the  BLFOMZFO composite, a slight decrease in the P r to 0.004 µ C cm -2 and the E C to 1.3 kV cm -1  is due to a decrease in the FE content of  the  BLFO  phase  to  80  wt.%.  This  conclusion  is  confirmed by  parallel  displacement  along  the  ordinate  axis  of  the P r ( E ) dependence for the composite (Figure 7a). The increase in the P max  from 0.052 to 0.055 µ C cm -2  is caused by a decrease in the SCIENCE NEWS\nwww.advancedsciencenews.com MATERIALS\nwww.afm-journal.de\nFigure 7. a) The electric field and b) pressure dependences of the residual polarization for the BLFO powder and BLFO-MZFO composite processed by compression and HPT. The Δ P r / P r  is a relative change in the pressure-induced residual polarization under 5 GPa.\naverage particle size of the BLFO in the composite from 131-104 to 103-97 nm (see Table 1). It leads to an increase in the total surface  of  the  FE  phase  and  the  accumulation  of  a  weak-con­ nected charge on the boundaries in the low-frequency range. [44] The comparative analysis of P-E loops between the initial BLFO powder and BLFO-MZFO composite (Figure 7a,b) allows us to conclude that the FE properties of the composite are due to the 80 wt.% BLFO fraction and they weakly differ from the proper­ ties of the BLFO.\nIn  the  BLFO-MZFO  composite  HPT,  there  are  significant improvements  in  the  FE  properties  compared  to  the  BLFO powder. Even without considering the decrease in the amount of FE phase in this composite, an increase of 2.4 times in the residual polarization to P r = 0.012 µ C cm -2  and an increase of 2.9 times in the coercive field to E C = 4.6 kV cm -1  are observed. Such a broadening of the hysteresis region is due to an increase in the coupling between magnetic and electric subsystems. The magnetic field induced by the alternating electric field gives an additional  contribution  to  the  polarization  of  the  multiferroic in  the  presence  of  interaction  between  FE  and  FM  phases. [45] Reducing the P max  by ≈ 17% to 0.043 µ C cm -2  is due to the pres­ ence of 20 wt.% non-ferroelectric magnetic MZFO fraction in the composite.\nEvaluation of the energy density of the electric field w E  for the  new  composite  at  room  temperature  allows  us  to  con­ clude that a small alternating magnetic field H ≈ 50  Oe  can induce  relatively  large  electric  fields ≈ 18  kV  cm -1 with  an energy ≈ 3 × 10 -21  J in the FE fractions with a size of ≈ 14 nm and with the dielectric constant ε ≈ 80. With such properties, the new nanocomposite can become a promising functional material  during  the  creation  of  high-performance  artificial intelligence systems. [46]   Such a nanocomposite can dramati­ cally solve the problem of cooling and removing heat in the integrated  circuits  of  high-speed  computing  systems  asso­ ciated  with  a  decrease  in  switching  energy  for  nanoscale devices. [47]\nThe  dependences  of  the  effect  of  high-pressure p on  the residual polarization P r  are shown in Figure 7b. From the anal­ ysis of the P r ( p ) dependences, it can be concluded that there is a  significant difference in the effect of p on  the  FE  properties of  the  initial  BLFO  powder  and  composites.  In  the  BLFO,  as p increases  from  0  to  5.26  GPa  the  residual  polarization P r increases by approximately four times to 0.315 µ C cm -2  with a polarization sensitivity coefficient to 0.043 ( µ C cm -2 ) GPa -1 .  In the BLFO-MZFO composite, there is a colossal increase in the P r ≈ 92 times up to 2.654 µ C cm -2   with  an  increase  in p from 0  up  to  4.62  GPa  with  0.568  ( µ C  cm -2 )  GPa -1 .  In  the  BLFOMZFO  composite  HPT,  the  residual  polarization  increases by ≈ 16  times  to P r = 0.968 µ C  cm -2 under p = 7 .41  GPa  with 0.123 ( µ C cm -2 ) GPa -1 .\nFor a quantitative assessment of the effect of high-pressure on FE, we have first introduced the relative change of the pres­ sure-induced  polarization  coefficient Δ P r / P r = [ P r ( p )-P r (0)]/ P r (0) × 100% at the same pressure p = 5  GPa. This coefficient is Δ P r / P r = 240%  for  the  BLFO  powder, Δ P r / P r = 11200%  for the  composite,  and Δ P r / P r = 1230%  for  the  composite  HPT (Figure  7b).  The  large  changes  in  the Δ P r / P r = 1230%  for  the BLFO-MZFO composite HPT compared to Δ P r / P r = 240% for the BLFO powder can be explained by the manifestation of ani­ sotropic nature of piezoelectric properties [48]  in the close-packed structure  of  the  composite.  However,  the  colossal  change Δ P r / P r = 11 200% in the BLFO-MZFO composite requires addi­ tional analysis.\nAn  electrical  polarization  in  the  BiFeO 3   with  a  rhombohe­ dral R 3 c distortion of an elementary cell occurs as a result of an anti-phase rotation of the FeO 6  octahedra with a displacement of  cations  of  iron  and  bismuth  in  one  direction  and  anions of  oxygen  in  another  direction. [49] The  result  of  such  a  local breaking symmetry of the crystal is the appearance of the vector of electrical polarization P along the axis [111]. Applying external high-pressure enhances the deformation of octahedra, changes the angles and the lengths of metal-oxygen bonds, affects the structural properties, and leads to the emergence of new phase transformations. [50]\nIn the range of external high-pressure from 1.25 to 4.5 GPa for  the  BiFeO 3 ,  several  phase  transformations  associated  with the  appearance  and  coexistence  of  polar R 3 c rhombohedral (FE), nonpolar P nma orthorhombic (PE, GdFeO3-type), antipolar P bam orthorhombic antiferroelectric (AFE) (PbZrO3-type), and  nonpolar I bmm  orthorhombic  (PE,  nonstandard  setting  of www.advancedsciencenews.com I mma)  phases  occurs. [51] In  addition  to  the  polarization  vector P along  the  direction  [111]  in  the  FE R 3 c phase,  the  vector P along the direction in the AFE P bam  phase is added. [52]   During the coexistence of two different FE phases, a tremendous gain of piezoelectric properties occurs as a result of not only polari­ zation  rotation,  but  also  polarization  extension  near  the  mor­ photropic 'polar-antipolar' boundary. [53] Pressure-induced phase  transformations  in  the  Bi 0.9 La0.1 FeO3  will  occur  at  a lower ≈ 0.5  GPa  external  pressure  because  the  chemical  pres­ sure during replacing bismuth by 1 mol.% of lanthanum in the Bi1x La x FeO3 is approximately equivalent to applying 0.05 GPa hydrostatic  pressure  on  BiFeO 3 . [54]   In  the  BLFO-MZFO  com­ posite,  the  colossal  increase  in  polarization Δ P r / P r starts  at ≈ 1  GPa  (Figure  7b)  and  coincides  with  an  appearance  of  the pressure-induced AFE P bam  phase. [54]  Such a colossal growth of Δ P r / P r  is due to an additional contribution to polarization, both from the new AFE P bam  phase and from expanding the polari­ zation area near the border between the FE R 3 c rhombohedral and AFE P bam  orthorhombic phases. Additional contribution to pressure-induced growth of Δ P r / P r  can give pinning on interfa­ cial  'FE/AFE'  ( R 3 c / P bam ),  'FE/PE'  ( R 3 c / P nma, R 3 c / I bmm),  and 'AFE/PE' ( P bam / P nma, P bam / I bmm) boundaries. [7a]\nLarge  values  of  pressure-induced  relative  changes  in  the polarization Δ P r / P r for  the  new  composite  are  of  interest  and are  of  great  practical  importance  because  such  a  functional material  can  be  used  to  create  high-pressure  sensors.  The colossal values of Δ P r / P r = 11 200% at 5 GPa make it possible to use the BLFO-MZFO composite as a sensing element in ultra­ sensitive high-pressure sensors. For creating electronic devices to monitor high-pressure, where the presence of ME coupling in  the  sensitive  element  is  required,  it  is  advisable  to  use  the BLFO-MZFO composite HPT with Δ P r / P r = 1230%  at  5  GPa and with an almost linear dependence of Δ P r / P r on  the  pres­ sure in a wide range from 0 to 7 .5 GPa.",
+    "retrieval_methods": [
+      {
+        "provider": "table_rule",
+        "details": {
+          "matched_patterns": [
+            "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+            "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+            "(?<!\\w)Curie\\ temperature(?!\\w)",
+            "(?<!\\w)curie\\ temperature(?!\\w)",
+            "curie\\ temperature",
+            "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+          ]
+        }
+      }
+    ],
+    "section": null,
+    "page_start": null,
+    "page_end": null,
+    "metadata": {}
+  },
+  {
+    "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+    "document_id": "10.1063/5.0133946",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1063_5_0133946_FULL_TEXT_0009",
+    "content": "The RT electric field dependent polarization (P-E) for the BFBNT-BTM ( x ¼ 0.00, 0.10 x 0.27) and BF-BNT-BTM ( y ¼ 0.23, 0 x 0.15) are shown in Figs. 2(a) and 2(b), respectively. As can be seen, all the samples except y 0.10 x 0.00 exhibit good ferroelectricity at RT with nearly rectangle shape of P-E loops and E-switched displacement current (J). The coercive electric fields E C for all these samples are in the range of 55-75 kV/cm, as can be seen from the P-E and J-E curves in Fig. 2(b). Figure 2(c) shows the temperature-dependent dielectric constant e 0 ( e 0 -T) for the samples y 0.23 x 0.00 and y 0.23 x 0.10-AQ near the MPB. A sharp and frequency-independent peak at T C 774K observed for as-prepared y 0.23 x 0.00, which can be ascribed to the FE to paraelectric transition. The sample y 0.23 x 0.10AQ with slight Mn-doping shows a relatively broader and weak frequency-dependent dielectric peak at T m with T m ranging from 781.9 to 793.9 K, implying a weak relaxor FE behavior in this sample. The FE/relaxor-FE transition temperatures are comparable to those reported previously for BF-BT systems. 45\n\nThe piezoelectric coefficient d33 as a function of y and x are shown in the inset of Figs. 2(a) and 2(b), respectively. Maximum d33 are observed near y ¼ 0.23 with fixed x ¼ 0.00 and d33 drops substantially for x 0.15 with fixed y ¼ 0.23. This composition dependent piezoelectricity resembles those in the typical piezoceramics PbZr1 x Ti x O3 (PZT), 46,47 which implies an MPB feature for the samples y ¼ 0.23 and 0.00 x 0.10. The samples near the MPB usually show the best piezoelectric properties, which can be ascribed to the easier polarization rotation with respect to the flattened free energy profile at the MPB. 43,48 It is noted that the smaller d33 after the air quenching for y 0.23 x 0.00 might be due to the quenching induced changes in phase fraction.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 384.08746337890625
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 338
+    }
+  },
+  {
+    "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+    "document_id": "10.1143/JPSJ.7.5",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015",
+    "content": "Fig. 4 depicts the temperature dependence of the dielectric constant ( ε ) and tangent loss ( tan δ ) of (BNFPT) x ceramics in the frequency range 1 kHz to 1 MHz for various x compositions. It has been observed that the dielectric constant increases with the in­ crease in temperature and Nd concentration [42,43]. This may be due to the fact that with a rise in temperature, the thermal energy increases the dielectric polarization. Similar behavior is observed in Dy-modified BFO-PTO [44]. However, dielectric anomalies at ap­ proximately 320 °C are seen at all frequencies and shift towards lower frequencies as Nd doping increases. In this work, the XRD analysis confirms the presence of two phases in composite (ferrite BFO and ferroelectric PTO phase), which has different electrical conductivity suggesting that the accretion of charges will occur at the phase boundary. An additional space charge polarization has been given to these charges, providing the Maxwell-Wagner re­ laxation phenomenon [45]. Also, a ferroelectric-paraelectric transi­ tion or abrupt changes in the tilt system and cation displacements can be blamed for the anomaly in the evolution of the dielectric, as reported by many researchers [44,45].\n\nAdditionally, it has been noted that the ferroelectric transition for undoped (1x )BFOx PTO correlates with the dielectric anomaly and occurs at 650 °C, dropping to 227 °C when lanthanum is substituted [46,47]. Therefore, it is expected that the dielectric anomaly ob­ served in our case with Nd substitution may correspond to Curie temperature T C. Similar anomalies in dielectric constant have been observed in a Dy-doped BiFeO3-PbTiO3 solid solution [44]. As pre­ viously reported, the Curie Temperature Tc in the BF-PT binary system is reduced by rare-earth substitution [44,46,47].",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 374.0727844238281
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 284
+    }
+  },
+  {
+    "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+    "document_id": "local-pdf/4d3fe4ad46460542",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013",
+    "content": "Fig. 3. The SEM images of 5BFO/5PZT with micro and nano grain size sintered at 700 °C.\n\n<!-- image -->\n\nactive mode in the cubic paraelectric phase [33]. Raman spectrum of BFO has three sharp bands at 74, 140, and 172 cm -1 attributed to E , E + A 1-1, and A 1-2 [34]. Those three bands are marked as character­ istic of BFO in Fig. 5d. The above-mentioned main bands of PZT and BFO are observed in the system sintered at 650-700 °C. Especially the bands at 140 and 172 ( E + A 1-1 and A 1-2 modes of BFO) indicate their composite-like structures. However, the E (TO2) mode at 200 cm -1 of composites is weaker than that of PZT powder, which may result from the influence of BFO addition on modes from the Zr and Ti atoms. The new band at 640 cm -1 is observed in composites ( T s &gt; 650 °C). This new band may result from the symmetrical stretching vibrations of the basal oxygen ions of the FeO6 octa­ hedra [35].\n\nSEM images of 3BFO n /7PZT m sintered at different temperatures are shown in Fig. 5e, f, and g. The composite consists of BFO and PZT particles separated at Ts = 650 °C. The EDS results suggest that the small particles belong to BFO, and the more oversized agglomerates mainly attribute to PZT. As the sintering temperature increases, the particles starte to merge, and the boundaries disappeare at 700 °C. Besides, dielectric measurement also confirms this result. As shown in Fig. 6, the real dielectric permittivity of the 3BFO n /7PZT m com­ posite sintered at T s = 650 °C suggests a dielectric anomaly at the PZT's Curie temperature T C around 355 °C. However, the anomaly at 355 °C disappears when T s increases to 700 °C.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 309
+    }
+  },
+  {
+    "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+    "document_id": "local-pdf/e0b7c7f789f25ed2",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008",
+    "content": "Figure Ŝ shows the temperature dependent dielectric constant ǻε ′ -TǼ at different frequencies for the BF-BKT-BT samples. It is seen that all the samples except for x ȹ=ȹŖ.Ś show a frequency-dependent peak in the temperature range of ŝŖŖ-ŞŖŖ K in the ε ′ -T curves, which should be corresponding to the possible relaxor FE to paraelectric phase transition temperature. The frequency dependent dielectric peak temperature ­ Tm for the ε ′ -T curves near ~ȹŝŜŖ K for the selected sample x ȹ=ȹŖ.Ş obeys well the Vogel-Fulcher ǻV-FǼ relation, f ȹ=ȹ f Ŗ expǻ-ȹ­ E Ŗ /k B (T m -ȹ­ T f ǼǼ, with ­ E Ŗ the energy barrier to dipole reorientation, f Ŗ the attempt frequency, and ­ T f the critical temperature where all the relaxation times diverge. The best-fit analysis of the data to the V-F relation yields a value of ­ T f ȹ=ȹŝśř.Ş K, which is close to the peak temperature ­ T m. This result together with the RT FE hysteresis loop and displacement current peak ǻsee Fig. śa and bǼ evidently shows a relaxor ferroelectricity for x ȹ=ȹŖ.Ş. The sample x ȹ=ȹŖ.Ś near the MPB shows frequency-independent peak near the FE Curie temperature ­ T C ȹ~ȹŝŚŘ.Ŝ K, which indicates a normal FE behavior for x ȹ=ȹŖ.Ś and is in great contrast with those for other samples. It is noted that high values of the dielectric constant at the peak position for the BF-BKT-BT samples in Fig. Ŝ were also usually reported in other BFO-based systems [Ş, ŗŝ -ŗş]. The large dielectric constant at high temperature and low frequencies in the BFO-based systems can be ascribed to the combined effects of the increasing electric conductivity due to oxygen vacancy-related space charges [ŘŖ], the increased grain size and the chemical substitution [Řŗ].",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 424.07928466796875
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 300
+    }
+  },
+  {
+    "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+    "document_id": "10.1016/j.actamat.2023.119044",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003",
+    "content": "Among the rare RT multiferroics, the converse ME effects in BFO with both high FE Curie temperature (TC ~1100 K) and high N ´ eel temperature (TN~643 K) have attracted especially much attention. E control of antiferromagnetic (AFM) domains at RT via the coupling of the FE and magnetic domains to ferroelastic domains has been observed in BFO film [4,14]. RT E -induced switching of the canted AFM moment due to coupled Dzyaloshinskii -Moriya (DM) vector and FE polarization was also revealed in BFO film [19]. However, since all these reported E control of M in BFO is mediated by a FE domain reversal/reorientaion, relatively large voltage is required to control M , which is detrimental and challenging for ME devices [3]. It has also been reported that the L.-H. Yin et al.\n\n<!-- image -->\n\n<!-- image -->\n\nE -induced phase transition near the morphotropic phase boundary (MPB) might also show large ME response [20,21]. MPB in FE perov­ skites is a composition region that separates tetragonal ( T ) and rhom­ bohedral ( R ) phases. FEs near the MPB, e.g., Pb(Zr1x Ti x )O3 (PZT) with x ~0.48, usually show optimized piezoelectricity due to the easy polar­ ization rotation and low energy barrier between the coexisting two phases [22].\n\nHere we demonstrate a promising mechanism for lowE control of M via lattice distortion and/or phase transformation in multiferroic 0.58BiFeO3 -0.42Bi0.5K0.5TiO3 (BF-BKT) single crystals near the MPB. The BF-BKT single crystal is found to show a robust macroscopic control of M even at very low E at RT. Our results show a close relation between E control of M and E -induced lattice distortion and phase transformation in the BF-BKT crystal near the MPB, indicating a promising mechanism to realize possible lowE switching of M via designing devices based on multiferroics near the MPB.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 306
+    }
+  },
+  {
+    "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+    "document_id": "10.1016/j.actamat.2023.119044",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010",
+    "content": "L.-H. Yin et al.\n\ninduced by the simultaneous incorporation of K and Ti at Bi and Fe sites, respectively, results in the great reduction of the AFM N ´ eel temperature (see Fig. 2(a)), which is likely accompanied with a substantial sup­ pression of the cycloidal spin structure. This H -induced spin-reorientation, as shown by the M-H and Mθ curves in Fig. 2 for BF-BKT, might imply a destruction of the cycloidal spin structure and a formation of a homogeneous AFM state, reminiscent of that in other BFO-based systems [35,28].\n\nFig. 2(e) shows the RT polarization-electric field ( P -E ) hysteresis loops and displacement currentE ( J -E ) curves along [001]PC axis for BFBKT crystal. Good ferroelectricity with clear E -switched P and J near the coercive electric field of EC~ ± 50 -60 kV/cm was observed for the crystal. The strain versus E ( S-E ) at RT also shows butterfly-type shape with a minimum at about E C~ ± 35 kV/cm (see Fig. 2(f)). The FE curie temperature TC of the crystal is about 671.5 K, as indicated by the peak in the temperature dependent dielectric constant ( ε' -T ) curves at different frequencies in Fig. 2(f). This FE TC is consistent with that re­ ported previously in similar BFO-based solid solutions [26].",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "Curie temperature Tc material composition",
+          "score": 511.6425476074219
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 415.808837890625
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 218
+    }
+  },
+  {
+    "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+    "document_id": "10.1111/jace.19555",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1111_jace_19555_FULL_TEXT_0013",
+    "content": "Figure 3A and its inset show the RT polarization-electric field (P-E) hysteresis loops and the displacement currentE (I-E) curve for the samples (1y )BFCy BTM ( x = 0.03, 0.15 ≤ y ≤ 0.33). Good ferroelectricity with low leakage and clear E -switched P and I at RT were observed for all the samples, as shown in Figure 3A. Compared with the (1y )BFCy BTM ( x = 0.0), the Cr-Mn co-doped samples show much improved leakage and FE polarization, which might be due to the doping-induced decrease in the oxygen vacancy-related defects. Figure 3B shows the temperature dependence of the dielectric constant ( ε' -T) for the sample y 0.27 × 0.03 at different frequencies. A sharp and nearly frequency-independent dielectric peak at T C ∼ 795.2 K, corresponding to the FE to paraelectric (PE) transition, can be observed. This dielectric peak temperature ( ∼ 795.2 K) is very close to the anomaly temperature ( ∼ 792.1 K) in the DSC curve, confirming the FE-PE transition near T C for y 0.27 × 0.03.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 402.4844055175781
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 175
+    }
+  },
+  {
+    "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+    "document_id": "local-pdf/d6275e45598fdba0",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010",
+    "content": "<!-- image -->\n\nThe variation of dielectric constant and dielectric loss with temperature of composite samples is shown in Fig. 6. Composite sample of 24 h possess a di ff used but recognized transition temperature (paraelectric-ferroelectric phase transition) at 129 °C while more fl attened and broad transition were observed for other composite samples (Fig. 6a). Similar observations were reported by Ghosh et. al. [34] for nanocrystalline BaTiO3 composites. The reason of such fl attened peaks can be associated with submicron size of the composite material. Since the transition is broad, therefore in the present case the e ff ect of grain size reduction on the transition temperature cannot be examined with certainty. However, very recently, Wang et.al. [32] has mentioned that good dielectric behavior can be observed even with 8 nm particle prepared by two step method.\n\nFurther, the dielectric constant increases towards high temperature range for all composites samples. Fig. 6b shows the variation of dielectric losses with temperature and it is observed from these curves that the dielectric loss decreases as temperature increases, attain a certain lowest value and then again increases with temperature.\n\nFig. 3. Rietveld re fi ned X-ray di ff raction pattern of BaTiO3 (48 h); # indicates the BaCO3 phase.\n\n<!-- image -->\n\nTable 1 Lattice parameters of BaTiO3 samples.\n\n| BaTiO 3 | a (Å) | b (Å) | c (Å) | c/a |\n|-----------|---------|---------|---------|-------|\n| Pristine | 4.007 | 4.007 | 4.0232 | 1.004 |\n| 48 h | 3.999 | 3.999 | 4.0253 | 1.006 |",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "Curie temperature Tc material composition",
+          "score": 545.5634765625
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 421.39764404296875
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 256
+    }
+  },
+  {
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+    "document_id": "10.1016/j.ceramint.2022.11.245",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003",
+    "content": "earth metals and B -site as transition metals have gained much attention owing to their cost effectiveness and superficial synth­ esis. Moreover, these perovskites are highly in business because of their structural tunability and for some practical reasons, the compositional variations at A and B sites can also be made quite easily [5]. Amongst the single phase AB O3 type perovskite oxides, the pristine BFO ceramic possesses a high Curie temperature of ∼ 830 °C and Neel temperature of ∼ 370 °C that depicts highly ferroelectric and G-type anti-ferromagnetic behavior, simulta­ neously [6]. One of the promising features of BFO being the sole single-phase material is that it exhibits multiferroicity above room temperature (RT) while other perovskites often show this feature well below RT. Apart from having such unique virtues, it has encountered with some serious issues like high leakage cur­ rent due to volatilization of Bi 3+ ion when it is exposed to heat treatment, whereas the cause of G- type anti-ferromagnetism associated with cycloidal spin modulation is due to valency var­ iation of Fe ion [7,8]. In contrast, BFO has various merits such as cost effectiveness, low energy band gap ( Eg ∼ 2.2 eV), and high spontaneous polarization ( PS ∼ 100 µC/cm 2 ), but its moderate\n\n<!-- image -->\n\n<!-- image -->\n\n]]]]]]\n\nFig. 1. Schematic representation of the synthesis process.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "Curie temperature Tc material composition",
+          "score": 558.8701171875
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 226
+    }
+  },
+  {
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+    "document_id": "10.1016/j.ceramint.2022.11.245",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004",
+    "content": "<!-- image -->\n\nremanent polarization and un-stability at RT hindered its wide­ spread usage in multi-state device applications [9-11].\n\nOne of the convenient ways to avoid the phase transition (i.e., secondary phases) of BFO ceramics is the composite formation through the inclusion of some other ABO3 -type structure [12]. BaTiO3 (BTO) is one of the famous and stable type-1 ferroelectric materials having low leakage current compared to that of BFO and proved a vital option for composite making with BFO [13]. The significant piezoelectric nature of BFO-BTO composite with a high curie tem­ perature of over ∼ 580 °C made it a substantial alternative to leadbased ceramics such as PbZrTiO3 [14,15]. Consequently, BFO-BTO ceramics showed better ferroelectric behavior. A similar attempt at composite synthesis was done by Ji et al., (2021) and they prepared (1-x)BFO + xBTO (x = 0.2-0.4) composite aided by the microwave sintering (MWS) method and conventional sintering (CS) method and maximum value of remanent polarization ( PR ) for MWS and CS was recorded as 2.22 µC/cm 2 and 3.74 µC/cm 2 at x = 0.35, respec­ tively [16]. But insufficient ferromagnetic behavior was also en­ countered for this specific composite [17].",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "Curie temperature Tc material composition",
+          "score": 537.5
+        }
+      },
+      {
+        "provider": "physbert",
+        "details": {
+          "query": "ferroelectric paraelectric phase transition temperature material",
+          "score": 453.57037353515625
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 196
+    }
+  },
+  {
+    "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "target_property": "Curie temperature",
+    "source_type": "text",
+    "source_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028",
+    "content": "Fig. 9(b) shows the temperature dependence of the magnetization for the randomly mixed and layered ceramic composites at a fi eld cooling (FC) sequence, under the application of a magnetic fi eld H ⊥ ¼ 10 kOe. A method for accurately determining the magnetic anomalies is to derive the magnetization with respect to temperature. The corresponding dM/dT vs . temperature plot is shown in the Inset of Fig. 9(b) and evidence a two major peaks, one at ~720 K for the randomly mixed ceramic and at ~746 K for the layered one, corresponding to the ferrimagnetic-to-paramagnetic phase transition and one at ~632 K for both types of ceramics. Similar anomalies were reported for CF-PT composites [20] and for other cobalt ferrites produced by various methods [47,48] and is assigned to some cation re-arrangements. The Curie temperature is affected by doping and the difference of 26 K in their values for the two types of ceramic composites may be assigned to various doping levels determined by the different types of interfaces in the randomly mixed composite with respect to the layered one.\n\nFig. 9. (a) Room temperature M(H) loops for the BT-CF randomly mixed and layered composite under the magnetic fi eld applied parallel/perpendicular to the layers. Inset: magni fi cation of the low- fi eld region. (b) Magnetization vs. temperature dependences of the composites ( fi eld applied out-of-plane). Inset: the derivative dM/dT as a function of temperature.",
+    "retrieval_methods": [
+      {
+        "provider": "rule",
+        "details": {
+          "matched_patterns": [
+            "\\d",
+            "[A-Z]{2,}"
+          ]
+        }
+      }
+    ],
+    "section": "full_text",
+    "page_start": null,
+    "page_end": null,
+    "metadata": {
+      "word_count": 238
+    }
+  }
+]

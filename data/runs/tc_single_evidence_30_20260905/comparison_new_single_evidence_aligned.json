@@ -1,0 +1,1850 @@
+[
+  {
+    "document_id": "1",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.7Fe0.7O2.1-Ba0.255Ca0.045Ti0.3O0.9",
+    "material_normalized": "Bi0.7Fe0.7O2.1-Ba0.255Ca0.045Ti0.3O0.9",
+    "material_identity_key": "Bi0.7Fe0.7O2.1-Ba0.255Ca0.045Ti0.3O0.9",
+    "fact_value": {
+      "value": "700",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.7Fe0.7O2.1-Ba0.255Ca0.045Ti0.3O0.9"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9",
+    "material_normalized": "Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9",
+    "material_identity_key": "Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9",
+    "fact_value": {
+      "value": "683",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5",
+    "material_normalized": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5",
+    "material_identity_key": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5",
+    "fact_value": {
+      "value": "673",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0014_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co",
+    "material_normalized": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co",
+    "material_identity_key": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co",
+    "fact_value": {
+      "value": "612",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0014_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Mn",
+    "material_normalized": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Mn",
+    "material_identity_key": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Mn",
+    "fact_value": {
+      "value": "670",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0014_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Mn"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "10",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co+Mn",
+    "material_normalized": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co+Mn",
+    "material_identity_key": "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co+Mn",
+    "fact_value": {
+      "value": "638",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_1_5131055_FULL_TEXT_0014_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co+Mn"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "12",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1100",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "13",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "13",
+    "property_name": "Curie temperature",
+    "material_reported": "CoNb0.02Fe1.98O4",
+    "material_normalized": "CoNb0.02Fe1.98O4",
+    "material_identity_key": "CoNb0.02Fe1.98O4",
+    "fact_value": {
+      "value": "793",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "CoNb0.02Fe1.98O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "13",
+    "property_name": "Curie temperature",
+    "material_reported": "Ba0.85Ti0.85O2.55-Co0.15Nb0.003Fe0.297O0.6",
+    "material_normalized": "Ba0.85Ti0.85O2.55-Co0.15Nb0.003Fe0.297O0.6",
+    "material_identity_key": "Ba0.85Ti0.85O2.55-Co0.15Nb0.003Fe0.297O0.6",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Ba0.85Ti0.85O2.55-Co0.15Nb0.003Fe0.297O0.6"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "13",
+    "property_name": "Curie temperature",
+    "material_reported": "Ba0.75Ti0.75O2.25-Co0.25Nb0.005Fe0.495O",
+    "material_normalized": "Ba0.75Ti0.75O2.25-Co0.25Nb0.005Fe0.495O",
+    "material_identity_key": "Ba0.75Ti0.75O2.25-Co0.25Nb0.005Fe0.495O",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Ba0.75Ti0.75O2.25-Co0.25Nb0.005Fe0.495O"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "13",
+    "property_name": "Curie temperature",
+    "material_reported": "Ba0.65Ti0.65O1.95-Co0.35Nb0.007Fe0.693O1.4",
+    "material_normalized": "Ba0.65Ti0.65O1.95-Co0.35Nb0.007Fe0.693O1.4",
+    "material_identity_key": "Ba0.65Ti0.65O1.95-Co0.35Nb0.007Fe0.693O1.4",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Ba0.65Ti0.65O1.95-Co0.35Nb0.007Fe0.693O1.4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "14",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03",
+    "material_normalized": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03",
+    "material_identity_key": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.01O0.02",
+    "material_normalized": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.01O0.02",
+    "material_identity_key": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.01O0.02",
+    "fact_value": {
+      "value": "1098",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.01O0.02"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.02O0.04",
+    "material_normalized": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.02O0.04",
+    "material_identity_key": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.02O0.04",
+    "fact_value": {
+      "value": "1093",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.02O0.04"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.03O0.06",
+    "material_normalized": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.03O0.06",
+    "material_identity_key": "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.03O0.06",
+    "fact_value": {
+      "value": "1088",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.03O0.06"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "material_normalized": "Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "material_identity_key": "Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "fact_value": {
+      "value": "703",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "material_normalized": "Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "material_identity_key": "Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2",
+    "fact_value": {
+      "value": "690",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99",
+    "material_normalized": "Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99",
+    "material_identity_key": "Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99",
+    "fact_value": {
+      "value": "727",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99",
+    "material_normalized": "Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99",
+    "material_identity_key": "Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99",
+    "fact_value": {
+      "value": "634",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "15",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825",
+    "material_normalized": "Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825",
+    "material_identity_key": "Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825",
+    "fact_value": {
+      "value": "673",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "17",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "Mn0.5Zn0.5Fe2O4",
+    "material_normalized": "Mn0.5Zn0.5Fe2O4",
+    "material_identity_key": "Mn0.5Zn0.5Fe2O4",
+    "fact_value": {
+      "value": "518",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Mn0.5Zn0.5Fe2O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "Mg0.1Zn0.4Fe2.5O4",
+    "material_normalized": "Mg0.1Zn0.4Fe2.5O4",
+    "material_identity_key": "Mg0.1Zn0.4Fe2.5O4",
+    "fact_value": {
+      "value": "367",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Mg0.1Zn0.4Fe2.5O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.95La0.05FeO3",
+    "material_normalized": "Bi0.95La0.05FeO3",
+    "material_identity_key": "Bi0.95La0.05FeO3",
+    "fact_value": {
+      "value": "950",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.95La0.05FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "Mn0.6Zn0.3Fe2.1O4",
+    "material_normalized": "Mn0.6Zn0.3Fe2.1O4",
+    "material_identity_key": "Mn0.6Zn0.3Fe2.1O4",
+    "fact_value": {
+      "value": "518",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0001"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Mn0.6Zn0.3Fe2.1O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "Mn0.5Zn0.5Fe2O4",
+    "material_normalized": "Mn0.5Zn0.5Fe2O4",
+    "material_identity_key": "Mn0.5Zn0.5Fe2O4",
+    "fact_value": {
+      "value": "367",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0002"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Mn0.5Zn0.5Fe2O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "19",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "950",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0002"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "20",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "20",
+    "property_name": "Curie temperature",
+    "material_reported": "CrFe2O4",
+    "material_normalized": "CrFe2O4",
+    "material_identity_key": "CrFe2O4",
+    "fact_value": {
+      "value": "420",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "CrFe2O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "22",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.95Nd0.05FeO3",
+    "material_normalized": "Bi0.95Nd0.05FeO3",
+    "material_identity_key": "Bi0.95Nd0.05FeO3",
+    "fact_value": {
+      "value": "1020",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.95Nd0.05FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.9Nd0.1FeO3",
+    "material_normalized": "Bi0.9Nd0.1FeO3",
+    "material_identity_key": "Bi0.9Nd0.1FeO3",
+    "fact_value": {
+      "value": "950",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.9Nd0.1FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.85Nd0.15FeO3",
+    "material_normalized": "Bi0.85Nd0.15FeO3",
+    "material_identity_key": "Bi0.85Nd0.15FeO3",
+    "fact_value": {
+      "value": "900",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.85Nd0.15FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.8Nd0.2FeO3",
+    "material_normalized": "Bi0.8Nd0.2FeO3",
+    "material_identity_key": "Bi0.8Nd0.2FeO3",
+    "fact_value": {
+      "value": "850",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.8Nd0.2FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.75Nd0.25FeO3",
+    "material_normalized": "Bi0.75Nd0.25FeO3",
+    "material_identity_key": "Bi0.75Nd0.25FeO3",
+    "fact_value": {
+      "value": "800",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.75Nd0.25FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.7Nd0.3FeO3",
+    "material_normalized": "Bi0.7Nd0.3FeO3",
+    "material_identity_key": "Bi0.7Nd0.3FeO3",
+    "fact_value": {
+      "value": "750",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.7Nd0.3FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.65Nd0.35FeO3",
+    "material_normalized": "Bi0.65Nd0.35FeO3",
+    "material_identity_key": "Bi0.65Nd0.35FeO3",
+    "fact_value": {
+      "value": "700",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.65Nd0.35FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.6Nd0.4FeO3",
+    "material_normalized": "Bi0.6Nd0.4FeO3",
+    "material_identity_key": "Bi0.6Nd0.4FeO3",
+    "fact_value": {
+      "value": "650",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.6Nd0.4FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.55Nd0.45FeO3",
+    "material_normalized": "Bi0.55Nd0.45FeO3",
+    "material_identity_key": "Bi0.55Nd0.45FeO3",
+    "fact_value": {
+      "value": "600",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.55Nd0.45FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.5Nd0.5FeO3",
+    "material_normalized": "Bi0.5Nd0.5FeO3",
+    "material_identity_key": "Bi0.5Nd0.5FeO3",
+    "fact_value": {
+      "value": "550",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.5Nd0.5FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.45Nd0.55FeO3",
+    "material_normalized": "Bi0.45Nd0.55FeO3",
+    "material_identity_key": "Bi0.45Nd0.55FeO3",
+    "fact_value": {
+      "value": "500",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.45Nd0.55FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.4Nd0.6FeO3",
+    "material_normalized": "Bi0.4Nd0.6FeO3",
+    "material_identity_key": "Bi0.4Nd0.6FeO3",
+    "fact_value": {
+      "value": "450",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.4Nd0.6FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.35Nd0.65FeO3",
+    "material_normalized": "Bi0.35Nd0.65FeO3",
+    "material_identity_key": "Bi0.35Nd0.65FeO3",
+    "fact_value": {
+      "value": "400",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.35Nd0.65FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.3Nd0.7FeO3",
+    "material_normalized": "Bi0.3Nd0.7FeO3",
+    "material_identity_key": "Bi0.3Nd0.7FeO3",
+    "fact_value": {
+      "value": "350",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.3Nd0.7FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.25Nd0.75FeO3",
+    "material_normalized": "Bi0.25Nd0.75FeO3",
+    "material_identity_key": "Bi0.25Nd0.75FeO3",
+    "fact_value": {
+      "value": "300",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.25Nd0.75FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.2Nd0.8FeO3",
+    "material_normalized": "Bi0.2Nd0.8FeO3",
+    "material_identity_key": "Bi0.2Nd0.8FeO3",
+    "fact_value": {
+      "value": "250",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.2Nd0.8FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.15Nd0.85FeO3",
+    "material_normalized": "Bi0.15Nd0.85FeO3",
+    "material_identity_key": "Bi0.15Nd0.85FeO3",
+    "fact_value": {
+      "value": "200",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.15Nd0.85FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.1Nd0.9FeO3",
+    "material_normalized": "Bi0.1Nd0.9FeO3",
+    "material_identity_key": "Bi0.1Nd0.9FeO3",
+    "fact_value": {
+      "value": "150",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.1Nd0.9FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.05Nd0.95FeO3",
+    "material_normalized": "Bi0.05Nd0.95FeO3",
+    "material_identity_key": "Bi0.05Nd0.95FeO3",
+    "fact_value": {
+      "value": "100",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.05Nd0.95FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "NdFeO3",
+    "material_normalized": "NdFeO3",
+    "material_identity_key": "NdFeO3",
+    "fact_value": {
+      "value": "50",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "NdFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "24",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1100",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0133946_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "25",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.6Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_normalized": "Bi0.6Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_identity_key": "Bi0.6Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "fact_value": {
+      "value": "903",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.6Fe0.6O1.8-Pb0.4Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "25",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.57Nd0.03Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_normalized": "Bi0.57Nd0.03Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_identity_key": "Bi0.57Nd0.03Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "fact_value": {
+      "value": "873",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.57Nd0.03Fe0.6O1.8-Pb0.4Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "25",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.54Nd0.06Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_normalized": "Bi0.54Nd0.06Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_identity_key": "Bi0.54Nd0.06Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "fact_value": {
+      "value": "843",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.54Nd0.06Fe0.6O1.8-Pb0.4Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "25",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.51Nd0.09Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_normalized": "Bi0.51Nd0.09Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "material_identity_key": "Bi0.51Nd0.09Fe0.6O1.8-Pb0.4Ti0.4O1.2",
+    "fact_value": {
+      "value": "813",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.51Nd0.09Fe0.6O1.8-Pb0.4Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "25",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "28",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1100",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "28",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3-BiK0.5Ti0.5O3",
+    "material_normalized": "BiFeO3-BiK0.5Ti0.5O3",
+    "material_identity_key": "BiFeO3-BiK0.5Ti0.5O3",
+    "fact_value": {
+      "value": "671.5",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3-BiK0.5Ti0.5O3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "29",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1100",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1111_jace_19555_FULL_TEXT_0002_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "30",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "830",
+      "unit": "°C",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "30",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3-BaTiO3",
+    "material_normalized": "BiFeO3-BaTiO3",
+    "material_identity_key": "BiFeO3-BaTiO3",
+    "fact_value": {
+      "value": "580",
+      "unit": "°C",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3-BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "4",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "4",
+    "property_name": "Curie temperature",
+    "material_reported": "CoFe2O4",
+    "material_normalized": "CoFe2O4",
+    "material_identity_key": "CoFe2O4",
+    "fact_value": {
+      "value": "793",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "CoFe2O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "4",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0029_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "4",
+    "property_name": "Curie temperature",
+    "material_reported": "Bi0.95Nd0.05FeO3",
+    "material_normalized": "Bi0.95Nd0.05FeO3",
+    "material_identity_key": "Bi0.95Nd0.05FeO3",
+    "fact_value": {
+      "value": "1020",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0029_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Bi0.95Nd0.05FeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "6",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "120",
+      "unit": "°C",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_ceramint_2019_12_165_FULL_TEXT_0013_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "CoFe2O4",
+    "material_normalized": "CoFe2O4",
+    "material_identity_key": "CoFe2O4",
+    "fact_value": {
+      "value": "793",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "CoFe2O4"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "Co0.6Fe1.2O2.4-Ba0.4Ti0.4O1.2",
+    "material_normalized": "Co0.6Fe1.2O2.4-Ba0.4Ti0.4O1.2",
+    "material_identity_key": "Co0.6Fe1.2O2.4-Ba0.4Ti0.4O1.2",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Co0.6Fe1.2O2.4-Ba0.4Ti0.4O1.2"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "Co0.5FeO2-Ba0.5Ti0.5O1.5",
+    "material_normalized": "Co0.5FeO2-Ba0.5Ti0.5O1.5",
+    "material_identity_key": "Co0.5FeO2-Ba0.5Ti0.5O1.5",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Co0.5FeO2-Ba0.5Ti0.5O1.5"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "Co0.4Fe0.8O1.6-Ba0.6Ti0.6O1.8",
+    "material_normalized": "Co0.4Fe0.8O1.6-Ba0.6Ti0.6O1.8",
+    "material_identity_key": "Co0.4Fe0.8O1.6-Ba0.6Ti0.6O1.8",
+    "fact_value": {
+      "value": "393",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "Co0.4Fe0.8O1.6-Ba0.6Ti0.6O1.8"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "120",
+      "unit": "°C",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0005_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  },
+  {
+    "document_id": "7",
+    "property_name": "Curie temperature",
+    "material_reported": "BaTiO3",
+    "material_normalized": "BaTiO3",
+    "material_identity_key": "BaTiO3",
+    "fact_value": {
+      "value": "150",
+      "unit": "°C",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1063_5_0036518_FULL_TEXT_0006_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BaTiO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers.",
+    "property": "Curie temperature"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "state": "COMPLETE_WITH_ERRORS",
+  "evidence_total": 716,
+  "completed": 716,
+  "success": 702,
+  "failed": 14,
+  "resumed": 0,
+  "model_calls": 980,
+  "known_tokens": 1568238,
+  "started": 1788592752.2948604,
+  "articles": {
+    "local-pdf/d13a6634f5c93180": {
+      "completed": 25,
+      "failed": 0
+    },
+    "10.1063/1.5131055": {
+      "completed": 17,
+      "failed": 1
+    },
+    "10.1002/adma.201003636": {
+      "completed": 23,
+      "failed": 0
+    },
+    "10.1007/s10854-022-08492-3": {
+      "completed": 14,
+      "failed": 0
+    },
+    "local-pdf/f19a1c40d689d7e7": {
+      "completed": 44,
+      "failed": 0
+    },
+    "local-pdf/f632a01543d4e2d3": {
+      "completed": 28,
+      "failed": 0
+    },
+    "10.1063/5.0026210": {
+      "completed": 20,
+      "failed": 2
+    },
+    "local-pdf/ec08daecb7989eed": {
+      "completed": 39,
+      "failed": 0
+    },
+    "10.1021/acsnano.2c07215": {
+      "completed": 30,
+      "failed": 0
+    },
+    "10.1016/j.jallcom.2022.165519": {
+      "completed": 16,
+      "failed": 1
+    },
+    "10.1002/adfm.202113022": {
+      "completed": 43,
+      "failed": 3
+    },
+    "local-pdf/9a61ca892c8d5117": {
+      "completed": 31,
+      "failed": 0
+    },
+    "local-pdf/deb70641057677d8": {
+      "completed": 18,
+      "failed": 0
+    },
+    "10.13039/501100011033": {
+      "completed": 21,
+      "failed": 0
+    },
+    "local-pdf/7c100201e7883b3e": {
+      "completed": 17,
+      "failed": 0
+    },
+    "local-pdf/90db601f0c0243b4": {
+      "completed": 25,
+      "failed": 0
+    },
+    "10.1063/5.0133946": {
+      "completed": 17,
+      "failed": 1
+    },
+    "10.1143/JPSJ.7.5": {
+      "completed": 28,
+      "failed": 2
+    },
+    "local-pdf/4d3fe4ad46460542": {
+      "completed": 20,
+      "failed": 1
+    },
+    "local-pdf/e0b7c7f789f25ed2": {
+      "completed": 14,
+      "failed": 2
+    },
+    "10.1016/j.actamat.2023.119044": {
+      "completed": 20,
+      "failed": 0
+    },
+    "10.1111/jace.19555": {
+      "completed": 26,
+      "failed": 1
+    },
+    "local-pdf/d6275e45598fdba0": {
+      "completed": 15,
+      "failed": 0
+    },
+    "10.1016/j.ceramint.2022.11.245": {
+      "completed": 33,
+      "failed": 0
+    },
+    "10.1016/j.jallcom.2019.05.068": {
+      "completed": 33,
+      "failed": 0
+    },
+    "10.1016/j.matlet.2020.127623": {
+      "completed": 9,
+      "failed": 0
+    },
+    "10.1016/j.ceramint.2019.12.165": {
+      "completed": 21,
+      "failed": 0
+    },
+    "10.1063/5.0036518": {
+      "completed": 18,
+      "failed": 0
+    },
+    "10.1016/j.jallcom.2021.161861": {
+      "completed": 19,
+      "failed": 0
+    },
+    "10.1016/j.jmmm.2022.169735": {
+      "completed": 32,
+      "failed": 0
+    }
+  },
+  "elapsed_seconds": 489.5,
+  "last_evidence_id": "10_1016_j_jmmm_2022_169735_FULL_TEXT_0032_TEXT",
+  "last_error": null,
+  "exit_code": 1,
+  "finished": 1788593241.8189123
+}

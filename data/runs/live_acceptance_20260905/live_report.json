@@ -1,0 +1,337 @@
+{
+  "started": 1788623624.607939,
+  "max_model_http_requests": 24,
+  "token_reservation_limit": 180000,
+  "max_material_requests": 3,
+  "scope": "Seven original Evidence units: three core Tc texts, one equation, one table, one figure, one band-gap text. Not full-paper recall evaluation.",
+  "runtime_overrides": {
+    "identifier_max_tokens": 256,
+    "other_max_tokens": 4096,
+    "deepseek_thinking": "disabled",
+    "num_retries": 0,
+    "timeout": 70
+  },
+  "http_requests": [
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 1,
+      "reserved_tokens": 2755,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 2,
+      "reserved_tokens": 3053,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 3,
+      "reserved_tokens": 2897,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 4,
+      "reserved_tokens": 2635,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 5,
+      "reserved_tokens": 16665,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 6,
+      "reserved_tokens": 37469,
+      "status": "ConnectError"
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 7,
+      "reserved_tokens": 2396,
+      "status": "ConnectError"
+    }
+  ],
+  "model_calls": [
+    {
+      "call": 1,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2755,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623624.7955859,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 1.02
+    },
+    {
+      "call": 2,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 3053,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623625.8183894,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.14
+    },
+    {
+      "call": 3,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2897,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623625.9604404,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.03
+    },
+    {
+      "call": 4,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2635,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623625.9900804,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.04
+    },
+    {
+      "call": 5,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 16665,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623626.037741,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.03
+    },
+    {
+      "call": 6,
+      "model": "openai/qwen-vl-plus",
+      "reserved_tokens": 37469,
+      "max_tokens": 4096,
+      "images": 1,
+      "started": 1788623626.0704808,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.04
+    },
+    {
+      "call": 7,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2396,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623626.174357,
+      "error": "litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+      "elapsed_seconds": 0.04
+    }
+  ],
+  "runs": [
+    {
+      "preset": "curie_temperature",
+      "run_id": "live_tc_selected_20260905",
+      "exit_code": 1,
+      "predictions": [],
+      "failures": [
+        {
+          "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        },
+        {
+          "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        },
+        {
+          "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        },
+        {
+          "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        },
+        {
+          "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        },
+        {
+          "evidence_id": "figure_0",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        }
+      ]
+    },
+    {
+      "preset": "band_gap",
+      "run_id": "live_band_gap_selected_20260905",
+      "exit_code": 1,
+      "predictions": [],
+      "failures": [
+        {
+          "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+          "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+        }
+      ]
+    }
+  ],
+  "material_checks": [],
+  "known_input_issues": [
+    "Paper30 Article document_id/DOI came from a reference; PDF DOI is 10.1016/j.jallcom.2023.169571. Original source ID retained for this diagnostic.",
+    "Paper19 table block includes later body text; positive Tc output cannot establish correct table extraction.",
+    "Paper12 host-formula definition is in another Evidence and is not added to this unchanged per-Evidence test.",
+    "Band-gap abbreviation BFO definition is in another Evidence and is not injected into the model input."
+  ],
+  "selection": [
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT",
+      "document_id": "local-pdf/d13a6634f5c93180",
+      "source_type": "text",
+      "characters": 1455,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "source_type": "text",
+      "characters": 1761,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1007/s10854-022-08492-3",
+      "source_type": "text",
+      "characters": 1605,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        },
+        {
+          "provider": "physbert",
+          "details": {
+            "query": "ferroelectric paraelectric phase transition temperature material",
+            "score": 404.3557434082031
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "equation",
+      "characters": 1332,
+      "retrieval_methods": [
+        {
+          "provider": "equation_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+              "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 15192,
+      "retrieval_methods": [
+        {
+          "provider": "table_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+              "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+              "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "figure_0",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "figure",
+      "characters": 270,
+      "retrieval_methods": [
+        {
+          "provider": "figure_caption_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+              "(?<!\\w)Curie\\ temperature(?!\\w)",
+              "(?<!\\w)curie\\ temperature(?!\\w)",
+              "curie\\ temperature"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "band_gap",
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1390,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)\\bband[\\s-]*gap\\b",
+              "(?<!\\w)band\\ gap(?!\\w)",
+              "(?i)\\bE\\s*_?\\s*g\\b.{0,60}\\beV\\b"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "finished": 1788623626.2636368,
+  "elapsed_seconds": 1.66,
+  "actual_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "model_http_requests": 7
+}

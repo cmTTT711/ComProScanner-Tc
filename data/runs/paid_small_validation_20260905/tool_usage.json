@@ -1,0 +1,44 @@
+[
+  {
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT",
+    "resumed": false,
+    "stages": [
+      {
+        "stage": "identifier",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      },
+      {
+        "stage": "extractor",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      },
+      {
+        "stage": "formatter",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      }
+    ],
+    "usage_scope": "crew_reported_tokens; tool subcalls may be unreported",
+    "cost": null
+  }
+]

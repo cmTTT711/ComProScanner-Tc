@@ -1,0 +1,408 @@
+{
+  "scope": "Audit all 61 Sept4 predictions; rerun selected problem Evidence only.",
+  "historical_prediction_count": 61,
+  "strict_gold_fact_count": 46,
+  "strict_gold_temperature_events": 45,
+  "historical_temperature_event_hits": 43,
+  "temperature_event_misses": [
+    {
+      "gold_row_1based": 11,
+      "gold": {
+        "paper_id": 11,
+        "material": "BaTiO3",
+        "tc_value": 120,
+        "tc_unit": "°C",
+        "page": 6,
+        "fact_role": "background",
+        "transition_type": "ferroelectric-paraelectric",
+        "qualifier": "typical; not observed in the current CoFe2O4-Ba0.97Sr0.03TiO3 composite",
+        "evidence": "The typical maximum of epsilon' at about 120 °C, which stems from the ferroelectric to paraelectric phase transition of BaTiO3, was not found...",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "audit_note": "Same-paper/value/unit absent; material and scientific meaning require source verification.",
+      "source_verified": "PDF page 6: typical BaTiO3 FE-PE peak about 120 C, not observed in this composite; valid background fact, not a composite measurement."
+    },
+    {
+      "gold_row_1based": 41,
+      "gold": {
+        "paper_id": 27,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "fact_role": "background",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "audit_note": "Same-paper/value/unit absent; material and scientific meaning require source verification.",
+      "source_verified": "PDF pages 1-2 report approximately 830 C (1103.15 K by conversion), not literal 1103 K. Old parsed evidence has glyph corruption and splits the sentence across chunks. Keep original source unit; do not modify Gold."
+    }
+  ],
+  "flagged_name_rows": 37,
+  "name_incomplete_or_unexpanded_rows": 36,
+  "formula_typography_rows": 1,
+  "selected_evidence_count": 26,
+  "selected": [
+    {
+      "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+      "document_id": "10.1002/adma.201003636",
+      "source_type": "text",
+      "characters": 1521,
+      "old_rows": [],
+      "reasons": [
+        "FN_background_120C"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "document_id": "local-pdf/e0b7c7f789f25ed2",
+      "source_type": "text",
+      "characters": 872,
+      "old_rows": [],
+      "reasons": [
+        "FN_background_original_830C",
+        "PDF_text_recovery"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1063/1.5131055",
+      "source_type": "text",
+      "characters": 2125,
+      "old_rows": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reasons": [
+        "unexpanded_alias_and_additives"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1007/s10854-022-08492-3",
+      "source_type": "text",
+      "characters": 1605,
+      "old_rows": [
+        7
+      ],
+      "reasons": [
+        "missing_parent_formula"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1238,
+      "old_rows": [
+        17
+      ],
+      "reasons": [
+        "formula_typography_corruption"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1369,
+      "old_rows": [
+        18
+      ],
+      "reasons": [
+        "unresolved_parent_or_sample_variable"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1561,
+      "old_rows": [
+        19
+      ],
+      "reasons": [
+        "unresolved_parent_or_sample_variable"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1979,
+      "old_rows": [
+        21
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1462,
+      "old_rows": [
+        22,
+        23
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1332,
+      "old_rows": [
+        24
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1750,
+      "old_rows": [
+        25,
+        26,
+        27
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1336,
+      "old_rows": [
+        28,
+        29
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1743,
+      "old_rows": [
+        30
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 15192,
+      "old_rows": [
+        32,
+        33,
+        34
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 16339,
+      "old_rows": [
+        35
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "document_id": "10.1063/5.0133946",
+      "source_type": "text",
+      "characters": 1884,
+      "old_rows": [
+        40
+      ],
+      "reasons": [
+        "unexpanded_ternary_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "document_id": "10.1143/JPSJ.7.5",
+      "source_type": "text",
+      "characters": 1814,
+      "old_rows": [
+        42,
+        43,
+        44
+      ],
+      "reasons": [
+        "unexpanded_solid_solution_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "document_id": "local-pdf/4d3fe4ad46460542",
+      "source_type": "text",
+      "characters": 1648,
+      "old_rows": [
+        45
+      ],
+      "reasons": [
+        "unexpanded_phase_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "document_id": "local-pdf/e0b7c7f789f25ed2",
+      "source_type": "text",
+      "characters": 1719,
+      "old_rows": [
+        46
+      ],
+      "reasons": [
+        "unexpanded_ternary_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.actamat.2023.119044",
+      "source_type": "text",
+      "characters": 1829,
+      "old_rows": [
+        47
+      ],
+      "reasons": [
+        "unexpanded_material_or_crystal_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "document_id": "10.1016/j.actamat.2023.119044",
+      "source_type": "text",
+      "characters": 1238,
+      "old_rows": [
+        48
+      ],
+      "reasons": [
+        "unexpanded_material_or_crystal_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "document_id": "10.1111/jace.19555",
+      "source_type": "text",
+      "characters": 990,
+      "old_rows": [
+        50,
+        51
+      ],
+      "reasons": [
+        "unexpanded_variable_solid_solution"
+      ],
+      "equivalent_source_ids": [
+        "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+      ]
+    },
+    {
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "document_id": "local-pdf/d6275e45598fdba0",
+      "source_type": "text",
+      "characters": 1569,
+      "old_rows": [
+        52
+      ],
+      "reasons": [
+        "sample_label_without_composition"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1390,
+      "old_rows": [
+        53
+      ],
+      "reasons": [
+        "unexpanded_material_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1227,
+      "old_rows": [
+        54
+      ],
+      "reasons": [
+        "unexpanded_material_or_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    },
+    {
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "source_type": "text",
+      "characters": 1456,
+      "old_rows": [
+        58,
+        59
+      ],
+      "reasons": [
+        "unexpanded_composite_alias"
+      ],
+      "equivalent_source_ids": []
+    }
+  ],
+  "model_input_policy": "Unchanged original Evidence and frozen Tc instructions, except one explicitly logged PDF source-recovery paragraph. No Gold content supplied to models; no added material-definition context.",
+  "thinking": {
+    "type": "enabled"
+  },
+  "old_outputs_and_gold_untouched": true,
+  "source_sha256": {
+    "outputs/runs/tc_fulltext_001_030_20260904/predictions.json": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7",
+    "outputs/gold/tc_001_030/gold_facts.json": "7b423c955290fd1a5b02c322893e5d23ac477cf9904227708fb6a694533ee4bd"
+  }
+}

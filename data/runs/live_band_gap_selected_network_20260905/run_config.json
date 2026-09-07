@@ -1,0 +1,36 @@
+{
+  "preset": "band_gap",
+  "scope": "selected original evidence acceptance",
+  "source_preparation": "live_tc_prepare_20260905 + fresh providers on papers19/30",
+  "extraction": {
+    "preset": "band_gap",
+    "evidence_sha256": "c8f31f03001b3d4b48054d2aa5ca832c0ffa4a749e1ac9d3b7d0fb248a3e9b07",
+    "identifier_query": "Does this evidence explicitly assign a numerical band-gap energy to an identifiable material? Include optical measurements and computed electronic gaps, and explicit current-work, comparison or cited-material statements. Answer yes or no. Exclude absorption wavelengths, emission peaks, activation energies, exciton binding energies, and offsets between materials unless an explicit material-to-band-gap value is also given.",
+    "extraction_instructions": "Extract only explicitly reported scalar band-gap energies with an exact material-to-value relationship. Include current-work, comparison and cited-material facts when the evidence states the relationship; do not supply values from external knowledge. Preserve composition, dopant concentration, phase, thickness and sample identity when reported. Keep measured optical gaps and computed electronic/fundamental gaps as separate records: use conditions.determination_method='optical' or 'computational' only when explicitly supported. If the method is unstated, retain the fact without inventing a method; it can be reviewed. Preserve direct/indirect gap assignments, experimental technique, temperature and computational method/functional in conditions when reported. Never merge optical and computed values merely because the material is the same. Preserve the reported value, unit and any approximation or bound. Do not convert wavelengths or absorption edges to energies, infer a Tauc intercept, estimate values from a plot, or interpret activation, emission or exciton binding energies as band gaps. For multiple materials, bind each value to its own material and method. Return no fact when no explicit scalar band-gap value is supported.\n\nILLUSTRATIVE EXAMPLES (not evidence for the current article; never copy their materials or values into the answer):\n[\n  {\n    \"evidence\": \"Sample A (TiO2) has an optical band gap of 3.20 eV from a Tauc plot.\",\n    \"facts\": [\n      {\n        \"material_reported\": \"TiO2\",\n        \"property\": \"band gap\",\n        \"value\": 3.2,\n        \"unit\": \"eV\",\n        \"qualifier\": null,\n        \"conditions\": {\n          \"determination_method\": \"optical\",\n          \"technique\": \"Tauc plot\"\n        }\n      }\n    ]\n  },\n  {\n    \"evidence\": \"For ZnO, the PBE calculation gives a direct band gap of 0.75 eV.\",\n    \"facts\": [\n      {\n        \"material_reported\": \"ZnO\",\n        \"property\": \"band gap\",\n        \"value\": 0.75,\n        \"unit\": \"eV\",\n        \"qualifier\": null,\n        \"conditions\": {\n          \"determination_method\": \"computational\",\n          \"functional\": \"PBE\",\n          \"gap_type\": \"direct\"\n        }\n      }\n    ]\n  },\n  {\n    \"evidence\": \"TiO2 shows an absorption edge at 390 nm; its conductivity activation energy is 0.18 eV.\",\n    \"facts\": []\n  }\n]",
+    "allowed_units": [
+      "eV"
+    ],
+    "required_conditions": [
+      "determination_method"
+    ],
+    "material_normalizer": "identity",
+    "timeout": 70,
+    "models": {
+      "identifier": {
+        "model": "openai/qwen-flash",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_key_env": "DASHSCOPE_API_KEY"
+      },
+      "extractor": {
+        "model": "deepseek/deepseek-v4-flash",
+        "base_url": null,
+        "api_key_env": "DEEPSEEK_API_KEY"
+      },
+      "vision": {
+        "model": "openai/qwen-vl-plus",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_key_env": "DASHSCOPE_API_KEY"
+      }
+    }
+  }
+}

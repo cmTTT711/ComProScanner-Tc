@@ -1,0 +1,62 @@
+{
+  "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "stage_records": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\n  \"composition_extracted_data\": {\n    \"compositions_property_values\": {\n      \"BiFeO3\": 1103\n    },\n    \"abbreviations\": {\n      \"BFO\": \"BiFeO3\"\n    },\n    \"property_unit\": \"K\",\n    \"family\": \"BiFeO3\"\n  }\n}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      },
+      {
+        "stage": "formatter",
+        "raw_response": "{\n  \"composition_formatted_data\": {\n    \"compositions_property_values\": {\n      \"BiFeO3\": 1103\n    },\n    \"property_unit\": \"K\",\n    \"family\": \"BiFeO3\"\n  }\n}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 0,
+          "prompt_tokens": 0,
+          "cached_prompt_tokens": 0,
+          "completion_tokens": 0,
+          "successful_requests": 0
+        }
+      }
+    ],
+    "status": "DATA",
+    "review_required": true,
+    "representation_limits": [
+      "legacy output has one value per material and one shared unit; verify conditions, ranges and qualifiers against raw responses"
+    ],
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+  }
+}

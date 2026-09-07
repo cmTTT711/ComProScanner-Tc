@@ -1,0 +1,289 @@
+[
+  {
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "property_name": "Curie temperature",
+    "material_reported": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+    "material_normalized": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+    "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+    "fact_value": {
+      "value": "720",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "property_name": "Curie temperature",
+    "material_reported": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+    "material_normalized": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+    "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+    "fact_value": {
+      "value": "746",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "0.66BaTiO3-0.33CoFe2O4 tri-layer composite"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1007/s10854-022-08492-3",
+    "property_name": "Curie temperature",
+    "material_reported": "y=0.24, x=0.01",
+    "material_normalized": "y=0.24, x=0.01",
+    "material_identity_key": "y=0.24, x=0.01",
+    "fact_value": {
+      "value": "853.1",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+    ],
+    "conditions": {
+      "E_bias": "0 V"
+    },
+    "material_reported_variants": [
+      "y=0.24, x=0.01"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1007/s10854-022-08492-3",
+    "property_name": "Curie temperature",
+    "material_reported": "y=0.24, x=0.03",
+    "material_normalized": "y=0.24, x=0.03",
+    "material_identity_key": "y=0.24, x=0.03",
+    "fact_value": {
+      "value": "766.1",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+    ],
+    "conditions": {
+      "E_bias": "0 V"
+    },
+    "material_reported_variants": [
+      "y=0.24, x=0.03"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1007/s10854-022-08492-3",
+    "property_name": "Curie temperature",
+    "material_reported": "y=0.24, x=0.05",
+    "material_normalized": "y=0.24, x=0.05",
+    "material_identity_key": "y=0.24, x=0.05",
+    "fact_value": {
+      "value": "741.7",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+    ],
+    "conditions": {
+      "E_bias": "0 V"
+    },
+    "material_reported_variants": [
+      "y=0.24, x=0.05"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "BLFO-MZFO composite",
+    "material_normalized": "BLFO-MZFO composite",
+    "material_identity_key": "BLFO-MZFO composite",
+    "fact_value": {
+      "value": "518",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+      "10.1002_adfm.202113022_TABLE_0001"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BLFO-MZFO composite"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "MZFO powder",
+    "material_normalized": "MZFO powder",
+    "material_identity_key": "MZFO powder",
+    "fact_value": {
+      "value": "518",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0001"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "MZFO powder"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "BLFO-MZFO composite HPT",
+    "material_normalized": "BLFO-MZFO composite HPT",
+    "material_identity_key": "BLFO-MZFO composite HPT",
+    "fact_value": {
+      "value": "367",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0001"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BLFO-MZFO composite HPT"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "BLFO-MZFO composite HPT",
+    "material_normalized": "BLFO-MZFO composite HPT",
+    "material_identity_key": "BLFO-MZFO composite HPT",
+    "fact_value": {
+      "value": "778",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "10.1002_adfm.202113022_TABLE_0001"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BLFO-MZFO composite HPT"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "composite",
+    "material_normalized": "composite",
+    "material_identity_key": "composite",
+    "fact_value": {
+      "value": "367",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "figure_0"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "composite"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "composite",
+    "material_normalized": "composite",
+    "material_identity_key": "composite",
+    "fact_value": {
+      "value": "778",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "figure_0"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "composite"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "composite HPT",
+    "material_normalized": "composite HPT",
+    "material_identity_key": "composite HPT",
+    "fact_value": {
+      "value": "367",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "figure_0"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "composite HPT"
+    ],
+    "processing_issues": []
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "property_name": "Curie temperature",
+    "material_reported": "composite HPT",
+    "material_normalized": "composite HPT",
+    "material_identity_key": "composite HPT",
+    "fact_value": {
+      "value": "778",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "figure_0"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "composite HPT"
+    ],
+    "processing_issues": []
+  }
+]

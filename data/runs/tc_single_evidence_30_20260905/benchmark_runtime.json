@@ -1,0 +1,20 @@
+{
+  "workers": 3,
+  "model_request_cap": null,
+  "identifier_model": "openai/qwen-flash",
+  "extractor_model": "deepseek/deepseek-v4-flash",
+  "equation_model": "deepseek/deepseek-v4-flash",
+  "deepseek_thinking": "disabled",
+  "max_output_tokens": 8192,
+  "crewai_max_iter": 12,
+  "crewai_max_retry_limit": 1,
+  "http_retries": 1,
+  "providers": [
+    "rule_text",
+    "physbert",
+    "table",
+    "equation"
+  ],
+  "evidence_scope": "single_evidence",
+  "sample_limit": null
+}

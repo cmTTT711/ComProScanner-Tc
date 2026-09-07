@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "comproscanner"
-version = "2026.08.11"
-description = "Multi-agent system for extracting and processing structured composition-property data from scientific literature"
+version = "2026.09.06"
+description = "Traceable, preset-driven material-property extraction from scientific literature"
 readme = "README.md"
 authors = [{ name = "Aritra Roy", email = "contact@aritraroy.live" }]
 license = { text = "MIT" }
@@ -16,7 +16,11 @@ dependencies = [
     "tqdm",
     "lxml",
     "pandas",
+    "openpyxl",
     "litellm",
+    "pymatgen",
+    "pymupdf",
+    "tabulate",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -41,34 +45,22 @@ rag = [
     "transformers",
     "tokenizers",
     "sentence-transformers",
-    "langchain",
-    "langchain-community",
+    "langchain-core",
     "chromadb",
     "langchain-chroma",
 ]
-database = ["mysql-connector-python", "neo4j"]
-materials = ["pymatgen"]
-visualization = ["seaborn"]
-legacy = ["crewai", "crewai-tools"]
 all = [
     "docling",
     "torch",
     "transformers",
     "tokenizers",
     "sentence-transformers",
-    "langchain",
-    "langchain-community",
+    "langchain-core",
     "chromadb",
     "langchain-chroma",
-    "mysql-connector-python",
-    "neo4j",
     "pymatgen",
-    "seaborn",
-    "crewai",
-    "crewai-tools",
 ]
 dev = ["pytest", "pytest-mock"]
-docs = ["mkdocs-material", "mkdocs-minify-plugin", "mkdocstrings[python]"]
 test = ["pytest", "pytest-cov", "pytest-mock"]
 [project.urls]
 "Homepage" = "https://github.com/slimeslab/ComProScanner"
@@ -80,11 +72,13 @@ package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["comproscanner*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
-addopts = "-m 'not integration'"
+addopts = "--import-mode=importlib -m 'not integration'"
+cache_dir = "data/cache/pytest"
 markers = [
     "integration: requires optional local services, credentials, or model weights",
 ]
@@ -105,3 +99,6 @@ exclude_lines = [
     "raise NotImplementedError",
     "if __name__ == .__main__.:",
 ]
+
+[tool.black]
+target-version = ["py312"]

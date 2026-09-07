@@ -1,0 +1,110 @@
+{
+  "filtered_compositions": {
+    "10_1063_1_5131055_FULL_TEXT_0001_TEXT": [
+      {
+        "composition": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + 1 mol% MnO2",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + 1 mol% CuO",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 + 1 mol% MnO2 + 1 mol% CuO",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1063_1_5131055_FULL_TEXT_0011_TEXT": [
+      {
+        "composition": "0.7BiFeO3-0.3Ba0.7Ca0.3TiO3 + 0.1 wt% CoFe2O4",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.7BiFeO3-0.3Ba0.7Ca0.3TiO3 + 0.1 wt% MnFe2O4",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.7BiFeO3-0.3Ba0.7Ca0.3TiO3 + 0.1 wt% (CoFe2O4 + MnFe2O4)",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1063_5_0026210_FULL_TEXT_0005_TEXT": [
+      {
+        "composition": "0.7Bi0.9925Ca0.0075FeO3-0.3BaTiO3+0.3wt.%MnO2",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8wt.%MnO2",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-1.2wt.%MnO2",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1063_5_0026210_FULL_TEXT_0006_TEXT": [
+      {
+        "composition": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt. % MnO2",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT": [
+      {
+        "composition": "Mn-Zn ferrospinel",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT": [
+      {
+        "composition": "BiFeO3-Mn0.5Zn0.5Fe2O4 composite",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT": [
+      {
+        "composition": "(Bi0.95La0.05FeO3)-(Mn0.5Zn0.5Fe2O4) nanocomposite HPT",
+        "reason": "abbreviation_filtering"
+      }
+    ],
+    "10.1002_adfm.202113022_TABLE_0001": [
+      {
+        "composition": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+        "reason": "abbreviation_filtering"
+      },
+      {
+        "composition": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT (new FM order)",
+        "reason": "abbreviation_filtering"
+      }
+    ],
+    "10_1111_jace_19555_FULL_TEXT_0013_EQ_01": [
+      {
+        "composition": "(1-0.27)BiFeO3-based-0.27BaTiO3-based where x=0.03",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT": [
+      {
+        "composition": "BaTiO3 (24 h composite)",
+        "reason": "element_validation_strict"
+      }
+    ],
+    "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT": [
+      {
+        "composition": "0.66BaTiO3-0.33CoFe2O4 (randomly mixed)",
+        "reason": "element_validation_strict"
+      },
+      {
+        "composition": "0.66BaTiO3-0.33CoFe2O4 (layered)",
+        "reason": "element_validation_strict"
+      }
+    ]
+  },
+  "unresolved_compositions": {
+    "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT": [
+      {
+        "composition": "Pb(Zr,Ti)O3",
+        "reason": "unresolved_brackets_or_operators"
+      }
+    ]
+  }
+}

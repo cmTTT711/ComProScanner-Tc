@@ -1,0 +1,23 @@
+[
+  {
+    "row": 0,
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "status": "PASS",
+    "chunk_count": 28,
+    "evidence_count": 25
+  },
+  {
+    "row": 1,
+    "document_id": "10.1007/s10854-022-08492-3",
+    "status": "PASS",
+    "chunk_count": 24,
+    "evidence_count": 14
+  },
+  {
+    "row": 2,
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "status": "PASS",
+    "chunk_count": 40,
+    "evidence_count": 33
+  }
+]

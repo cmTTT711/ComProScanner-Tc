@@ -1,0 +1,250 @@
+[
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\paid_complex_paper12_nonthinking_20260905",
+    "to": "data/runs/paid_complex_paper12_nonthinking_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_band_gap_selected_network_20260905",
+    "to": "data/runs/live_band_gap_selected_network_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_20260904_material_recovered_20260906",
+    "to": "data/runs/tc_20260904_material_recovered_20260906"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_paper12_thinking_comparison_20260906",
+    "to": "data/runs/tc_paper12_thinking_comparison_20260906"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\production_fixture_end_to_end_20260905",
+    "to": "data/runs/production_fixture_end_to_end_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_single_evidence_001_030_20260905",
+    "to": "data/runs/tc_single_evidence_001_030_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_tc_selected_network_20260905",
+    "to": "data/runs/live_tc_selected_network_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\complex_paper12_prepare_20260905",
+    "to": "data/runs/complex_paper12_prepare_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_acceptance_network_20260905",
+    "to": "data/runs/live_acceptance_network_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_band_gap_selected_20260905",
+    "to": "data/runs/live_band_gap_selected_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\production_local_tools_20260905",
+    "to": "data/runs/production_local_tools_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\paid_small_validation_20260905",
+    "to": "data/runs/paid_small_validation_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\production_single_pdf_20260905",
+    "to": "data/runs/production_single_pdf_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_single_evidence_30_20260905",
+    "to": "data/runs/tc_single_evidence_30_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\paid_complex_paper12_20260905",
+    "to": "data/runs/paid_complex_paper12_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_baseline_targeted_20260906",
+    "to": "data/runs/tc_baseline_targeted_20260906"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_fulltext_001_030_20260904",
+    "to": "data/runs/tc_fulltext_001_030_20260904"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_tc_selected_20260905",
+    "to": "data/runs/live_tc_selected_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_acceptance_20260905",
+    "to": "data/runs/live_acceptance_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\live_tc_prepare_20260905",
+    "to": "data/runs/live_tc_prepare_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_hybrid_001_100",
+    "to": "data/runs/tc_hybrid_001_100"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030",
+    "to": "data/literature/recovered_001_030"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_final_001_030",
+    "to": "data/runs/tc_final_001_030"
+  },
+  {
+    "from": "outputs/runs/paid_complex_paper12_nonthinking_20260905",
+    "to": "data/runs/paid_complex_paper12_nonthinking_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\tmp\\paid_complex_pdf",
+    "to": "data/literature/validation_sample"
+  },
+  {
+    "from": "outputs/runs/live_band_gap_selected_network_20260905",
+    "to": "data/runs/live_band_gap_selected_network_20260905"
+  },
+  {
+    "from": "outputs/runs/tc_20260904_material_recovered_20260906",
+    "to": "data/runs/tc_20260904_material_recovered_20260906"
+  },
+  {
+    "from": "outputs/runs/tc_paper12_thinking_comparison_20260906",
+    "to": "data/runs/tc_paper12_thinking_comparison_20260906"
+  },
+  {
+    "from": "outputs/runs/production_fixture_end_to_end_20260905",
+    "to": "data/runs/production_fixture_end_to_end_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\literature",
+    "to": "data/literature/acquisition"
+  },
+  {
+    "from": "outputs/runs/tc_single_evidence_001_030_20260905",
+    "to": "data/runs/tc_single_evidence_001_030_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\metrics",
+    "to": "data/metrics"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\reports",
+    "to": "data/reports"
+  },
+  {
+    "from": "outputs/runs/live_tc_selected_network_20260905",
+    "to": "data/runs/live_tc_selected_network_20260905"
+  },
+  {
+    "from": "outputs/runs/complex_paper12_prepare_20260905",
+    "to": "data/runs/complex_paper12_prepare_20260905"
+  },
+  {
+    "from": "outputs/runs/live_acceptance_network_20260905",
+    "to": "data/runs/live_acceptance_network_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs\\gold",
+    "to": "data/gold"
+  },
+  {
+    "from": "outputs/runs/live_band_gap_selected_20260905",
+    "to": "data/runs/live_band_gap_selected_20260905"
+  },
+  {
+    "from": "outputs/runs/production_local_tools_20260905",
+    "to": "data/runs/production_local_tools_20260905"
+  },
+  {
+    "from": "outputs/runs/paid_small_validation_20260905",
+    "to": "data/runs/paid_small_validation_20260905"
+  },
+  {
+    "from": "outputs/runs/production_single_pdf_20260905",
+    "to": "data/runs/production_single_pdf_20260905"
+  },
+  {
+    "from": "outputs/runs/tc_single_evidence_30_20260905",
+    "to": "data/runs/tc_single_evidence_30_20260905"
+  },
+  {
+    "from": "outputs/runs/paid_complex_paper12_20260905",
+    "to": "data/runs/paid_complex_paper12_20260905"
+  },
+  {
+    "from": "outputs/runs/tc_baseline_targeted_20260906",
+    "to": "data/runs/tc_baseline_targeted_20260906"
+  },
+  {
+    "from": "outputs/runs/tc_fulltext_001_030_20260904",
+    "to": "data/runs/tc_fulltext_001_030_20260904"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\results",
+    "to": "data/literature/legacy_metadata"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\outputs",
+    "to": "data"
+  },
+  {
+    "from": "outputs/runs/live_tc_selected_20260905",
+    "to": "data/runs/live_tc_selected_20260905"
+  },
+  {
+    "from": "outputs/runs/live_acceptance_20260905",
+    "to": "data/runs/live_acceptance_20260905"
+  },
+  {
+    "from": "outputs/runs/live_tc_prepare_20260905",
+    "to": "data/runs/live_tc_prepare_20260905"
+  },
+  {
+    "from": "F:\\Python_Project\\ComProScanner\\pdfs",
+    "to": "data/literature/pdfs"
+  },
+  {
+    "from": "outputs/runs/tc_hybrid_001_100",
+    "to": "data/runs/tc_hybrid_001_100"
+  },
+  {
+    "from": "tmp/offline_reprocess_001_030",
+    "to": "data/literature/recovered_001_030"
+  },
+  {
+    "from": "outputs/runs/tc_final_001_030",
+    "to": "data/runs/tc_final_001_030"
+  },
+  {
+    "from": "tmp/paid_complex_pdf",
+    "to": "data/literature/validation_sample"
+  },
+  {
+    "from": "outputs/literature",
+    "to": "data/literature/acquisition"
+  },
+  {
+    "from": "outputs/metrics",
+    "to": "data/metrics"
+  },
+  {
+    "from": "outputs/reports",
+    "to": "data/reports"
+  },
+  {
+    "from": "outputs/gold",
+    "to": "data/gold"
+  },
+  {
+    "from": "results",
+    "to": "data/literature/legacy_metadata"
+  },
+  {
+    "from": "outputs",
+    "to": "data"
+  },
+  {
+    "from": "pdfs",
+    "to": "data/literature/pdfs"
+  }
+]

@@ -1,0 +1,959 @@
+{
+  "started": 1788623767.004222,
+  "max_model_http_requests": 17,
+  "prior_network_denied_attempts": 7,
+  "token_reservation_limit": 180000,
+  "max_material_requests": 3,
+  "scope": "Seven original Evidence units: three core Tc texts, one equation, one table, one figure, one band-gap text. Not full-paper recall evaluation.",
+  "runtime_overrides": {
+    "identifier_max_tokens": 256,
+    "other_max_tokens": 4096,
+    "deepseek_thinking": "disabled",
+    "num_retries": 0,
+    "timeout": 70
+  },
+  "http_requests": [
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 1,
+      "reserved_tokens": 2755,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 2,
+      "reserved_tokens": 8958,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 3,
+      "reserved_tokens": 3053,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 4,
+      "reserved_tokens": 9256,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 5,
+      "reserved_tokens": 2897,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 6,
+      "reserved_tokens": 9100,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 7,
+      "reserved_tokens": 2635,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 8,
+      "reserved_tokens": 8842,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 9,
+      "reserved_tokens": 16665,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 10,
+      "reserved_tokens": 22869,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 11,
+      "reserved_tokens": 37469,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 12,
+      "reserved_tokens": 10321,
+      "status": 200
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "call": 13,
+      "reserved_tokens": 2396,
+      "status": 200
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "call": 14,
+      "reserved_tokens": 8411,
+      "status": 200
+    }
+  ],
+  "model_calls": [
+    {
+      "call": 1,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2755,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623767.162463,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 530,
+        "total_tokens": 535,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 1.09
+    },
+    {
+      "call": 2,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 8958,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623768.2558389,
+      "usage": {
+        "completion_tokens": 38,
+        "prompt_tokens": 967,
+        "total_tokens": 1005,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 967
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BiFeO3\",\"property\":\"Curie temperature\",\"value\":1103,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "elapsed_seconds": 0.67
+    },
+    {
+      "call": 3,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 3053,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623768.933447,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 566,
+        "total_tokens": 571,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 0.32
+    },
+    {
+      "call": 4,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 9256,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623769.2605429,
+      "usage": {
+        "completion_tokens": 98,
+        "prompt_tokens": 983,
+        "total_tokens": 1081,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 983
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"0.66BaTiO3-0.33CoFe2O4 randomly mixed composite\",\"property\":\"Curie temperature\",\"value\":720,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"0.66BaTiO3-0.33CoFe2O4 tri-layer composite\",\"property\":\"Curie temperature\",\"value\":746,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "elapsed_seconds": 1.08
+    },
+    {
+      "call": 5,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2897,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623770.3454258,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 609,
+        "total_tokens": 614,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 0.22
+    },
+    {
+      "call": 6,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 9100,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623770.5674517,
+      "usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 1026,
+        "total_tokens": 1174,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 512,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 514
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"y=0.24, x=0.01\",\"property\":\"Curie temperature\",\"value\":853.1,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"E_bias\":\"0 V\"}},{\"material_reported\":\"y=0.24, x=0.03\",\"property\":\"Curie temperature\",\"value\":766.1,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"E_bias\":\"0 V\"}},{\"material_reported\":\"y=0.24, x=0.05\",\"property\":\"Curie temperature\",\"value\":741.7,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"E_bias\":\"0 V\"}}]}",
+      "elapsed_seconds": 1.04
+    },
+    {
+      "call": 7,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2635,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623771.614202,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 532,
+        "total_tokens": 537,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 0.23
+    },
+    {
+      "call": 8,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 8842,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623771.8467166,
+      "usage": {
+        "completion_tokens": 39,
+        "prompt_tokens": 965,
+        "total_tokens": 1004,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 512,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 453
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BLFO-MZFO composite\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "elapsed_seconds": 0.83
+    },
+    {
+      "call": 9,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 16665,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623772.6784165,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 4877,
+        "total_tokens": 4882,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 0.42
+    },
+    {
+      "call": 10,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 22869,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623773.1021366,
+      "usage": {
+        "completion_tokens": 227,
+        "prompt_tokens": 5034,
+        "total_tokens": 5261,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 512,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 4522
+      },
+      "finish_reason": "stop",
+      "raw_response": "```json\n{\n  \"facts\": [\n    {\n      \"material_reported\": \"MZFO powder\",\n      \"property\": \"Curie temperature\",\n      \"value\": 518,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"BLFO-MZFO composite\",\n      \"property\": \"Curie temperature\",\n      \"value\": 518,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"BLFO-MZFO composite HPT\",\n      \"property\": \"Curie temperature\",\n      \"value\": 367,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"BLFO-MZFO composite HPT\",\n      \"property\": \"Curie temperature\",\n      \"value\": 778,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    }\n  ]\n}\n```",
+      "elapsed_seconds": 1.43
+    },
+    {
+      "call": 11,
+      "model": "openai/qwen-vl-plus",
+      "reserved_tokens": 37469,
+      "max_tokens": 4096,
+      "images": 1,
+      "started": 1788623774.536075,
+      "usage": {
+        "completion_tokens": 775,
+        "prompt_tokens": 633,
+        "total_tokens": 1408,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": null,
+          "rejected_prediction_tokens": null,
+          "text_tokens": 775,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "The scientific figure consists of four panels labeled a, b, c, and d, each depicting different aspects of magnetization behavior under varying conditions.\n\n**Panel a:**\n- **Axes:** \n  - X-axis: Temperature (T) in Kelvin (K), ranging from 0 to 400 K.\n  - Y-axis: Magnetization (M) in emu/g, ranging from 0.0 to 1.2 emu/g.\n- **Data Lines:**\n  - Red circles represent the Field-Cooled (FC) magnetization at H = 50 Oe.\n  - Blue diamonds represent the Zero-Field-Cooled (ZFC) magnetization at H = 50 Oe.\n- **Legend:** Indicates FC and ZFC with corresponding symbols and H = 50 Oe.\n- **Inset:** Shows the Curie temperature (T_C) with two values: T_C = 367 K and T_C = 778 K.\n\n**Panel b:**\n- **Axes:** \n  - X-axis: Temperature (T) in Kelvin (K), ranging from 0 to 900 K.\n  - Y-axis: Magnetization (M) in emu/g, ranging from 0.0 to 1.2 emu/g.\n- **Data Lines:**\n  - Red circles represent the Field-Cooled (FC) magnetization at H = 50 Oe.\n  - Blue diamonds represent the Zero-Field-Cooled (ZFC) magnetization at H = 50 Oe.\n- **Legend:** Indicates FC and ZFC with corresponding symbols and H = 50 Oe.\n- **Inset:** Shows the derivative of magnetization with respect to temperature (dM/dT) in emu/(g·K), ranging from -0.0001 to 0.0001 emu/(g·K). The inset also displays the Curie temperature (T_C) with two values: T_C = 367 K and T_C = 778 K.\n\n**Panel c:**\n- **Axes:** \n  - X-axis: Magnetic field (H) in kOe, ranging from -30 to 30 kOe.\n  - Y-axis: Magnetization (M) in emu/g, ranging from -20 to 20 emu/g.\n- **Data Lines:**\n  - Different temperatures are represented by various symbols and colors:\n    - 2 K (blue circles)\n    - 77 K (purple squares)\n    - 300 K (green diamonds)\n    - 400 K (red triangles)\n- **Pressure Condition:** p = 0 GPa.\n- **Legend:** Indicates the temperature conditions for each data line.\n\n**Panel d:**\n- **Axes:** \n  - X-axis: Magnetic field (H) in kOe, ranging from -30 to 30 kOe.\n  - Y-axis: Magnetization (M) in emu/g, ranging from -20 to 20 emu/g.\n- **Data Lines:**\n  - Different temperatures are represented by various symbols and colors:\n    - 2 K (blue circles)\n    - 77 K (purple squares)\n    - 300 K (green diamonds)\n    - 400 K (red triangles)\n- **Pressure Condition:** p = 1 GPa.\n- **Legend:** Indicates the temperature conditions for each data line.\n\nThe figure compares the magnetization behavior of a composite material and a composite High-Pressure Torsion (HPT) material under zero and 1 GPa pressure conditions, focusing on temperature and field dependencies.",
+      "elapsed_seconds": 15.74
+    },
+    {
+      "call": 12,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 10321,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623790.280657,
+      "usage": {
+        "completion_tokens": 209,
+        "prompt_tokens": 1471,
+        "total_tokens": 1680,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 512,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 959
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\n  \"facts\": [\n    {\n      \"material_reported\": \"composite\",\n      \"property\": \"Curie temperature\",\n      \"value\": 367,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"composite\",\n      \"property\": \"Curie temperature\",\n      \"value\": 778,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"composite HPT\",\n      \"property\": \"Curie temperature\",\n      \"value\": 367,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    },\n    {\n      \"material_reported\": \"composite HPT\",\n      \"property\": \"Curie temperature\",\n      \"value\": 778,\n      \"unit\": \"K\",\n      \"qualifier\": null,\n      \"conditions\": {}\n    }\n  ]\n}",
+      "elapsed_seconds": 1.27
+    },
+    {
+      "call": 13,
+      "model": "openai/qwen-flash",
+      "reserved_tokens": 2396,
+      "max_tokens": 256,
+      "images": 0,
+      "started": 1788623791.6128156,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 448,
+        "total_tokens": 453,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "elapsed_seconds": 0.23
+    },
+    {
+      "call": 14,
+      "model": "deepseek/deepseek-v4-flash",
+      "reserved_tokens": 8411,
+      "max_tokens": 4096,
+      "images": 0,
+      "started": 1788623791.8516123,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 929,
+        "total_tokens": 934,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 929
+      },
+      "finish_reason": "stop",
+      "raw_response": "{\"facts\":[]}",
+      "elapsed_seconds": 0.5
+    }
+  ],
+  "runs": [
+    {
+      "preset": "curie_temperature",
+      "run_id": "live_tc_selected_network_20260905",
+      "exit_code": 0,
+      "predictions": [
+        {
+          "document_id": "local-pdf/d13a6634f5c93180",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+          "fact_value": {
+            "value": "720",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+          "fact_value": {
+            "value": "746",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.66BaTiO3-0.33CoFe2O4 tri-layer composite"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1007/s10854-022-08492-3",
+          "property_name": "Curie temperature",
+          "material_reported": "y=0.24, x=0.01",
+          "material_normalized": "y=0.24, x=0.01",
+          "material_identity_key": "y=0.24, x=0.01",
+          "fact_value": {
+            "value": "853.1",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "E_bias": "0 V"
+          },
+          "material_reported_variants": [
+            "y=0.24, x=0.01"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1007/s10854-022-08492-3",
+          "property_name": "Curie temperature",
+          "material_reported": "y=0.24, x=0.03",
+          "material_normalized": "y=0.24, x=0.03",
+          "material_identity_key": "y=0.24, x=0.03",
+          "fact_value": {
+            "value": "766.1",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "E_bias": "0 V"
+          },
+          "material_reported_variants": [
+            "y=0.24, x=0.03"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1007/s10854-022-08492-3",
+          "property_name": "Curie temperature",
+          "material_reported": "y=0.24, x=0.05",
+          "material_normalized": "y=0.24, x=0.05",
+          "material_identity_key": "y=0.24, x=0.05",
+          "fact_value": {
+            "value": "741.7",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "E_bias": "0 V"
+          },
+          "material_reported_variants": [
+            "y=0.24, x=0.05"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite",
+          "material_normalized": "BLFO-MZFO composite",
+          "material_identity_key": "BLFO-MZFO composite",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "MZFO powder",
+          "material_normalized": "MZFO powder",
+          "material_identity_key": "MZFO powder",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "MZFO powder"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite HPT",
+          "material_normalized": "BLFO-MZFO composite HPT",
+          "material_identity_key": "BLFO-MZFO composite HPT",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite HPT"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite HPT",
+          "material_normalized": "BLFO-MZFO composite HPT",
+          "material_identity_key": "BLFO-MZFO composite HPT",
+          "fact_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite HPT"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "composite",
+          "material_normalized": "composite",
+          "material_identity_key": "composite",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "figure_0"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "composite"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "composite",
+          "material_normalized": "composite",
+          "material_identity_key": "composite",
+          "fact_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "figure_0"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "composite"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "composite HPT",
+          "material_normalized": "composite HPT",
+          "material_identity_key": "composite HPT",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "figure_0"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "composite HPT"
+          ],
+          "processing_issues": []
+        },
+        {
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "composite HPT",
+          "material_normalized": "composite HPT",
+          "material_identity_key": "composite HPT",
+          "fact_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "figure_0"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "composite HPT"
+          ],
+          "processing_issues": []
+        }
+      ],
+      "failures": []
+    },
+    {
+      "preset": "band_gap",
+      "run_id": "live_band_gap_selected_network_20260905",
+      "exit_code": 0,
+      "predictions": [],
+      "failures": []
+    }
+  ],
+  "material_checks": [
+    {
+      "input_material": "BiFeO3",
+      "output_fact": {
+        "document_id": "local-pdf/d13a6634f5c93180",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": [
+          "material_normalization_failed: HTTP 503"
+        ]
+      }
+    }
+  ],
+  "known_input_issues": [
+    "Paper30 Article document_id/DOI came from a reference; PDF DOI is 10.1016/j.jallcom.2023.169571. Original source ID retained for this diagnostic.",
+    "Paper19 table block includes later body text; positive Tc output cannot establish correct table extraction.",
+    "Paper12 host-formula definition is in another Evidence and is not added to this unchanged per-Evidence test.",
+    "Band-gap abbreviation BFO definition is in another Evidence and is not injected into the model input."
+  ],
+  "selection": [
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT",
+      "document_id": "local-pdf/d13a6634f5c93180",
+      "source_type": "text",
+      "characters": 1455,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "source_type": "text",
+      "characters": 1761,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1007/s10854-022-08492-3",
+      "source_type": "text",
+      "characters": 1605,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "\\d",
+              "[A-Z]{2,}"
+            ]
+          }
+        },
+        {
+          "provider": "physbert",
+          "details": {
+            "query": "ferroelectric paraelectric phase transition temperature material",
+            "score": 404.3557434082031
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "equation",
+      "characters": 1332,
+      "retrieval_methods": [
+        {
+          "provider": "equation_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+              "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 15192,
+      "retrieval_methods": [
+        {
+          "provider": "table_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)(?<![A-Za-z])t\\s*_?\\s*c(?:urie)?(?![A-Za-z0-9])\\s*(?:[=:≈~∼�]\\s*|(?:is|of)\\s+)[+-]?\\d+(?:\\.\\d+)?(?:\\s*(?:°\\s*c|k)\\b)?",
+              "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+              "\\bt[\\s_]*c\\s*(?:=|:|≈|~|∼)\\s*[+-]?\\d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "curie_temperature",
+      "evidence_id": "figure_0",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "figure",
+      "characters": 270,
+      "retrieval_methods": [
+        {
+          "provider": "figure_caption_rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)\\bcurie[-\\s]+(?:temperature|point|transition)(?:[-\\s]+transition)?\\b",
+              "(?<!\\w)Curie\\ temperature(?!\\w)",
+              "(?<!\\w)curie\\ temperature(?!\\w)",
+              "curie\\ temperature"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "preset": "band_gap",
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1390,
+      "retrieval_methods": [
+        {
+          "provider": "rule",
+          "details": {
+            "matched_patterns": [
+              "(?i)\\bband[\\s-]*gap\\b",
+              "(?<!\\w)band\\ gap(?!\\w)",
+              "(?i)\\bE\\s*_?\\s*g\\b.{0,60}\\beV\\b"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "finished": 1788623794.5176365,
+  "elapsed_seconds": 27.51,
+  "actual_usage": {
+    "prompt_tokens": 19570,
+    "completion_tokens": 1569,
+    "total_tokens": 21139
+  },
+  "model_http_requests": 14
+}

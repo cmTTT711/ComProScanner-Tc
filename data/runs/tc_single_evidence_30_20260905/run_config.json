@@ -1,0 +1,18 @@
+{
+  "command": "prepare-evidence",
+  "preset": "curie_temperature",
+  "source_csv": "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_single_evidence_30_20260905\\article.csv",
+  "with_rag": false,
+  "evidence_providers": [
+    "rule_text",
+    "physbert",
+    "table",
+    "equation"
+  ],
+  "external_llm_calls": false,
+  "chunking": {
+    "target_words": 220,
+    "max_words": 360,
+    "overlap_words": 60
+  }
+}

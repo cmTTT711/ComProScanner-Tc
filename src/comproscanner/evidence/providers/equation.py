@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from ..models import Evidence, EvidenceType, RetrievalMethod
-from .base import find_patterns
+from comproscanner.evidence.models import Evidence
+from comproscanner.evidence.models import EvidenceType
+from comproscanner.evidence.models import RetrievalMethod
+from comproscanner.evidence.providers.base import find_patterns
 
 
 @dataclass(frozen=True)
@@ -29,9 +31,7 @@ class EquationEvidenceProvider:
     def __init__(self, patterns: tuple[str, ...]):
         self.patterns = patterns
 
-    def select(
-        self, units: list[EquationUnit], target_property: str
-    ) -> list[Evidence]:
+    def select(self, units: list[EquationUnit], target_property: str) -> list[Evidence]:
         evidence: list[Evidence] = []
         for unit in units:
             content = unit.render()

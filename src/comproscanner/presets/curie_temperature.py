@@ -1,25 +1,11 @@
-"""Curie temperature (Tc) preset for ComProScanner.
-
-This is intentionally NOT a new extraction pipeline. It only supplies the
-existing configurable knobs that ComProScanner already exposes:
-
-- main_property_keyword
-- main_extraction_keyword
-- property_keywords
-- materials_data_identifier_query
-- expected few-shot examples
-- composition extraction/formatting prompt notes
-
-No real LLM API is called by importing this module. New batch execution uses
-the guarded ``comproscanner run`` CLI; the historical Python example remains a
-compatibility entry point.
-"""
+"""Validated Tc selection rules and prompts for per-Evidence extraction."""
 
 from __future__ import annotations
 
-from textwrap import dedent
+from copy import deepcopy
 
-from .base import PropertyExtractionPreset
+from ._shared import default_models
+from comproscanner.presets.base import PropertyExtractionPreset
 
 MAIN_PROPERTY_KEYWORD = "magnetic"
 MAIN_EXTRACTION_KEYWORD = "Curie temperature"
@@ -108,8 +94,8 @@ TC_EXTRACTOR_PRECISION_TASK_NOTES = [
 ]
 
 
-def get_curie_temperature_flow_optional_args() -> dict:
-    """Return the prompt notes and few-shot examples for the Tc extraction flow."""
+def _extraction_instructions() -> str:
+    """Keep the validated prompt text, including its historical list formatting."""
     composition_property_extraction_agent_notes = [
         "You are extracting the Curie temperature (Tc / T_C / Curie point) "
         "reported for each material composition, not any other temperature.",
@@ -139,96 +125,49 @@ def get_curie_temperature_flow_optional_args() -> dict:
         "Preserve the reported unit exactly. Use 'K' or '°C' as reported; do not "
         "silently convert between units.",
     ] + TC_EXTRACTOR_PRECISION_TASK_NOTES
-    composition_property_formatting_agent_notes = [
-        "Preserve the composition -> Curie temperature mapping during formatting.",
-        "Keep the reported unit (K or °C) unchanged.",
-        "Keep the original family field behavior; do not introduce a material, "
-        "sample, or phase hierarchy.",
-    ]
-    composition_property_formatting_task_notes = [
-        "Format the extracted Curie temperature data without converting units.",
-        "Keep 'compositions_property_values', 'property_unit', and 'family' as the "
-        "only composition-data fields.",
-        "Do not add evidence, confidence, truth status, judge, or ScientificFact "
-        "fields.",
-    ]
-
-    expected_composition_property_example = dedent(
-        """
-        {
-          "compositions": {
-            "BiFeO3": 1103,
-            "Bi0.95Nd0.05FeO3": 1020
-          },
-          "property_unit": "K",
-          "family": "BiFeO3"
-        }
-        """
+    return "\n".join(
+        str(notes).strip()
+        for notes in (
+            composition_property_extraction_agent_notes,
+            composition_property_extraction_task_notes,
+        )
     )
-    expected_variable_composition_property_example = dedent(
-        """
-        {
-          "compositions": {
-            "Bi(1-x)NdxFeO3 where x=0.05": 1020,
-            "Bi(1-x)NdxFeO3 where x=0.10": 950
-          },
-          "property_unit": "K",
-          "family": "BiFeO3"
-        }
-        """
-    )
-
-    return {
-        "expected_composition_property_example": expected_composition_property_example,
-        "expected_variable_composition_property_example": (
-            expected_variable_composition_property_example
-        ),
-        "composition_property_extraction_agent_notes": (
-            composition_property_extraction_agent_notes
-        ),
-        "composition_property_extraction_task_notes": (
-            composition_property_extraction_task_notes
-        ),
-        "composition_property_formatting_agent_notes": (
-            composition_property_formatting_agent_notes
-        ),
-        "composition_property_formatting_task_notes": (
-            composition_property_formatting_task_notes
-        ),
-    }
 
 
 def get_curie_temperature_preset_definition() -> PropertyExtractionPreset:
-    """Return the typed, immutable Tc domain configuration."""
+    """Return a fresh Tc domain configuration with the validated prompt."""
     return PropertyExtractionPreset(
         name="curie_temperature",
+        models={
+            **default_models(),
+            "vision": {
+                "model": "openai/qwen-vl-plus",
+                "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+                "api_key_env": "DASHSCOPE_API_KEY",
+            },
+        },
         main_property_keyword=MAIN_PROPERTY_KEYWORD,
         main_extraction_keyword=MAIN_EXTRACTION_KEYWORD,
-        property_keywords=PROPERTY_KEYWORDS,
+        property_keywords=deepcopy(PROPERTY_KEYWORDS),
+        identifier_query=MATERIALS_DATA_IDENTIFIER_QUERY,
+        # Keep the validated Evidence prompt byte-for-byte, including the
+        # historical list representation used by _scientific_instructions.
+        extraction_instructions=_extraction_instructions(),
+        retrieval_queries=(
+            "Curie temperature Tc material composition",
+            "ferroelectric paraelectric phase transition temperature material",
+        ),
+        allowed_units=("K", "°C"),
+        property_aliases=("Tc", "curie_temperature"),
+        legacy_fields={"tc_value": "value", "tc_unit": "unit"},
         # Preserve the validated high-recall rule at canonical chunk level.
         # Qwen remains responsible for rejecting unrelated numeric/acronym text.
         text_candidate_patterns=(r"\d", r"[A-Z]{2,}"),
         evidence_providers=("rule_text", "table", "figure", "equation"),
         processing_kwargs={"allow_missing_doi": True},
-        extraction_kwargs={
-            "main_extraction_keyword": MAIN_EXTRACTION_KEYWORD,
-            "is_extract_synthesis_data": False,
-            "materials_data_identifier_query": MATERIALS_DATA_IDENTIFIER_QUERY,
-            "identifier_context_mode": "hybrid",
-            "hybrid_retrieval_queries": [
-                "Curie temperature Tc material composition",
-                "ferroelectric paraelectric phase transition temperature material",
-            ],
-            "identifier_model": "openai/qwen-flash",
-            "identifier_base_url": (
-                "https://dashscope.aliyuncs.com/compatible-mode/v1"
-            ),
-            "identifier_api_key_env": "DASHSCOPE_API_KEY",
-            **get_curie_temperature_flow_optional_args(),
-        },
     )
 
 
-def get_curie_temperature_preset() -> dict:
-    """Return the backward-compatible runtime dictionary for Tc extraction."""
-    return get_curie_temperature_preset_definition().to_runtime_dict()
+def get_preset_definition() -> PropertyExtractionPreset:
+    """Factory convention used to discover presets by filename."""
+    return get_curie_temperature_preset_definition()

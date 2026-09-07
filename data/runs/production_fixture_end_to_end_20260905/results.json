@@ -1,0 +1,106 @@
+{
+  "production_fixture_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_TEXT"
+  },
+  "production-fixture_TABLE_0001": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "production-fixture",
+    "evidence_id": "production-fixture_TABLE_0001"
+  },
+  "fixture-figure": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "production-fixture",
+    "evidence_id": "fixture-figure"
+  },
+  "production_fixture_FULL_TEXT_0001_EQ_01": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_EQ_01"
+  }
+}

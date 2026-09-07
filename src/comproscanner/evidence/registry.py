@@ -21,7 +21,9 @@ class EvidenceProviderRegistry:
         key = name.strip().casefold()
         if key not in self._factories:
             available = ", ".join(self.names()) or "<none>"
-            raise KeyError(f"Unknown evidence provider '{name}'. Available: {available}")
+            raise KeyError(
+                f"Unknown evidence provider '{name}'. Available: {available}"
+            )
         return self._factories[key](*args, **kwargs)
 
     def names(self) -> tuple[str, ...]:

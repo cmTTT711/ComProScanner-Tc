@@ -1,0 +1,29 @@
+[
+  {
+    "document_id": "10.1007/s10854-022-08492-3",
+    "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: DeepseekException - Paid test hard limit: 3 model HTTP requests",
+    "stages": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": null
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\n  \"composition_extracted_data\": {\n    \"compositions_property_values\": {\n      \"y=0.24, x=0.01\": 853.1\n    },\n    \"abbreviations\": {},\n    \"property_unit\": \"K\",\n    \"family\": \"BiFeO3\"\n  }\n}",
+        "crew_invocations": 1,
+        "token_usage": null
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": "HTTP 503",
+        "token_usage": null,
+        "status": "TOOL_ERROR"
+      }
+    ],
+    "cost": null
+  }
+]

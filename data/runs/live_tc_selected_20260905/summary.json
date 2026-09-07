@@ -1,0 +1,9 @@
+{
+  "evidence": 6,
+  "identifier_accepted": 0,
+  "facts_before_merge": 0,
+  "facts_after_merge": 0,
+  "errors": 6,
+  "facts_needing_review": 0,
+  "material_normalizer": "identity"
+}

@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
-from ...chunking import TextChunk
-from ..text import TextChunkMatch
-from .base import find_patterns
+from comproscanner.evidence.chunking import TextChunk
+from comproscanner.evidence.text import TextChunkMatch
+from comproscanner.evidence.providers.base import find_patterns
 
 
 class RuleTextEvidenceProvider:

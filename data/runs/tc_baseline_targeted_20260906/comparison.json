@@ -1,0 +1,1553 @@
+{
+  "method": "Same Evidence and numeric value/unit coverage only; no material/condition correctness implied. Duplicate old rows may share one new candidate.",
+  "finished": true,
+  "http_requests": 51,
+  "usage": {
+    "prompt_tokens": 61184,
+    "completion_tokens": 121208,
+    "total_tokens": 182392
+  },
+  "rows": [
+    {
+      "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+      "document_id": "10.1002/adma.201003636",
+      "source_type": "text",
+      "characters": 1521,
+      "old_rows": [],
+      "reasons": [
+        "FN_background_120C"
+      ],
+      "equivalent_source_ids": [],
+      "state": "identifier_rejected",
+      "new_facts": [],
+      "comparison": []
+    },
+    {
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "document_id": "local-pdf/e0b7c7f789f25ed2",
+      "source_type": "text",
+      "characters": 872,
+      "old_rows": [],
+      "reasons": [
+        "FN_background_original_830C",
+        "PDF_text_recovery"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BiFeO3 (BFO)",
+          "property": "ferroelectric Curie temperature",
+          "value": 830,
+          "unit": "°C",
+          "qualifier": "~",
+          "conditions": {}
+        }
+      ],
+      "comparison": []
+    },
+    {
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1063/1.5131055",
+      "source_type": "text",
+      "characters": 2125,
+      "old_rows": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reasons": [
+        "unexpanded_alias_and_additives"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BF-BCT",
+          "property": "Curie temperature",
+          "value": 683,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {
+            "frequency": "100 kHz"
+          }
+        },
+        {
+          "material_reported": "BF-BCT-C",
+          "property": "Curie temperature",
+          "value": 692,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {
+            "frequency": "100 kHz"
+          }
+        },
+        {
+          "material_reported": "BF-BCT-M",
+          "property": "Curie temperature",
+          "value": 690,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {
+            "frequency": "100 kHz"
+          }
+        },
+        {
+          "material_reported": "BF-BCT-CM",
+          "property": "Curie temperature",
+          "value": 687,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {
+            "frequency": "100 kHz"
+          }
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 2,
+          "old_material": "BF-BCT",
+          "old_value": {
+            "value": "683",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "frequency": "100 kHz"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BF-BCT",
+              "property": "Curie temperature",
+              "value": 683,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {
+                "frequency": "100 kHz"
+              }
+            }
+          ]
+        },
+        {
+          "old_row": 3,
+          "old_material": "BF-BCT-C",
+          "old_value": {
+            "value": "692",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "frequency": "100 kHz"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BF-BCT-C",
+              "property": "Curie temperature",
+              "value": 692,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {
+                "frequency": "100 kHz"
+              }
+            }
+          ]
+        },
+        {
+          "old_row": 4,
+          "old_material": "BF-BCT-M",
+          "old_value": {
+            "value": "690",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "frequency": "100 kHz"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BF-BCT-M",
+              "property": "Curie temperature",
+              "value": 690,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {
+                "frequency": "100 kHz"
+              }
+            }
+          ]
+        },
+        {
+          "old_row": 5,
+          "old_material": "BF-BCT-CM",
+          "old_value": {
+            "value": "687",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "frequency": "100 kHz"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BF-BCT-CM",
+              "property": "Curie temperature",
+              "value": 687,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {
+                "frequency": "100 kHz"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1007/s10854-022-08492-3",
+      "source_type": "text",
+      "characters": 1605,
+      "old_rows": [
+        7
+      ],
+      "reasons": [
+        "missing_parent_formula"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "y = 0.24, x = 0.01",
+          "property": "Curie temperature",
+          "value": 853.1,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {
+            "E_bias": "0 V"
+          }
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 7,
+          "old_material": "y=0.24, x=0.01",
+          "old_value": {
+            "value": "853.1",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "E_bias": "0 V"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "y = 0.24, x = 0.01",
+              "property": "Curie temperature",
+              "value": 853.1,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {
+                "E_bias": "0 V"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1238,
+      "old_rows": [
+        17
+      ],
+      "reasons": [
+        "formula_typography_corruption"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2",
+          "property": "Curie temperature",
+          "value": 698,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 17,
+          "old_material": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+          "old_value": {
+            "value": "698",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2",
+              "property": "Curie temperature",
+              "value": 698,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1369,
+      "old_rows": [
+        18
+      ],
+      "reasons": [
+        "unresolved_parent_or_sample_variable"
+      ],
+      "equivalent_source_ids": [],
+      "state": "empty",
+      "new_facts": [],
+      "comparison": [
+        {
+          "old_row": 18,
+          "old_material": "BF-BCT-Mn-x (x=0)",
+          "old_value": {
+            "value": "732",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": false,
+          "same_value_candidates": []
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "document_id": "10.1063/5.0026210",
+      "source_type": "text",
+      "characters": 1561,
+      "old_rows": [
+        19
+      ],
+      "reasons": [
+        "unresolved_parent_or_sample_variable"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+          "property": "Curie temperature",
+          "value": 698,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 19,
+          "old_material": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+          "old_value": {
+            "value": "698",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+              "property": "Curie temperature",
+              "value": 698,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1979,
+      "old_rows": [
+        21
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "MZFO ferrospinel",
+          "property": "Curie temperature",
+          "value": 501,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 21,
+          "old_material": "MZFO ferrospinel",
+          "old_value": {
+            "value": "501",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "MZFO ferrospinel",
+              "property": "Curie temperature",
+              "value": 501,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1462,
+      "old_rows": [
+        22,
+        23
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "initial MZFO powder",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 22,
+          "old_material": "initial MZFO powder",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "initial MZFO powder",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 23,
+          "old_material": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "initial MZFO powder",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1332,
+      "old_rows": [
+        24
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BLFO-MZFO composite (80 wt.% BLFO, 20 wt.% MZFO)",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 24,
+          "old_material": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO composite (80 wt.% BLFO, 20 wt.% MZFO)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1750,
+      "old_rows": [
+        25,
+        26,
+        27
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BLFO-MZFO composite",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "BLFO-MZFO composite HPT",
+          "property": "Curie temperature",
+          "value": 367,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "BLFO-MZFO composite HPT",
+          "property": "Curie temperature",
+          "value": 778,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 25,
+          "old_material": "BLFO-MZFO composite",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO composite",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 26,
+          "old_material": "BLFO-MZFO composite HPT",
+          "old_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO composite HPT",
+              "property": "Curie temperature",
+              "value": 367,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 27,
+          "old_material": "BLFO-MZFO composite HPT",
+          "old_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": "new FM order (T_C*)"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO composite HPT",
+              "property": "Curie temperature",
+              "value": 778,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1336,
+      "old_rows": [
+        28,
+        29
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "MZFO",
+          "property": "Curie temperature",
+          "value": 367,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "BLFO",
+          "property": "Curie temperature",
+          "value": 950,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 28,
+          "old_material": "MZFO fraction",
+          "old_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "MZFO",
+              "property": "Curie temperature",
+              "value": 367,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 29,
+          "old_material": "BLFO fraction",
+          "old_value": {
+            "value": "950",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO",
+              "property": "Curie temperature",
+              "value": 950,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "text",
+      "characters": 1743,
+      "old_rows": [
+        30
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BLFO-MZFO nanocomposite HPT",
+          "property": "Curie temperature",
+          "value": 367,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 30,
+          "old_material": "BLFO-MZFO nanocomposite HPT",
+          "old_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO nanocomposite HPT",
+              "property": "Curie temperature",
+              "value": 367,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 15192,
+      "old_rows": [
+        32,
+        33,
+        34
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "Mn-Zn ferrospinel industrial grades 3000HMC, 3C91, ML27D (same stoichiometric composition as MZFO powder)",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "BLFO-MZFO composite (processed by compression)",
+          "property": "Curie temperature",
+          "value": 518,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        },
+        {
+          "material_reported": "BLFO-MZFO composite HPT",
+          "property": "Curie temperature",
+          "value": 367,
+          "unit": "K",
+          "qualifier": "decreased from 518 K",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 32,
+          "old_material": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            },
+            {
+              "material_reported": "Mn-Zn ferrospinel industrial grades 3000HMC, 3C91, ML27D (same stoichiometric composition as MZFO powder)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            },
+            {
+              "material_reported": "BLFO-MZFO composite (processed by compression)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 33,
+          "old_material": "BLFO-MZFO composite processed by compression",
+          "old_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            },
+            {
+              "material_reported": "Mn-Zn ferrospinel industrial grades 3000HMC, 3C91, ML27D (same stoichiometric composition as MZFO powder)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            },
+            {
+              "material_reported": "BLFO-MZFO composite (processed by compression)",
+              "property": "Curie temperature",
+              "value": 518,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 34,
+          "old_material": "BLFO-MZFO composite processed by HPT",
+          "old_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BLFO-MZFO composite HPT",
+              "property": "Curie temperature",
+              "value": 367,
+              "unit": "K",
+              "qualifier": "decreased from 518 K",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "document_id": "10.1002/adfm.202113022",
+      "source_type": "table",
+      "characters": 16339,
+      "old_rows": [
+        35
+      ],
+      "reasons": [
+        "unexpanded_phase_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "error",
+      "new_facts": [],
+      "comparison": [
+        {
+          "old_row": 35,
+          "old_material": "BLFO fraction",
+          "old_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "context": "T_C* = 778 K; internal stresses and magnetostriction stabilize FM interactions, above which BLFO fraction goes PM"
+          },
+          "numeric_event_present": false,
+          "same_value_candidates": []
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "document_id": "10.1063/5.0133946",
+      "source_type": "text",
+      "characters": 1884,
+      "old_rows": [
+        40
+      ],
+      "reasons": [
+        "unexpanded_ternary_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "as-prepared y=0.23, x=0.00",
+          "property": "Curie temperature",
+          "value": 774,
+          "unit": "K",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 40,
+          "old_material": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+          "old_value": {
+            "value": "774",
+            "unit": "K",
+            "qualifier": null
+          },
+          "old_conditions": {
+            "sample_state": "as-prepared"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "as-prepared y=0.23, x=0.00",
+              "property": "Curie temperature",
+              "value": 774,
+              "unit": "K",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "document_id": "10.1143/JPSJ.7.5",
+      "source_type": "text",
+      "characters": 1814,
+      "old_rows": [
+        42,
+        43,
+        44
+      ],
+      "reasons": [
+        "unexpanded_solid_solution_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "error",
+      "new_facts": [],
+      "comparison": [
+        {
+          "old_row": 42,
+          "old_material": "undoped (1-x)BFO-xPTO",
+          "old_value": {
+            "value": "650",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": false,
+          "same_value_candidates": []
+        },
+        {
+          "old_row": 43,
+          "old_material": "lanthanum-substituted (1-x)BFO-xPTO",
+          "old_value": {
+            "value": "227",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": false,
+          "same_value_candidates": []
+        },
+        {
+          "old_row": 44,
+          "old_material": "(BNFPT)x ceramics with Nd substitution",
+          "old_value": {
+            "value": "320",
+            "unit": "°C",
+            "qualifier": "approximately"
+          },
+          "old_conditions": {},
+          "numeric_event_present": false,
+          "same_value_candidates": []
+        }
+      ]
+    },
+    {
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "document_id": "local-pdf/4d3fe4ad46460542",
+      "source_type": "text",
+      "characters": 1648,
+      "old_rows": [
+        45
+      ],
+      "reasons": [
+        "unexpanded_phase_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "PZT",
+          "property": "Curie temperature",
+          "value": 355,
+          "unit": "°C",
+          "qualifier": "around",
+          "conditions": {
+            "sample_context": "PZT phase in 3BFO_n/7PZT_m composite sintered at Ts=650 °C; anomaly absent at Ts=700 °C"
+          }
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 45,
+          "old_material": "PZT",
+          "old_value": {
+            "value": "355",
+            "unit": "°C",
+            "qualifier": "around"
+          },
+          "old_conditions": {
+            "sample": "3BFO_n/7PZT_m composite",
+            "sintering_temperature": "650 °C"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "PZT",
+              "property": "Curie temperature",
+              "value": 355,
+              "unit": "°C",
+              "qualifier": "around",
+              "conditions": {
+                "sample_context": "PZT phase in 3BFO_n/7PZT_m composite sintered at Ts=650 °C; anomaly absent at Ts=700 °C"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "document_id": "local-pdf/e0b7c7f789f25ed2",
+      "source_type": "text",
+      "characters": 1719,
+      "old_rows": [
+        46
+      ],
+      "reasons": [
+        "unexpanded_ternary_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BF-BKT-BT sample x = 0.4",
+          "property": "Curie temperature",
+          "value": 742.6,
+          "unit": "K",
+          "qualifier": "~",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 46,
+          "old_material": "BF-BKT-BT (x=0.4)",
+          "old_value": {
+            "value": "742.6",
+            "unit": "K",
+            "qualifier": "approximately"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BF-BKT-BT sample x = 0.4",
+              "property": "Curie temperature",
+              "value": 742.6,
+              "unit": "K",
+              "qualifier": "~",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.actamat.2023.119044",
+      "source_type": "text",
+      "characters": 1829,
+      "old_rows": [
+        47
+      ],
+      "reasons": [
+        "unexpanded_material_or_crystal_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BFO",
+          "property": "Curie temperature",
+          "value": 1100,
+          "unit": "K",
+          "qualifier": "~",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 47,
+          "old_material": "BFO",
+          "old_value": {
+            "value": "1100",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BFO",
+              "property": "Curie temperature",
+              "value": 1100,
+              "unit": "K",
+              "qualifier": "~",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "document_id": "10.1016/j.actamat.2023.119044",
+      "source_type": "text",
+      "characters": 1238,
+      "old_rows": [
+        48
+      ],
+      "reasons": [
+        "unexpanded_material_or_crystal_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BFBKT crystal",
+          "property": "Curie temperature",
+          "value": 671.5,
+          "unit": "K",
+          "qualifier": "about",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 48,
+          "old_material": "BFBKT crystal",
+          "old_value": {
+            "value": "671.5",
+            "unit": "K",
+            "qualifier": "about"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BFBKT crystal",
+              "property": "Curie temperature",
+              "value": 671.5,
+              "unit": "K",
+              "qualifier": "about",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "document_id": "10.1111/jace.19555",
+      "source_type": "text",
+      "characters": 990,
+      "old_rows": [
+        50,
+        51
+      ],
+      "reasons": [
+        "unexpanded_variable_solid_solution"
+      ],
+      "equivalent_source_ids": [
+        "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+      ],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+          "property": "Curie temperature",
+          "value": 795.2,
+          "unit": "K",
+          "qualifier": "approximately",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 50,
+          "old_material": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+          "old_value": {
+            "value": "795.2",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+              "property": "Curie temperature",
+              "value": 795.2,
+              "unit": "K",
+              "qualifier": "approximately",
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 51,
+          "old_material": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+          "old_value": {
+            "value": "795.2",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+              "property": "Curie temperature",
+              "value": 795.2,
+              "unit": "K",
+              "qualifier": "approximately",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "document_id": "local-pdf/d6275e45598fdba0",
+      "source_type": "text",
+      "characters": 1569,
+      "old_rows": [
+        52
+      ],
+      "reasons": [
+        "sample_label_without_composition"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "composite sample of 24 h",
+          "property": "Curie temperature",
+          "value": 129,
+          "unit": "°C",
+          "qualifier": null,
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 52,
+          "old_material": "Composite sample of 24 h",
+          "old_value": {
+            "value": "129",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "composite sample of 24 h",
+              "property": "Curie temperature",
+              "value": 129,
+              "unit": "°C",
+              "qualifier": null,
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1390,
+      "old_rows": [
+        53
+      ],
+      "reasons": [
+        "unexpanded_material_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "pristine BFO ceramic",
+          "property": "Curie temperature",
+          "value": 830,
+          "unit": "°C",
+          "qualifier": "~",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 53,
+          "old_material": "pristine BFO ceramic",
+          "old_value": {
+            "value": "830",
+            "unit": "°C",
+            "qualifier": "approximately"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "pristine BFO ceramic",
+              "property": "Curie temperature",
+              "value": 830,
+              "unit": "°C",
+              "qualifier": "~",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "document_id": "10.1016/j.ceramint.2022.11.245",
+      "source_type": "text",
+      "characters": 1227,
+      "old_rows": [
+        54
+      ],
+      "reasons": [
+        "unexpanded_material_or_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BFO-BTO composite",
+          "property": "Curie temperature",
+          "value": 580,
+          "unit": "°C",
+          "qualifier": "over ~",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 54,
+          "old_material": "BFO-BTO composite",
+          "old_value": {
+            "value": "580",
+            "unit": "°C",
+            "qualifier": "over ~"
+          },
+          "old_conditions": {},
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BFO-BTO composite",
+              "property": "Curie temperature",
+              "value": 580,
+              "unit": "°C",
+              "qualifier": "over ~",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "source_type": "text",
+      "characters": 1456,
+      "old_rows": [
+        58,
+        59
+      ],
+      "reasons": [
+        "unexpanded_composite_alias"
+      ],
+      "equivalent_source_ids": [],
+      "state": "extracted",
+      "new_facts": [
+        {
+          "material_reported": "BT-CF randomly mixed ceramic composite",
+          "property": "Curie temperature",
+          "value": 720,
+          "unit": "K",
+          "qualifier": "approximately",
+          "conditions": {}
+        },
+        {
+          "material_reported": "BT-CF layered ceramic composite",
+          "property": "Curie temperature",
+          "value": 746,
+          "unit": "K",
+          "qualifier": "approximately",
+          "conditions": {}
+        }
+      ],
+      "comparison": [
+        {
+          "old_row": 58,
+          "old_material": "BT-CF randomly mixed ceramic composite",
+          "old_value": {
+            "value": "720",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "old_conditions": {
+            "measurement": "field-cooled magnetization",
+            "magnetic_field": "10 kOe out-of-plane"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BT-CF randomly mixed ceramic composite",
+              "property": "Curie temperature",
+              "value": 720,
+              "unit": "K",
+              "qualifier": "approximately",
+              "conditions": {}
+            }
+          ]
+        },
+        {
+          "old_row": 59,
+          "old_material": "BT-CF layered ceramic composite",
+          "old_value": {
+            "value": "746",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "old_conditions": {
+            "measurement": "field-cooled magnetization",
+            "magnetic_field": "10 kOe out-of-plane"
+          },
+          "numeric_event_present": true,
+          "same_value_candidates": [
+            {
+              "material_reported": "BT-CF layered ceramic composite",
+              "property": "Curie temperature",
+              "value": 746,
+              "unit": "K",
+              "qualifier": "approximately",
+              "conditions": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

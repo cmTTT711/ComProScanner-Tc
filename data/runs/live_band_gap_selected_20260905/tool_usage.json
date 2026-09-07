@@ -1,0 +1,10 @@
+[
+  {
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+    "source_type": "text",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  }
+]

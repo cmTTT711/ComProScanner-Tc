@@ -1,0 +1,49 @@
+{
+  "tc_contract_unchanged": {
+    "identifier_query": true,
+    "extraction_instructions": true,
+    "retrieval_queries": true,
+    "text_candidate_patterns": true,
+    "property_keywords": true,
+    "evidence_providers": true
+  },
+  "historical_predictions_count": 61,
+  "baseline_postprocessing_replay_count": 59,
+  "current_postprocessing_replay_count": 59,
+  "replay_matches_baseline_except_added_diagnostics": true,
+  "all_evidence_references_preserved": true,
+  "historical_prediction_sha256": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7",
+  "paid_model_calls": 0,
+  "note": "Offline configuration and saved-Fact replay only; not a new 30-paper extraction or model quality benchmark. Both old and new postprocessing merge the same two typography-equivalent duplicate records. Historical predictions are unchanged.",
+  "changed_baseline_files": [
+    "src/comproscanner/agents/litellm_adapters.py",
+    "src/comproscanner/cli/main.py",
+    "src/comproscanner/evaluation/strict.py",
+    "src/comproscanner/evaluation/__init__.py",
+    "src/comproscanner/facts/merger.py",
+    "src/comproscanner/facts/models.py",
+    "src/comproscanner/facts/processors.py",
+    "src/comproscanner/facts/__init__.py",
+    "src/comproscanner/presets/base.py",
+    "src/comproscanner/presets/curie_temperature.py",
+    "src/comproscanner/presets/registry.py",
+    "src/comproscanner/presets/__init__.py",
+    "src/comproscanner/results/review.py",
+    "tests/test_canonical_pipeline_smoke.py",
+    "tests/test_cli_run.py",
+    "tests/test_curie_temperature_preset.py",
+    "tests/test_evaluation/test_strict.py",
+    "tests/test_facts/test_fact_merger.py",
+    "tests/test_facts/test_processors.py",
+    "tests/test_results/test_review.py",
+    "pyproject.toml",
+    "README.md",
+    "docs/architecture.md"
+  ],
+  "tests": {
+    "full_suite_passed": 792,
+    "integration_not_run": 17,
+    "additional_frozen_contract_passed": 1,
+    "full_suite_log": "tmp/preset_pipeline_tests_20260905.log"
+  }
+}

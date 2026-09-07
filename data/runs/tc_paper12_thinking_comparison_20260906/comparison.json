@@ -1,0 +1,28 @@
+{
+  "supported_conclusion": "For this evidence, the default-thinking arm reproduced the historical extracted fact; disabling thinking reproduced the two Tm false positives.",
+  "historical_fact_core_fields_reproduced": true,
+  "previous_disabled_error_reproduced": true,
+  "request_messages_identical": true,
+  "new_requests": 2,
+  "usage": {
+    "prompt_tokens": 2131,
+    "completion_tokens": 6253,
+    "total_tokens": 8384
+  },
+  "cumulative_successful_model_requests_since_initial_acceptance": 16,
+  "cumulative_provider_reported_tokens": 29523,
+  "cumulative_model_attempts_including_network_denials": 23,
+  "cumulative_model_plus_material_attempts": 24,
+  "source_sha256": {
+    "outputs\\runs\\tc_fulltext_001_030_20260904\\predictions.json": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7",
+    "outputs\\runs\\tc_paper12_thinking_comparison_20260906\\live_report.json": "bf22283aa45fea22b762ac0394df0be7f00f08d8ffd96ba29f0e304742c2ca22"
+  },
+  "historical_predictions_modified": false,
+  "scope": "One Evidence, two real extractor calls, one per arm; no full-paper or 30-paper benchmark.",
+  "remaining_limitations": [
+    "Historical server thinking/model defaults are unknown; this does not establish their exact historical values.",
+    "One paired observation cannot establish repeatability or identify every historical failure cause.",
+    "Material remains y/x alias, as in original historical prediction; no complete formula restoration.",
+    "Figure, table, DOI and band-gap findings are not resolved by this experiment."
+  ]
+}

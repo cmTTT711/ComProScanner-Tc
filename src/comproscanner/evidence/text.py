@@ -7,8 +7,10 @@ from collections.abc import Iterable
 from dataclasses import dataclass, field
 from typing import Any
 
-from ..chunking import TextChunk
-from .models import Evidence, EvidenceType, RetrievalMethod
+from comproscanner.evidence.chunking import TextChunk
+from comproscanner.evidence.models import Evidence
+from comproscanner.evidence.models import EvidenceType
+from comproscanner.evidence.models import RetrievalMethod
 
 
 @dataclass(frozen=True)

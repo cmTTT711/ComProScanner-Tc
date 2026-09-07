@@ -1,0 +1,5166 @@
+{
+  "summary": {
+    "prediction_rows": 59,
+    "gold_rows": 47,
+    "strict_gold_rows": 46,
+    "strict_gold_unique_numeric_events": 45,
+    "numeric_event_hits": 43,
+    "numeric_event_misses": 2,
+    "numeric_event_recall": 0.9555555555555556,
+    "numeric_events_unchanged_from_sept4": true,
+    "strict_gold_manual_review_counts": {
+      "MATCH": 31,
+      "INCOMPLETE": 13,
+      "MISSING": 2
+    },
+    "non_strict_bound_matches": 1,
+    "additional_phase_or_comparison_rows": [
+      22,
+      27,
+      31,
+      34
+    ],
+    "not_acceptable_as_definite_tc_rows": [
+      43,
+      58
+    ],
+    "counting_note": "Manual statuses assess material/value binding and necessary sample information, not literal string equality or full scientific F1. MATCH may still lack non-binding qualifiers; see row notes. Never treat all numeric candidates as material matches.",
+    "external_calls": 0,
+    "source_hashes": {
+      "F:\\Python_Project\\ComProScanner\\outputs\\gold\\tc_001_030\\gold_facts.json": "7b423c955290fd1a5b02c322893e5d23ac477cf9904227708fb6a694533ee4bd",
+      "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_20260904_material_recovered_20260906\\predictions.json": "69efc4835cb68920af0d44066ebe793c7257bbadb6dc7d763f6ef86de2d354e0",
+      "F:\\Python_Project\\ComProScanner\\outputs\\runs\\tc_fulltext_001_030_20260904\\predictions.json": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7"
+    }
+  },
+  "gold_review": [
+    {
+      "gold_row": 1,
+      "gold": {
+        "paper_id": 1,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        1
+      ],
+      "numeric_candidate_rows": [
+        1
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 1,
+          "document_id": "local-pdf/d13a6634f5c93180",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 2,
+      "gold": {
+        "paper_id": 3,
+        "material": "0.8BaTiO3–0.2Ni0.5Co0.5Fe2O4 (24 h ball-milled sample)",
+        "tc_value": 129,
+        "tc_unit": "°C",
+        "page": 3,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        50
+      ],
+      "numeric_candidate_rows": [
+        50
+      ],
+      "note": "仅有 24 h 样品标签，缺 0.8BaTiO3–0.2Ni0.5Co0.5Fe2O4 母配方。",
+      "predictions": [
+        {
+          "prediction_row": 50,
+          "document_id": "local-pdf/d6275e45598fdba0",
+          "property_name": "Curie temperature",
+          "material_reported": "Composite sample of 24 h",
+          "material_normalized": "Composite sample of 24 h",
+          "material_identity_key": "Composite sample of 24 h",
+          "fact_value": {
+            "value": "129",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "Composite sample of 24 h"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 3,
+      "gold": {
+        "paper_id": 4,
+        "material": "0.66BaTiO3–0.33CoFe2O4 (randomly mixed)",
+        "tc_value": 720,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        53,
+        56
+      ],
+      "numeric_candidate_rows": [
+        53,
+        56
+      ],
+      "note": "配方正确，随机混合条件在 conditions 或材料名中保留；同一事实有不同 Evidence/限定的重复记录。",
+      "predictions": [
+        {
+          "prediction_row": 53,
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+          "fact_value": {
+            "value": "720",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {
+            "phase_arrangement": "randomly mixed phases"
+          },
+          "material_reported_variants": [
+            "0.66BaTiO3-0.33CoFe2O4"
+          ],
+          "processing_issues": []
+        },
+        {
+          "prediction_row": 56,
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "BT-CF randomly mixed ceramic composite",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4 randomly mixed ceramic composite",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 randomly mixed ceramic composite",
+          "fact_value": {
+            "value": "720",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+          ],
+          "conditions": {
+            "measurement": "field-cooled magnetization",
+            "magnetic_field": "10 kOe out-of-plane"
+          },
+          "material_reported_variants": [
+            "BT-CF randomly mixed ceramic composite"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.jallcom.2019.05.068",
+              "alias": "BT-CF",
+              "formula": "0.66BaTiO3-0.33CoFe2O4",
+              "source_text": "0.66BaTiO3 - 0.33CoFe2O4(BT-CF)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+                "sha256": "eaaa02459fb4273bba1ede2a288dea4c7dad690f6515c6c06000a22498b1b891",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 4,
+      "gold": {
+        "paper_id": 4,
+        "material": "0.66BaTiO3–0.33CoFe2O4 (tri-layered)",
+        "tc_value": 746,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        54,
+        57
+      ],
+      "numeric_candidate_rows": [
+        54,
+        57
+      ],
+      "note": "配方正确，三层/层状条件保留；不要与 720 K 的随机混合样品混配。",
+      "predictions": [
+        {
+          "prediction_row": 54,
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+          "fact_value": {
+            "value": "746",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {
+            "phase_arrangement": "tri-layer/layered structure"
+          },
+          "material_reported_variants": [
+            "0.66BaTiO3-0.33CoFe2O4"
+          ],
+          "processing_issues": []
+        },
+        {
+          "prediction_row": 57,
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "BT-CF layered ceramic composite",
+          "material_normalized": "0.66BaTiO3-0.33CoFe2O4 layered ceramic composite",
+          "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 layered ceramic composite",
+          "fact_value": {
+            "value": "746",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+          ],
+          "conditions": {
+            "measurement": "field-cooled magnetization",
+            "magnetic_field": "10 kOe out-of-plane"
+          },
+          "material_reported_variants": [
+            "BT-CF layered ceramic composite"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.jallcom.2019.05.068",
+              "alias": "BT-CF",
+              "formula": "0.66BaTiO3-0.33CoFe2O4",
+              "source_text": "0.66BaTiO3 - 0.33CoFe2O4(BT-CF)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+                "sha256": "eaaa02459fb4273bba1ede2a288dea4c7dad690f6515c6c06000a22498b1b891",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 5,
+      "gold": {
+        "paper_id": 4,
+        "material": "CoFe2O4",
+        "tc_value": 793,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        55
+      ],
+      "numeric_candidate_rows": [
+        55
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 55,
+          "document_id": "10.1016/j.jallcom.2019.05.068",
+          "property_name": "Curie temperature",
+          "material_reported": "CoFe2O4",
+          "material_normalized": "CoFe2O4",
+          "material_identity_key": "CoFe2O4",
+          "fact_value": {
+            "value": "793",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "CoFe2O4"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 6,
+      "gold": {
+        "paper_id": 7,
+        "material": "BaTiO3",
+        "tc_value": 120,
+        "tc_unit": "°C",
+        "page": 3,
+        "fact_role": "background",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        59
+      ],
+      "numeric_candidate_rows": [
+        59
+      ],
+      "note": "原文描述 BaTiO3 冷却时 cubic→tetragonal 的 120°C 转变；预测 cubic 标签是相变起始相，不是新的材料。",
+      "predictions": [
+        {
+          "prediction_row": 59,
+          "document_id": "10.1063/5.0036518",
+          "property_name": "Curie temperature",
+          "material_reported": "cubic BaTiO3",
+          "material_normalized": "cubic BaTiO3",
+          "material_identity_key": "cubic BaTiO3",
+          "fact_value": {
+            "value": "120",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0036518_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "cubic BaTiO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 7,
+      "gold": {
+        "paper_id": 10,
+        "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3",
+        "tc_value": 683,
+        "tc_unit": "K",
+        "fact_role": "current_work",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        2
+      ],
+      "numeric_candidate_rows": [
+        2
+      ],
+      "note": "BF-BCT 未展开，母配方仍缺失。",
+      "predictions": [
+        {
+          "prediction_row": 2,
+          "document_id": "10.1063/1.5131055",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BCT",
+          "material_normalized": "BF-BCT",
+          "material_identity_key": "BF-BCT",
+          "fact_value": {
+            "value": "683",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "frequency": "100 kHz"
+          },
+          "material_reported_variants": [
+            "BF-BCT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 8,
+      "gold": {
+        "paper_id": 10,
+        "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO and MnO2 additives",
+        "tc_value": 687,
+        "tc_unit": "K",
+        "fact_role": "current_work",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        5
+      ],
+      "numeric_candidate_rows": [
+        5
+      ],
+      "note": "BF-BCT-CM 未展开，母配方与 CuO/MnO2 添加信息未写全。",
+      "predictions": [
+        {
+          "prediction_row": 5,
+          "document_id": "10.1063/1.5131055",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BCT-CM",
+          "material_normalized": "BF-BCT-CM",
+          "material_identity_key": "BF-BCT-CM",
+          "fact_value": {
+            "value": "687",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "frequency": "100 kHz"
+          },
+          "material_reported_variants": [
+            "BF-BCT-CM"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 9,
+      "gold": {
+        "paper_id": 10,
+        "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with MnO2 additive",
+        "tc_value": 690,
+        "tc_unit": "K",
+        "fact_role": "current_work",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        4
+      ],
+      "numeric_candidate_rows": [
+        4
+      ],
+      "note": "BF-BCT-M 未展开，母配方与 MnO2 添加信息未写全。",
+      "predictions": [
+        {
+          "prediction_row": 4,
+          "document_id": "10.1063/1.5131055",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BCT-M",
+          "material_normalized": "BF-BCT-M",
+          "material_identity_key": "BF-BCT-M",
+          "fact_value": {
+            "value": "690",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "frequency": "100 kHz"
+          },
+          "material_reported_variants": [
+            "BF-BCT-M"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 10,
+      "gold": {
+        "paper_id": 10,
+        "material": "0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO additive",
+        "tc_value": 692,
+        "tc_unit": "K",
+        "fact_role": "current_work",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        3
+      ],
+      "numeric_candidate_rows": [
+        3
+      ],
+      "note": "BF-BCT-C 未展开，母配方与 CuO 添加信息未写全。",
+      "predictions": [
+        {
+          "prediction_row": 3,
+          "document_id": "10.1063/1.5131055",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BCT-C",
+          "material_normalized": "BF-BCT-C",
+          "material_identity_key": "BF-BCT-C",
+          "fact_value": {
+            "value": "692",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "frequency": "100 kHz"
+          },
+          "material_reported_variants": [
+            "BF-BCT-C"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 11,
+      "gold": {
+        "paper_id": 11,
+        "material": "BaTiO3",
+        "tc_value": 120,
+        "tc_unit": "°C",
+        "page": 6,
+        "fact_role": "background",
+        "transition_type": "ferroelectric-paraelectric",
+        "qualifier": "typical; not observed in the current CoFe2O4-Ba0.97Sr0.03TiO3 composite",
+        "evidence": "The typical maximum of epsilon' at about 120 °C, which stems from the ferroelectric to paraelectric phase transition of BaTiO3, was not found...",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MISSING",
+      "status_label": "漏项",
+      "prediction_rows": [],
+      "numeric_candidate_rows": [],
+      "note": "当前文件完全缺失。此前单独诊断已抽到 BaTiO3 约 120°C，但未写入这份保留 4 号抽取的结果。",
+      "predictions": []
+    },
+    {
+      "gold_row": 12,
+      "gold": {
+        "paper_id": 12,
+        "material": "(1−y)BiFe1−xCrxO3–yBaTi1−xMnxO3 (y=0.24, x=0.01)",
+        "tc_value": 853.1,
+        "tc_unit": "K",
+        "page": 6,
+        "fact_role": "current_work",
+        "transition_type": "normal ferroelectric–paraelectric",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        7
+      ],
+      "numeric_candidate_rows": [
+        7
+      ],
+      "note": "变量代入与 Gold 母配方等价，853.1 K 正确；母配方候选选择仍保留人工 Review 提示。",
+      "predictions": [
+        {
+          "prediction_row": 7,
+          "document_id": "10.1007/s10854-022-08492-3",
+          "property_name": "Curie temperature",
+          "material_reported": "y=0.24, x=0.01",
+          "material_normalized": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3 [y=0.24, x=0.01]",
+          "material_identity_key": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3 [y=0.24, x=0.01]",
+          "fact_value": {
+            "value": "853.1",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {
+            "E_bias": "0 V"
+          },
+          "material_reported_variants": [
+            "y=0.24, x=0.01"
+          ],
+          "processing_issues": [
+            "material_parent_inferred_review"
+          ],
+          "material_resolution": [
+            {
+              "tool": "variable_composition",
+              "document_id": "10.1007/s10854-022-08492-3",
+              "parent_formula": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+              "assignments": {
+                "y": "0.24",
+                "x": "0.01"
+              },
+              "source_text": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+              "expanded": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\12-CrMn共掺杂铁酸铋钛酸钡固溶体-2022-J Mater Sci Mater Electron.pdf",
+                "sha256": "8355ff3bb1678eb80e8a33232e0a7097fa6368f60060dedd9f7769fe27de6cda",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 13,
+      "gold": {
+        "paper_id": 12,
+        "material": "BiFeO3",
+        "tc_value": 1100,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        6
+      ],
+      "numeric_candidate_rows": [
+        6
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 6,
+          "document_id": "10.1007/s10854-022-08492-3",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1100",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 14,
+      "gold": {
+        "paper_id": 14,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        8
+      ],
+      "numeric_candidate_rows": [
+        8
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 8,
+          "document_id": "local-pdf/f632a01543d4e2d3",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 15,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.67BiFeO3–0.33Ba0.70Ca0.30TiO3",
+        "tc_value": 634,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        12
+      ],
+      "numeric_candidate_rows": [
+        12
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 12,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+          "material_normalized": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+          "material_identity_key": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+          "fact_value": {
+            "value": "634",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 16,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.725BiFeO3–0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "tc_value": 673,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        13
+      ],
+      "numeric_candidate_rows": [
+        13
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 13,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+          "material_normalized": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+          "material_identity_key": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+          "fact_value": {
+            "value": "673",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 17,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3–1.2 wt.% MnO2",
+        "tc_value": 689,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "current_work_table",
+        "evidence": "Table I labels the property column as TC (K) and reports 689 K for the 1.2 wt.% MnO2 sample.",
+        "qualifier": "article also discusses frequency-dependent relaxor Tm",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        16
+      ],
+      "numeric_candidate_rows": [
+        16
+      ],
+      "note": "按 Gold 接受的表 I Tc=689 K、1.2 wt.% MnO2 配对核验；全文同时存在 relaxor Tm 讨论，不能仅按数值关联其他样品。",
+      "predictions": [
+        {
+          "prediction_row": 16,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+          "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+          "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+          "fact_value": {
+            "value": "689",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 18,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.6BiFe0.85Co0.15O3–0.4(Bi0.5K0.5)TiO3",
+        "tc_value": 690,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        10
+      ],
+      "numeric_candidate_rows": [
+        10
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 10,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+          "material_normalized": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+          "material_identity_key": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+          "fact_value": {
+            "value": "690",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 19,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3–0.8 wt.% MnO2",
+        "tc_value": 698,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "current_work_table",
+        "evidence": "Table I labels the property column as TC (K) and reports 698 K for the 0.8 wt.% MnO2 sample; the introduction also explicitly states TC = 698 K for x = 0.8.",
+        "qualifier": "article also discusses frequency-dependent relaxor Tm",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        15,
+        18
+      ],
+      "numeric_candidate_rows": [
+        15,
+        18
+      ],
+      "note": "预测 15 的 0.8 wt.%/698 K 完整对应；预测 18 是未赋值 x 的冗余不完整记录。Gold 的 relaxor 审查备注应保留。",
+      "predictions": [
+        {
+          "prediction_row": 15,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+          "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+          "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+          "fact_value": {
+            "value": "698",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT",
+            "10_1063_5_0026210_FULL_TEXT_0006_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+            "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "local_material_typography",
+              "source_text": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+                "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 18,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+          "material_normalized": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+          "material_identity_key": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+          "fact_value": {
+            "value": "698",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0019_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2"
+          ],
+          "processing_issues": [
+            "material_variables_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 20,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.6BiFeO3–0.4Bi0.5K0.5TiO3",
+        "tc_value": 703,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        9
+      ],
+      "numeric_candidate_rows": [
+        9
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 9,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+          "material_normalized": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+          "material_identity_key": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+          "fact_value": {
+            "value": "703",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 21,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.7Bi0.9925Ca0.0075FeO3–0.3BaTiO3 + 0.3 wt.% MnO2",
+        "tc_value": 711,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        14
+      ],
+      "numeric_candidate_rows": [
+        14
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 14,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+          "material_normalized": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+          "material_identity_key": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+          "fact_value": {
+            "value": "711",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 22,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.67Bi1.05Fe0.97Ga0.03O3–0.33BaTiO3",
+        "tc_value": 727,
+        "tc_unit": "K",
+        "page": 3,
+        "fact_role": "background_table",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        11
+      ],
+      "numeric_candidate_rows": [
+        11
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 11,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+          "material_normalized": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+          "material_identity_key": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+          "fact_value": {
+            "value": "727",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 23,
+      "gold": {
+        "paper_id": 15,
+        "material": "0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3",
+        "tc_value": 732,
+        "tc_unit": "K",
+        "page": 8,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        17
+      ],
+      "numeric_candidate_rows": [
+        17
+      ],
+      "note": "x=0 被写为 0 wt.% MnO2，与 Gold 不添加 MnO2 的母配方等价；732 K 保留。",
+      "predictions": [
+        {
+          "prediction_row": 17,
+          "document_id": "10.1063/5.0026210",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BCT-Mn-x (x=0)",
+          "material_normalized": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2 (x=0)",
+          "material_identity_key": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2 (x=0)",
+          "fact_value": {
+            "value": "732",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0026210_FULL_TEXT_0015_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BF-BCT-Mn-x (x=0)"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1063/5.0026210",
+              "alias": "BF-BCT-Mn-x",
+              "formula": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+              "source_text": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt. % MnO2(BF-BCT- Mn-x)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+                "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "variable_composition",
+              "document_id": "10.1063/5.0026210",
+              "parent_formula": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+              "assignments": {
+                "x": "0"
+              },
+              "source_text": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+              "expanded": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+                "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 24,
+      "gold": {
+        "paper_id": 17,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        19
+      ],
+      "numeric_candidate_rows": [
+        19
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 19,
+          "document_id": "10.1021/acsnano.2c07215",
+          "property_name": "Curie temperature",
+          "material_reported": "bulk BiFeO3",
+          "material_normalized": "bulk BiFeO3",
+          "material_identity_key": "bulk BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "bulk BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 25,
+      "gold": {
+        "paper_id": 19,
+        "material": "80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite after high-pressure torsion",
+        "tc_value": 367,
+        "tc_unit": "K",
+        "page": 5,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        25,
+        29,
+        33
+      ],
+      "numeric_candidate_rows": [
+        25,
+        27,
+        29,
+        33
+      ],
+      "note": "已展开两相配方并保留 HPT，但该条结果未写出 80/20 wt.% 配比。不能用同温度的 MZFO fraction 代替复合材料。",
+      "predictions": [
+        {
+          "prediction_row": 25,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite HPT",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite HPT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 29,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO nanocomposite HPT",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 nanocomposite HPT",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 nanocomposite HPT",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO nanocomposite HPT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 33,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite processed by HPT",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by HPT",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by HPT",
+          "fact_value": {
+            "value": "367",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite processed by HPT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 26,
+      "gold": {
+        "paper_id": 19,
+        "material": "Mn0.6Zn0.3Fe2.1O4 (MZFO, literature value)",
+        "tc_value": 501,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        20
+      ],
+      "numeric_candidate_rows": [
+        20
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 20,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "MZFO ferrospinel",
+          "material_normalized": "Mn0.6Zn0.3Fe2.1O4 ferrospinel",
+          "material_identity_key": "Mn0.6Zn0.3Fe2.1O4 ferrospinel",
+          "fact_value": {
+            "value": "501",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "MZFO ferrospinel"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 27,
+      "gold": {
+        "paper_id": 19,
+        "material": "Mn0.6Zn0.3Fe2.1O4 (initial MZFO powder)",
+        "tc_value": 518,
+        "tc_unit": "K",
+        "page": 4,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        21,
+        30
+      ],
+      "numeric_candidate_rows": [
+        21,
+        22,
+        23,
+        24,
+        30,
+        31,
+        32
+      ],
+      "note": "initial MZFO powder 的 518 K 正确；商业牌号记录为其他来源陈述，不能按同温度直接计成这一 Gold 行。",
+      "predictions": [
+        {
+          "prediction_row": 21,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "initial MZFO powder",
+          "material_normalized": "initial Mn0.6Zn0.3Fe2.1O4 powder",
+          "material_identity_key": "initial Mn0.6Zn0.3Fe2.1O4 powder",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "initial MZFO powder"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 30,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+          "material_normalized": "Mn0.6Zn0.3Fe2.1O4 powder (Mn0.6Zn0.3Fe2.1O4)",
+          "material_identity_key": "Mn0.6Zn0.3Fe2.1O4 powder (Mn0.6Zn0.3Fe2.1O4)",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "MZFO powder (Mn0.6Zn0.3Fe2.1O4)"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 28,
+      "gold": {
+        "paper_id": 19,
+        "material": "80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite",
+        "tc_value": 518,
+        "tc_unit": "K",
+        "page": 5,
+        "fact_role": "current_work",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        23,
+        24,
+        32
+      ],
+      "numeric_candidate_rows": [
+        21,
+        22,
+        23,
+        24,
+        30,
+        31,
+        32
+      ],
+      "note": "预测 23 的 80/20 wt.% 配方及 518 K 完整对应；预测 24、32 未写全配比。",
+      "predictions": [
+        {
+          "prediction_row": 23,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite (80 wt.% Bi0.9La0.1FeO3 / 20 wt.% Mn0.6Zn0.3Fe2.1O4)",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite (80 wt.% Bi0.9La0.1FeO3 / 20 wt.% Mn0.6Zn0.3Fe2.1O4)",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 24,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+            "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        },
+        {
+          "prediction_row": 32,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite processed by compression",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by compression",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by compression",
+          "fact_value": {
+            "value": "518",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10.1002_adfm.202113022_TABLE_0001"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite processed by compression"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 29,
+      "gold": {
+        "paper_id": 19,
+        "material": "80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite after high-pressure torsion (new ferromagnetic order)",
+        "tc_value": 778,
+        "tc_unit": "K",
+        "page": 5,
+        "fact_role": "current_work",
+        "label_in_source": "Tc*",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        26
+      ],
+      "numeric_candidate_rows": [
+        26,
+        34
+      ],
+      "note": "已展开两相配方，HPT 和 new FM order (T_C*) 保留；80/20 wt.% 配比仍未写入本条。",
+      "predictions": [
+        {
+          "prediction_row": 26,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO-MZFO composite HPT",
+          "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+          "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+          "fact_value": {
+            "value": "778",
+            "unit": "K",
+            "qualifier": "new FM order (T_C*)"
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO-MZFO composite HPT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "MZFO",
+              "formula": "Mn0.6Zn0.3Fe2.1O4",
+              "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 30,
+      "gold": {
+        "paper_id": 19,
+        "material": "Bi0.9La0.1FeO3 fraction in high-pressure-torsion composite",
+        "tc_value": 950,
+        "tc_unit": "K",
+        "page": 7,
+        "fact_role": "current_work",
+        "transition_type": "ferroelectric",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        28
+      ],
+      "numeric_candidate_rows": [
+        28
+      ],
+      "note": "BLFO 化学式及 fraction 正确，但 HPT 复合材料语境和 FE 转变类型只在 Evidence 中，尚未结构化保留。",
+      "predictions": [
+        {
+          "prediction_row": 28,
+          "document_id": "10.1002/adfm.202113022",
+          "property_name": "Curie temperature",
+          "material_reported": "BLFO fraction",
+          "material_normalized": "Bi0.9La0.1FeO3 fraction",
+          "material_identity_key": "Bi0.9La0.1FeO3 fraction",
+          "fact_value": {
+            "value": "950",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+            "10.1002_adfm.202113022_TABLE_0002",
+            "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BLFO fraction"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1002/adfm.202113022",
+              "alias": "BLFO",
+              "formula": "Bi0.9La0.1FeO3",
+              "source_text": "Bi0.9La0.1FeO3(BLFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+                "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 31,
+      "gold": {
+        "paper_id": 20,
+        "material": "CrFe2O4",
+        "tc_value": 420,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        36
+      ],
+      "numeric_candidate_rows": [
+        36
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 36,
+          "document_id": "local-pdf/deb70641057677d8",
+          "property_name": "Curie temperature",
+          "material_reported": "CrFe2O4",
+          "material_normalized": "CrFe2O4",
+          "material_identity_key": "CrFe2O4",
+          "fact_value": {
+            "value": "420",
+            "unit": "K",
+            "qualifier": "approximately"
+          },
+          "evidence_ids": [
+            "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "CrFe2O4"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 32,
+      "gold": {
+        "paper_id": 20,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        35
+      ],
+      "numeric_candidate_rows": [
+        35
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 35,
+          "document_id": "local-pdf/deb70641057677d8",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 33,
+      "gold": {
+        "paper_id": 22,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "evidence": "The Curie temperature (TC) and Néel temperature (TN) for BFO are ~1103 K and ~643 K, respectively.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        37
+      ],
+      "numeric_candidate_rows": [
+        37
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 37,
+          "document_id": "local-pdf/7c100201e7883b3e",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3 (BFO)",
+          "material_normalized": "BiFeO3 (BFO)",
+          "material_identity_key": "BiFeO3 (BFO)",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3 (BFO)"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 34,
+      "gold": {
+        "paper_id": 24,
+        "material": "BF-BNT-BT (y=0.23, x=0.00; y0.23x0.00)",
+        "tc_value": 774,
+        "tc_unit": "K",
+        "page": 4,
+        "fact_role": "current_work",
+        "qualifier": "approximately",
+        "transition_type": "normal ferroelectric–paraelectric",
+        "evidence": "A sharp and frequency-independent peak at TC ~774 K observed for as-prepared y0.23x0.00, which can be ascribed to the FE to paraelectric transition.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        39
+      ],
+      "numeric_candidate_rows": [
+        39
+      ],
+      "note": "774 K 和 y=.23/x=0 样品对应，当前仅部分展开；缺完整外层配比和 BTM 展开，不能把现有字符串当最终三元配方。原文为约 774 K，预测还丢失了近似限定。",
+      "predictions": [
+        {
+          "prediction_row": 39,
+          "document_id": "10.1063/5.0133946",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+          "material_normalized": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3-BTM (y = 0.23, x = 0.00)",
+          "material_identity_key": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3-BTM (y = 0.23, x = 0.00)",
+          "fact_value": {
+            "value": "774",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0133946_FULL_TEXT_0009_TEXT"
+          ],
+          "conditions": {
+            "sample_state": "as-prepared"
+          },
+          "material_reported_variants": [
+            "BF-BNT-BTM (y = 0.23, x = 0.00)"
+          ],
+          "processing_issues": [
+            "material_parent_unresolved",
+            "material_name_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1063/5.0133946",
+              "alias": "BF-BNT",
+              "formula": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3",
+              "source_text": "0.9BiFeO3-0.1Bi0.5 Na0.5TiO3(BF- BNT)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
+                "sha256": "532b43cb161178ed876c37c9a7920959183db736de1253e69f625fb4cd2ea6aa",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 35,
+      "gold": {
+        "paper_id": 24,
+        "material": "BiFeO3",
+        "tc_value": 1100,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "evidence": "Multiferroic BiFeO3 shows coexistence of robust ferroelectric (TC ~1100 K) and antiferromagnetic (TN ~640 K) orders.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        38
+      ],
+      "numeric_candidate_rows": [
+        38
+      ],
+      "note": "BiFeO3/1100 K 对应，但 Gold 和原文的 approximately 未在本条 qualifier 中保留。",
+      "predictions": [
+        {
+          "prediction_row": 38,
+          "document_id": "10.1063/5.0133946",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1100",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1063_5_0133946_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 36,
+      "gold": {
+        "paper_id": 25,
+        "material": "lanthanum-substituted (1−x)BiFeO3−xPbTiO3",
+        "tc_value": 227,
+        "tc_unit": "°C",
+        "page": 4,
+        "fact_role": "background",
+        "transition_type": "ferroelectric transition",
+        "evidence": "The ferroelectric transition ... occurs at 650 °C, dropping to 227 °C when lanthanum is substituted.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        42
+      ],
+      "numeric_candidate_rows": [
+        42
+      ],
+      "note": "La-substituted 与 227°C 对应；PTO 已展开，BFO 仍未展开。原文未明确给出 La 掺杂量，不应猜测补齐。",
+      "predictions": [
+        {
+          "prediction_row": 42,
+          "document_id": "10.1143/JPSJ.7.5",
+          "property_name": "Curie temperature",
+          "material_reported": "lanthanum-substituted (1-x)BFO-xPTO",
+          "material_normalized": "lanthanum-substituted (1-x)BFO-xPbTiO3",
+          "material_identity_key": "lanthanum-substituted (1-x)BFO-xPbTiO3",
+          "fact_value": {
+            "value": "227",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "lanthanum-substituted (1-x)BFO-xPTO"
+          ],
+          "processing_issues": [
+            "material_name_unresolved",
+            "material_variables_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1143/JPSJ.7.5",
+              "alias": "PTO",
+              "formula": "PbTiO3",
+              "source_text": "PbTiO3(PTO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+                "sha256": "ffcb831eb3ee603855e1cc6957fa3dc286fb54c22d7a6e031bf6e42a88541e2f",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 37,
+      "gold": {
+        "paper_id": 25,
+        "material": "undoped (1−x)BiFeO3−xPbTiO3",
+        "tc_value": 650,
+        "tc_unit": "°C",
+        "page": 4,
+        "fact_role": "background",
+        "transition_type": "ferroelectric transition",
+        "evidence": "The ferroelectric transition for undoped (1-x)BFO-xPTO correlates with the dielectric anomaly and occurs at 650 °C.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        41
+      ],
+      "numeric_candidate_rows": [
+        41
+      ],
+      "note": "undoped 与 650°C 对应；PTO 已展开，BFO 仍未展开，x 未确定。",
+      "predictions": [
+        {
+          "prediction_row": 41,
+          "document_id": "10.1143/JPSJ.7.5",
+          "property_name": "Curie temperature",
+          "material_reported": "undoped (1-x)BFO-xPTO",
+          "material_normalized": "undoped (1-x)BFO-xPbTiO3",
+          "material_identity_key": "undoped (1-x)BFO-xPbTiO3",
+          "fact_value": {
+            "value": "650",
+            "unit": "°C",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "undoped (1-x)BFO-xPTO"
+          ],
+          "processing_issues": [
+            "material_name_unresolved",
+            "material_variables_unresolved"
+          ],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1143/JPSJ.7.5",
+              "alias": "PTO",
+              "formula": "PbTiO3",
+              "source_text": "PbTiO3(PTO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+                "sha256": "ffcb831eb3ee603855e1cc6957fa3dc286fb54c22d7a6e031bf6e42a88541e2f",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 38,
+      "gold": {
+        "paper_id": 25,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "page": 2,
+        "fact_role": "background",
+        "evidence": "BFO exhibits ferroelectricity as well as G-type antiferromagnetism with Curie temperature (TC) and Néel temperature (TN) at 1103 K and 643 K respectively.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        40
+      ],
+      "numeric_candidate_rows": [
+        40
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 40,
+          "document_id": "10.1143/JPSJ.7.5",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3 (BFO)",
+          "material_normalized": "BiFeO3 (BFO)",
+          "material_identity_key": "BiFeO3 (BFO)",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3 (BFO)"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 39,
+      "gold": {
+        "paper_id": 26,
+        "material": "PZT phase in 3BFO_n/7PZT_m composite sintered at 650 °C",
+        "tc_value": 355,
+        "tc_unit": "°C",
+        "page": 5,
+        "fact_role": "current_work",
+        "transition_type": "dielectric anomaly assigned to PZT Curie temperature",
+        "evidence": "The 3BFOn/7PZTm composite sintered at Ts=650 °C suggests a dielectric anomaly at the PZT's Curie temperature TC around 355 °C.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        44
+      ],
+      "numeric_candidate_rows": [
+        44
+      ],
+      "note": "PZT 相、355°C、3BFO_n/7PZT_m 和 650°C 烧结条件均与 Gold 对应；Gold 本身也使用 PZT 标签，完整 Zr/Ti 比例仍未明确。",
+      "predictions": [
+        {
+          "prediction_row": 44,
+          "document_id": "local-pdf/4d3fe4ad46460542",
+          "property_name": "Curie temperature",
+          "material_reported": "PZT",
+          "material_normalized": "PZT",
+          "material_identity_key": "PZT",
+          "fact_value": {
+            "value": "355",
+            "unit": "°C",
+            "qualifier": "around"
+          },
+          "evidence_ids": [
+            "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+            "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_EQ_01"
+          ],
+          "conditions": {
+            "sample": "3BFO_n/7PZT_m composite",
+            "sintering_temperature": "650 °C"
+          },
+          "material_reported_variants": [
+            "PZT"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 40,
+      "gold": {
+        "paper_id": 27,
+        "material": "0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3] (x=0.4)",
+        "tc_value": 742.6,
+        "tc_unit": "K",
+        "page": 4,
+        "fact_role": "current_work",
+        "transition_type": "normal ferroelectric",
+        "evidence": "The sample x=0.4 near the MPB shows frequency-independent peak near the FE Curie temperature TC ~742.6 K, which indicates a normal FE behavior.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        45
+      ],
+      "numeric_candidate_rows": [
+        45
+      ],
+      "note": "x=.4、约 742.6 K 对应，BF-BKT-BT 母配方未展开。禁止拿内层二元配方替代整个三元体系。",
+      "predictions": [
+        {
+          "prediction_row": 45,
+          "document_id": "local-pdf/e0b7c7f789f25ed2",
+          "property_name": "Curie temperature",
+          "material_reported": "BF-BKT-BT (x=0.4)",
+          "material_normalized": "BF-BKT-BT (x=0.4)",
+          "material_identity_key": "BF-BKT-BT (x=0.4)",
+          "fact_value": {
+            "value": "742.6",
+            "unit": "K",
+            "qualifier": "approximately"
+          },
+          "evidence_ids": [
+            "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BF-BKT-BT (x=0.4)"
+          ],
+          "processing_issues": [
+            "material_parent_unresolved",
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 41,
+      "gold": {
+        "paper_id": 27,
+        "material": "BiFeO3",
+        "tc_value": 1103,
+        "tc_unit": "K",
+        "fact_role": "background",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MISSING",
+      "status_label": "漏项",
+      "prediction_rows": [],
+      "numeric_candidate_rows": [],
+      "note": "当前文件缺失。原 PDF 实际写约 830°C，约合 1103.15 K；此前源段落恢复实验已抽到，但未并入此文件，也未修改 Gold。",
+      "predictions": []
+    },
+    {
+      "gold_row": 42,
+      "gold": {
+        "paper_id": 28,
+        "material": "0.58BiFeO3–0.42Bi0.5K0.5TiO3 single crystal",
+        "tc_value": 671.5,
+        "tc_unit": "K",
+        "page": 4,
+        "fact_role": "current_work",
+        "qualifier": "approximately",
+        "transition_type": "ferroelectric",
+        "evidence": "The FE Curie temperature TC of the crystal is about 671.5 K, as indicated by the peak in the temperature dependent dielectric constant curves.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "INCOMPLETE",
+      "status_label": "数值对应，材料/样品信息待补",
+      "prediction_rows": [
+        47
+      ],
+      "numeric_candidate_rows": [
+        47
+      ],
+      "note": "约 671.5 K 和晶体样品对应，BFBKT 尚未展开成 0.58/0.42 配方。",
+      "predictions": [
+        {
+          "prediction_row": 47,
+          "document_id": "10.1016/j.actamat.2023.119044",
+          "property_name": "Curie temperature",
+          "material_reported": "BFBKT crystal",
+          "material_normalized": "BFBKT crystal",
+          "material_identity_key": "BFBKT crystal",
+          "fact_value": {
+            "value": "671.5",
+            "unit": "K",
+            "qualifier": "about"
+          },
+          "evidence_ids": [
+            "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BFBKT crystal"
+          ],
+          "processing_issues": [
+            "material_name_unresolved"
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 43,
+      "gold": {
+        "paper_id": 28,
+        "material": "BiFeO3",
+        "tc_value": 1100,
+        "tc_unit": "K",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "evidence": "BFO with both high FE Curie temperature (TC ~1100 K) and high Néel temperature (TN ~643 K).",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        46
+      ],
+      "numeric_candidate_rows": [
+        46
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 46,
+          "document_id": "10.1016/j.actamat.2023.119044",
+          "property_name": "ferroelectric Curie temperature",
+          "material_reported": "BFO",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1100",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BFO"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.actamat.2023.119044",
+              "alias": "BFO",
+              "formula": "BiFeO3",
+              "source_text": "BiFeO3(BFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\28-2023-Acta Mater-Control of magnetism at low electric fields in multiferroic 0.58BiFeO3–0.42Bi0.5K0.5TiO3  near morphotropic phase boundary.pdf",
+                "sha256": "418a7d73d29925a3cbda3570149665b9200185bb9c550d379fc57bc61502e714",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 44,
+      "gold": {
+        "paper_id": 29,
+        "material": "(1−y)BiFe1−xCrxO3−yBaTi1−xMnxO3 (y=0.27, x=0.03)",
+        "tc_value": 795.2,
+        "tc_unit": "K",
+        "page": 5,
+        "fact_role": "current_work",
+        "qualifier": "approximately",
+        "transition_type": "ferroelectric–paraelectric",
+        "evidence": "A sharp and nearly frequency-independent dielectric peak at TC ~795.2 K, corresponding to the FE to paraelectric transition, can be observed.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        49
+      ],
+      "numeric_candidate_rows": [
+        49
+      ],
+      "note": "代入 x=.03/y=.27 后与 Gold 等价，约 795.2 K 对应；旧重复文本/公式记录已合并。",
+      "predictions": [
+        {
+          "prediction_row": 49,
+          "document_id": "10.1111/jace.19555",
+          "property_name": "Curie temperature",
+          "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+          "material_normalized": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3 (x=0.03, y=0.27)",
+          "material_identity_key": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3 (x=0.03, y=0.27)",
+          "fact_value": {
+            "value": "795.2",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+            "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+            "(1-y)BFC-yBTM (x = 0.03, y = 0.27)"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1111/jace.19555",
+              "alias": "BFC",
+              "formula": "BiFe1-xCrxO3",
+              "source_text": "BiFe1-xCrxO3(BFC)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+                "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1111/jace.19555",
+              "alias": "BTM",
+              "formula": "BaTi1-xMnxO3",
+              "source_text": "BaTi1-xMnxO3(BTM)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+                "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "variable_composition",
+              "document_id": "10.1111/jace.19555",
+              "parent_formula": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+              "assignments": {
+                "x": "0.03",
+                "y": "0.27"
+              },
+              "source_text": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+              "expanded": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+                "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 45,
+      "gold": {
+        "paper_id": 29,
+        "material": "BiFeO3",
+        "tc_value": 1100,
+        "tc_unit": "K",
+        "fact_role": "background",
+        "review_decision": "ADD_TO_GOLD",
+        "review_note": "User explicitly accepted after prediction-versus-Gold audit.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        48
+      ],
+      "numeric_candidate_rows": [
+        48
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 48,
+          "document_id": "10.1111/jace.19555",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3 (BFO)",
+          "material_normalized": "BiFeO3 (BFO)",
+          "material_identity_key": "BiFeO3 (BFO)",
+          "fact_value": {
+            "value": "1100",
+            "unit": "K",
+            "qualifier": "~"
+          },
+          "evidence_ids": [
+            "10_1111_jace_19555_FULL_TEXT_0002_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3 (BFO)"
+          ],
+          "processing_issues": []
+        }
+      ]
+    },
+    {
+      "gold_row": 46,
+      "gold": {
+        "paper_id": 30,
+        "material": "BiFeO3-BaTiO3 composite",
+        "tc_value": 580,
+        "tc_unit": "°C",
+        "comparison_operator": ">",
+        "page": 2,
+        "fact_role": "background",
+        "transition_type": "Curie temperature",
+        "qualifier": "approximately; lower-bound statement",
+        "evidence": "...BFO-BTO composite with a high Curie temperature of over ~580 °C...",
+        "strict_scoring": false,
+        "gold_status": "ACCEPTED_NON_STRICT_RANGE"
+      },
+      "status": "BOUND_MATCH",
+      "status_label": "下界对应（非严格）",
+      "prediction_rows": [
+        52
+      ],
+      "numeric_candidate_rows": [
+        52
+      ],
+      "note": "Gold 明确为非严格下界事实；预测保留 over ~580°C，不能当作精确 580°C 或误报普通 FP。",
+      "predictions": [
+        {
+          "prediction_row": 52,
+          "document_id": "10.1016/j.ceramint.2022.11.245",
+          "property_name": "Curie temperature",
+          "material_reported": "BFO-BTO composite",
+          "material_normalized": "BiFeO3-BaTiO3 composite",
+          "material_identity_key": "BiFeO3-BaTiO3 composite",
+          "fact_value": {
+            "value": "580",
+            "unit": "°C",
+            "qualifier": "over ~"
+          },
+          "evidence_ids": [
+            "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BFO-BTO composite"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.ceramint.2022.11.245",
+              "alias": "BFO",
+              "formula": "BiFeO3",
+              "source_text": "BiFeO3(BFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+                "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+                "reader": "pymupdf"
+              }
+            },
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.ceramint.2022.11.245",
+              "alias": "BTO",
+              "formula": "BaTiO3",
+              "source_text": "BaTiO3(BTO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+                "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gold_row": 47,
+      "gold": {
+        "paper_id": 30,
+        "material": "BiFeO3",
+        "tc_value": 830,
+        "tc_unit": "°C",
+        "page": 1,
+        "fact_role": "background",
+        "qualifier": "approximately",
+        "evidence": "The pristine BFO ceramic possesses a high Curie temperature of ~830 °C and Néel temperature of ~370 °C.",
+        "strict_scoring": true,
+        "gold_status": "ACCEPTED"
+      },
+      "status": "MATCH",
+      "status_label": "材料与数值对应",
+      "prediction_rows": [
+        51
+      ],
+      "numeric_candidate_rows": [
+        51
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "predictions": [
+        {
+          "prediction_row": 51,
+          "document_id": "10.1016/j.ceramint.2022.11.245",
+          "property_name": "Curie temperature",
+          "material_reported": "pristine BFO ceramic",
+          "material_normalized": "pristine BiFeO3 ceramic",
+          "material_identity_key": "pristine BiFeO3 ceramic",
+          "fact_value": {
+            "value": "830",
+            "unit": "°C",
+            "qualifier": "approximately"
+          },
+          "evidence_ids": [
+            "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "pristine BFO ceramic"
+          ],
+          "processing_issues": [],
+          "material_resolution": [
+            {
+              "tool": "article_abbreviation",
+              "document_id": "10.1016/j.ceramint.2022.11.245",
+              "alias": "BFO",
+              "formula": "BiFeO3",
+              "source_text": "BiFeO3(BFO)",
+              "context_source": {
+                "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+                "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+                "reader": "pymupdf"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "prediction_review": [
+    {
+      "prediction_row": 1,
+      "paper_id": 1,
+      "status": "MATCH",
+      "gold_rows": [
+        1
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "local-pdf/d13a6634f5c93180",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 2,
+      "paper_id": 10,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        7
+      ],
+      "note": "BF-BCT 未展开，母配方仍缺失。",
+      "prediction": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT",
+        "material_normalized": "BF-BCT",
+        "material_identity_key": "BF-BCT",
+        "fact_value": {
+          "value": "683",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        },
+        "material_reported_variants": [
+          "BF-BCT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 3,
+      "paper_id": 10,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        10
+      ],
+      "note": "BF-BCT-C 未展开，母配方与 CuO 添加信息未写全。",
+      "prediction": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-C",
+        "material_normalized": "BF-BCT-C",
+        "material_identity_key": "BF-BCT-C",
+        "fact_value": {
+          "value": "692",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        },
+        "material_reported_variants": [
+          "BF-BCT-C"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 4,
+      "paper_id": 10,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        9
+      ],
+      "note": "BF-BCT-M 未展开，母配方与 MnO2 添加信息未写全。",
+      "prediction": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-M",
+        "material_normalized": "BF-BCT-M",
+        "material_identity_key": "BF-BCT-M",
+        "fact_value": {
+          "value": "690",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        },
+        "material_reported_variants": [
+          "BF-BCT-M"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 5,
+      "paper_id": 10,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        8
+      ],
+      "note": "BF-BCT-CM 未展开，母配方与 CuO/MnO2 添加信息未写全。",
+      "prediction": {
+        "document_id": "10.1063/1.5131055",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-CM",
+        "material_normalized": "BF-BCT-CM",
+        "material_identity_key": "BF-BCT-CM",
+        "fact_value": {
+          "value": "687",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "frequency": "100 kHz"
+        },
+        "material_reported_variants": [
+          "BF-BCT-CM"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 6,
+      "paper_id": 12,
+      "status": "MATCH",
+      "gold_rows": [
+        13
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1007/s10854-022-08492-3",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 7,
+      "paper_id": 12,
+      "status": "MATCH",
+      "gold_rows": [
+        12
+      ],
+      "note": "变量代入与 Gold 母配方等价，853.1 K 正确；母配方候选选择仍保留人工 Review 提示。",
+      "prediction": {
+        "document_id": "10.1007/s10854-022-08492-3",
+        "property_name": "Curie temperature",
+        "material_reported": "y=0.24, x=0.01",
+        "material_normalized": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3 [y=0.24, x=0.01]",
+        "material_identity_key": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3 [y=0.24, x=0.01]",
+        "fact_value": {
+          "value": "853.1",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {
+          "E_bias": "0 V"
+        },
+        "material_reported_variants": [
+          "y=0.24, x=0.01"
+        ],
+        "processing_issues": [
+          "material_parent_inferred_review"
+        ],
+        "material_resolution": [
+          {
+            "tool": "variable_composition",
+            "document_id": "10.1007/s10854-022-08492-3",
+            "parent_formula": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+            "assignments": {
+              "y": "0.24",
+              "x": "0.01"
+            },
+            "source_text": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+            "expanded": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\12-CrMn共掺杂铁酸铋钛酸钡固溶体-2022-J Mater Sci Mater Electron.pdf",
+              "sha256": "8355ff3bb1678eb80e8a33232e0a7097fa6368f60060dedd9f7769fe27de6cda",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 8,
+      "paper_id": 14,
+      "status": "MATCH",
+      "gold_rows": [
+        14
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "local-pdf/f632a01543d4e2d3",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 9,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        20
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "material_normalized": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "material_identity_key": "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3",
+        "fact_value": {
+          "value": "703",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.6BiFeO3 - 0.4Bi0.5K0.5TiO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 10,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        18
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "material_normalized": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "material_identity_key": "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3",
+        "fact_value": {
+          "value": "690",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 11,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        22
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "material_normalized": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "material_identity_key": "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3",
+        "fact_value": {
+          "value": "727",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 12,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        15
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "material_normalized": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "material_identity_key": "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3",
+        "fact_value": {
+          "value": "634",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 13,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        16
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "material_normalized": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "material_identity_key": "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+        "fact_value": {
+          "value": "673",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 14,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        21
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "material_normalized": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "material_identity_key": "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2",
+        "fact_value": {
+          "value": "711",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 15,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        19
+      ],
+      "note": "预测 15 的 0.8 wt.%/698 K 完整对应；预测 18 是未赋值 x 的冗余不完整记录。Gold 的 relaxor 审查备注应保留。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+        "fact_value": {
+          "value": "698",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT",
+          "10_1063_5_0026210_FULL_TEXT_0006_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2",
+          "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "local_material_typography",
+            "source_text": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+              "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 16,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        17
+      ],
+      "note": "按 Gold 接受的表 I Tc=689 K、1.2 wt.% MnO2 配对核验；全文同时存在 relaxor Tm 讨论，不能仅按数值关联其他样品。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "material_normalized": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2",
+        "fact_value": {
+          "value": "689",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 17,
+      "paper_id": 15,
+      "status": "MATCH",
+      "gold_rows": [
+        23
+      ],
+      "note": "x=0 被写为 0 wt.% MnO2，与 Gold 不添加 MnO2 的母配方等价；732 K 保留。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BCT-Mn-x (x=0)",
+        "material_normalized": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2 (x=0)",
+        "material_identity_key": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2 (x=0)",
+        "fact_value": {
+          "value": "732",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BF-BCT-Mn-x (x=0)"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1063/5.0026210",
+            "alias": "BF-BCT-Mn-x",
+            "formula": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+            "source_text": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt. % MnO2(BF-BCT- Mn-x)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+              "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "variable_composition",
+            "document_id": "10.1063/5.0026210",
+            "parent_formula": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+            "assignments": {
+              "x": "0"
+            },
+            "source_text": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-xwt.%MnO2",
+            "expanded": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0wt.%MnO2",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\15-BFO、BCTO Mn掺杂-2020-JAP--Improved ferroelectric, piezoelectric, and magnetic.pdf",
+              "sha256": "082cfd0f8d1cdc7219200e71bbad1e7465ab5aadc1253c9c25319f0111712b50",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 18,
+      "paper_id": 15,
+      "status": "INCOMPLETE_DUPLICATE",
+      "gold_rows": [
+        19
+      ],
+      "note": "同一 Gold 事实已有更完整预测；本条未确定变量或未保留完整复合配比，不算额外 TP。",
+      "prediction": {
+        "document_id": "10.1063/5.0026210",
+        "property_name": "Curie temperature",
+        "material_reported": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "material_normalized": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "material_identity_key": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2",
+        "fact_value": {
+          "value": "698",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0026210_FULL_TEXT_0019_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2"
+        ],
+        "processing_issues": [
+          "material_variables_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 19,
+      "paper_id": 17,
+      "status": "MATCH",
+      "gold_rows": [
+        24
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1021/acsnano.2c07215",
+        "property_name": "Curie temperature",
+        "material_reported": "bulk BiFeO3",
+        "material_normalized": "bulk BiFeO3",
+        "material_identity_key": "bulk BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "bulk BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 20,
+      "paper_id": 19,
+      "status": "MATCH",
+      "gold_rows": [
+        26
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO ferrospinel",
+        "material_normalized": "Mn0.6Zn0.3Fe2.1O4 ferrospinel",
+        "material_identity_key": "Mn0.6Zn0.3Fe2.1O4 ferrospinel",
+        "fact_value": {
+          "value": "501",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "MZFO ferrospinel"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 21,
+      "paper_id": 19,
+      "status": "MATCH",
+      "gold_rows": [
+        27
+      ],
+      "note": "initial MZFO powder 的 518 K 正确；商业牌号记录为其他来源陈述，不能按同温度直接计成这一 Gold 行。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "initial MZFO powder",
+        "material_normalized": "initial Mn0.6Zn0.3Fe2.1O4 powder",
+        "material_identity_key": "initial Mn0.6Zn0.3Fe2.1O4 powder",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "initial MZFO powder"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 22,
+      "paper_id": 19,
+      "status": "ADDITIONAL_COMPARISON",
+      "gold_rows": [],
+      "note": "商业 Mn-Zn 牌号的 518 K 比较陈述；Gold 未单列，当前名称仍缺具体化学式，不当作初始粉体的额外 TP。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "material_normalized": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "material_identity_key": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan)"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 23,
+      "paper_id": 19,
+      "status": "MATCH",
+      "gold_rows": [
+        28
+      ],
+      "note": "预测 23 的 80/20 wt.% 配方及 518 K 完整对应；预测 24、32 未写全配比。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite (80 wt.% Bi0.9La0.1FeO3 / 20 wt.% Mn0.6Zn0.3Fe2.1O4)",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite (80 wt.% Bi0.9La0.1FeO3 / 20 wt.% Mn0.6Zn0.3Fe2.1O4)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO)"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 24,
+      "paper_id": 19,
+      "status": "INCOMPLETE_DUPLICATE",
+      "gold_rows": [
+        28
+      ],
+      "note": "同一 Gold 事实已有更完整预测；本条未确定变量或未保留完整复合配比，不算额外 TP。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+          "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 25,
+      "paper_id": 19,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        25
+      ],
+      "note": "已展开两相配方并保留 HPT，但该条结果未写出 80/20 wt.% 配比。不能用同温度的 MZFO fraction 代替复合材料。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite HPT",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite HPT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 26,
+      "paper_id": 19,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        29
+      ],
+      "note": "已展开两相配方，HPT 和 new FM order (T_C*) 保留；80/20 wt.% 配比仍未写入本条。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite HPT",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite HPT",
+        "fact_value": {
+          "value": "778",
+          "unit": "K",
+          "qualifier": "new FM order (T_C*)"
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite HPT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 27,
+      "paper_id": 19,
+      "status": "ADDITIONAL_PHASE",
+      "gold_rows": [],
+      "note": "原文明确将 367 K 赋给 HPT 复合材料中的 MZFO fraction；Gold 单列的是复合材料。保留组分相区别，不按同温度计为复合材料 TP。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO fraction",
+        "material_normalized": "Mn0.6Zn0.3Fe2.1O4 fraction",
+        "material_identity_key": "Mn0.6Zn0.3Fe2.1O4 fraction",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+          "10.1002_adfm.202113022_TABLE_0002",
+          "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "MZFO fraction"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 28,
+      "paper_id": 19,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        30
+      ],
+      "note": "BLFO 化学式及 fraction 正确，但 HPT 复合材料语境和 FE 转变类型只在 Evidence 中，尚未结构化保留。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO fraction",
+        "material_normalized": "Bi0.9La0.1FeO3 fraction",
+        "material_identity_key": "Bi0.9La0.1FeO3 fraction",
+        "fact_value": {
+          "value": "950",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+          "10.1002_adfm.202113022_TABLE_0002",
+          "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO fraction"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 29,
+      "paper_id": 19,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        25
+      ],
+      "note": "已展开两相配方并保留 HPT，但该条结果未写出 80/20 wt.% 配比。不能用同温度的 MZFO fraction 代替复合材料。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO nanocomposite HPT",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 nanocomposite HPT",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 nanocomposite HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO nanocomposite HPT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 30,
+      "paper_id": 19,
+      "status": "MATCH",
+      "gold_rows": [
+        27
+      ],
+      "note": "initial MZFO powder 的 518 K 正确；商业牌号记录为其他来源陈述，不能按同温度直接计成这一 Gold 行。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "MZFO powder (Mn0.6Zn0.3Fe2.1O4)",
+        "material_normalized": "Mn0.6Zn0.3Fe2.1O4 powder (Mn0.6Zn0.3Fe2.1O4)",
+        "material_identity_key": "Mn0.6Zn0.3Fe2.1O4 powder (Mn0.6Zn0.3Fe2.1O4)",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "MZFO powder (Mn0.6Zn0.3Fe2.1O4)"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 31,
+      "paper_id": 19,
+      "status": "ADDITIONAL_COMPARISON",
+      "gold_rows": [],
+      "note": "与预测 22 对应的商业牌号比较陈述，补入与 MZFO 相同化学计量的定义；Gold 未单列此来源。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO",
+        "material_normalized": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as Mn0.6Zn0.3Fe2.1O4",
+        "material_identity_key": "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as Mn0.6Zn0.3Fe2.1O4",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 32,
+      "paper_id": 19,
+      "status": "INCOMPLETE_DUPLICATE",
+      "gold_rows": [
+        28
+      ],
+      "note": "同一 Gold 事实已有更完整预测；本条未确定变量或未保留完整复合配比，不算额外 TP。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite processed by compression",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by compression",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by compression",
+        "fact_value": {
+          "value": "518",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite processed by compression"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 33,
+      "paper_id": 19,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        25
+      ],
+      "note": "已展开两相配方并保留 HPT，但该条结果未写出 80/20 wt.% 配比。不能用同温度的 MZFO fraction 代替复合材料。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO-MZFO composite processed by HPT",
+        "material_normalized": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by HPT",
+        "material_identity_key": "Bi0.9La0.1FeO3-Mn0.6Zn0.3Fe2.1O4 composite processed by HPT",
+        "fact_value": {
+          "value": "367",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0001"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BLFO-MZFO composite processed by HPT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "MZFO",
+            "formula": "Mn0.6Zn0.3Fe2.1O4",
+            "source_text": "Mn0.6Zn0.3Fe2.1O4(MZFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 34,
+      "paper_id": 19,
+      "status": "ADDITIONAL_PHASE",
+      "gold_rows": [],
+      "note": "Tc*=778 K 的 BLFO 组分相解释有原文支持；Gold 列的是 HPT 复合材料新 FM 有序。应保留相/复合材料区别及 HPT 背景。",
+      "prediction": {
+        "document_id": "10.1002/adfm.202113022",
+        "property_name": "Curie temperature",
+        "material_reported": "BLFO fraction",
+        "material_normalized": "Bi0.9La0.1FeO3 fraction",
+        "material_identity_key": "Bi0.9La0.1FeO3 fraction",
+        "fact_value": {
+          "value": "778",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10.1002_adfm.202113022_TABLE_0002"
+        ],
+        "conditions": {
+          "context": "T_C* = 778 K; internal stresses and magnetostriction stabilize FM interactions, above which BLFO fraction goes PM"
+        },
+        "material_reported_variants": [
+          "BLFO fraction"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1002/adfm.202113022",
+            "alias": "BLFO",
+            "formula": "Bi0.9La0.1FeO3",
+            "source_text": "Bi0.9La0.1FeO3(BLFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\19-高压扭转-2022-Adv Funct Materials - Novel Multiferroic‐Like Nanocomposite with High Pressure‐Modulated Magnetic and.pdf",
+              "sha256": "a4d5f50c8133ec3c5bb9988837f903f80bc253486bbdfbf51188127197b415dd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 35,
+      "paper_id": 20,
+      "status": "MATCH",
+      "gold_rows": [
+        32
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "local-pdf/deb70641057677d8",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 36,
+      "paper_id": 20,
+      "status": "MATCH",
+      "gold_rows": [
+        31
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "local-pdf/deb70641057677d8",
+        "property_name": "Curie temperature",
+        "material_reported": "CrFe2O4",
+        "material_normalized": "CrFe2O4",
+        "material_identity_key": "CrFe2O4",
+        "fact_value": {
+          "value": "420",
+          "unit": "K",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "CrFe2O4"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 37,
+      "paper_id": 22,
+      "status": "MATCH",
+      "gold_rows": [
+        33
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "local-pdf/7c100201e7883b3e",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3 (BFO)"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 38,
+      "paper_id": 24,
+      "status": "MATCH",
+      "gold_rows": [
+        35
+      ],
+      "note": "BiFeO3/1100 K 对应，但 Gold 和原文的 approximately 未在本条 qualifier 中保留。",
+      "prediction": {
+        "document_id": "10.1063/5.0133946",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0133946_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 39,
+      "paper_id": 24,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        34
+      ],
+      "note": "774 K 和 y=.23/x=0 样品对应，当前仅部分展开；缺完整外层配比和 BTM 展开，不能把现有字符串当最终三元配方。原文为约 774 K，预测还丢失了近似限定。",
+      "prediction": {
+        "document_id": "10.1063/5.0133946",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BNT-BTM (y = 0.23, x = 0.00)",
+        "material_normalized": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3-BTM (y = 0.23, x = 0.00)",
+        "material_identity_key": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3-BTM (y = 0.23, x = 0.00)",
+        "fact_value": {
+          "value": "774",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0133946_FULL_TEXT_0009_TEXT"
+        ],
+        "conditions": {
+          "sample_state": "as-prepared"
+        },
+        "material_reported_variants": [
+          "BF-BNT-BTM (y = 0.23, x = 0.00)"
+        ],
+        "processing_issues": [
+          "material_parent_unresolved",
+          "material_name_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1063/5.0133946",
+            "alias": "BF-BNT",
+            "formula": "0.9BiFeO3-0.1Bi0.5Na0.5TiO3",
+            "source_text": "0.9BiFeO3-0.1Bi0.5 Na0.5TiO3(BF- BNT)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\24-三相复合临界-2023-Applied Physics Letters-Enhanced electric field control of magnetism in ternary.pdf",
+              "sha256": "532b43cb161178ed876c37c9a7920959183db736de1253e69f625fb4cd2ea6aa",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 40,
+      "paper_id": 25,
+      "status": "MATCH",
+      "gold_rows": [
+        38
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1103",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3 (BFO)"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 41,
+      "paper_id": 25,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        37
+      ],
+      "note": "undoped 与 650°C 对应；PTO 已展开，BFO 仍未展开，x 未确定。",
+      "prediction": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "undoped (1-x)BFO-xPTO",
+        "material_normalized": "undoped (1-x)BFO-xPbTiO3",
+        "material_identity_key": "undoped (1-x)BFO-xPbTiO3",
+        "fact_value": {
+          "value": "650",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "undoped (1-x)BFO-xPTO"
+        ],
+        "processing_issues": [
+          "material_name_unresolved",
+          "material_variables_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1143/JPSJ.7.5",
+            "alias": "PTO",
+            "formula": "PbTiO3",
+            "source_text": "PbTiO3(PTO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+              "sha256": "ffcb831eb3ee603855e1cc6957fa3dc286fb54c22d7a6e031bf6e42a88541e2f",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 42,
+      "paper_id": 25,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        36
+      ],
+      "note": "La-substituted 与 227°C 对应；PTO 已展开，BFO 仍未展开。原文未明确给出 La 掺杂量，不应猜测补齐。",
+      "prediction": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "lanthanum-substituted (1-x)BFO-xPTO",
+        "material_normalized": "lanthanum-substituted (1-x)BFO-xPbTiO3",
+        "material_identity_key": "lanthanum-substituted (1-x)BFO-xPbTiO3",
+        "fact_value": {
+          "value": "227",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "lanthanum-substituted (1-x)BFO-xPTO"
+        ],
+        "processing_issues": [
+          "material_name_unresolved",
+          "material_variables_unresolved"
+        ],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1143/JPSJ.7.5",
+            "alias": "PTO",
+            "formula": "PbTiO3",
+            "source_text": "PbTiO3(PTO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\25-Nd掺杂磁电耦合不对-2023-JAC-钕（Nd）掺杂BiFeO3-PbTiO3固溶体的储能和磁电耦合.pdf",
+              "sha256": "ffcb831eb3ee603855e1cc6957fa3dc286fb54c22d7a6e031bf6e42a88541e2f",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 43,
+      "paper_id": 25,
+      "status": "REJECT_DEFINITE_TC",
+      "gold_rows": [],
+      "note": "约 320°C 为介电异常；第 4 页仅推测可能对应 Tc，第 6 页明确描述频率依赖及 relaxor 行为。不能作为确定的 normal Tc，建议剔出确定 Tc 数据集或降级。",
+      "prediction": {
+        "document_id": "10.1143/JPSJ.7.5",
+        "property_name": "Curie temperature",
+        "material_reported": "(BNFPT)x ceramics with Nd substitution",
+        "material_normalized": "(BNFPT)x ceramics with Nd substitution",
+        "material_identity_key": "(BNFPT)x ceramics with Nd substitution",
+        "fact_value": {
+          "value": "320",
+          "unit": "°C",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "(BNFPT)x ceramics with Nd substitution"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 44,
+      "paper_id": 26,
+      "status": "MATCH",
+      "gold_rows": [
+        39
+      ],
+      "note": "PZT 相、355°C、3BFO_n/7PZT_m 和 650°C 烧结条件均与 Gold 对应；Gold 本身也使用 PZT 标签，完整 Zr/Ti 比例仍未明确。",
+      "prediction": {
+        "document_id": "local-pdf/4d3fe4ad46460542",
+        "property_name": "Curie temperature",
+        "material_reported": "PZT",
+        "material_normalized": "PZT",
+        "material_identity_key": "PZT",
+        "fact_value": {
+          "value": "355",
+          "unit": "°C",
+          "qualifier": "around"
+        },
+        "evidence_ids": [
+          "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+          "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_EQ_01"
+        ],
+        "conditions": {
+          "sample": "3BFO_n/7PZT_m composite",
+          "sintering_temperature": "650 °C"
+        },
+        "material_reported_variants": [
+          "PZT"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 45,
+      "paper_id": 27,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        40
+      ],
+      "note": "x=.4、约 742.6 K 对应，BF-BKT-BT 母配方未展开。禁止拿内层二元配方替代整个三元体系。",
+      "prediction": {
+        "document_id": "local-pdf/e0b7c7f789f25ed2",
+        "property_name": "Curie temperature",
+        "material_reported": "BF-BKT-BT (x=0.4)",
+        "material_normalized": "BF-BKT-BT (x=0.4)",
+        "material_identity_key": "BF-BKT-BT (x=0.4)",
+        "fact_value": {
+          "value": "742.6",
+          "unit": "K",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BF-BKT-BT (x=0.4)"
+        ],
+        "processing_issues": [
+          "material_parent_unresolved",
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 46,
+      "paper_id": 28,
+      "status": "MATCH",
+      "gold_rows": [
+        43
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "property_name": "ferroelectric Curie temperature",
+        "material_reported": "BFO",
+        "material_normalized": "BiFeO3",
+        "material_identity_key": "BiFeO3",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BFO"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.actamat.2023.119044",
+            "alias": "BFO",
+            "formula": "BiFeO3",
+            "source_text": "BiFeO3(BFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\28-2023-Acta Mater-Control of magnetism at low electric fields in multiferroic 0.58BiFeO3–0.42Bi0.5K0.5TiO3  near morphotropic phase boundary.pdf",
+              "sha256": "418a7d73d29925a3cbda3570149665b9200185bb9c550d379fc57bc61502e714",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 47,
+      "paper_id": 28,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        42
+      ],
+      "note": "约 671.5 K 和晶体样品对应，BFBKT 尚未展开成 0.58/0.42 配方。",
+      "prediction": {
+        "document_id": "10.1016/j.actamat.2023.119044",
+        "property_name": "Curie temperature",
+        "material_reported": "BFBKT crystal",
+        "material_normalized": "BFBKT crystal",
+        "material_identity_key": "BFBKT crystal",
+        "fact_value": {
+          "value": "671.5",
+          "unit": "K",
+          "qualifier": "about"
+        },
+        "evidence_ids": [
+          "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BFBKT crystal"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 48,
+      "paper_id": 29,
+      "status": "MATCH",
+      "gold_rows": [
+        45
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1111/jace.19555",
+        "property_name": "Curie temperature",
+        "material_reported": "BiFeO3 (BFO)",
+        "material_normalized": "BiFeO3 (BFO)",
+        "material_identity_key": "BiFeO3 (BFO)",
+        "fact_value": {
+          "value": "1100",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0002_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BiFeO3 (BFO)"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 49,
+      "paper_id": 29,
+      "status": "MATCH",
+      "gold_rows": [
+        44
+      ],
+      "note": "代入 x=.03/y=.27 后与 Gold 等价，约 795.2 K 对应；旧重复文本/公式记录已合并。",
+      "prediction": {
+        "document_id": "10.1111/jace.19555",
+        "property_name": "Curie temperature",
+        "material_reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+        "material_normalized": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3 (x=0.03, y=0.27)",
+        "material_identity_key": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3 (x=0.03, y=0.27)",
+        "fact_value": {
+          "value": "795.2",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+          "10_1111_jace_19555_FULL_TEXT_0013_EQ_01"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+          "(1-y)BFC-yBTM (x = 0.03, y = 0.27)"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1111/jace.19555",
+            "alias": "BFC",
+            "formula": "BiFe1-xCrxO3",
+            "source_text": "BiFe1-xCrxO3(BFC)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+              "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1111/jace.19555",
+            "alias": "BTM",
+            "formula": "BaTi1-xMnxO3",
+            "source_text": "BaTi1-xMnxO3(BTM)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+              "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "variable_composition",
+            "document_id": "10.1111/jace.19555",
+            "parent_formula": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+            "assignments": {
+              "x": "0.03",
+              "y": "0.27"
+            },
+            "source_text": "(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3",
+            "expanded": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\29-(1-y)BiFe1-xCrxO3-yBaTi1-xMnxO3固溶体-2023-美陶- Lattice‐mediated room temperature magnetoelectric effect in  1‐y.pdf",
+              "sha256": "70f9c2e4a611e7231a25e95c09fab7fbca51b9588045dbbf3c1148302887a883",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 50,
+      "paper_id": 3,
+      "status": "INCOMPLETE",
+      "gold_rows": [
+        2
+      ],
+      "note": "仅有 24 h 样品标签，缺 0.8BaTiO3–0.2Ni0.5Co0.5Fe2O4 母配方。",
+      "prediction": {
+        "document_id": "local-pdf/d6275e45598fdba0",
+        "property_name": "Curie temperature",
+        "material_reported": "Composite sample of 24 h",
+        "material_normalized": "Composite sample of 24 h",
+        "material_identity_key": "Composite sample of 24 h",
+        "fact_value": {
+          "value": "129",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "Composite sample of 24 h"
+        ],
+        "processing_issues": [
+          "material_name_unresolved"
+        ]
+      }
+    },
+    {
+      "prediction_row": 51,
+      "paper_id": 30,
+      "status": "MATCH",
+      "gold_rows": [
+        47
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "property_name": "Curie temperature",
+        "material_reported": "pristine BFO ceramic",
+        "material_normalized": "pristine BiFeO3 ceramic",
+        "material_identity_key": "pristine BiFeO3 ceramic",
+        "fact_value": {
+          "value": "830",
+          "unit": "°C",
+          "qualifier": "approximately"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "pristine BFO ceramic"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.ceramint.2022.11.245",
+            "alias": "BFO",
+            "formula": "BiFeO3",
+            "source_text": "BiFeO3(BFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+              "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 52,
+      "paper_id": 30,
+      "status": "MATCH",
+      "gold_rows": [
+        46
+      ],
+      "note": "Gold 明确为非严格下界事实；预测保留 over ~580°C，不能当作精确 580°C 或误报普通 FP。",
+      "prediction": {
+        "document_id": "10.1016/j.ceramint.2022.11.245",
+        "property_name": "Curie temperature",
+        "material_reported": "BFO-BTO composite",
+        "material_normalized": "BiFeO3-BaTiO3 composite",
+        "material_identity_key": "BiFeO3-BaTiO3 composite",
+        "fact_value": {
+          "value": "580",
+          "unit": "°C",
+          "qualifier": "over ~"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "BFO-BTO composite"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.ceramint.2022.11.245",
+            "alias": "BFO",
+            "formula": "BiFeO3",
+            "source_text": "BiFeO3(BFO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+              "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+              "reader": "pymupdf"
+            }
+          },
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.ceramint.2022.11.245",
+            "alias": "BTO",
+            "formula": "BaTiO3",
+            "source_text": "BaTiO3(BTO)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\30-Shahid Atiq三相复合-2023-JAC-Optimization of magnetoelectric coupling in BiFeO3-BaTiO3-MnFe2O4 tri-phase composites for ultra-sensitive devices.pdf",
+              "sha256": "5dd645cc02f12d1cfa931a90668f444a329e272762e72d76e1687ad156e2aadd",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 53,
+      "paper_id": 4,
+      "status": "MATCH",
+      "gold_rows": [
+        3
+      ],
+      "note": "配方正确，随机混合条件在 conditions 或材料名中保留；同一事实有不同 Evidence/限定的重复记录。",
+      "prediction": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+        "fact_value": {
+          "value": "720",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {
+          "phase_arrangement": "randomly mixed phases"
+        },
+        "material_reported_variants": [
+          "0.66BaTiO3-0.33CoFe2O4"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 54,
+      "paper_id": 4,
+      "status": "MATCH",
+      "gold_rows": [
+        4
+      ],
+      "note": "配方正确，三层/层状条件保留；不要与 720 K 的随机混合样品混配。",
+      "prediction": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "0.66BaTiO3-0.33CoFe2O4",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4",
+        "fact_value": {
+          "value": "746",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+        ],
+        "conditions": {
+          "phase_arrangement": "tri-layer/layered structure"
+        },
+        "material_reported_variants": [
+          "0.66BaTiO3-0.33CoFe2O4"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 55,
+      "paper_id": 4,
+      "status": "MATCH",
+      "gold_rows": [
+        5
+      ],
+      "note": "材料与数值、单位对应；允许配方排版、近似符号和样品描述的等价写法，不表示所有元数据字段全等。",
+      "prediction": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "CoFe2O4",
+        "material_normalized": "CoFe2O4",
+        "material_identity_key": "CoFe2O4",
+        "fact_value": {
+          "value": "793",
+          "unit": "K",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "CoFe2O4"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 56,
+      "paper_id": 4,
+      "status": "MATCH",
+      "gold_rows": [
+        3
+      ],
+      "note": "配方正确，随机混合条件在 conditions 或材料名中保留；同一事实有不同 Evidence/限定的重复记录。",
+      "prediction": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "BT-CF randomly mixed ceramic composite",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4 randomly mixed ceramic composite",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 randomly mixed ceramic composite",
+        "fact_value": {
+          "value": "720",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+        ],
+        "conditions": {
+          "measurement": "field-cooled magnetization",
+          "magnetic_field": "10 kOe out-of-plane"
+        },
+        "material_reported_variants": [
+          "BT-CF randomly mixed ceramic composite"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.jallcom.2019.05.068",
+            "alias": "BT-CF",
+            "formula": "0.66BaTiO3-0.33CoFe2O4",
+            "source_text": "0.66BaTiO3 - 0.33CoFe2O4(BT-CF)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+              "sha256": "eaaa02459fb4273bba1ede2a288dea4c7dad690f6515c6c06000a22498b1b891",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 57,
+      "paper_id": 4,
+      "status": "MATCH",
+      "gold_rows": [
+        4
+      ],
+      "note": "配方正确，三层/层状条件保留；不要与 720 K 的随机混合样品混配。",
+      "prediction": {
+        "document_id": "10.1016/j.jallcom.2019.05.068",
+        "property_name": "Curie temperature",
+        "material_reported": "BT-CF layered ceramic composite",
+        "material_normalized": "0.66BaTiO3-0.33CoFe2O4 layered ceramic composite",
+        "material_identity_key": "0.66BaTiO3-0.33CoFe2O4 layered ceramic composite",
+        "fact_value": {
+          "value": "746",
+          "unit": "K",
+          "qualifier": "~"
+        },
+        "evidence_ids": [
+          "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT"
+        ],
+        "conditions": {
+          "measurement": "field-cooled magnetization",
+          "magnetic_field": "10 kOe out-of-plane"
+        },
+        "material_reported_variants": [
+          "BT-CF layered ceramic composite"
+        ],
+        "processing_issues": [],
+        "material_resolution": [
+          {
+            "tool": "article_abbreviation",
+            "document_id": "10.1016/j.jallcom.2019.05.068",
+            "alias": "BT-CF",
+            "formula": "0.66BaTiO3-0.33CoFe2O4",
+            "source_text": "0.66BaTiO3 - 0.33CoFe2O4(BT-CF)",
+            "context_source": {
+              "path": "F:\\Python_Project\\ComProScanner\\tmp\\offline_reprocess_001_030\\pdfs\\4-层状和混合陶瓷对比-2019-JAC-Functional properties of randomly mixed and layered BaTiO3-CoFe2O4 ceramic composites close to the percolation limit.pdf",
+              "sha256": "eaaa02459fb4273bba1ede2a288dea4c7dad690f6515c6c06000a22498b1b891",
+              "reader": "pymupdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "prediction_row": 58,
+      "paper_id": 6,
+      "status": "UNCERTAIN_BOUND",
+      "gold_rows": [],
+      "note": "PDF 第 4 页仅说 <200°C 的峰可能关联 BaTiO3 Tc。预测保留 below，却丢失 may be related 的不确定性，且自身 Evidence 缺含数值的前半句。不能当成 Tc=200°C 或确定上界事实。",
+      "prediction": {
+        "document_id": "10.1016/j.ceramint.2019.12.165",
+        "property_name": "Curie temperature",
+        "material_reported": "BaTiO3",
+        "material_normalized": "BaTiO3",
+        "material_identity_key": "BaTiO3",
+        "fact_value": {
+          "value": "200",
+          "unit": "°C",
+          "qualifier": "below"
+        },
+        "evidence_ids": [
+          "10_1016_j_ceramint_2019_12_165_FULL_TEXT_0014_TEXT"
+        ],
+        "conditions": {
+          "frequency_dependence": "independent"
+        },
+        "material_reported_variants": [
+          "BaTiO3"
+        ],
+        "processing_issues": []
+      }
+    },
+    {
+      "prediction_row": 59,
+      "paper_id": 7,
+      "status": "MATCH",
+      "gold_rows": [
+        6
+      ],
+      "note": "原文描述 BaTiO3 冷却时 cubic→tetragonal 的 120°C 转变；预测 cubic 标签是相变起始相，不是新的材料。",
+      "prediction": {
+        "document_id": "10.1063/5.0036518",
+        "property_name": "Curie temperature",
+        "material_reported": "cubic BaTiO3",
+        "material_normalized": "cubic BaTiO3",
+        "material_identity_key": "cubic BaTiO3",
+        "fact_value": {
+          "value": "120",
+          "unit": "°C",
+          "qualifier": null
+        },
+        "evidence_ids": [
+          "10_1063_5_0036518_FULL_TEXT_0005_TEXT"
+        ],
+        "conditions": {},
+        "material_reported_variants": [
+          "cubic BaTiO3"
+        ],
+        "processing_issues": []
+      }
+    }
+  ]
+}

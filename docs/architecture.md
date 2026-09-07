@@ -1,172 +1,60 @@
-# ComProScanner project architecture
+# 四个模块与数据边界
 
-This repository keeps the public ComProScanner processors and tools, and adds a
-traceable evidence-first workflow for material-property extraction.
+## documents：文献到 Article
 
-## Corpus boundary
+本地 PDF、下载 PDF 和 Wiley PDF 使用同一 Docling 解析器，输出 Markdown 后进入统一 Article。
+Elsevier、Springer、IOP 的原生 XML 使用已有格式适配器，保留其原始文件并汇入相同的 Article 契约；不会为了统一格式把 XML 再变成 PDF。
 
-`pdfs/manual/` is reserved for user-supplied PDFs. API downloads go to a
-source-specific directory under `pdfs/downloaded/`. Files accepted by the
-normalizer are represented in `pdfs/normalized/`; invalid inputs go to
-`pdfs/quarantine/`. Discovery metadata and manifests belong under
-`outputs/literature/`, never beside the PDFs.
+`documents/schemas/article_csv.py` 定义 Article：文献标识、论文标题、完整正文、章节、表格、图片清单、来源路径、文件哈希和扩展元数据。
+未知章节也保留在正文中。`is_property_mentioned` 只是历史诊断字段，不会剔除文章。
 
-`comproscanner init-corpus --root pdfs` creates this layout locally and makes
-no network or model calls.
+每份 Docling 输入另存原始 PDF、`article.md`、`document.json`、页面图和全部识别出的图片／表格图。资产清单明确记录导出错误。
+“完整保存”指原始文件和解析产物完整保留，不意味着 OCR 或版面识别必然无误。
+原始文献不因关键词未命中而丢弃图片。
 
-## Side-effect boundaries
+出版社适配器只生成文献数据，不再访问 MySQL 或创建隐藏的向量库。
+IOP 的整理操作在工作副本上进行；原始输入目录不被整理过程删除。CDN 图片下载由网络执行许可控制。
 
-- `presets`, `init-corpus`, `prepare-evidence`, `review`, and `evaluate` are
-  local commands.
-- `process-articles` is plan-only by default. Actual parsing requires
-  `--execute-processing`; a network-backed source additionally requires
-  `--execute-network`.
-- `discover` and `acquire-oa` require `--execute-network`.
-- `extract` requires `--execute`.
-- Importing `comproscanner` or showing CLI help does not load CrewAI, LiteLLM,
-  embedding models, or telemetry.
+## evidence：一次切分、五个工具
 
-## Canonical normalization
+统一切分器从 Article 的 `full_text` 生成 TextChunk。章节、编号和文字保持来源关联。
+末尾可识别的参考文献区域被标记，在常规检索中跳过，但仍保留在文章和切分产物中。
 
-Publisher and PDF processors may retain their format-specific parsing logic,
-but their CSV outputs converge through one command:
+| preset 工具名 | 职责 |
+|---|---|
+| `rule_text` | 候选关键词／正则命中统一文本块 |
+| `physbert` | 对相同文本块建库，按属性查询检索 |
+| `table` | 选择并保存表格原文、标题、行列与注释 |
+| `figure` | 选择图片、标题、邻近正文和原图位置 |
+| `equation` | 保留公式及附近原始解释 |
 
-```bash
-comproscanner normalize --csv first.csv --csv second.csv --output article.csv
-```
+候选文本与 RAG 命中相同 chunk 时生成一条文本 Evidence，记录两种检索来源。
+停用的工具不会执行其来源读取。工具不负责判断某个材料属性是否真实成立。
 
-The command sanitizes NUL bytes, upgrades legacy columns, validates the schema,
-and de-duplicates by `document_id`. `full_text` is the authoritative textual
-payload: local PDF parsing writes the complete parser Markdown with only unsafe
-control characters removed, while the legacy publisher
-adapter composes it from all preserved sections. `paper_id`, `source_path`, and
-`file_hash` keep local corpus identity independent of DOI availability.
-`comproscanner sources` lists the registered raw inputs and their
-credential/network requirements.
+## extraction：每条 Evidence 独立抽取
 
-The processor entry point is likewise shared:
+文本、表格、公式：identifier → 被接受后 extractor。
+图片：vision 读取像素 → extractor 形成结构化事实。
 
-```bash
-comproscanner process-articles --source manual_pdf --folder pdfs/manual
-comproscanner process-articles --source downloaded_pdf --folder pdfs/downloaded/elsevier
-comproscanner process-articles --source springer --doi-file dois.txt
-```
+不把整篇文章的 Evidence 合并后发送。一个 Evidence 失败会记录错误，后续 Evidence 继续执行。
+保留原始响应和逐条检查点。Tc 的科学提示词、完整消息模板和 Evidence 规则有冻结回归测试。
+没有重新接入旧 CrewAI 流程；其中曾改变 Tc 结果的清洗／多 agent 编排不属于正式流程。
 
-These examples only print validated plans. The first two map to the existing
-`PDFsProcessor`; publisher names map to their existing processors. Local plans
-disable DOI/metadata lookups unless network execution is explicitly enabled.
-The processors only produce Article data in this workflow: their historical
-per-article vector-database side effect is disabled. Vector retrieval remains
-available as an explicit Evidence provider. This preserves the tools while
-removing the second hidden extraction path and the need for a new Python runner
-for each batch.
+## results：材料恢复到最终表格
 
-## Stable pipeline
+使用同一篇文章的上下文和原 PDF 文字，展开明确缩写、恢复母配方，再代入当前事实自己的变量赋值。
+不会借用另一篇文章或另一个样品的变量。未能确定的材料名称保留，并记录待审查原因。
+保守合并保留所有 Evidence；不同条件、限定或属性扩展字段不会被当作相同事实合并。
 
-```text
-paper discovery
-  -> lawful full-text acquisition
-  -> PDF or publisher-XML processor
-  -> canonical article CSV
-  -> canonical TextChunks and non-text source units
-  -> Evidence
-  -> per-Evidence identifier
-  -> per-Evidence extractor
-  -> Fact processors and conservative merge
-  -> prediction JSON and review workbook
-  -> accepted Gold and strict evaluation
-```
+JSON 保留原始材料名、恢复名、值、单位、条件、限定、材料恢复过程及 Evidence IDs。
+表格额外关联论文标题、DOI、来源及可用的出版社元数据；未知信息留空。
+Review 只由人工决定接受、拒绝或修改，抽取运行不会自动改写 Gold。
 
-The current validated domain is Curie temperature. Scientific inclusion policy
-remains in `presets/curie_temperature.py`; processing, paths, models, and batch
-selection do not belong in that preset.
+## 编排与扩展
 
-## Data contracts
+`cli/` 按 documents、evidence、extraction、results、run 分开编排。
+`run` 是正式端到端入口；阶段命令使用相同实现。
+各阶段记录配置和状态。恢复运行前检查配置与输入，避免把不同策略混在一次运行中。
 
-`schemas/article_csv.py` defines the CSV columns shared by local PDFs and every
-publisher processor. Historical processor frames pass through a non-lossy
-adapter while processors are migrated. Missing sections are allowed; missing
-columns or document identifiers are not. `is_property_mentioned` is retained
-only as compatibility/diagnostic metadata; it never removes Article text or
-gates the canonical Evidence stage.
-
-`chunking/text_chunker.py` produces the only normal-text segmentation from
-`full_text`. An exact terminal References/Bibliography heading is represented
-as `section=references`; the text stays in Article and chunk artifacts, but
-rule, vector, and equation Evidence providers skip those pure bibliography
-chunks by default. Ambiguous early headings remain normal text to protect
-recall in multi-column parser output. Chunks
-never cross section boundaries, prefer natural paragraphs, and split oversized
-paragraphs with overlap. Fixed three-sentence context is not used.
-
-## Evidence
-
-Evidence preserves original article content. It does not classify statements as
-background, cited work, or current work.
-
-- `TextEvidence`: one canonical TextChunk selected by rules, PhysBERT, or both.
-- `TableEvidence`: caption, headers, selected rows, units, and footnotes.
-- `FigureEvidence`: original image reference, caption, nearby original text, and
-  later vision output.
-- `EquationEvidence`: equation and its nearby original explanatory text.
-
-Rules and RAG are retrieval methods, not different evidence types. Both operate
-on the same TextChunk collection and return `chunk_id`. If both select one chunk,
-the model sees it once and the evidence records both methods.
-
-## Agent boundary
-
-Each Evidence is handled independently. Qwen performs the identifier decision;
-accepted text/table/equation Evidence is extracted by DeepSeek. Figure pixels
-require a configured vision model before their result is formatted. One
-Evidence failure does not stop later Evidence or papers.
-
-External calls require an explicit CLI execution flag. Preparing CSV, chunks,
-Evidence, manifests, and review structures is local-only.
-
-## Configurable execution
-
-The property preset declares the default Evidence providers. A run may override
-them without editing the pipeline by repeating `--provider`. Provider factories
-are resolved through `EvidenceProviderRegistry`; `physbert` uses the same
-canonical chunks as rule retrieval and remains opt-in because it loads a local
-embedding model.
-
-`comproscanner run` accepts an Article CSV, processor CSVs, or registered raw
-PDF/publisher sources. Raw processors execute in the run's own
-`processor_workspace`, then normalize into that run's canonical `article.csv`
-before Evidence preparation, extraction, review, and evaluation. It prints a
-plan by default. `--execute-pipeline` permits processing and local stages,
-`--execute-models` permits Qwen/DeepSeek/VLM stages, and `--execute-network`
-separately permits publisher and optional network tools such as Material
-Parsers.
-
-Each stage is recorded in `stage_status.json`; Evidence preparation checkpoints
-each document and extraction checkpoints each Evidence. `--resume` skips those
-completed records, including recorded failures, so an interruption or one bad
-paper does not repeat completed work. Replacement is explicit through
-`--force`, which is mutually exclusive with `--resume`.
-
-Fact normalization is also pluggable. The safe default preserves the exact
-reported material. `material-parser-api` adapts the historical formula parser
-without importing CrewAI, caches repeated formulas, and falls back to the
-reported material if the service cannot resolve a value.
-
-## Facts and review
-
-Facts retain reported and normalized material names, value, qualifier, unit,
-conditions, and every supporting `evidence_id`. Initial merging is deliberately
-strict: no implicit K/°C conversion, tolerance merge, or approximate-value
-collapse.
-
-The review workbook uses one Fact per row and combines all supporting original
-Evidence into one visible cell. Human `ACCEPT`, `REJECT`, or `MODIFY` decisions
-produce Gold; prediction runs never overwrite Gold.
-
-## Extension boundary
-
-New properties define a preset: scientific scope, signals, units, vector
-queries, and model instructions. New source-finding tools implement an Evidence
-provider. New normalization tools implement a Fact processor. New exports,
-metrics, graphs, or visualizations implement a result processor. None requires
-copying the PDF processors or the main workflow.
+新属性加入 preset；新的来源适配器输出 Article；新 Evidence 工具输出统一 Evidence；新导出工具读取最终 Facts。
+`reference/` 不在安装路径内，也不被正式源码或测试导入。

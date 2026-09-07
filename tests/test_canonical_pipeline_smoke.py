@@ -1,8 +1,8 @@
 """Small offline acceptance test for the canonical production contracts."""
 
-from comproscanner.evaluation import score_exact_facts
-from comproscanner.facts import Fact, FactValue, merge_facts
-from comproscanner.pipeline import EvidencePreparationPipeline
+from comproscanner.results.evaluation import score_exact_facts
+from comproscanner.results.facts import Fact, FactValue, merge_facts
+from comproscanner.evidence.preparation import EvidencePreparationPipeline
 from comproscanner.results import write_review_workbook
 
 
@@ -40,8 +40,8 @@ def test_article_to_evidence_to_fact_to_review_to_metrics(tmp_path):
             "paper_id": 1,
             "property": "Tc",
             "material": "BiFeO3",
-            "tc_value": 1103,
-            "tc_unit": "K",
+            "value": 1103,
+            "unit": "K",
             "strict_scoring": True,
         }
     ]

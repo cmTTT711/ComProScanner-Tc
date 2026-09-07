@@ -1,0 +1,14 @@
+{
+  "openai/qwen-flash": {
+    "calls": 716,
+    "prompt_tokens": 786470,
+    "completion_tokens": 13604,
+    "total_tokens": 800074
+  },
+  "deepseek/deepseek-v4-flash": {
+    "calls": 264,
+    "prompt_tokens": 722068,
+    "completion_tokens": 46096,
+    "total_tokens": 768164
+  }
+}

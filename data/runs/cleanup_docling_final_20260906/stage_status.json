@@ -1,0 +1,14 @@
+{
+  "process": {
+    "status": "COMPLETE",
+    "exit_code": 0
+  },
+  "normalize": {
+    "status": "COMPLETE",
+    "exit_code": 0
+  },
+  "prepare": {
+    "status": "COMPLETE",
+    "exit_code": 0
+  }
+}

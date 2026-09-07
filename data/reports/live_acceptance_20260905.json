@@ -1,0 +1,328 @@
+{
+  "date": "2026-09-05",
+  "overall_status": "NOT_ACCEPTED_FOR_PRODUCTION",
+  "scope": {
+    "papers": [
+      1,
+      4,
+      12,
+      19,
+      30
+    ],
+    "paid_evidence_units": 7,
+    "full_pdf_reparse": false,
+    "full_paper_recall_evaluation": false,
+    "new_30_paper_benchmark": false,
+    "main_material_normalizer": "identity"
+  },
+  "operational_results": {
+    "successful_model_http_requests": 14,
+    "prior_network_blocked_attempts": 7,
+    "total_model_request_attempts": 21,
+    "authorized_model_request_limit": 24,
+    "provider_reported_tokens": {
+      "prompt_tokens": 19570,
+      "completion_tokens": 1569,
+      "total_tokens": 21139
+    },
+    "api_currency_cost": null,
+    "tc_raw_facts": 15,
+    "tc_final_facts": 14,
+    "band_gap_final_facts": 0,
+    "standalone_material_service_probes": 1,
+    "material_service_result": "HTTP 503; diagnostic retained; probe stopped"
+  },
+  "tc_scientific_audit": [
+    {
+      "prediction_row_1based": 1,
+      "document_id": "local-pdf/d13a6634f5c93180",
+      "material_reported": "BiFeO3",
+      "value": "1103",
+      "unit": "K",
+      "evidence_ids": [
+        "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+      ],
+      "disposition": "supported_core_relation",
+      "audit_issues": [],
+      "note": "1103 K is ferroelectric Tc; the antiferromagnetic 643 K was correctly excluded.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 2,
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "material_reported": "0.66BaTiO3-0.33CoFe2O4 randomly mixed composite",
+      "value": "720",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+      ],
+      "disposition": "supported_relation_conditions_not_structured",
+      "audit_issues": [
+        "sample_structure_only_in_material_string"
+      ],
+      "note": "720 K randomly mixed / 746 K tri-layer are correctly distinguished in the material strings.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 3,
+      "document_id": "10.1016/j.jallcom.2019.05.068",
+      "material_reported": "0.66BaTiO3-0.33CoFe2O4 tri-layer composite",
+      "value": "746",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT"
+      ],
+      "disposition": "supported_relation_conditions_not_structured",
+      "audit_issues": [
+        "sample_structure_only_in_material_string"
+      ],
+      "note": "720 K randomly mixed / 746 K tri-layer are correctly distinguished in the material strings.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 4,
+      "document_id": "10.1007/s10854-022-08492-3",
+      "material_reported": "y=0.24, x=0.01",
+      "value": "853.1",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_host_formula",
+        "approximation_not_retained"
+      ],
+      "note": "853.1 K at E_bias=0 V is supported, but x/y labels have no host formula in this evidence.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 5,
+      "document_id": "10.1007/s10854-022-08492-3",
+      "material_reported": "y=0.24, x=0.03",
+      "value": "766.1",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+      ],
+      "disposition": "reject_scientific_error",
+      "audit_issues": [
+        "unresolved_host_formula",
+        "relaxor_or_dipole_glass_Tm_misclassified_as_Tc"
+      ],
+      "note": "Preset already excludes these frequency-dependent Tm peaks; the model violated the rule.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 6,
+      "document_id": "10.1007/s10854-022-08492-3",
+      "material_reported": "y=0.24, x=0.05",
+      "value": "741.7",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT"
+      ],
+      "disposition": "reject_scientific_error",
+      "audit_issues": [
+        "unresolved_host_formula",
+        "relaxor_or_dipole_glass_Tm_misclassified_as_Tc"
+      ],
+      "note": "Preset already excludes these frequency-dependent Tm peaks; the model violated the rule.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 7,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "BLFO-MZFO composite",
+      "value": "518",
+      "unit": "K",
+      "evidence_ids": [
+        "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+        "10.1002_adfm.202113022_TABLE_0001"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "conditions_not_retained",
+        "table_evidence_contains_body_text",
+        "80_20_weight_ratio_not_retained"
+      ],
+      "note": "Value has article-body support. Alias/conditions are incomplete; Table 1 itself contains no Tc.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 8,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "MZFO powder",
+      "value": "518",
+      "unit": "K",
+      "evidence_ids": [
+        "10.1002_adfm.202113022_TABLE_0001"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "conditions_not_retained",
+        "table_evidence_contains_body_text"
+      ],
+      "note": "Value has article-body support. Alias/conditions are incomplete; Table 1 itself contains no Tc.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 9,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "BLFO-MZFO composite HPT",
+      "value": "367",
+      "unit": "K",
+      "evidence_ids": [
+        "10.1002_adfm.202113022_TABLE_0001"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "conditions_not_retained",
+        "table_evidence_contains_body_text",
+        "80_20_weight_ratio_not_retained"
+      ],
+      "note": "Value has article-body support. Alias/conditions are incomplete; Table 1 itself contains no Tc.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 10,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "BLFO-MZFO composite HPT",
+      "value": "778",
+      "unit": "K",
+      "evidence_ids": [
+        "10.1002_adfm.202113022_TABLE_0001"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "conditions_not_retained",
+        "table_evidence_contains_body_text",
+        "80_20_weight_ratio_not_retained",
+        "Tc_star_new_ferromagnetic_order_not_retained"
+      ],
+      "note": "Value has article-body support. Alias/conditions are incomplete; Table 1 itself contains no Tc.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 11,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "composite",
+      "value": "367",
+      "unit": "K",
+      "evidence_ids": [
+        "figure_0"
+      ],
+      "disposition": "reject_scientific_error",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "measurement_conditions_not_retained",
+        "HPT_panel_b_value_assigned_to_ordinary_composite_panel_a"
+      ],
+      "note": "The original figure labels 367 K and 778 K only in panel b (HPT). VLM invented the inset in panel a.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 12,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "composite",
+      "value": "778",
+      "unit": "K",
+      "evidence_ids": [
+        "figure_0"
+      ],
+      "disposition": "reject_scientific_error",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "measurement_conditions_not_retained",
+        "HPT_panel_b_value_assigned_to_ordinary_composite_panel_a",
+        "Tc_star_distinction_not_retained"
+      ],
+      "note": "The original figure labels 367 K and 778 K only in panel b (HPT). VLM invented the inset in panel a.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 13,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "composite HPT",
+      "value": "367",
+      "unit": "K",
+      "evidence_ids": [
+        "figure_0"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "measurement_conditions_not_retained"
+      ],
+      "note": "HPT numerical value is visible in panel b, but material composition and distinctions are incomplete.",
+      "original_processing_issues": []
+    },
+    {
+      "prediction_row_1based": 14,
+      "document_id": "10.1002/adfm.202113022",
+      "material_reported": "composite HPT",
+      "value": "778",
+      "unit": "K",
+      "evidence_ids": [
+        "figure_0"
+      ],
+      "disposition": "supported_value_incomplete_fact",
+      "audit_issues": [
+        "unresolved_material_alias",
+        "measurement_conditions_not_retained",
+        "Tc_star_distinction_not_retained"
+      ],
+      "note": "HPT numerical value is visible in panel b, but material composition and distinctions are incomplete.",
+      "original_processing_issues": []
+    }
+  ],
+  "clearly_incorrect_tc_rows": 4,
+  "band_gap_audit": {
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+    "identifier_accepted": true,
+    "extractor_raw_response": "{\"facts\":[]}",
+    "expected_source_statement": "BFO has a low energy band gap Eg approximately 2.2 eV.",
+    "existing_band_gap_gold": false,
+    "status": "explicit_reported_value_not_extracted",
+    "context_limitation": "BFO-to-BiFeO3 definition is in another evidence unit, not in the model input.",
+    "cause": "undetermined; no causal retest performed",
+    "recorded_document_id": "10.1016/j.ceramint.2022.11.245",
+    "verified_pdf_doi": "10.1016/j.jallcom.2023.169571"
+  },
+  "automatic_review_gap": "summary facts_needing_review=0 despite scientific errors and unresolved materials",
+  "local_repairs_after_diagnosis": {
+    "figure_manifest_paths": {
+      "status": "fixed",
+      "original_images_resolved": "6/6",
+      "source": "src/comproscanner/evidence/figure_manifest.py"
+    },
+    "figure_evidence_identity": {
+      "status": "fixed_for_newly_prepared_evidence",
+      "source": "src/comproscanner/evidence/providers/figure.py",
+      "regression": "tests/test_figure_source_identity.py",
+      "checks": [
+        "distinct_cache",
+        "fact_document_binding",
+        "review_sources",
+        "cache_resume"
+      ],
+      "related_offline_tests_passed": 50,
+      "historical_ids_migrated": false,
+      "application": "Prepare a new run; resume of historical evidence does not regenerate IDs."
+    },
+    "scientific_results_retested_after_repairs": false
+  },
+  "historical_outputs_and_gold_modified": false,
+  "source_sha256": {
+    "outputs/runs/live_acceptance_network_20260905/live_report.json": "288d71217cbb8bd6ce2ec9b55cab6e268f0b4d18135726a3fde57cd3d84ea069",
+    "outputs/runs/live_tc_selected_network_20260905/predictions.json": "de3b097ebc43a62e9d4c3ee22699fc3ab3b361778c5c83ed9766efe7330ed0aa",
+    "outputs/runs/live_band_gap_selected_network_20260905/predictions.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "outputs/gold/tc_001_030/gold_facts.json": "7b423c955290fd1a5b02c322893e5d23ac477cf9904227708fb6a694533ee4bd",
+    "outputs/gold/tc_001_030/paper_id_map.json": "f51f963e095af3e3b4e1ad5d009460ab3e998a46eeb007e8648282baaca545a4"
+  },
+  "audit_method": "Manual source/Evidence/raw-response/Fact/Gold cross-check; not a numeric accuracy benchmark."
+}

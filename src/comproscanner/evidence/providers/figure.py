@@ -2,10 +2,15 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
+import re
 from dataclasses import dataclass
 
-from ..models import Evidence, EvidenceType, RetrievalMethod
-from .base import find_patterns
+from comproscanner.evidence.models import Evidence
+from comproscanner.evidence.models import EvidenceType
+from comproscanner.evidence.models import RetrievalMethod
+from comproscanner.evidence.providers.base import find_patterns
 
 
 @dataclass(frozen=True)
@@ -35,9 +40,24 @@ class FigureEvidenceProvider:
             matched = find_patterns(content, self.patterns)
             if not matched:
                 continue
+            # Figure numbers are local to an article. Keep readable, bounded
+            # path-safe labels and hash the original identities so sanitizing
+            # punctuation, Unicode, or case cannot merge different sources.
+            document_label = (
+                re.sub(r"[^A-Za-z0-9]+", "_", unit.document_id).strip("_")[:48]
+                or "document"
+            )
+            figure_label = (
+                re.sub(r"[^A-Za-z0-9]+", "_", unit.figure_id).strip("_")[:32]
+                or "figure"
+            )
+            identity = json.dumps(
+                [unit.document_id, unit.figure_id], ensure_ascii=False
+            )
+            digest = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:16]
             evidence.append(
                 Evidence(
-                    evidence_id=unit.figure_id,
+                    evidence_id=f"{document_label}_FIGURE_{figure_label}_{digest}",
                     document_id=unit.document_id,
                     target_property=target_property,
                     source_type=EvidenceType.FIGURE,

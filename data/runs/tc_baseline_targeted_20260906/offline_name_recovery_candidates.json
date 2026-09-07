@@ -1,0 +1,54 @@
+[
+  {
+    "old_row": 7,
+    "paper_id": 12,
+    "reported": "y=0.24, x=0.01",
+    "candidate": "0.76BiFe0.99Cr0.01O3-0.24BaTi0.99Mn0.01O3",
+    "value": {
+      "value": "853.1",
+      "unit": "K",
+      "qualifier": null
+    },
+    "status": "UNREVIEWED_OFFLINE_CANDIDATE",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API"
+  },
+  {
+    "old_row": 17,
+    "paper_id": 15,
+    "reported": "0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2",
+    "candidate": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2",
+    "value": {
+      "value": "698",
+      "unit": "K",
+      "qualifier": null
+    },
+    "status": "UNREVIEWED_OFFLINE_CANDIDATE",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API"
+  },
+  {
+    "old_row": 50,
+    "paper_id": 29,
+    "reported": "(1-y)BFC-yBTM (x=0.03, y=0.27)",
+    "candidate": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+    "value": {
+      "value": "795.2",
+      "unit": "K",
+      "qualifier": "~"
+    },
+    "status": "UNREVIEWED_OFFLINE_CANDIDATE",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API"
+  },
+  {
+    "old_row": 51,
+    "paper_id": 29,
+    "reported": "(1-y)BFC-yBTM (x = 0.03, y = 0.27)",
+    "candidate": "0.73BiFe0.97Cr0.03O3-0.27BaTi0.97Mn0.03O3",
+    "value": {
+      "value": "795.2",
+      "unit": "K",
+      "qualifier": "~"
+    },
+    "status": "UNREVIEWED_OFFLINE_CANDIDATE",
+    "source": "existing VariableCompositionNormalizer + original PDF text; no Gold or API"
+  }
+]

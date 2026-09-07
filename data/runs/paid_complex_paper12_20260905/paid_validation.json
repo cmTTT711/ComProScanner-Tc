@@ -1,0 +1,152 @@
+{
+  "scope": "one canonical text Evidence from complex paper 12",
+  "max_model_http_requests": 6,
+  "requests": [
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "status": 200,
+      "model": "qwen-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    }
+  ],
+  "checks": [
+    {
+      "name": "real_text_pipeline",
+      "exit_code": 1,
+      "predictions": [],
+      "failures": [
+        {
+          "document_id": "10.1007/s10854-022-08492-3",
+          "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+          "error": "ValueError: Invalid response from LLM call - None or empty."
+        }
+      ]
+    }
+  ],
+  "started": 1788591011.7929702,
+  "model_usage": [
+    {
+      "model": "openai/qwen-flash",
+      "usage": {
+        "completion_tokens": 19,
+        "prompt_tokens": 1112,
+        "total_tokens": 1131,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "finish_reason": "stop"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "usage": {
+        "completion_tokens": 2048,
+        "prompt_tokens": 3658,
+        "total_tokens": 5706,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2048,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3658
+      },
+      "finish_reason": "length"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "usage": {
+        "completion_tokens": 2048,
+        "prompt_tokens": 3658,
+        "total_tokens": 5706,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2048,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 3584,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 3584,
+        "prompt_cache_miss_tokens": 74
+      },
+      "finish_reason": "length"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "usage": {
+        "completion_tokens": 2048,
+        "prompt_tokens": 3658,
+        "total_tokens": 5706,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2048,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 3584,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 3584,
+        "prompt_cache_miss_tokens": 74
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "finished": 1788591065.0479052,
+  "elapsed_seconds": 53.3,
+  "model_http_requests": 4
+}

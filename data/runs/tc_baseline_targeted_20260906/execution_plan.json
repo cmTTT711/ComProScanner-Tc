@@ -1,0 +1,12 @@
+{
+  "max_model_http_requests": 52,
+  "max_provider_reported_tokens": 400000,
+  "identifier_max_tokens": 256,
+  "extractor_max_tokens": 16384,
+  "deepseek_thinking": {
+    "type": "enabled"
+  },
+  "num_retries": 0,
+  "timeout_seconds": 180,
+  "material_service_calls": 0
+}

@@ -1,0 +1,13 @@
+{
+  "facts_before": 61,
+  "facts_after_merge": 59,
+  "materials_changed": 27,
+  "facts_needing_review": 20,
+  "external_calls": 0,
+  "extraction_replayed": false,
+  "source_predictions_unchanged": true,
+  "all_61_original_assertions_preserved": true,
+  "values_units_qualifiers_conditions_evidence_unchanged": true,
+  "external_call_attempts": 0,
+  "source_verified_examples_passed": true
+}

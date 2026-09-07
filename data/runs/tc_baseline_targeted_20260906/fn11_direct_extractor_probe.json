@@ -1,0 +1,67 @@
+{
+  "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+  "diagnostic_only": true,
+  "note": "Same approved Evidence and canonical extraction prompt, bypassing identifier. Not a canonical pipeline success.",
+  "prior_http_requests": 51,
+  "prior_total_tokens": 182392,
+  "http_requests": [
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "thinking": {
+        "type": "enabled"
+      },
+      "messages_sha256": "2620569f40b4fcc9b750f8920931a08b4637ab6e866bb3363cfb15e5425dff16",
+      "status": 200
+    }
+  ],
+  "started": 1788626463.8638518,
+  "thinking": {
+    "type": "enabled"
+  },
+  "max_new_requests": 1,
+  "num_retries": 0,
+  "raw_response": "{\"facts\":[{\"material_reported\":\"BaTiO3\",\"property\":\"Curie temperature\",\"value\":120,\"unit\":\"°C\",\"qualifier\":\"about\",\"conditions\":{}}]}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6280,
+    "prompt_tokens": 1047,
+    "total_tokens": 7327,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 6242,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": null,
+      "video_tokens": null
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 640,
+      "text_tokens": null,
+      "image_tokens": null,
+      "video_tokens": null
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 407
+  },
+  "returned_model": "deepseek-v4-flash",
+  "reasoning_content_characters": 26896,
+  "result": {
+    "facts": [
+      {
+        "material_reported": "BaTiO3",
+        "property": "Curie temperature",
+        "value": 120,
+        "unit": "°C",
+        "qualifier": "about",
+        "conditions": {}
+      }
+    ],
+    "raw_response": "{\"facts\":[{\"material_reported\":\"BaTiO3\",\"property\":\"Curie temperature\",\"value\":120,\"unit\":\"°C\",\"qualifier\":\"about\",\"conditions\":{}}]}"
+  },
+  "finished": 1788626516.0813522,
+  "combined_http_requests": 52,
+  "combined_total_tokens": 189719
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "document_id": "10.1063/1.5131055",
+    "evidence_id": "10_1063_1_5131055_FULL_TEXT_0015_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1063/5.0026210",
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+    "error": "RuntimeError: ValueError: PARSE_ERROR: Composition formatting: expected a nonempty JSON object with keys ['compositions_property_values', 'property_unit', 'family']"
+  },
+  {
+    "document_id": "10.1063/5.0026210",
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1016/j.jallcom.2022.165519",
+    "evidence_id": "10_1016_j_jallcom_2022_165519_FULL_TEXT_0011_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503; material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_EQ_01",
+    "error": "RuntimeError: ValidationError: 1 validation error for FormattedCompositionPropertyData\n  Invalid JSON: trailing characters at line 10 column 2 [type=json_invalid, input_value='{\\n  \"composition_format...MZFO composite\"\\n  }\\n}', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid"
+  },
+  {
+    "document_id": "10.1063/5.0133946",
+    "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1143/JPSJ.7.5",
+    "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503; material_parser: HTTP 503"
+  },
+  {
+    "document_id": "10.1143/JPSJ.7.5",
+    "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0027_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503"
+  },
+  {
+    "document_id": "local-pdf/4d3fe4ad46460542",
+    "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_EQ_01",
+    "error": "RuntimeError: RuntimeError: TOOL_NOT_CALLED: selected equation Evidence was not inspected by its tool"
+  },
+  {
+    "document_id": "local-pdf/e0b7c7f789f25ed2",
+    "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0001_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503; material_parser: HTTP 503"
+  },
+  {
+    "document_id": "local-pdf/e0b7c7f789f25ed2",
+    "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+    "error": "RuntimeError: ValueError: PARSE_ERROR: Composition formatting: expected a nonempty JSON object with keys ['compositions_property_values', 'property_unit', 'family']"
+  },
+  {
+    "document_id": "10.1111/jace.19555",
+    "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+    "error": "RuntimeError: RuntimeError: TOOL_ERROR: material_parser: HTTP 503"
+  }
+]

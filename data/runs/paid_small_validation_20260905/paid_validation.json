@@ -1,0 +1,205 @@
+{
+  "scope": "one real text Evidence + one real figure tool + one controlled equation tool",
+  "max_model_http_requests": 8,
+  "requests": [
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "status": 200,
+      "model": "qwen-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    },
+    {
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "status": 200,
+      "model": "qwen-vl-plus",
+      "max_tokens": 2048
+    },
+    {
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "status": 200,
+      "model": "deepseek-v4-flash",
+      "max_tokens": 2048
+    }
+  ],
+  "checks": [
+    {
+      "name": "real_text_pipeline",
+      "exit_code": 0,
+      "predictions": [
+        {
+          "document_id": "local-pdf/d13a6634f5c93180",
+          "property_name": "Curie temperature",
+          "material_reported": "BiFeO3",
+          "material_normalized": "BiFeO3",
+          "material_identity_key": "BiFeO3",
+          "fact_value": {
+            "value": "1103",
+            "unit": "K",
+            "qualifier": null
+          },
+          "evidence_ids": [
+            "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+          ],
+          "conditions": {},
+          "material_reported_variants": [
+            "BiFeO3"
+          ],
+          "evidence_scope": "single_evidence",
+          "material_reported_scope": "legacy_cleaned_output",
+          "review_required": true,
+          "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers."
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "real_graph_tool",
+      "result": "{\n  \"real-figure-6\": {\n    \"caption\": \"Fig. 6. Temperature dependent dielectric constant curves of pristine BiFeO3 and (1-x)BiFeO3-xCoFe2O4 nanocomposites.\",\n    \"extracted_data\": {\n      \"data_points\": [\n        {\n          \"composition\": \"x = 0.0\",\n          \"value\": 650,\n          \"unit\": \"K\",\n          \"series\": \"pristine BiFeO3\"\n        },\n        {\n          \"composition\": \"x = 0.2\",\n          \"value\": 680,\n          \"unit\": \"K\",\n          \"series\": \"(1-x)BiFeO3-xCoFe2O4\"\n        },\n        {\n          \"composition\": \"x = 0.3\",\n          \"value\": 700,\n          \"unit\": \"K\",\n          \"series\": \"(1-x)BiFeO3-xCoFe2O4\"\n        },\n        {\n          \"composition\": \"x = 0.4\",\n          \"value\": 720,\n          \"unit\": \"K\",\n          \"series\": \"(1-x)BiFeO3-xCoFe2O4\"\n        }\n      ]\n    }\n  }\n}",
+      "observations": [
+        {
+          "stage": "tool",
+          "tool": "figure",
+          "error": null,
+          "token_usage": {
+            "completion_tokens": 212,
+            "prompt_tokens": 440,
+            "total_tokens": 652,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": null,
+              "rejected_prediction_tokens": null,
+              "text_tokens": 212,
+              "image_tokens": null,
+              "video_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0,
+              "text_tokens": null,
+              "image_tokens": null,
+              "video_tokens": null
+            }
+          },
+          "status": "SUCCESS"
+        }
+      ],
+      "quality_note": "Peak estimates require visual review and are not accepted Tc facts."
+    },
+    {
+      "name": "controlled_equation_tool",
+      "input": "Controlled test, not a published-paper assertion: Ba1-xSrxTiO3 forms a single-phase perovskite solid solution for x=0.10. XRD shows no secondary phases. Sr2+ replaces Ba2+ on the A site; titanium remains Ti4+; oxygen stoichiometry is O3. Derive the composition formula without inventing vacancies.",
+      "result": "(Ba(1-x)Sr(x))TiO3",
+      "observations": [
+        {
+          "stage": "tool",
+          "tool": "equation",
+          "error": null,
+          "token_usage": {
+            "completion_tokens": 330,
+            "prompt_tokens": 1380,
+            "total_tokens": 1710,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": null,
+              "reasoning_tokens": 318,
+              "rejected_prediction_tokens": null,
+              "text_tokens": null,
+              "image_tokens": null,
+              "video_tokens": null
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0,
+              "text_tokens": null,
+              "image_tokens": null,
+              "video_tokens": null
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1380
+          },
+          "status": "SUCCESS"
+        }
+      ],
+      "expected": "Ba(1-x)SrxTiO3; at x=0.10, Ba0.9Sr0.1TiO3"
+    }
+  ],
+  "started": 1788590310.290662,
+  "finished": 1788590326.5938761,
+  "elapsed_seconds": 16.3,
+  "model_http_requests": 5,
+  "assessment": {
+    "text": "PASS: BiFeO3 1103 K matches selected Gold record",
+    "equation": "PASS: returned (Ba(1-x)Sr(x))TiO3 on controlled single-phase fixture",
+    "graph": "CALL_SUCCEEDED_QUALITY_FAILED: e.g. x=0.0 main-panel peak is near 700 K visually, model reports 650 K; no graph result accepted as Tc",
+    "usage": "Text Crew reports zero counters despite 3 successful requests; usage unknown for those calls",
+    "known_tool_tokens": 2362,
+    "known_tool_usage": [
+      {
+        "stage": "figure",
+        "completion_tokens": 212,
+        "prompt_tokens": 440,
+        "total_tokens": 652,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": null,
+          "rejected_prediction_tokens": null,
+          "text_tokens": 212,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      {
+        "stage": "equation",
+        "completion_tokens": 330,
+        "prompt_tokens": 1380,
+        "total_tokens": 1710,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 318,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1380
+      }
+    ],
+    "cost": null,
+    "additional_paid_retries": 0
+  }
+}

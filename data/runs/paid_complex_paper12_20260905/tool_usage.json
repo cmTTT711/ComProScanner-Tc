@@ -1,0 +1,16 @@
+[
+  {
+    "document_id": "10.1007/s10854-022-08492-3",
+    "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+    "error": "ValueError: Invalid response from LLM call - None or empty.",
+    "stages": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": null
+      }
+    ],
+    "cost": null
+  }
+]

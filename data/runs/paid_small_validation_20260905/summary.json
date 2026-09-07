@@ -1,0 +1,8 @@
+{
+  "pipeline": "legacy",
+  "articles": 1,
+  "evidence": 1,
+  "facts_after_cleaning": 1,
+  "errors": 0,
+  "material_normalizer": "legacy"
+}

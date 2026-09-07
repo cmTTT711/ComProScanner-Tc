@@ -1,0 +1,50 @@
+[
+  {
+    "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT",
+    "source_type": "text",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  },
+  {
+    "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0003_TEXT",
+    "source_type": "text",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  },
+  {
+    "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+    "source_type": "text",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  },
+  {
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_EQ_01",
+    "source_type": "equation",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  },
+  {
+    "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+    "source_type": "table",
+    "identifier_accepted": false,
+    "vlm_called": false,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  },
+  {
+    "evidence_id": "figure_0",
+    "source_type": "figure",
+    "identifier_accepted": null,
+    "vlm_called": true,
+    "extractor_called": false,
+    "error": "InternalServerError: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error."
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "property_name": "Curie temperature",
+    "material_reported": "BiFeO3",
+    "material_normalized": "BiFeO3",
+    "material_identity_key": "BiFeO3",
+    "fact_value": {
+      "value": "1103",
+      "unit": "K",
+      "qualifier": null
+    },
+    "evidence_ids": [
+      "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+    ],
+    "conditions": {},
+    "material_reported_variants": [
+      "BiFeO3"
+    ],
+    "evidence_scope": "single_evidence",
+    "material_reported_scope": "legacy_cleaned_output",
+    "review_required": true,
+    "representation_limits": "Check original Evidence and raw_results stage_records for multiple values, units, conditions, qualifiers."
+  }
+]

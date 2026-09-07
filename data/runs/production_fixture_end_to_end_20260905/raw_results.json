@@ -1,0 +1,242 @@
+{
+  "production_fixture_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "stage_records": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "status": "DATA",
+    "review_required": true,
+    "representation_limits": [
+      "legacy output has one value per material and one shared unit; verify conditions, ranges and qualifiers against raw responses"
+    ],
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_TEXT"
+  },
+  "production-fixture_TABLE_0001": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "stage_records": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "status": "DATA",
+    "review_required": true,
+    "representation_limits": [
+      "legacy output has one value per material and one shared unit; verify conditions, ranges and qualifiers against raw responses"
+    ],
+    "document_id": "production-fixture",
+    "evidence_id": "production-fixture_TABLE_0001"
+  },
+  "fixture-figure": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "stage_records": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "figure",
+        "error": null,
+        "token_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "status": "DATA",
+    "review_required": true,
+    "representation_limits": [
+      "legacy output has one value per material and one shared unit; verify conditions, ranges and qualifiers against raw responses"
+    ],
+    "document_id": "production-fixture",
+    "evidence_id": "fixture-figure"
+  },
+  "production_fixture_FULL_TEXT_0001_EQ_01": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "stage_records": [
+      {
+        "stage": "identifier",
+        "raw_response": "{\"answer\": \"yes\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "extractor",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "formatter",
+        "raw_response": "{\"compositions_property_values\": {\"BiFeO3\": 1103}, \"property_unit\": \"K\", \"family\": \"BiFeO3\"}",
+        "crew_invocations": 1,
+        "token_usage": {
+          "total_tokens": 15
+        }
+      },
+      {
+        "stage": "tool",
+        "tool": "equation",
+        "error": null,
+        "token_usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "stage": "tool",
+        "tool": "material_parser",
+        "error": null,
+        "token_usage": null,
+        "status": "SUCCESS"
+      }
+    ],
+    "status": "DATA",
+    "review_required": true,
+    "representation_limits": [
+      "legacy output has one value per material and one shared unit; verify conditions, ranges and qualifiers against raw responses"
+    ],
+    "document_id": "production-fixture",
+    "evidence_id": "production_fixture_FULL_TEXT_0001_EQ_01"
+  }
+}

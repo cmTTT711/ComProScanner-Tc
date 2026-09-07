@@ -1,0 +1,120 @@
+{
+  "preclean_gold_temperature_hits": 37,
+  "lost_vs_previous": [
+    {
+      "paper": 3,
+      "value": 129.0,
+      "unit": "°C",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 4,
+      "value": 720.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 4,
+      "value": 746.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 10,
+      "value": 687.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 10,
+      "value": 690.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 10,
+      "value": 692.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 12,
+      "value": 853.1,
+      "unit": "K",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 15,
+      "value": 689.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 15,
+      "value": 698.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 15,
+      "value": 711.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 15,
+      "value": 732.0,
+      "unit": "K",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 19,
+      "value": 501.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 19,
+      "value": 778.0,
+      "unit": "K",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 24,
+      "value": 774.0,
+      "unit": "K",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 25,
+      "value": 227.0,
+      "unit": "°C",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 25,
+      "value": 650.0,
+      "unit": "°C",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 26,
+      "value": 355.0,
+      "unit": "°C",
+      "present_before_cleaning": true
+    },
+    {
+      "paper": 27,
+      "value": 742.6,
+      "unit": "K",
+      "present_before_cleaning": false
+    },
+    {
+      "paper": 29,
+      "value": 795.2,
+      "unit": "K",
+      "present_before_cleaning": true
+    }
+  ],
+  "lost_present_before_cleaning": 13
+}

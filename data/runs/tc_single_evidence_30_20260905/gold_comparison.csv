@@ -1,0 +1,47 @@
+﻿paper_id,gold_material,gold_value,gold_unit,gold_qualifier,legacy_retained_same_temperature,legacy_retained_materials,previous_20260904_same_temperature,previous_20260904_materials,new_single_evidence_same_temperature,new_single_evidence_materials
+1,BiFeO3,1103,K,,True,BiFeO3,True,BiFeO3,True,BiFeO3
+3,0.8BaTiO3–0.2Ni0.5Co0.5Fe2O4 (24 h ball-milled sample),129,°C,,True,0.8BaTiO3-0.2Ni0.5Co0.5Fe2O4,True,Composite sample of 24 h,False,
+4,0.66BaTiO3–0.33CoFe2O4 (randomly mixed),720,K,,True,0.66BaTiO3-0.33CoFe2O4 (randomly mixed),True,0.66BaTiO3-0.33CoFe2O4 | BT-CF randomly mixed ceramic composite,False,
+4,0.66BaTiO3–0.33CoFe2O4 (tri-layered),746,K,,True,0.66BaTiO3-0.33CoFe2O4 (layered),True,0.66BaTiO3-0.33CoFe2O4 | BT-CF layered ceramic composite,False,
+4,CoFe2O4,793,K,,True,CoFe2O4,True,CoFe2O4,True,CoFe2O4
+7,BaTiO3,120,°C,,True,BaTiO3,True,cubic BaTiO3,True,BaTiO3
+10,0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3,683,K,,False,,True,BF-BCT,True,Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9
+10,0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO and MnO2 additives,687,K,,False,,True,BF-BCT-CM,False,
+10,0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with MnO2 additive,690,K,,False,,True,BF-BCT-M,False,
+10,0.7BiFeO3-0.3(Ba0.85Ca0.15)TiO3 with CuO additive,692,K,,False,,True,BF-BCT-C,False,
+11,BaTiO3,120,°C,typical; not observed in the current CoFe2O4-Ba0.97Sr0.03TiO3 composite,True,BaTiO3,False,,False,
+12,"(1−y)BiFe1−xCrxO3–yBaTi1−xMnxO3 (y=0.24, x=0.01)",853.1,K,,True,(1-0.24)BiFe(1-0.01)Cr(0.01)O3-0.24BaTi(1-0.01)Mn(0.01)O3,True,"y=0.24, x=0.01",False,
+12,BiFeO3,1100,K,approximately,True,BiFeO3,True,BiFeO3,True,BiFeO3
+14,BiFeO3,1103,K,,True,BiFeO3,True,BiFeO3,True,BiFeO3
+15,0.67BiFeO3–0.33Ba0.70Ca0.30TiO3,634,K,,True,0.67BiFeO3-0.33Ba0.70Ca0.30TiO3,True,0.67BiFeO3 - 0.33Ba0.70Ca0.30TiO3,True,Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99
+15,0.725BiFeO3–0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3,673,K,,True,0.725BiFeO3-0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3,True,0.725BiFeO3 - 0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3,True,Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825
+15,0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3–1.2 wt.% MnO2,689,K,article also discusses frequency-dependent relaxor Tm,True,0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-1.2 wt.% MnO2,True,0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 1.2 wt.% MnO2,False,
+15,0.6BiFe0.85Co0.15O3–0.4(Bi0.5K0.5)TiO3,690,K,,True,0.6BiFe0.85Co0.15O3-0.4(Bi0.5K0.5)TiO3,True,0.6BiFe0.85Co0.15O3 - 0.4(Bi0.5K0.5)TiO3,True,Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2
+15,0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3–0.8 wt.% MnO2,698,K,article also discusses frequency-dependent relaxor Tm,True,0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2,True,0.74BiFeO3 - 0.26(Ba0.85Ca0.15)TiO3 - 0.8 wt.% MnO2 | 0.74BiFeO3-0.26(Ba0:85Ca0:15)TiO3-0.8 wt.% MnO2 | 0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2,False,
+15,0.6BiFeO3–0.4Bi0.5K0.5TiO3,703,K,,True,0.6BiFeO3-0.4Bi0.5K0.5TiO3,True,0.6BiFeO3 - 0.4Bi0.5K0.5TiO3,True,Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2
+15,0.7Bi0.9925Ca0.0075FeO3–0.3BaTiO3 + 0.3 wt.% MnO2,711,K,,True,0.7Bi0.9925Ca0.0075FeO3-0.3BaTiO3+0.3 wt.% MnO2,True,0.7Bi0.9925Ca0.0075FeO3 - 0.3BaTiO3 +0.3 wt.% MnO2,False,
+15,0.67Bi1.05Fe0.97Ga0.03O3–0.33BaTiO3,727,K,,True,0.67Bi1.05Fe0.97Ga0.03O3-0.33BaTiO3,True,0.67Bi1.05Fe0.97Ga0.03O3 - 0.33BaTiO3,True,Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99
+15,0.74BiFeO3–0.26(Ba0.85Ca0.15)TiO3,732,K,,True,0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0 wt.% MnO2,True,BF-BCT-Mn-x (x=0),False,
+17,BiFeO3,1103,K,approximately,True,BiFeO3,True,bulk BiFeO3,True,BiFeO3
+19,80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite after high-pressure torsion,367,K,,True,80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite HPT | Mn0.6Zn0.3Fe2.1O4 (Mn0.6Zn0.3Fe2.1O4 fraction in composite HPT),True,BLFO-MZFO composite HPT | MZFO fraction | BLFO-MZFO nanocomposite HPT | BLFO-MZFO composite processed by HPT,True,Mg0.1Zn0.4Fe2.5O4 | Mn0.5Zn0.5Fe2O4
+19,"Mn0.6Zn0.3Fe2.1O4 (MZFO, literature value)",501,K,,True,"Mn0.6Zn0.3Fe2.1O4 (industrial grade, [8])",True,MZFO ferrospinel,False,
+19,Mn0.6Zn0.3Fe2.1O4 (initial MZFO powder),518,K,,True,Mn0.6Zn0.3Fe2.1O4 | 80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite,True,"initial MZFO powder | Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan) | BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO) | BLFO-MZFO composite | MZFO powder (Mn0.6Zn0.3Fe2.1O4) | Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO | BLFO-MZFO composite processed by compression",True,Mn0.5Zn0.5Fe2O4 | Mn0.6Zn0.3Fe2.1O4
+19,80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite,518,K,,True,Mn0.6Zn0.3Fe2.1O4 | 80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite,True,"initial MZFO powder | Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan) | BLFO-MZFO composite (80 wt.% BLFO / 20 wt.% MZFO) | BLFO-MZFO composite | MZFO powder (Mn0.6Zn0.3Fe2.1O4) | Mn-Zn ferrospinels of industrial grades 3000HMC (USSR), 3C91 (Germany), ML27D (Japan), same stoichiometric composition as MZFO | BLFO-MZFO composite processed by compression",True,Mn0.5Zn0.5Fe2O4 | Mn0.6Zn0.3Fe2.1O4
+19,80 wt.% Bi0.9La0.1FeO3–20 wt.% Mn0.6Zn0.3Fe2.1O4 composite after high-pressure torsion (new ferromagnetic order),778,K,,True,80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite HPT (Tc*),True,BLFO-MZFO composite HPT | BLFO fraction,False,
+19,Bi0.9La0.1FeO3 fraction in high-pressure-torsion composite,950,K,,True,Bi0.9La0.1FeO3,True,BLFO fraction,True,Bi0.95La0.05FeO3 | BiFeO3
+20,CrFe2O4,420,K,approximately,True,CrFe2O4,True,CrFe2O4,True,CrFe2O4
+20,BiFeO3,1103,K,approximately,True,BiFeO3,True,BiFeO3,True,BiFeO3
+22,BiFeO3,1103,K,approximately,True,BiFeO3,True,BiFeO3 (BFO),True,BiFeO3
+24,"BF-BNT-BT (y=0.23, x=0.00; y0.23x0.00)",774,K,approximately,True,(Bi(0.95*(1-0.23))Na(0.05*(1-0.23))Ba(0.23))(Fe(0.9*(1-0.23))Ti(0.1*(1-0.23)+0.23*(1-0.00))Mn(0.23*0.00))O3,True,"BF-BNT-BTM (y = 0.23, x = 0.00)",False,
+24,BiFeO3,1100,K,approximately,True,BiFeO3,True,BiFeO3,True,BiFeO3
+25,lanthanum-substituted (1−x)BiFeO3−xPbTiO3,227,°C,,False,,True,lanthanum-substituted (1-x)BFO-xPTO,False,
+25,undoped (1−x)BiFeO3−xPbTiO3,650,°C,,False,,True,undoped (1-x)BFO-xPTO,False,
+25,BiFeO3,1103,K,,True,BiFeO3,True,BiFeO3 (BFO),True,BiFeO3
+26,PZT phase in 3BFO_n/7PZT_m composite sintered at 650 °C,355,°C,,True,Pb(Zr1-xTix)O3,True,PZT,False,
+27,0.65BiFeO3–0.35[(1−x)Bi0.5K0.5TiO3−xBaTiO3] (x=0.4),742.6,K,,True,(Bi(0.825-(0.175*0.4))K(0.175-(0.175*0.4))Ba(0.35*0.4))(Fe0.65Ti0.35)O3,True,BF-BKT-BT (x=0.4),False,
+27,BiFeO3,1103,K,,True,BiFeO3,False,,False,
+28,0.58BiFeO3–0.42Bi0.5K0.5TiO3 single crystal,671.5,K,approximately,True,0.58BiFeO3-0.42Bi0.5K0.5TiO3,True,BFBKT crystal,True,BiFeO3-BiK0.5Ti0.5O3
+28,BiFeO3,1100,K,approximately,True,BiFeO3,True,BFO,True,BiFeO3
+29,"(1−y)BiFe1−xCrxO3−yBaTi1−xMnxO3 (y=0.27, x=0.03)",795.2,K,approximately,True,(1-0.27)BiFe(1-0.03)Cr(0.03)O3-0.27BaTi(1-0.03)Mn(0.03)O3,True,"(1-y)BFC-yBTM (x=0.03, y=0.27) | (1-y)BFC-yBTM (x = 0.03, y = 0.27)",False,
+29,BiFeO3,1100,K,,True,BiFeO3,True,BiFeO3 (BFO),True,BiFeO3
+30,BiFeO3,830,°C,approximately,True,BiFeO3,True,pristine BFO ceramic,True,BiFeO3

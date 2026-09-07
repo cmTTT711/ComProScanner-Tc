@@ -1,0 +1,21 @@
+{
+  "evidence_count": 26,
+  "canonical_http_requests": 51,
+  "diagnostic_http_requests": 1,
+  "combined_http_requests": 52,
+  "canonical_tokens": 182392,
+  "diagnostic_tokens": 7327,
+  "combined_total_tokens": 189719,
+  "all_deepseek_thinking_enabled": true,
+  "http_status_counts": {
+    "200": 52
+  },
+  "canonical_saved_facts": 32,
+  "canonical_truncated_responses": 2,
+  "canonical_identifier_yes": 25,
+  "canonical_identifier_no": 1,
+  "canonical_empty_extraction": 1,
+  "no_automatic_retries": true,
+  "material_service_calls": 0,
+  "old_results_not_overwritten": true
+}

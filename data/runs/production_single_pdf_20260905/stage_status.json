@@ -1,0 +1,17 @@
+{
+  "process": {
+    "status": "COMPLETE",
+    "exit_code": 0,
+    "signature": "ccace21bba56ba9599c3274c96c905013ebab4f9ce9caad841e4f8e887b5a01a"
+  },
+  "normalize": {
+    "status": "COMPLETE",
+    "exit_code": 0,
+    "signature": null
+  },
+  "prepare": {
+    "status": "COMPLETE",
+    "exit_code": 0,
+    "signature": null
+  }
+}

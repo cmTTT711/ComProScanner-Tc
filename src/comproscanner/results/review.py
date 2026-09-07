@@ -3,13 +3,16 @@
 from __future__ import annotations
 
 from copy import copy
+import json
+from openpyxl.worksheet.datavalidation import DataValidation
 from pathlib import Path
+from comproscanner._paths import resolve_recorded_path
 
 import pandas as pd
 from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
 
-from ..evidence import Evidence
-from ..facts import Fact
+from comproscanner.evidence import Evidence
+from comproscanner.results.facts import Fact
 
 
 def _excel_safe(value):
@@ -30,7 +33,7 @@ def _evidence_text(item: Evidence) -> str:
         if value
     )
     image_path = item.metadata.get("image_path")
-    image_line = f"\n[image] {image_path}" if image_path else ""
+    image_line = f"\n[image] {resolve_recorded_path(image_path)}" if image_path else ""
     return f"[{location}]\n{item.content}{image_line}"
 
 
@@ -60,9 +63,25 @@ def write_review_workbook(
                 "qualifier": fact.fact_value.qualifier or "",
                 "unit": fact.fact_value.unit,
                 "conditions": str(fact.conditions) if fact.conditions else "",
+                "processing_issues": "\n".join(fact.processing_issues),
                 "evidence": "\n\n---\n\n".join(map(_evidence_text, supporting)),
                 "decision": "",
                 "review_note": "",
+                **(
+                    {
+                        "material_resolution": json.dumps(
+                            fact.material_resolution, ensure_ascii=False
+                        )
+                    }
+                    if fact.material_resolution
+                    else {}
+                ),
+                "evidence_ids": json.dumps(fact.evidence_ids, ensure_ascii=False),
+                **(
+                    {"attributes": json.dumps(fact.attributes, ensure_ascii=False)}
+                    if fact.attributes
+                    else {}
+                ),
             }
         )
     destination = Path(path)
@@ -73,6 +92,12 @@ def write_review_workbook(
         sheet = writer.sheets["facts"]
         sheet.freeze_panes = "A2"
         sheet.auto_filter.ref = sheet.dimensions
+        decisions = DataValidation(
+            type="list", formula1='"ACCEPT,REJECT,MODIFY"', allow_blank=True
+        )
+        sheet.add_data_validation(decisions)
+        if rows:
+            decisions.add(f"L2:L{len(rows)+1}")
         widths = {
             "A": 22,
             "B": 32,
@@ -83,9 +108,11 @@ def write_review_workbook(
             "G": 14,
             "H": 12,
             "I": 28,
-            "J": 90,
-            "K": 14,
-            "L": 30,
+            "J": 45,
+            "K": 90,
+            "L": 14,
+            "M": 30,
+            "N": 85,
         }
         for column, width in widths.items():
             sheet.column_dimensions[column].width = width

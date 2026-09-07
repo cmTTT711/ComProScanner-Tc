@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
-from ...chunking import TextChunk
-from ..text import TextChunkMatch
+from comproscanner.evidence.chunking import TextChunk
+from comproscanner.evidence.text import TextChunkMatch
 
 
 class VectorTextEvidenceProvider:

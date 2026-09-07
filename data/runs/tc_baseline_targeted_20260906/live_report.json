@@ -1,0 +1,2218 @@
+{
+  "started": 1788625520.6891618,
+  "budget": {
+    "max_model_http_requests": 52,
+    "max_provider_reported_tokens": 400000,
+    "identifier_max_tokens": 256,
+    "extractor_max_tokens": 16384,
+    "deepseek_thinking": {
+      "type": "enabled"
+    },
+    "num_retries": 0,
+    "timeout_seconds": 180,
+    "material_service_calls": 0
+  },
+  "model_calls": [
+    {
+      "call": 1,
+      "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+      "stage": "identifier",
+      "started": 1788625520.7072604,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"no\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 535,
+        "total_tokens": 540,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.98
+    },
+    {
+      "call": 2,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "stage": "identifier",
+      "started": 1788625521.6971493,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 416,
+        "total_tokens": 421,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.26
+    },
+    {
+      "call": 3,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "stage": "extractor",
+      "started": 1788625521.9568598,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BiFeO3 (BFO)\",\"property\":\"ferroelectric Curie temperature\",\"value\":830,\"unit\":\"°C\",\"qualifier\":\"~\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 295,
+        "prompt_tokens": 926,
+        "total_tokens": 1221,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 249,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 640,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 286
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 902,
+      "elapsed_seconds": 2.68
+    },
+    {
+      "call": 4,
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "stage": "identifier",
+      "started": 1788625524.6367273,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 796,
+        "total_tokens": 801,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.35
+    },
+    {
+      "call": 5,
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "stage": "extractor",
+      "started": 1788625524.9852564,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BF-BCT\",\"property\":\"Curie temperature\",\"value\":683,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"frequency\":\"100 kHz\"}},{\"material_reported\":\"BF-BCT-C\",\"property\":\"Curie temperature\",\"value\":692,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"frequency\":\"100 kHz\"}},{\"material_reported\":\"BF-BCT-M\",\"property\":\"Curie temperature\",\"value\":690,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"frequency\":\"100 kHz\"}},{\"material_reported\":\"BF-BCT-CM\",\"property\":\"Curie temperature\",\"value\":687,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"frequency\":\"100 kHz\"}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 304,
+        "prompt_tokens": 1258,
+        "total_tokens": 1562,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 151,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 106
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 608,
+      "elapsed_seconds": 1.94
+    },
+    {
+      "call": 6,
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "stage": "identifier",
+      "started": 1788625526.928908,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 609,
+        "total_tokens": 614,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.31
+    },
+    {
+      "call": 7,
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "stage": "extractor",
+      "started": 1788625527.239335,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"y = 0.24, x = 0.01\",\"property\":\"Curie temperature\",\"value\":853.1,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{\"E_bias\":\"0 V\"}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 2353,
+        "prompt_tokens": 1105,
+        "total_tokens": 3458,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2298,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 81
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 9320,
+      "elapsed_seconds": 17.84
+    },
+    {
+      "call": 8,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "stage": "identifier",
+      "started": 1788625545.0837264,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 600,
+        "total_tokens": 605,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.39
+    },
+    {
+      "call": 9,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "stage": "extractor",
+      "started": 1788625545.4732332,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2\",\"property\":\"Curie temperature\",\"value\":698,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1122,
+        "prompt_tokens": 1082,
+        "total_tokens": 2204,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1056,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 58
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 3481,
+      "elapsed_seconds": 8.15
+    },
+    {
+      "call": 10,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "stage": "identifier",
+      "started": 1788625553.628965,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 630,
+        "total_tokens": 635,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.4
+    },
+    {
+      "call": 11,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "stage": "extractor",
+      "started": 1788625554.0336728,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 12137,
+        "prompt_tokens": 1118,
+        "total_tokens": 13255,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 12131,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 94
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 47270,
+      "elapsed_seconds": 89.05
+    },
+    {
+      "call": 12,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "stage": "identifier",
+      "started": 1788625643.0876951,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 596,
+        "total_tokens": 601,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.48
+    },
+    {
+      "call": 13,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "stage": "extractor",
+      "started": 1788625643.5699587,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-x wt.% MnO2\",\"property\":\"Curie temperature\",\"value\":698,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5201,
+        "prompt_tokens": 1087,
+        "total_tokens": 6288,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 5138,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 63
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 19276,
+      "elapsed_seconds": 37.58
+    },
+    {
+      "call": 14,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "stage": "identifier",
+      "started": 1788625681.1535883,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 752,
+        "total_tokens": 757,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.4
+    },
+    {
+      "call": 15,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "stage": "extractor",
+      "started": 1788625681.5553572,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"MZFO ferrospinel\",\"property\":\"Curie temperature\",\"value\":501,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 568,
+        "prompt_tokens": 1244,
+        "total_tokens": 1812,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 528,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 92
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 2052,
+      "elapsed_seconds": 4.43
+    },
+    {
+      "call": 16,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "stage": "identifier",
+      "started": 1788625685.9940324,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 692,
+        "total_tokens": 697,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.29
+    },
+    {
+      "call": 17,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "stage": "extractor",
+      "started": 1788625686.2812707,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"initial MZFO powder\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1343,
+        "prompt_tokens": 1173,
+        "total_tokens": 2516,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1304,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 21
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 5508,
+      "elapsed_seconds": 10.88
+    },
+    {
+      "call": 18,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "stage": "identifier",
+      "started": 1788625697.16506,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 532,
+        "total_tokens": 537,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.48
+    },
+    {
+      "call": 19,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "stage": "extractor",
+      "started": 1788625697.6485262,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BLFO-MZFO composite (80 wt.% BLFO, 20 wt.% MZFO)\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 9562,
+        "prompt_tokens": 1044,
+        "total_tokens": 10606,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 9507,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 20
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 38695,
+      "elapsed_seconds": 68.07
+    },
+    {
+      "call": 20,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "stage": "identifier",
+      "started": 1788625765.7222714,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 743,
+        "total_tokens": 748,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.39
+    },
+    {
+      "call": 21,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "stage": "extractor",
+      "started": 1788625766.1151385,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BLFO-MZFO composite\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"BLFO-MZFO composite HPT\",\"property\":\"Curie temperature\",\"value\":367,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"BLFO-MZFO composite HPT\",\"property\":\"Curie temperature\",\"value\":778,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 11900,
+        "prompt_tokens": 1228,
+        "total_tokens": 13128,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 11786,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 76
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 47562,
+      "elapsed_seconds": 90.15
+    },
+    {
+      "call": 22,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "stage": "identifier",
+      "started": 1788625856.2662566,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 596,
+        "total_tokens": 601,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.39
+    },
+    {
+      "call": 23,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "stage": "extractor",
+      "started": 1788625856.6547892,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"MZFO\",\"property\":\"Curie temperature\",\"value\":367,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"BLFO\",\"property\":\"Curie temperature\",\"value\":950,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 4570,
+        "prompt_tokens": 1096,
+        "total_tokens": 5666,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 4502,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 72
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 17452,
+      "elapsed_seconds": 35.36
+    },
+    {
+      "call": 24,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "stage": "identifier",
+      "started": 1788625892.0238383,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 638,
+        "total_tokens": 643,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.36
+    },
+    {
+      "call": 25,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "stage": "extractor",
+      "started": 1788625892.390068,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BLFO-MZFO nanocomposite HPT\",\"property\":\"Curie temperature\",\"value\":367,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 271,
+        "prompt_tokens": 1143,
+        "total_tokens": 1414,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 228,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 119
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 966,
+      "elapsed_seconds": 2.4
+    },
+    {
+      "call": 26,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "stage": "identifier",
+      "started": 1788625894.794741,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 4877,
+        "total_tokens": 4882,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.54
+    },
+    {
+      "call": 27,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "stage": "extractor",
+      "started": 1788625895.3331134,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"MZFO powder (Mn0.6Zn0.3Fe2.1O4)\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"Mn-Zn ferrospinel industrial grades 3000HMC, 3C91, ML27D (same stoichiometric composition as MZFO powder)\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"BLFO-MZFO composite (processed by compression)\",\"property\":\"Curie temperature\",\"value\":518,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}},{\"material_reported\":\"BLFO-MZFO composite HPT\",\"property\":\"Curie temperature\",\"value\":367,\"unit\":\"K\",\"qualifier\":\"decreased from 518 K\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 10147,
+        "prompt_tokens": 5113,
+        "total_tokens": 15260,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 9949,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 4992,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 4992,
+        "prompt_cache_miss_tokens": 121
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 39707,
+      "elapsed_seconds": 75.71
+    },
+    {
+      "call": 28,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "stage": "identifier",
+      "started": 1788625971.0482047,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 5317,
+        "total_tokens": 5322,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.67
+    },
+    {
+      "call": 29,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "stage": "extractor",
+      "started": 1788625971.7132266,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "",
+      "finish_reason": "length",
+      "usage": {
+        "completion_tokens": 16384,
+        "prompt_tokens": 5503,
+        "total_tokens": 21887,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 16384,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 5376,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 5376,
+        "prompt_cache_miss_tokens": 127
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 63802,
+      "error": "Incomplete model response: finish_reason=length",
+      "elapsed_seconds": 127.08
+    },
+    {
+      "call": 30,
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "stage": "identifier",
+      "started": 1788626098.8016303,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 795,
+        "total_tokens": 800,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.41
+    },
+    {
+      "call": 31,
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "stage": "extractor",
+      "started": 1788626099.214817,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"as-prepared y=0.23, x=0.00\",\"property\":\"Curie temperature\",\"value\":774,\"unit\":\"K\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 6423,
+        "prompt_tokens": 1257,
+        "total_tokens": 7680,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 6376,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 105
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 20686,
+      "elapsed_seconds": 44.08
+    },
+    {
+      "call": 32,
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "stage": "identifier",
+      "started": 1788626143.2965078,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 617,
+        "total_tokens": 622,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.49
+    },
+    {
+      "call": 33,
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "stage": "extractor",
+      "started": 1788626143.7900608,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"undoped (1-x)BFO-xPTO\",\"property\":\"Curie temperature\",\"value\":650,\"unit\":\"°C\",\"qualifier\":null,\"conditions",
+      "finish_reason": "length",
+      "usage": {
+        "completion_tokens": 16384,
+        "prompt_tokens": 1108,
+        "total_tokens": 17492,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 16343,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 84
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 66420,
+      "error": "Incomplete model response: finish_reason=length",
+      "elapsed_seconds": 123.95
+    },
+    {
+      "call": 34,
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "stage": "identifier",
+      "started": 1788626267.7398915,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 705,
+        "total_tokens": 710,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.27
+    },
+    {
+      "call": 35,
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "stage": "extractor",
+      "started": 1788626268.0184946,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"PZT\",\"property\":\"Curie temperature\",\"value\":355,\"unit\":\"°C\",\"qualifier\":\"around\",\"conditions\":{\"sample_context\":\"PZT phase in 3BFO_n/7PZT_m composite sintered at Ts=650 °C; anomaly absent at Ts=700 °C\"}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 2326,
+        "prompt_tokens": 1175,
+        "total_tokens": 3501,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 2254,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 23
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 8819,
+      "elapsed_seconds": 17.16
+    },
+    {
+      "call": 36,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "stage": "identifier",
+      "started": 1788626285.180097,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 659,
+        "total_tokens": 664,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.48
+    },
+    {
+      "call": 37,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "stage": "extractor",
+      "started": 1788626285.6586688,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BF-BKT-BT sample x = 0.4\",\"property\":\"Curie temperature\",\"value\":742.6,\"unit\":\"K\",\"qualifier\":\"~\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 8498,
+        "prompt_tokens": 1231,
+        "total_tokens": 9729,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 8450,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 79
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 23591,
+      "elapsed_seconds": 62.89
+    },
+    {
+      "call": 38,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "stage": "identifier",
+      "started": 1788626348.5589504,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 665,
+        "total_tokens": 670,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.4
+    },
+    {
+      "call": 39,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "stage": "extractor",
+      "started": 1788626348.9564154,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BFO\",\"property\":\"Curie temperature\",\"value\":1100,\"unit\":\"K\",\"qualifier\":\"~\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 361,
+        "prompt_tokens": 1168,
+        "total_tokens": 1529,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 324,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1152,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 16
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 1211,
+      "elapsed_seconds": 3.24
+    },
+    {
+      "call": 40,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "stage": "identifier",
+      "started": 1788626352.1995063,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 519,
+        "total_tokens": 524,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.32
+    },
+    {
+      "call": 41,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "stage": "extractor",
+      "started": 1788626352.5199509,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BFBKT crystal\",\"property\":\"Curie temperature\",\"value\":671.5,\"unit\":\"K\",\"qualifier\":\"about\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 1176,
+        "prompt_tokens": 1024,
+        "total_tokens": 2200,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 1136,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 896,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 128
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 4493,
+      "elapsed_seconds": 8.74
+    },
+    {
+      "call": 42,
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "stage": "identifier",
+      "started": 1788626361.2662,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 483,
+        "total_tokens": 488,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.39
+    },
+    {
+      "call": 43,
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "stage": "extractor",
+      "started": 1788626361.6571658,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"(1-y)BFC-yBTM (x=0.03, y=0.27)\",\"property\":\"Curie temperature\",\"value\":795.2,\"unit\":\"K\",\"qualifier\":\"approximately\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 4134,
+        "prompt_tokens": 986,
+        "total_tokens": 5120,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 4077,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 896,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 90
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 13893,
+      "elapsed_seconds": 31.25
+    },
+    {
+      "call": 44,
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "stage": "identifier",
+      "started": 1788626392.919384,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 601,
+        "total_tokens": 606,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.37
+    },
+    {
+      "call": 45,
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "stage": "extractor",
+      "started": 1788626393.2896464,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"composite sample of 24 h\",\"property\":\"Curie temperature\",\"value\":129,\"unit\":\"°C\",\"qualifier\":null,\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 624,
+        "prompt_tokens": 1089,
+        "total_tokens": 1713,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 582,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 65
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 2781,
+      "elapsed_seconds": 4.81
+    },
+    {
+      "call": 46,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "stage": "identifier",
+      "started": 1788626398.1082842,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 520,
+        "total_tokens": 525,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.35
+    },
+    {
+      "call": 47,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "stage": "extractor",
+      "started": 1788626398.4646935,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"pristine BFO ceramic\",\"property\":\"Curie temperature\",\"value\":830,\"unit\":\"°C\",\"qualifier\":\"~\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 640,
+        "prompt_tokens": 1020,
+        "total_tokens": 1660,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 600,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 896,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 124
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 2468,
+      "elapsed_seconds": 5.25
+    },
+    {
+      "call": 48,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "stage": "identifier",
+      "started": 1788626403.7191727,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 521,
+        "total_tokens": 526,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.41
+    },
+    {
+      "call": 49,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "stage": "extractor",
+      "started": 1788626404.1376166,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BFO-BTO composite\",\"property\":\"Curie temperature\",\"value\":580,\"unit\":\"°C\",\"qualifier\":\"over ~\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 790,
+        "prompt_tokens": 1021,
+        "total_tokens": 1811,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 749,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 896,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 125
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 3036,
+      "elapsed_seconds": 6.51
+    },
+    {
+      "call": 50,
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "stage": "identifier",
+      "started": 1788626410.6505578,
+      "model": "openai/qwen-flash",
+      "raw_response": "{\"answer\":\"yes\"}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 534,
+        "total_tokens": 539,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        }
+      },
+      "returned_model": "qwen-flash",
+      "reasoning_content_characters": 0,
+      "elapsed_seconds": 0.4
+    },
+    {
+      "call": 51,
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "stage": "extractor",
+      "started": 1788626411.0546975,
+      "model": "deepseek/deepseek-v4-flash",
+      "raw_response": "{\"facts\":[{\"material_reported\":\"BT-CF randomly mixed ceramic composite\",\"property\":\"Curie temperature\",\"value\":720,\"unit\":\"K\",\"qualifier\":\"approximately\",\"conditions\":{}},{\"material_reported\":\"BT-CF layered ceramic composite\",\"property\":\"Curie temperature\",\"value\":746,\"unit\":\"K\",\"qualifier\":\"approximately\",\"conditions\":{}}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 3565,
+        "prompt_tokens": 1037,
+        "total_tokens": 4602,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 3489,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 1024,
+          "text_tokens": null,
+          "image_tokens": null,
+          "video_tokens": null
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 13
+      },
+      "returned_model": "deepseek-v4-flash",
+      "reasoning_content_characters": 15673,
+      "elapsed_seconds": 27.0
+    }
+  ],
+  "http_requests": [
+    {
+      "call": 1,
+      "evidence_id": "10_1002_adma_201003636_FULL_TEXT_0019_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "2fddbd5a5896f78c5c37d91d2e961d962c52cc537e327edf6ba9a42abb9bdf6c"
+    },
+    {
+      "call": 2,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "f9c8a142b42293689672fae704417d8fdced4ccd50cace4bffa56bc7c8471c12"
+    },
+    {
+      "call": 3,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_PDF_P001_P002_INTRO_TC",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "af20c5f8ba046a7f541b77a72c0a0a73559c9a59ac834b91d4708d451e70700b"
+    },
+    {
+      "call": 4,
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "669dbba33acc3b2f2b729e4fd153985681a60a3dedef864d596d882ea5cf870c"
+    },
+    {
+      "call": 5,
+      "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "3a00361a5d34abc2edc8ce68b49f9e77df071400d18f55bf191bcf34da627461"
+    },
+    {
+      "call": 6,
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "440342a19514271698369bf720d4795ae5e3ec90900e476a1a655495d47d9157"
+    },
+    {
+      "call": 7,
+      "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0011_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "df59b8d7dd1fc4c1a42c8916b616e972a4cb23a85989727147fafefd48968800"
+    },
+    {
+      "call": 8,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "9bf88b21bfafcf7346964431068977b6633fc102c152d68127016b2b93335ca0"
+    },
+    {
+      "call": 9,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0006_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "5a2a4432c67b4a223ca39e3f07d2f3656d1992d59fd638925cbcffeb0e851e98"
+    },
+    {
+      "call": 10,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "246b5cf8003933c0fb13a454f5e0e6b512b23fb159f1d84f9b04026daf6535e3"
+    },
+    {
+      "call": 11,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0015_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "209c41e1cd9a9da345bb50848c4ee3775c13c603e100ae27086fe8c2154476bc"
+    },
+    {
+      "call": 12,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "fa959839c30f925874729f9984a239d63c4d487d7c3566b8036bfc6ca52fba4a"
+    },
+    {
+      "call": 13,
+      "evidence_id": "10_1063_5_0026210_FULL_TEXT_0019_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "723481a4f56cf73ce21ad3af9ab37966616eef90337dcfa7845aab0b9014fe8e"
+    },
+    {
+      "call": 14,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "897db7875169632c403851baf61ad8657fd1baae777d8d80768fd8f914854f4c"
+    },
+    {
+      "call": 15,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0003_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "26ddd2a294d46bb2164ade0c959503e80949c5b7782ab653b8fd53219f1f93da"
+    },
+    {
+      "call": 16,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "c86b0d41a035a9726c29ba32e021c921ba39d719eae6b5e997f4525bc47e4c7e"
+    },
+    {
+      "call": 17,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "c66bd9ab8df4b6866c78ee1d06eee1b5a85e8b1db032f7076ab11d2340d90b05"
+    },
+    {
+      "call": 18,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "a0d9de537dc978390793c9c70f97215c568f54e506442701a399d903e2416fb2"
+    },
+    {
+      "call": 19,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0012_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "fcd44f8b0f86b223372e578cb3da6fdb9eabd9602b77e71d51ae27159bed17dd"
+    },
+    {
+      "call": 20,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "f4dde7e768a0380e02246bf8f5b84661b06662366bcbe687108ab866614af02e"
+    },
+    {
+      "call": 21,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0013_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "7e897fda6517ce19b8d7bb1a24650a54700787d37e7d52353f960f05238f749f"
+    },
+    {
+      "call": 22,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "249edb89ce5eed58cb0153a5c31356c5501a6cd1bf614c2671b12866f7a33909"
+    },
+    {
+      "call": 23,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "f4ce5120435487d13ed960a35d032aba19acfd21aaa4e070a37ea1cba5e495e9"
+    },
+    {
+      "call": 24,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "26ee9785bb656d2752a7cfef1e0c7456c0d6e5b879d02b358c1edbe3f762005f"
+    },
+    {
+      "call": 25,
+      "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0027_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "28fab67be735bca88bebad82901ab58a303a93d61b250300073e15bc6bc43063"
+    },
+    {
+      "call": 26,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "d0e5cdcb22287aae29fdd8c70acaba60b40544cb972357ebb70b9cff5dbb3c5e"
+    },
+    {
+      "call": 27,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0001",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "2652980bd8817f1c729b48e962bd195630eebf94b86ebb22c74028e9178f98de"
+    },
+    {
+      "call": 28,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "73eacc5ec059917fa1de37d09966f4e038e2ea19ad55143baf19acbd091ede82"
+    },
+    {
+      "call": 29,
+      "evidence_id": "10.1002_adfm.202113022_TABLE_0002",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "3483585aef6f3378bd8587b4aa47dcee4c75c8096a6e0a2ac6ab229cceee9094"
+    },
+    {
+      "call": 30,
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "5f30b7bfba8cb54cea36e29058ec240fa247c6fe8708270d7e45b52a9f46464d"
+    },
+    {
+      "call": 31,
+      "evidence_id": "10_1063_5_0133946_FULL_TEXT_0009_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "1dbe2e2082931dd409ce3ddaccc286bdc6cde38a08f074872fcb09951a9d70d4"
+    },
+    {
+      "call": 32,
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "6f006c32c8090747a4e2a55ca9e3ac362a8b38fd3badd157aa10ad3368879471"
+    },
+    {
+      "call": 33,
+      "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0015_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "351620f35a211f0d0710ac9fc4b0821248b0f3d16100657d952d79bef529ef27"
+    },
+    {
+      "call": 34,
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "2f0901c92292bc465a2803e95a04cd7c3947a6c5a0eb6cd5787f8197c64b8092"
+    },
+    {
+      "call": 35,
+      "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "aab3da180a30da1c89f129fd3740f34067540a9f2673f3062a75879c175e453c"
+    },
+    {
+      "call": 36,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "de28ff6f87c82916573cf652195a7da5e6c1bf0f96d8390abe148c692c30a13f"
+    },
+    {
+      "call": 37,
+      "evidence_id": "local_pdf_e0b7c7f789f25ed2_FULL_TEXT_0008_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "cbfbf519663cf7c1721b2610a3c134c35ed356fe676f07e2a7ff332e490a3d3a"
+    },
+    {
+      "call": 38,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "0026ff13316c387015a97bfd7439ff212c20a6631ddd5c6dc820b5a3ab09e373"
+    },
+    {
+      "call": 39,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "1c52b1d814b209ce18d9619c5af560b0a94a46c876d9f93220ca86b554c2456f"
+    },
+    {
+      "call": 40,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "c2dd21b1975dffcb840d3c7f183ee3553572cc9ee36ee4745769401dfb1dddec"
+    },
+    {
+      "call": 41,
+      "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "b5bd8ed05b4a9a9e745c1b0b33fa2a52ca93c4bd271727b38624e6b076d6a33c"
+    },
+    {
+      "call": 42,
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "51734b47ebae79a285e967e6cfb9eca40050e170a9badf6420f97494001cc6c5"
+    },
+    {
+      "call": 43,
+      "evidence_id": "10_1111_jace_19555_FULL_TEXT_0013_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "6ebd08fd6ba6893c03698f9194d16b0811d8ac775594b65bb2fed24dedf104f2"
+    },
+    {
+      "call": 44,
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "0f5519b26b31f6cbcbe9019323ec5c8ba1c1f8de2fee465aeaa617f963cbaf2e"
+    },
+    {
+      "call": 45,
+      "evidence_id": "local_pdf_d6275e45598fdba0_FULL_TEXT_0010_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "e8ea71cf441728259f6382e57b65774e33efdb07ba6ec4bf440f1efd6e44604f"
+    },
+    {
+      "call": 46,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "376028242ec0480e82084be5336c35815d317351e086bc847e51759b2a41406e"
+    },
+    {
+      "call": 47,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "d97bfbcdac06fa11bb8244788ed17cb6bcace09757983a80eb4f7b8269dd94e6"
+    },
+    {
+      "call": 48,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "9f6a19030d430931fe579746ba46035bca44db80b5a27dfeed0fc8ca97cff711"
+    },
+    {
+      "call": 49,
+      "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "2c6ea136679cf03bf7c096233b5a3ad96ce0d668bf82b494107cd01a08a93d99"
+    },
+    {
+      "call": 50,
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "host": "dashscope.aliyuncs.com",
+      "path": "/compatible-mode/v1/chat/completions",
+      "model": "qwen-flash",
+      "thinking": null,
+      "max_tokens": 256,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "47f8a22320db29bb5093c1dc2f23ecf6c8a687d3e9cda0cbdae96e7e393c3d86"
+    },
+    {
+      "call": 51,
+      "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0028_TEXT",
+      "host": "api.deepseek.com",
+      "path": "/beta/chat/completions",
+      "model": "deepseek-v4-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "max_tokens": 16384,
+      "temperature": 0,
+      "status": 200,
+      "messages_sha256": "4e5136ae22f24ae9af4186dc39d03375a1204408d5f95861a71fbe0007632117"
+    }
+  ],
+  "source": "Sept4 selected problem Evidence; one documented PDF text recovery",
+  "instructions_sha256": "ffb846ec4e8772bfb2cf3c9a4fdd1eb65e930a5ca932e4a4a82131a125407eb2",
+  "usage": {
+    "prompt_tokens": 61184,
+    "completion_tokens": 121208,
+    "total_tokens": 182392
+  },
+  "cli_exit_code": 1,
+  "review_exit_code": 0,
+  "finished": 1788626438.1084182
+}

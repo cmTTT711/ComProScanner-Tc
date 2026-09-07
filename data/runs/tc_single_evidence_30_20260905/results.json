@@ -1,0 +1,929 @@
+{
+  "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/d13a6634f5c93180",
+    "evidence_id": "local_pdf_d13a6634f5c93180_FULL_TEXT_0003_TEXT"
+  },
+  "10_1063_1_5131055_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.7Fe0.7O2.1-Ba0.255Ca0.045Ti0.3O0.9": 700
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/1.5131055",
+    "evidence_id": "10_1063_1_5131055_FULL_TEXT_0001_TEXT"
+  },
+  "10_1063_1_5131055_FULL_TEXT_0011_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.7Fe0.7O2.1-Ba0.21Ca0.09Ti0.3O0.9": 683
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/1.5131055",
+    "evidence_id": "10_1063_1_5131055_FULL_TEXT_0011_TEXT"
+  },
+  "10_1063_1_5131055_FULL_TEXT_0014_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5": 673,
+        "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co": 612,
+        "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Mn": 670,
+        "Bi0.5Fe0.5O1.5-Ba0.425Ca0.075Ti0.45Zr0.05O1.5+Co+Mn": 638
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/1.5131055",
+    "evidence_id": "10_1063_1_5131055_FULL_TEXT_0014_TEXT"
+  },
+  "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1100
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1007/s10854-022-08492-3",
+    "evidence_id": "10_1007_s10854_022_08492_3_FULL_TEXT_0002_TEXT"
+  },
+  "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BaTiO3": 393,
+        "CoNb0.02Fe1.98O4": 793,
+        "Ba0.85Ti0.85O2.55-Co0.15Nb0.003Fe0.297O0.6": 393,
+        "Ba0.75Ti0.75O2.25-Co0.25Nb0.005Fe0.495O": 393,
+        "Ba0.65Ti0.65O1.95-Co0.35Nb0.007Fe0.693O1.4": 393
+      },
+      "property_unit": "K",
+      "family": "BaTiO3/CoNb0.02Fe1.98O4"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/f19a1c40d689d7e7",
+    "evidence_id": "local_pdf_f19a1c40d689d7e7_FULL_TEXT_0001_TEXT"
+  },
+  "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/f632a01543d4e2d3",
+    "evidence_id": "local_pdf_f632a01543d4e2d3_FULL_TEXT_0004_TEXT"
+  },
+  "10_1063_5_0026210_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03": 1103,
+        "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.01O0.02": 1098,
+        "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.02O0.04": 1093,
+        "Bi0.99Fe0.99O2.97-Ba0.0085Ca0.0015Ti0.01O0.03-Mn0.03O0.06": 1088
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-(Ba0.85Ca0.15)TiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0026210",
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0001_TEXT"
+  },
+  "10_1063_5_0026210_FULL_TEXT_0005_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.6Fe0.6O1.8-Bi0.2K0.2Ti0.4O1.2": 703,
+        "Bi0.6Fe0.51Co0.09O1.8-Bi0.2K0.2Ti0.4O1.2": 690,
+        "Bi0.7035Fe0.6499Ga0.0201O2.01-Ba0.33Ti0.33O0.99": 727,
+        "Bi0.67Fe0.67O2.01-Ba0.231Ca0.099Ti0.33O0.99": 634,
+        "Bi0.725Fe0.725O2.175-Ba0.23375Ca0.04125Ti0.2475Zr0.020625Sn0.006875O0.825": 673
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0026210",
+    "evidence_id": "10_1063_5_0026210_FULL_TEXT_0005_TEXT"
+  },
+  "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1021/acsnano.2c07215",
+    "evidence_id": "10_1021_acsnano_2c07215_FULL_TEXT_0002_TEXT"
+  },
+  "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Mn0.5Zn0.5Fe2O4": 518
+      },
+      "property_unit": "K",
+      "family": "Mn-Zn ferrite"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0011_TEXT"
+  },
+  "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Mg0.1Zn0.4Fe2.5O4": 367,
+        "Bi0.95La0.05FeO3": 950
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10_1002_adfm_202113022_FULL_TEXT_0016_TEXT"
+  },
+  "10.1002_adfm.202113022_TABLE_0001": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Mn0.6Zn0.3Fe2.1O4": 518
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-based multiferroic/ferrite composite"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10.1002_adfm.202113022_TABLE_0001"
+  },
+  "10.1002_adfm.202113022_TABLE_0002": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Mn0.5Zn0.5Fe2O4": 367,
+        "BiFeO3": 950
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1002/adfm.202113022",
+    "evidence_id": "10.1002_adfm.202113022_TABLE_0002"
+  },
+  "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/deb70641057677d8",
+    "evidence_id": "local_pdf_deb70641057677d8_FULL_TEXT_0003_TEXT"
+  },
+  "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "CrFe2O4": 420
+      },
+      "property_unit": "K",
+      "family": "CrFe2O4"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/deb70641057677d8",
+    "evidence_id": "local_pdf_deb70641057677d8_FULL_TEXT_0004_TEXT"
+  },
+  "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/7c100201e7883b3e",
+    "evidence_id": "local_pdf_7c100201e7883b3e_FULL_TEXT_0003_TEXT"
+  },
+  "10_1063_5_0133946_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103,
+        "Bi0.95Nd0.05FeO3": 1020,
+        "Bi0.9Nd0.1FeO3": 950,
+        "Bi0.85Nd0.15FeO3": 900,
+        "Bi0.8Nd0.2FeO3": 850,
+        "Bi0.75Nd0.25FeO3": 800,
+        "Bi0.7Nd0.3FeO3": 750,
+        "Bi0.65Nd0.35FeO3": 700,
+        "Bi0.6Nd0.4FeO3": 650,
+        "Bi0.55Nd0.45FeO3": 600,
+        "Bi0.5Nd0.5FeO3": 550,
+        "Bi0.45Nd0.55FeO3": 500,
+        "Bi0.4Nd0.6FeO3": 450,
+        "Bi0.35Nd0.65FeO3": 400,
+        "Bi0.3Nd0.7FeO3": 350,
+        "Bi0.25Nd0.75FeO3": 300,
+        "Bi0.2Nd0.8FeO3": 250,
+        "Bi0.15Nd0.85FeO3": 200,
+        "Bi0.1Nd0.9FeO3": 150,
+        "Bi0.05Nd0.95FeO3": 100,
+        "NdFeO3": 50
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0133946",
+    "evidence_id": "10_1063_5_0133946_FULL_TEXT_0001_TEXT"
+  },
+  "10_1063_5_0133946_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1100
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0133946",
+    "evidence_id": "10_1063_5_0133946_FULL_TEXT_0003_TEXT"
+  },
+  "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "Bi0.6Fe0.6O1.8-Pb0.4Ti0.4O1.2": 903,
+        "Bi0.57Nd0.03Fe0.6O1.8-Pb0.4Ti0.4O1.2": 873,
+        "Bi0.54Nd0.06Fe0.6O1.8-Pb0.4Ti0.4O1.2": 843,
+        "Bi0.51Nd0.09Fe0.6O1.8-Pb0.4Ti0.4O1.2": 813
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-PbTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1143/JPSJ.7.5",
+    "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0001_TEXT"
+  },
+  "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1143/JPSJ.7.5",
+    "evidence_id": "10_1143_JPSJ_7_5_FULL_TEXT_0004_TEXT"
+  },
+  "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {},
+      "property_unit": "°C",
+      "family": "PZT"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "local-pdf/4d3fe4ad46460542",
+    "evidence_id": "local_pdf_4d3fe4ad46460542_FULL_TEXT_0013_TEXT"
+  },
+  "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1100
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.actamat.2023.119044",
+    "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0003_TEXT"
+  },
+  "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3-BiK0.5Ti0.5O3": 671.5
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.actamat.2023.119044",
+    "evidence_id": "10_1016_j_actamat_2023_119044_FULL_TEXT_0010_TEXT"
+  },
+  "10_1111_jace_19555_FULL_TEXT_0002_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1100
+      },
+      "property_unit": "K",
+      "family": "BiFeO3-BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1111/jace.19555",
+    "evidence_id": "10_1111_jace_19555_FULL_TEXT_0002_TEXT"
+  },
+  "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 830
+      },
+      "property_unit": "°C",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.ceramint.2022.11.245",
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0003_TEXT"
+  },
+  "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3-BaTiO3": 580
+      },
+      "property_unit": "°C",
+      "family": "BiFeO3-BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.ceramint.2022.11.245",
+    "evidence_id": "10_1016_j_ceramint_2022_11_245_FULL_TEXT_0004_TEXT"
+  },
+  "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BaTiO3": 393,
+        "CoFe2O4": 793
+      },
+      "property_unit": "K",
+      "family": "BaTiO3-CoFe2O4"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0001_TEXT"
+  },
+  "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0005_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "CoFe2O4": 793
+      },
+      "property_unit": "K",
+      "family": "CoFe2O4"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0005_TEXT"
+  },
+  "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0029_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BiFeO3": 1103,
+        "Bi0.95Nd0.05FeO3": 1020
+      },
+      "property_unit": "K",
+      "family": "BiFeO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.jallcom.2019.05.068",
+    "evidence_id": "10_1016_j_jallcom_2019_05_068_FULL_TEXT_0029_TEXT"
+  },
+  "10_1016_j_ceramint_2019_12_165_FULL_TEXT_0013_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BaTiO3": 120
+      },
+      "property_unit": "°C",
+      "family": "BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1016/j.ceramint.2019.12.165",
+    "evidence_id": "10_1016_j_ceramint_2019_12_165_FULL_TEXT_0013_TEXT"
+  },
+  "10_1063_5_0036518_FULL_TEXT_0001_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "CoFe2O4": 793,
+        "BaTiO3": 393,
+        "Co0.6Fe1.2O2.4-Ba0.4Ti0.4O1.2": 393,
+        "Co0.5FeO2-Ba0.5Ti0.5O1.5": 393,
+        "Co0.4Fe0.8O1.6-Ba0.6Ti0.6O1.8": 393
+      },
+      "property_unit": "K",
+      "family": "CoFe2O4-BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0036518",
+    "evidence_id": "10_1063_5_0036518_FULL_TEXT_0001_TEXT"
+  },
+  "10_1063_5_0036518_FULL_TEXT_0005_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BaTiO3": 120
+      },
+      "property_unit": "°C",
+      "family": "BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0036518",
+    "evidence_id": "10_1063_5_0036518_FULL_TEXT_0005_TEXT"
+  },
+  "10_1063_5_0036518_FULL_TEXT_0006_TEXT": {
+    "composition_data": {
+      "compositions_property_values": {
+        "BaTiO3": 150
+      },
+      "property_unit": "°C",
+      "family": "BaTiO3"
+    },
+    "synthesis_data": {
+      "method": "",
+      "precursors": [],
+      "steps": [],
+      "characterization_techniques": []
+    },
+    "article_metadata": {
+      "doi": "",
+      "title": "",
+      "journal": "",
+      "year": "",
+      "isOpenAccess": false,
+      "authors": [],
+      "keywords": []
+    },
+    "document_id": "10.1063/5.0036518",
+    "evidence_id": "10_1063_5_0036518_FULL_TEXT_0006_TEXT"
+  }
+}

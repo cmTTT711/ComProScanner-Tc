@@ -1,0 +1,338 @@
+[
+  {
+    "paper_id": 1,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "1",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 3,
+    "material": "0.8BaTiO3-0.2Ni0.5Co0.5Fe2O4",
+    "value": 129,
+    "unit": "°C",
+    "document_id": "3",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 4,
+    "material": "0.66BaTiO3-0.33CoFe2O4 (randomly mixed)",
+    "value": 720,
+    "unit": "K",
+    "document_id": "4",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 4,
+    "material": "0.66BaTiO3-0.33CoFe2O4 (layered)",
+    "value": 746,
+    "unit": "K",
+    "document_id": "4",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 4,
+    "material": "CoFe2O4",
+    "value": 793,
+    "unit": "K",
+    "document_id": "4",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 7,
+    "material": "BaTiO3",
+    "value": 120,
+    "unit": "°C",
+    "document_id": "7",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 11,
+    "material": "BaTiO3",
+    "value": 120,
+    "unit": "°C",
+    "document_id": "11",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 12,
+    "material": "BiFeO3",
+    "value": 1100,
+    "unit": "K",
+    "document_id": "12",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 12,
+    "material": "(1-0.24)BiFe(1-0.01)Cr(0.01)O3-0.24BaTi(1-0.01)Mn(0.01)O3",
+    "value": 853.1,
+    "unit": "K",
+    "document_id": "12",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 14,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "14",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0 wt.% MnO2",
+    "value": 732,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-0.8 wt.% MnO2",
+    "value": 698,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.74BiFeO3-0.26(Ba0.85Ca0.15)TiO3-1.2 wt.% MnO2",
+    "value": 689,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.6BiFeO3-0.4Bi0.5K0.5TiO3",
+    "value": 703,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.6BiFe0.85Co0.15O3-0.4(Bi0.5K0.5)TiO3",
+    "value": 690,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.67Bi1.05Fe0.97Ga0.03O3-0.33BaTiO3",
+    "value": 727,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.67BiFeO3-0.33Ba0.70Ca0.30TiO3",
+    "value": 634,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.725BiFeO3-0.275Ba0.85Ca0.15Ti0.9Zr0.075Sn0.025O3",
+    "value": 673,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 15,
+    "material": "0.7Bi0.9925Ca0.0075FeO3-0.3BaTiO3+0.3 wt.% MnO2",
+    "value": 711,
+    "unit": "K",
+    "document_id": "15",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 17,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "17",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "Mn0.6Zn0.3Fe2.1O4",
+    "value": 518,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "Mn0.6Zn0.3Fe2.1O4 (industrial grade, [8])",
+    "value": 501,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "Bi0.9La0.1FeO3",
+    "value": 950,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite",
+    "value": 518,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite HPT",
+    "value": 367,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "80wt%Bi0.9La0.1FeO3-20wt%Mn0.6Zn0.3Fe2.1O4 composite HPT (Tc*)",
+    "value": 778,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 19,
+    "material": "Mn0.6Zn0.3Fe2.1O4 (Mn0.6Zn0.3Fe2.1O4 fraction in composite HPT)",
+    "value": 367,
+    "unit": "K",
+    "document_id": "19",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 20,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "20",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 20,
+    "material": "CrFe2O4",
+    "value": 420,
+    "unit": "K",
+    "document_id": "20",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 22,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "22",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 24,
+    "material": "BiFeO3",
+    "value": 1100,
+    "unit": "K",
+    "document_id": "24",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 24,
+    "material": "(Bi(0.95*(1-0.23))Na(0.05*(1-0.23))Ba(0.23))(Fe(0.9*(1-0.23))Ti(0.1*(1-0.23)+0.23*(1-0.00))Mn(0.23*0.00))O3",
+    "value": 774,
+    "unit": "K",
+    "document_id": "24",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 25,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "25",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 26,
+    "material": "Pb(Zr1-xTix)O3",
+    "value": 355,
+    "unit": "°C",
+    "document_id": "26",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 27,
+    "material": "BiFeO3",
+    "value": 1103,
+    "unit": "K",
+    "document_id": "27",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 27,
+    "material": "(Bi(0.825-(0.175*0.4))K(0.175-(0.175*0.4))Ba(0.35*0.4))(Fe0.65Ti0.35)O3",
+    "value": 742.6,
+    "unit": "K",
+    "document_id": "27",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 28,
+    "material": "0.58BiFeO3-0.42Bi0.5K0.5TiO3",
+    "value": 671.5,
+    "unit": "K",
+    "document_id": "28",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 28,
+    "material": "BiFeO3",
+    "value": 1100,
+    "unit": "K",
+    "document_id": "28",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 29,
+    "material": "(1-0.27)BiFe(1-0.03)Cr(0.03)O3-0.27BaTi(1-0.03)Mn(0.03)O3",
+    "value": 795.2,
+    "unit": "K",
+    "document_id": "29",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 29,
+    "material": "BiFeO3",
+    "value": 1100,
+    "unit": "K",
+    "document_id": "29",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 30,
+    "material": "BiFeO3",
+    "value": 830,
+    "unit": "°C",
+    "document_id": "30",
+    "property": "Curie temperature"
+  },
+  {
+    "paper_id": 30,
+    "material": "BiFeO3-BaTiO3",
+    "value": 580,
+    "unit": "°C",
+    "document_id": "30",
+    "property": "Curie temperature"
+  }
+]
