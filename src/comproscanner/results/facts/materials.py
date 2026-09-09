@@ -256,6 +256,16 @@ class ArticleMaterialNormalizer:
             if len(alias) < 2:
                 continue
             prefix = text[max(0, match.start() - 220) : match.start()].rstrip()
+            # A prose sentence boundary is not a decimal point or additive tail.
+            prefix = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9(])", prefix)[-1]
+            definition_prefix = prefix
+            # Accept an explicit variable range between a formula and its alias.
+            # Do not strip arbitrary parenthetical prose or formula groups.
+            prefix = re.sub(
+                r"\s*\(\s*\d+(?:\.\d+)?\s*(?:<=|≤|<)\s*[xyz]\s*"
+                r"(?:<=|≤|<)\s*\d+(?:\.\d+)?\s*\)\s*$",
+                "", prefix,
+            ).rstrip()
             for start in re.finditer(r"(?<![A-Za-z0-9.])(?=[A-Z0-9(])", prefix):
                 before = prefix[: start.start()].rstrip()
                 if before and (
@@ -264,7 +274,7 @@ class ArticleMaterialNormalizer:
                     continue  # Do not mistake a formula/additive tail for the whole definition.
                 formula = re.sub(r"\s+", "", prefix[start.start() :])
                 if self._chemical(formula):
-                    add(alias, formula, prefix[start.start() :] + match[0])
+                    add(alias, formula, definition_prefix[start.start() :] + match[0])
                     break
         # Legacy composition extraction already emits this mapping. Accept it
         # only when both pieces also occur in this Article, and retain conflicts.
@@ -277,6 +287,12 @@ class ArticleMaterialNormalizer:
                         formula,
                         f"Article definition / extracted abbreviations: {alias} = {formula}",
                     )
+        # Separator-free spellings are accepted only within this paper. Merge
+        # their candidate sets so conflicting definitions remain ambiguous.
+        for alias in list(definitions):
+            compact_alias = alias.replace("-", "")
+            if compact_alias != alias:
+                definitions.setdefault(compact_alias, {}).update(definitions[alias])
         self._definitions[document_id] = (text, definitions)
         return text, definitions
 

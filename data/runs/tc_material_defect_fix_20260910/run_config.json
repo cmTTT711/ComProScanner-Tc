@@ -1,0 +1,11 @@
+{
+  "preset": "curie_temperature",
+  "source_predictions": "F:\\Python_Project\\ComProScanner\\data\\runs\\tc_fulltext_001_030_20260904\\predictions.json",
+  "source_sha256": "d786e325318a58d418084860bd8453f3ceec7266baa7e1be9a5232924480b3b7",
+  "material_article": {
+    "path": "F:\\Python_Project\\ComProScanner\\data\\runs\\tc_single_evidence_30_20260905\\article.csv",
+    "sha256": "19adbb90f02c59ee62171e854d4380bcb092116eb11b5e4feafafcf5d1aadaba"
+  },
+  "material_normalizer": "article",
+  "external_calls": 0
+}

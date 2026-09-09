@@ -1,0 +1,33 @@
+{
+  "facts_checked": 61,
+  "non_material_fields_unchanged": true,
+  "material_name_changes": [
+    {
+      "source_row": 42,
+      "original": "undoped (1-x)BFO-xPTO",
+      "before": "undoped (1-x)BFO-xPbTiO3",
+      "after": "undoped (1-x)BiFeO3-xPbTiO3"
+    },
+    {
+      "source_row": 43,
+      "original": "lanthanum-substituted (1-x)BFO-xPTO",
+      "before": "lanthanum-substituted (1-x)BFO-xPbTiO3",
+      "after": "lanthanum-substituted (1-x)BiFeO3-xPbTiO3"
+    },
+    {
+      "source_row": 48,
+      "original": "BFBKT crystal",
+      "before": "BFBKT crystal",
+      "after": "0.58BiFeO3-0.42Bi0.5K0.5TiO3 crystal"
+    }
+  ],
+  "external_calls": 0,
+  "old_files_sha256": {
+    "data\\runs\\tc_20260904_material_recovered_20260906\\predictions.json": "69efc4835cb68920af0d44066ebe793c7257bbadb6dc7d763f6ef86de2d354e0",
+    "data\\runs\\tc_20260904_material_recovered_20260906\\material_changes.json": "687bd4bb62a404aed4ac8a24b91f0accb11aa898b03aab87c746b065c50e10ac"
+  },
+  "limitations": [
+    "Paper 27 definitions now detected but bracket variants remain ambiguous.",
+    "No new strict F1 or complete manual Gold audit performed."
+  ]
+}

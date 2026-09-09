@@ -57,6 +57,38 @@ def test_conflicting_definitions_are_not_silently_selected():
     assert "material_definition_ambiguous: BFO" in result.processing_issues
 
 
+def test_sentence_boundary_before_definition_is_not_a_formula_tail():
+    text = "Applications include memory devices [15,16]. BiFeO3 (BFO)."
+    out = FactProcessor(ArticleMaterialNormalizer({"paper": text})).process(fact("BFO"))
+    assert out.material_normalized == "BiFeO3"
+
+
+def test_ternary_definition_with_range_preserves_outer_composition():
+    formula = "0.65BiFeO3-0.35[(1-x)Bi0.5K0.5TiO3-xBaTiO3]"
+    text = formula + " (0.0 ≤ x ≤ 1.0) (BF-BKT-BT) solid solutions."
+    out = FactProcessor(ArticleMaterialNormalizer({"paper": text})).process(
+        fact("BF-BKT-BT (x=0.4)")
+    )
+    assert out.material_normalized == (
+        "0.65BiFeO3-0.35[0.6Bi0.5K0.5TiO3-0.4BaTiO3] (x=0.4)"
+    )
+    assert "(0.0 ≤ x ≤ 1.0)" in out.material_resolution[0]["source_text"]
+
+
+def test_separator_free_alias_requires_unambiguous_same_paper_definition():
+    text = "0.58BiFeO3-0.42Bi0.5K0.5TiO3 (BF-BKT)."
+    out = FactProcessor(ArticleMaterialNormalizer({"paper": text})).process(
+        fact("BFBKT crystal")
+    )
+    assert out.material_normalized == "0.58BiFeO3-0.42Bi0.5K0.5TiO3 crystal"
+    conflict = text + " BaTiO3 (BFBKT)."
+    out = FactProcessor(ArticleMaterialNormalizer({"paper": conflict})).process(
+        fact("BFBKT crystal")
+    )
+    assert out.material_normalized == "BFBKT crystal"
+    assert "material_definition_ambiguous: BFBKT" in out.processing_issues
+
+
 @pytest.mark.parametrize(
     "text",
     [
