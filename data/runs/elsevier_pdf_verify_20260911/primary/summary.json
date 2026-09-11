@@ -1,0 +1,157 @@
+{
+  "count": 1,
+  "success": 1,
+  "partial": 0,
+  "failed": 0,
+  "results": [
+    {
+      "doi": "10.1016/j.mssp.2026.110559",
+      "status": "success",
+      "reason": "",
+      "state": "pdf_response_captured",
+      "article_url": "https://doi.org/10.1016/j.mssp.2026.110559",
+      "final_url": "https://www.sciencedirect.com/science/article/pii/S1369800126001551?[redacted]",
+      "title": "Achieving prominent piezoelectric response and high Curie temperature in BiFeO3-BaTiO3-based ceramics through multi-component cooperative regulation and quenching treatment - ScienceDirect",
+      "pdf_url": "https://pdf.sciencedirectassets.com/271987/1-s2.0-S1369800126X20017/1-s2.0-S1369800126001551/main.pdf?[redacted]",
+      "pdf_path": "F:\\Python_Project\\ComProScanner\\data\\runs\\elsevier_pdf_verify_20260911\\primary\\pdfs\\10.1016_j.mssp.2026.110559.pdf",
+      "text_length": 51638,
+      "size_bytes": 15464174,
+      "verified_match": true,
+      "diagnostic_path": "",
+      "events": [
+        {
+          "state": "article_open",
+          "detail": "https://doi.org/10.1016/j.mssp.2026.110559"
+        },
+        {
+          "state": "challenge_manual_wait",
+          "detail": "complete verification in visible browser"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "1"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "2"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "3"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "4"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "5"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "6"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "7"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "8"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "9"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "10"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "11"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "12"
+        },
+        {
+          "state": "challenge_resolved",
+          "detail": "https://www.sciencedirect.com/science/article/pii/S1369800126001551?[redacted]"
+        },
+        {
+          "state": "pdf_button_clicked",
+          "detail": "{\"selector\": \"elsevier-view-pdf\", \"text\": \"View PDF\", \"href\": \"https://www.sciencedirect.com/science/article/pii/S1369800126001551/pdfft?[redacted]\", \"score\": 210}"
+        },
+        {
+          "state": "pdf_candidate",
+          "detail": "https://www.sciencedirect.com/science/article/pii/S1369800126001551/pdfft"
+        },
+        {
+          "state": "pdf_async_navigation",
+          "detail": "https://www.sciencedirect.com/science/article/pii/S1369800126001551/pdfft"
+        },
+        {
+          "state": "challenge_manual_wait",
+          "detail": "complete verification in visible browser"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "1"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "2"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "3"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "4"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "5"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "6"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "7"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "8"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "9"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "10"
+        },
+        {
+          "state": "challenge_wait",
+          "detail": "11"
+        },
+        {
+          "state": "pdf_candidate",
+          "detail": "https://www.sciencedirect.com/science/article/pii/S1369800126001551/pdfft?[redacted]"
+        },
+        {
+          "state": "pdf_async_navigation",
+          "detail": "https://www.sciencedirect.com/science/article/pii/S1369800126001551/pdfft?[redacted]"
+        },
+        {
+          "state": "pdf_state_candidate",
+          "detail": "https://pdf.sciencedirectassets.com/271987/1-s2.0-S1369800126X20017/1-s2.0-S1369800126001551/main.pdf?[redacted]"
+        }
+      ]
+    }
+  ]
+}

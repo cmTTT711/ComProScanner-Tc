@@ -1,0 +1,32 @@
+{
+  "count": 1,
+  "success": 1,
+  "missing": 0,
+  "unverified": 0,
+  "verified_match": 1,
+  "pdf_dir": "F:\\Python_Project\\ComProScanner\\data\\runs\\elsevier_pdf_verify_20260911\\complete\\pdfs",
+  "manifest": "F:\\Python_Project\\ComProScanner\\data\\runs\\elsevier_pdf_verify_20260911\\complete\\manifest.csv",
+  "publisher": "Elsevier",
+  "primary": {
+    "count": 1,
+    "success": 1,
+    "failed": 0
+  },
+  "final": {
+    "count": 1,
+    "success": 1,
+    "failed": 0
+  },
+  "retry_attempted": 0,
+  "retry_success": 0,
+  "target_verified": null,
+  "target_reached": false,
+  "skipped": 0,
+  "cached_skipped": 0,
+  "carsi_portal_preauth": false,
+  "carsi_portal_preauth_attempted": false,
+  "carsi_portal_preauth_done": false,
+  "attempt_cache": "F:\\Python_Project\\ComProScanner\\data\\runs\\elsevier_pdf_verify_20260911\\attempts.jsonl",
+  "concurrency": 1,
+  "browser_profile_dir": "C:\\Users\\asus\\.instsci\\chrome-profile"
+}

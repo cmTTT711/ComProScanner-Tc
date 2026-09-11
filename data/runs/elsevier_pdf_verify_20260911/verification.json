@@ -1,0 +1,14 @@
+{
+  "publisher": "Elsevier",
+  "doi": "10.1016/j.mssp.2026.110559",
+  "requested_institution": "Harbin Institute of Technology",
+  "route_attempted": "visible CloakBrowser ScienceDirect article -> View PDF",
+  "pdf_saved": true,
+  "pages": 12,
+  "size_bytes": 15464174,
+  "doi_in_pdf": true,
+  "screenshot_verified": false,
+  "institution_entitlement_verified": false,
+  "api_tested": false,
+  "limitation": "Screenshot request declined; PDF content verified locally, no final institutional capability verdict."
+}

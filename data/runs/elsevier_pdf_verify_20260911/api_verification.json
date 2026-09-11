@@ -1,0 +1,7 @@
+{
+  "status": 401,
+  "content_type": "application/xml",
+  "bytes": 189,
+  "pdf_magic": false,
+  "response": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><error-response><error-code>APIKEY_INVALID</error-code><error-message>The provided apiKey is invalid.</error-message></error-response>"
+}
