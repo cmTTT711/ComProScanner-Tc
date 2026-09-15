@@ -15,18 +15,24 @@ from comproscanner.documents.literature.oa import existing_pdf_hashes
 from comproscanner.documents.literature.oa import hash_file
 from comproscanner.documents.literature.oa import resolve_openalex_urls
 from comproscanner.documents.literature.oa import resolve_semantic_scholar
+from comproscanner.documents.literature.openalex_discover import OpenalexSearch
+from comproscanner.documents.literature.openalex_discover import discover_openalex
+from comproscanner.documents.literature.openalex_discover import parse_openalex_work
 
 __all__ = [
     "CorpusLayout",
     "DownloadSource",
+    "OpenalexSearch",
     "ScopusSearch",
     "atomic_csv",
     "atomic_json",
+    "discover_openalex",
     "discover_scopus",
     "download_validated_pdf",
     "existing_pdf_hashes",
     "hash_file",
     "normalize_doi",
+    "parse_openalex_work",
     "parse_scopus_entry",
     "read_csv",
     "resolve_openalex_urls",

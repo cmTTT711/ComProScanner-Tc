@@ -109,6 +109,7 @@ def download_validated_pdf(
     *,
     session=requests,
     minimum_bytes: int = 10_000,
+    headers: dict[str, str] | None = None,
 ) -> tuple[str, int]:
     """Stream a PDF, validate signature/size, and return SHA-256 plus byte size."""
     temporary = Path(temporary_path)
@@ -119,9 +120,9 @@ def download_validated_pdf(
     try:
         with session.get(
             url,
-            headers={"User-Agent": USER_AGENT, "Accept": "application/pdf,*/*;q=0.5"},
+            headers={"User-Agent": USER_AGENT, "Accept": "application/pdf,*/*;q=0.5", **(headers or {})},
             stream=True,
-            timeout=(30, 120),
+            timeout=(15, 45),
             allow_redirects=True,
         ) as response:
             response.raise_for_status()

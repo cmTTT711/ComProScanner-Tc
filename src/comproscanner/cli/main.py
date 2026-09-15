@@ -11,7 +11,9 @@ from comproscanner.documents.ingestion import normalize_article_csvs
 from comproscanner.documents.literature import CorpusLayout
 from .run import _RUN_STAGES
 from .documents import _acquire_oa
+from .documents import _acquire_pdfs
 from .documents import _discover
+from .documents import _discover_openalex
 from .results import _evaluate
 from .extraction import _extract_evidence
 from .results import _postprocess_materials
@@ -73,6 +75,36 @@ def build_parser() -> argparse.ArgumentParser:
     discover.add_argument("--api-key-env", default="SCOPUS_API_KEY")
     discover.add_argument("--output", default="data/literature/acquisition/discovery")
     discover.add_argument("--execute-network", action="store_true")
+    discover_openalex = subparsers.add_parser(
+        "discover-openalex",
+        help="Search OpenAlex metadata; requires explicit network execution",
+    )
+    discover_openalex.add_argument("--query", required=True)
+    discover_openalex.add_argument("--start-year", type=int, required=True)
+    discover_openalex.add_argument("--end-year", type=int, required=True)
+    discover_openalex.add_argument(
+        "--document-type",
+        action="append",
+        default=None,
+        help="OpenAlex work type filter; repeat for multiple types",
+    )
+    discover_openalex.add_argument("--per-page", type=int, default=200)
+    discover_openalex.add_argument("--max-records", type=int, default=5000)
+    discover_openalex.add_argument("--shortlist", type=int, default=500)
+    discover_openalex.add_argument("--delay", type=float, default=0.5)
+    discover_openalex.add_argument("--mailto", default="")
+    discover_openalex.add_argument("--api-key-env", default="OPENALEX_API_KEY")
+    discover_openalex.add_argument(
+        "--output", default="data/literature/acquisition/discovery-openalex"
+    )
+    discover_openalex.add_argument("--execute-network", action="store_true")
+    pdfs = subparsers.add_parser("acquire-pdfs", help="Merge DOI lists, download public/archive PDFs, export browser handoff")
+    pdfs.add_argument("--candidates", action="append", required=True, help="Discovery JSON/CSV; repeat to merge sources")
+    pdfs.add_argument("--limit", type=int, default=50)
+    pdfs.add_argument("--max-archive-requests", type=int, default=50)
+    pdfs.add_argument("--output", required=True)
+    pdfs.add_argument("--browser-manifest", help="Import InstSci summary JSON locally, without network calls")
+    pdfs.add_argument("--execute-network", action="store_true")
     acquire = subparsers.add_parser(
         "acquire-oa", help="Resolve and download validated OA PDFs"
     )
@@ -257,8 +289,16 @@ def main(argv: list[str] | None = None) -> int:
         if args.shortlist < 1 or args.shortlist > args.limit:
             raise ValueError("Require 1 <= shortlist <= limit")
         return _discover(args)
+    if args.command == "discover-openalex":
+        if args.shortlist < 1 or args.shortlist > args.max_records:
+            raise ValueError("Require 1 <= shortlist <= max-records")
+        return _discover_openalex(args)
     if args.command == "acquire-oa":
         return _acquire_oa(args)
+    if args.command == "acquire-pdfs":
+        if args.limit < 1 or args.max_archive_requests < 0:
+            raise ValueError("Require positive limit and nonnegative archive budget")
+        return _acquire_pdfs(args)
     if args.command == "normalize":
         print(
             normalize_article_csvs(args.csv, args.output, source_type=args.source_type)

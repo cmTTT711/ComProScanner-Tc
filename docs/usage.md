@@ -2,6 +2,34 @@
 
 ## 输入
 
+### DOI 检索与 PDF 获取
+
+`discover` 检索 Scopus，`discover-openalex` 检索 OpenAlex。
+两个检索来源的查询语法不同；请记录检索词、年份和抽样方式，不将测试集当作主题全集。
+运行前在本机环境中加载 `.env`，不要把 Key 写入命令或结果文件。
+
+```bash
+comproscanner discover --query "TITLE-ABS-KEY(multiferroic* AND magnetoelectric*)" --start-year 2020 --end-year 2026 --limit 50 --shortlist 50 --output data/literature/acquisition/scopus --execute-network
+comproscanner discover-openalex --query "multiferroic magnetoelectric" --start-year 2020 --end-year 2026 --max-records 50 --shortlist 50 --output data/literature/acquisition/openalex --execute-network
+comproscanner acquire-pdfs --candidates data/literature/acquisition/scopus/candidates.json --candidates data/literature/acquisition/openalex/candidates.json --limit 50 --max-archive-requests 50 --output data/literature/acquisition/combined --execute-network
+```
+
+`acquire-pdfs` 按 DOI 合并来源并交替选择，先尝试 OpenAlex 报告的公开 PDF 地址，再尝试缓存。
+缓存使用 `OPENALEX_API_KEY`；每次缓存请求开始前持久化预算，默认最多 50 次。
+目录内 `pdfs/` 只存身份校验通过的文件；待核对文件进入 `quarantine/`。
+`manifest.csv/json` 记录每篇状态，`remaining_dois.txt` 保存全部待下载 DOI，`browser_input/` 按出版社生成 InstSci 输入。
+该步骤只验证 PDF 获取，不执行 Docling 或付费属性抽取。
+
+```bash
+instsci papers data/literature/acquisition/combined/browser_input/elsevier.txt --publisher elsevier --institution "Harbin Institute of Technology" --output data/literature/acquisition/combined/browser/elsevier --no-retry
+```
+
+InstSci 是独立安装的下载工具。当前版本的 `--publisher auto` 要求同一批 DOI 属于同一出版社，不能直接处理混合清单；按 `browser_input/` 分组运行，unknown 留待人工确认。机构登录、验证码由用户完成，出版社批量访问需符合对应授权。
+将其包含 `doi` 和 `pdf_path` 的结果列表或 `results` 汇总 JSON 传给 `acquire-pdfs --browser-manifest <文件>`，其余参数保持一致，即可本地校验并合并到同一结果清单，不再联网。
+相同输出目录续跑会跳过已有有效 PDF 和已尝试下载地址；失败重试使用明确的新运行目录。
+PDF 身份采用前两页 DOI 或长标题词匹配，属于自动初验；无文本、补充材料或无法匹配的文件保留待核对。
+下载后使用下面的 `downloaded_pdf` 入口进入现有 Article 流程。
+
 `run --source manual_pdf --folder <目录>`：本地 PDF。
 `run --source downloaded_pdf --folder <目录>`：已下载的 PDF。
 `run --source elsevier|springer|wiley --doi-file <文件>`：对应出版社来源，每行一个 DOI；实际执行还需要 `--execute-network` 和对应密钥。

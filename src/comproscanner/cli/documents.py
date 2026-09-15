@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 from pathlib import Path
 from comproscanner.presets import get_preset
@@ -12,9 +13,11 @@ from comproscanner.documents.ingestion import format_processing_plan
 from comproscanner.documents.ingestion import read_doi_file
 from comproscanner.documents.literature import CorpusLayout
 from comproscanner.documents.literature import DownloadSource
+from comproscanner.documents.literature import OpenalexSearch
 from comproscanner.documents.literature import ScopusSearch
 from comproscanner.documents.literature import atomic_csv
 from comproscanner.documents.literature import atomic_json
+from comproscanner.documents.literature import discover_openalex
 from comproscanner.documents.literature import discover_scopus
 from comproscanner.documents.literature import download_validated_pdf
 from comproscanner.documents.literature import existing_pdf_hashes
@@ -64,6 +67,50 @@ def _discover(args: argparse.Namespace) -> int:
             "year_range": [args.start_year, args.end_year],
             "candidate_count": len(rows),
             "shortlist_count": min(len(rows), args.shortlist),
+            "full_text_downloaded": False,
+            "llm_called": False,
+        },
+    )
+    print(output)
+    return 0
+
+
+def _discover_openalex(args: argparse.Namespace) -> int:
+    _require_network_execution(args)
+    search = OpenalexSearch(
+        query=args.query,
+        start_year=args.start_year,
+        end_year=args.end_year,
+        document_types=tuple(args.document_type or ("article", "review")),
+        per_page=args.per_page,
+        max_records=args.max_records,
+        delay_seconds=args.delay,
+        mailto=args.mailto,
+        api_key=os.getenv(args.api_key_env) or "",
+    )
+    rows = discover_openalex(search)
+    rows.sort(
+        key=lambda row: (
+            -int(row.get("cited_by_count") or 0),
+            -int(row.get("year") or 0),
+            row.get("title", "").casefold(),
+        )
+    )
+    for rank, row in enumerate(rows, start=1):
+        row["candidate_rank"] = rank
+    output = Path(args.output).resolve()
+    atomic_csv(output / "candidates.csv", rows)
+    atomic_json(output / "candidates.json", rows)
+    atomic_csv(output / "shortlist.csv", rows[: args.shortlist])
+    atomic_json(
+        output / "summary.json",
+        {
+            "source": "openalex",
+            "query": args.query,
+            "year_range": [args.start_year, args.end_year],
+            "candidate_count": len(rows),
+            "shortlist_count": min(len(rows), args.shortlist),
+            "truncated_at_max_records": len(rows) >= search.max_records,
             "full_text_downloaded": False,
             "llm_called": False,
         },
@@ -170,6 +217,24 @@ def _acquire_oa(args: argparse.Namespace) -> int:
     )
     print(output)
     return 1 if counts.get("DOWNLOAD_FAILED") else 0
+
+
+def _acquire_pdfs(args: argparse.Namespace) -> int:
+    from comproscanner.documents.literature.acquisition import acquire_pdfs, merge_candidates
+
+    if not args.browser_manifest:
+        _require_network_execution(args)
+    sources = []
+    for name in args.candidates:
+        path = Path(name)
+        sources.append(json.loads(path.read_text(encoding="utf-8")) if path.suffix == ".json"
+                       else read_csv(path))
+    rows = merge_candidates(*sources, limit=args.limit)
+    result = acquire_pdfs(rows, args.output, api_key=os.getenv("OPENALEX_API_KEY", ""),
+                          max_archive_requests=args.max_archive_requests,
+                          browser_manifest=args.browser_manifest)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0
 
 
 def _process_articles(args: argparse.Namespace) -> int:
